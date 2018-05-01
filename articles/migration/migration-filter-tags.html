@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Fluent Interface | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Fluent Interface | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.33.2.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="migration-filter-tags">
+<h1 id="filter-migrations-run-based-on-tags">Filter migrations run based on Tags</h1>
+
+<p>Scenario: multiple database once had the same schema but over the years have had differences introduced.</p>
+<p>Because of this the majority of migrations, contained in one assembly, can be run against all the databases but at the same time you need to be able to filter certain migrations to run against specific databases based on the country (UK, DK, etc) and environment (Staging, Production, etc) it serves.</p>
+<p>To facilitate this you can tag migrations (much like cucumber scenarios) and then filter these by passing tags into the runner. A migration is then run if it has:</p>
+<ul>
+<li>No Tags</li>
+<li>OR Has Tags that match ALL those passed into the runner.</li>
+</ul>
+<p>Tags are assigned to migrations with an attribute/s:</p>
+<pre><code class="lang-cs">[Tags(&quot;DK&quot;, &quot;NL&quot;, &quot;UK&quot;)]
+[Tags(&quot;Staging&quot;, &quot;Production&quot;)]
+[Migration(1)]
+public class DoSomeStuffToEuropeanStagingAndProdDbs : Migration { /* ... etc ... */ }
+</code></pre>
+<h1 id="filtering">Filtering</h1>
+<div class="tabGroup" id="tabgroup_CeZOj-G++Q">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_runner-internal" role="tab" aria-controls="tabpanel_CeZOj-G++Q_runner-internal" data-tab="runner-internal" tabindex="0" aria-selected="true"><code>IMigrationRunner</code></a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_runner-external-migrate" role="tab" aria-controls="tabpanel_CeZOj-G++Q_runner-external-migrate" data-tab="runner-external-migrate" tabindex="-1"><code>Migrate.exe</code> tool</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_runner-external-msbuid" role="tab" aria-controls="tabpanel_CeZOj-G++Q_runner-external-msbuid" data-tab="runner-external-msbuid" tabindex="-1">MSBuild task</a>
+</li>
+</ul>
+<section id="tabpanel_CeZOj-G++Q_runner-internal" role="tabpanel" data-tab="runner-internal">
+
+<pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
+    .AddFluentMigratorCore()
+    .ConfigureRunner(rb =&gt; rb
+        .AddSqlServer2008()
+        .WithGlobalConnectionString(&quot;server=.\\SQLEXPRESS;uid=testfm;pwd=test;Trusted_Connection=yes;database=FluentMigrator&quot;)
+        .WithMigrationsIn(typeof(DoSomeStuffToEuropeanStagingAndProdDbs).Assembly))
+    .AddLogging(lb =&gt; lb.AddFluentMigratorConsole())
+    // Start of type filter configuration
+    .Configure&lt;RunnerOptions&gt;(opt =&gt; {
+        opt.Tags = new[] { &quot;UK&quot;, &quot;Production&quot; }
+    })
+    .BuildServiceProvider(false);
+
+var runner = serviceProvider.GetRequiredService&lt;IMigrationRunner&gt;();
+runner.MigrateUp();
+</code></pre>
+</section>
+<section id="tabpanel_CeZOj-G++Q_runner-external-migrate" role="tabpanel" data-tab="runner-external-migrate" aria-hidden="true" hidden="hidden">
+
+<p>And the tags are entered into the command line like so: (Migrations with UK AND Production tags executed)</p>
+<pre><code><migrate.exe command=""> --tag UK --tag Production</migrate.exe></code></pre>
+</section>
+<section id="tabpanel_CeZOj-G++Q_runner-external-msbuid" role="tabpanel" data-tab="runner-external-msbuid" aria-hidden="true" hidden="hidden">
+
+<p>For the Msbuild runner, there is a Tags option and tags are passed in as a comma-separated string.</p>
+<pre><code class="lang-xml">&lt;Migrate Database=&quot;sqlserver2008&quot;
+    Connection=&quot;server=.\SQLEXPRESS;uid=testfm;pwd=test;Trusted_Connection=yes;database=FluentMigrator&quot;
+	Target=&quot;Migrations&quot; 
+    Tags=&quot;UK,Production&quot; /&gt;
+</code></pre>
+</section>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/docfx_project/articles/migration/migration-filter-tags.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

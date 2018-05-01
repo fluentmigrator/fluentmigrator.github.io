@@ -1,6 +1,12 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: app-context
+  name: 'ApplicationContext: Passing parameters to Migrations'
+  href: articles/obsolete/app-context.html
+- uid: db-functions
+  name: Database functions
+  href: articles/db-functions.html
 - uid: fluent-interface.md
   name: Fluent Interface
   href: articles/fluent-interface.html
@@ -32783,12 +32789,24 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.DependencyInjection.FluentMigratorServiceCollectionExtensions.ConfigureRunner
   nameWithType: FluentMigratorServiceCollectionExtensions.ConfigureRunner
+- uid: migration-attribute-custom
+  name: Enforcing migration version numbering rules
+  href: articles/migration/migration-attribute-custom.html
+- uid: migration-auto-reversing
+  name: Auto-reversing migrations
+  href: articles/migration/migration-auto-reversing.html
 - uid: migration-example.md
   name: Migrations
   href: articles/migration-example.html
+- uid: migration-filter-tags
+  name: Fluent Interface
+  href: articles/migration/migration-filter-tags.html
 - uid: migration-runners.md
   name: Migration runners
   href: articles/migration-runners.html
+- uid: migration-transaction-behavior
+  name: Migration transaction behavior
+  href: articles/migration/migration-transaction-behavior.html
 - uid: multi-db-support.md
   name: Dealing with Multiple Database Types
   href: articles/multi-db-support.html
@@ -32798,6 +32816,15 @@ references:
 - uid: quickstart.md
   name: Starting with FluentMigrator
   href: articles/quickstart.html
+- uid: raw-sql
+  name: Raw SQL helper
+  href: articles/raw-sql.html
+- uid: runner-console
+  name: Command Line Runner
+  href: articles/runners/runner-console.html
 - uid: sql-server-extensions.md
   name: SQL Server specific extensions
   href: articles/extensions/sql-server-extensions.html
+- uid: version-table-metadata
+  name: Custom metadata for the VersionInfo table
+  href: articles/version-table-metadata.html

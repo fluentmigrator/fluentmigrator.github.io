@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Custom metadata for the VersionInfo table | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Custom metadata for the VersionInfo table | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.33.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="version-table-metadata">
+<h1 id="custom-metadata-for-the-versioninfo-table">Custom metadata for the VersionInfo table</h1>
+
+<p>By implementing the <a class="xref" href="../api/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> interface you can change the defaults for the VersionInfo table. The interface exposes six properties:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../api/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_SchemaName">SchemaName</a></td>
+<td>(empty)</td>
+<td>The schema where the version table is stored</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_TableName">TableName</a></td>
+<td><code>&quot;VersionInfo&quot;</code></td>
+<td>The table where the version information is stored</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_ColumnName">ColumnName</a></td>
+<td><code>&quot;Version&quot;</code></td>
+<td>The name of the column where the version numbers are stored</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_DescriptionColumnName">DescriptionColumnName</a></td>
+<td><code>&quot;Description&quot;</code></td>
+<td>The name of the last migration applied</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_AppliedOnColumnName">AppliedOnColumnName</a></td>
+<td><code>&quot;AppliedOn&quot;</code></td>
+<td>The datetime of when the last migration was applied</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_UniqueIndexName">UniqueIndexName</a></td>
+<td><code>&quot;UC_Version&quot;</code></td>
+<td>The name of the unique constraint for the version column</td>
+</tr>
+</tbody>
+</table>
+<p>In the same assembly that your migrations are located, create a new class (it has to be public) that implements the <a class="xref" href="../api/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> interface and decorate the class with the <a class="xref" href="../api/FluentMigrator.Runner.VersionTableInfo.VersionTableMetaDataAttribute.html">VersionTableMetaDataAttribute</a>. FluentMigrator will automatically find this and use it instead of the default settings.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The custom <a class="xref" href="../api/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> is filtered by the values in the <a class="xref" href="../api/FluentMigrator.Runner.Initialization.TypeFilterOptions.html">TypeFilterOptions</a>. This allows different <a class="xref" href="../api/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> for every database.</p>
+</div>
+<p>A common use case is changing the default schema so that you can have a migration assembly per schema.</p>
+<pre><code class="lang-c#">using FluentMigrator.VersionTableInfo;
+
+namespace Migrations
+{
+    [VersionTableMetaData]
+    public class VersionTable : IVersionTableMetaData
+    {
+        public string ColumnName
+        {
+            get { return &quot;Version&quot;; }
+        }
+
+        public string SchemaName
+        {
+            get { return &quot;&quot;; }
+        }
+
+        public string TableName
+        {
+            get { return &quot;Version2&quot;; }
+        }
+
+        public string UniqueIndexName
+        {
+            get { return &quot;UC_Version&quot;; }
+        }
+
+        public virtual string AppliedOnColumnName
+        {
+            get { return &quot;AppliedOn&quot;; }
+        }
+
+        public virtual string DescriptionColumnName
+        {
+            get { return &quot;Description&quot;; }
+        }
+    }
+}
+</code></pre>
+<h1 id="overriding-the-defaultversiontablemetadata-class">Overriding the DefaultVersionTableMetaData class</h1>
+<p>If you want to keep most of the default values and just change one or two of the properties. Then you can create a class that inherits from DefaultVersionTableMetaData and override the property to be changed. Don't forget to add the VersionTableMetaData attribute to the class.</p>
+<pre><code class="lang-c#">[VersionTableMetaData]
+public class VersionTable : DefaultVersionTableMetaData
+{
+    public override string ColumnName
+    {
+        get { return &quot;Version&quot;; }
+    }
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/docfx_project/articles/version-table-metadata.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

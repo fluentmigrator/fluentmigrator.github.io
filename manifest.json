@@ -6090,22 +6090,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "OBsifma6qww0C7U2gGpdMQ=="
+          "hash": "r4MWZqSxlcF85d0Syay0og=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/upgrades/guide-2.0-to-3.0.md",
       "output": {
         ".html": {
           "relative_path": "articles/upgrades/guide-2.0-to-3.0.html",
-          "hash": "pYe9YcK7xXPipGzdyHHeLg=="
+          "hash": "GMz8PM4m0npWG+w1w0e5/A=="
         }
       },
       "is_incremental": false,

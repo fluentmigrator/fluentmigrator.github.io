@@ -254,7 +254,7 @@ using (var processor = processorFactory.Create(
 <h2 id="iannouncer"><code>IAnnouncer</code></h2>
 <p>The <a class="xref" href="../../api/FluentMigrator.Runner.IAnnouncer.html">IAnnouncer</a> interface (and its implementations) were replaced by <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> and its implementations.</p>
 <h3 id="logger-registration">Logger registration</h3>
-<p>You can comfortably register the default <a href="FluentMigrator.Runner.Logging.FluentMigratorConsoleLogger">FluentMigratorConsoleLogger</a>:</p>
+<p>You can comfortably register the default <a class="xref" href="../../api/FluentMigrator.Runner.Logging.FluentMigratorConsoleLogger.html">FluentMigratorConsoleLogger</a>:</p>
 <pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
     .AddLogging(lb =&gt; lb.AddFluentMigratorConsole())
     .BuildServiceProvider();
@@ -289,9 +289,9 @@ using (var processor = processorFactory.Create(
 </code></pre>
 <h2 id="imigrationrunnerconventionsgetmigrationinfo"><a class="xref" href="../../api/FluentMigrator.Runner.IMigrationRunnerConventions.html#FluentMigrator_Runner_IMigrationRunnerConventions_GetMigrationInfo">IMigrationRunnerConventions.GetMigrationInfo</a></h2>
 <p>This function was replaced by <a class="xref" href="../../api/FluentMigrator.Runner.IMigrationRunnerConventions.html#FluentMigrator_Runner_IMigrationRunnerConventions_GetMigrationInfoForMigration">IMigrationRunnerConventions.GetMigrationInfoForMigration</a>, because the instantiation will be done using the dependency injection framework.</p>
-<h2 id="iprofileloaderapplyprofiles"><a class="xref" href="../../api/FluentMigrator.Runner.IProfileLoader.html#FluentMigrator_Runner_IProfileLoader_ApplyProfiles">IProfileLoader.ApplyProfiles()</a></h2>
-<p>This function was replaced by <a href="xref:FluentMigrator.Runner.IProfileLoader.ApplyProfiles(IMigrationRunner)">IProfileLoader.ApplyProfiles(IMigrationRunner)</a> to avoid circular dependencies.</p>
-<h2 id="iprofileloaderfindprofilesiniassemblycollection-stringxreffluentmigratorrunneriprofileloaderfindprofilesiniassemblycollection-string">[IProfileLoader.FindProfilesIn(IAssemblyCollection, String)](xref:FluentMigrator.Runner.IProfileLoader.FindProfilesIn(IAssemblyCollection, String))</h2>
+<h2 id="iprofileloaderapplyprofiles"><a class="xref" href="../../api/FluentMigrator.Runner.IProfileLoader.html#FluentMigrator_Runner_IProfileLoader_ApplyProfiles">IProfileLoader.ApplyProfiles</a></h2>
+<p>This function was replaced by <a class="xref" href="../../api/FluentMigrator.Runner.IProfileLoader.html#FluentMigrator_Runner_IProfileLoader_ApplyProfiles_FluentMigrator_Runner_IMigrationRunner_">IProfileLoader.ApplyProfiles(IMigrationRunner)</a> to avoid circular dependencies.</p>
+<h2 id="iprofileloaderfindprofilesiniassemblycollection-string"><a class="xref" href="../../api/FluentMigrator.Runner.IProfileLoader.html#FluentMigrator_Runner_IProfileLoader_FindProfilesIn_FluentMigrator_Infrastructure_IAssemblyCollection_System_String_">IProfileLoader.FindProfilesIn(IAssemblyCollection, String)</a></h2>
 <p>This function is not used anymore.</p>
 <h2 id="imigrationprocessoroptions"><a class="xref" href="../../api/FluentMigrator.IMigrationProcessorOptions.html">IMigrationProcessorOptions</a></h2>
 <p>This interface is not used anymore. We use <a class="xref" href="../../api/FluentMigrator.Runner.Processors.ProcessorOptions.html">ProcessorOptions</a> instead.</p>
@@ -320,8 +320,10 @@ using (var processor = processorFactory.Create(
 <li><a class="xref" href="../../api/FluentMigrator.Runner.Processors.ProcessorOptions.html#FluentMigrator_Runner_Processors_ProcessorOptions_Timeout">Timeout</a></li>
 </ul>
 <h3 id="properties-moved-into-typefilteroptions">Properties moved into <a class="xref" href="../../api/FluentMigrator.Runner.Initialization.TypeFilterOptions.html">TypeFilterOptions</a></h3>
-<p><a class="xref" href="../../api/FluentMigrator.Runner.Initialization.TypeFilterOptions.html#FluentMigrator_Runner_Initialization_TypeFilterOptions_Namespace">Namespace</a>
-<a class="xref" href="../../api/FluentMigrator.Runner.Initialization.TypeFilterOptions.html#FluentMigrator_Runner_Initialization_TypeFilterOptions_NestedNamespaces">NestedNamespaces</a></p>
+<ul>
+<li><a class="xref" href="../../api/FluentMigrator.Runner.Initialization.TypeFilterOptions.html#FluentMigrator_Runner_Initialization_TypeFilterOptions_Namespace">Namespace</a></li>
+<li><a class="xref" href="../../api/FluentMigrator.Runner.Initialization.TypeFilterOptions.html#FluentMigrator_Runner_Initialization_TypeFilterOptions_NestedNamespaces">NestedNamespaces</a></li>
+</ul>
 <h3 id="properties-moved-into-appconfigconnectionstringaccessoroptions">Properties moved into <a class="xref" href="../../api/FluentMigrator.Runner.Initialization.NetFramework.AppConfigConnectionStringAccessorOptions.html">AppConfigConnectionStringAccessorOptions</a></h3>
 <div class="WARNING">
 <h5>Warning</h5>
@@ -330,15 +332,15 @@ Provide access to an <a class="xref" href="https://docs.microsoft.com/dotnet/api
 The FluentMigrator library will use it to call the <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationextensions.getconnectionstring#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetConnectionString_Microsoft_Extensions_Configuration_IConfiguration_System_String_">GetConnectionString</a> extension method.</p>
 </div>
 <ul>
-<li><a class="xref" href="../../api/FluentMigrator.Runner.Initialization.NetFramework.AppConfigConnectionStringAccessorOptions.html#FluentMigrator_Runner_Initialization_NetFramework_AppConfigConnectionStringAccessorOptions_ConnectionStringConfigPath">ConnectionStringPath -&gt; ConnectionStringConfigPath</a></li>
+<li><a class="xref" href="../../api/FluentMigrator.Runner.Initialization.NetFramework.AppConfigConnectionStringAccessorOptions.html#FluentMigrator_Runner_Initialization_NetFramework_AppConfigConnectionStringAccessorOptions_ConnectionStringConfigPath">ConnectionStringPath ➔ ConnectionStringConfigPath</a></li>
 </ul>
 <h3 id="properties-moved-into-selectingprocessoraccessoroptions">Properties moved into <a class="xref" href="../../api/FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions.html">SelectingProcessorAccessorOptions</a></h3>
 <ul>
-<li><a class="xref" href="../../api/FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions.html#FluentMigrator_Runner_Processors_SelectingProcessorAccessorOptions_ProcessorId">Database -&gt; ProcessorId</a></li>
+<li><a class="xref" href="../../api/FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions.html#FluentMigrator_Runner_Processors_SelectingProcessorAccessorOptions_ProcessorId">Database ➔ ProcessorId</a></li>
 </ul>
 <h3 id="properties-moved-into-assemblysourceoptions">Properties moved into <a class="xref" href="../../api/FluentMigrator.Runner.Initialization.AssemblySourceOptions.html">AssemblySourceOptions</a></h3>
 <ul>
-<li><a class="xref" href="../../api/FluentMigrator.Runner.Initialization.AssemblySourceOptions.html#FluentMigrator_Runner_Initialization_AssemblySourceOptions_AssemblyNames">Targets -&gt; AssemblyNames</a></li>
+<li><a class="xref" href="../../api/FluentMigrator.Runner.Initialization.AssemblySourceOptions.html#FluentMigrator_Runner_Initialization_AssemblySourceOptions_AssemblyNames">Targets ➔ AssemblyNames</a></li>
 </ul>
 <h3 id="properties-with-no-direct-replacement">Properties with no direct replacement</h3>
 <ul>
@@ -363,7 +365,7 @@ services.AddSingleton&lt;IConventionSet&gt;(conventionSet)
 <p>This class was overkill.</p>
 <h2 id="migrationgeneratorfactory"><code>MigrationGeneratorFactory</code></h2>
 <p>This isn't needed anymore, because all factories must be added dynamically using the <a class="xref" href="../../api/Microsoft.Extensions.DependencyInjection.FluentMigratorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_FluentMigratorServiceCollectionExtensions_ConfigureRunner_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_FluentMigrator_Runner_IMigrationRunnerBuilder__">ConfigureRunner</a> extension method.</p>
-<p><a href="factory-example">Example:</a></p>
+<p><a id="factory-example"></a>Example:</p>
 <pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
     // Registration of all FluentMigrator-specific services
     .AddFluentMigratorCore()

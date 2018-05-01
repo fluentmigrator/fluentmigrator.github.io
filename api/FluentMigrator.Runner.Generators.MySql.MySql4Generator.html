@@ -1,0 +1,990 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MySql4Generator
+   | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MySql4Generator
+   | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.33.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator">
+  
+  
+  <h1 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator" class="text-break">Class MySql4Generator
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html">GeneratorBase</a></div>
+    <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html">GenericGenerator</a></div>
+    <div class="level3"><span class="xref">MySql4Generator</span></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.MySql.MySql5Generator.html">MySql5Generator</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_compatabilityMode">GenericGenerator.compatabilityMode</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CompatibilityMode">GenericGenerator.CompatibilityMode</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateTable">GenericGenerator.CreateTable</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropTable">GenericGenerator.DropTable</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AddColumn">GenericGenerator.AddColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropColumn">GenericGenerator.DropColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_RenameColumn">GenericGenerator.RenameColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_RenameTable">GenericGenerator.RenameTable</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateSchema">GenericGenerator.CreateSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AlterSchema">GenericGenerator.AlterSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropSchema">GenericGenerator.DropSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateIndex">GenericGenerator.CreateIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropIndex">GenericGenerator.DropIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_InsertData">GenericGenerator.InsertData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_UpdateData">GenericGenerator.UpdateData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DeleteData">GenericGenerator.DeleteData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateConstraint">GenericGenerator.CreateConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateForeignKeyConstraint">GenericGenerator.CreateForeignKeyConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GetUniqueString_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.GetUniqueString(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GetClusterTypeString_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.GetClusterTypeString(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteTableExpression_">GenericGenerator.Generate(DeleteTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_RenameTableExpression_">GenericGenerator.Generate(RenameTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateColumnExpression_">GenericGenerator.Generate(CreateColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_AlterColumnExpression_">GenericGenerator.Generate(AlterColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteColumnExpression_">GenericGenerator.Generate(DeleteColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.Generate(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateForeignKeyExpression_">GenericGenerator.Generate(CreateForeignKeyExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateConstraintExpression_">GenericGenerator.Generate(CreateConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GenerateForeignKeyName_FluentMigrator_Model_ForeignKeyDefinition_">GenericGenerator.GenerateForeignKeyName(ForeignKeyDefinition)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_InsertDataExpression_">GenericGenerator.Generate(InsertDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AppendSqlStatementEndToken_System_Text_StringBuilder_">GenericGenerator.AppendSqlStatementEndToken(StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GenerateColumnNamesAndValues_FluentMigrator_Expressions_InsertDataExpression_">GenericGenerator.GenerateColumnNamesAndValues(InsertDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_ValidateAdditionalFeatureCompatibility_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___">GenericGenerator.ValidateAdditionalFeatureCompatibility(IEnumerable&lt;KeyValuePair&lt;String, Object&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_UpdateDataExpression_">GenericGenerator.Generate(UpdateDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteDataExpression_">GenericGenerator.Generate(DeleteDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateSchemaExpression_">GenericGenerator.Generate(CreateSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteSchemaExpression_">GenericGenerator.Generate(DeleteSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_AlterSchemaExpression_">GenericGenerator.Generate(AlterSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_IsAdditionalFeatureSupported_System_String_">GeneratorBase.IsAdditionalFeatureSupported(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Column">GeneratorBase.Column</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Quoter">GeneratorBase.Quoter</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_DescriptionGenerator">GeneratorBase.DescriptionGenerator</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Generators.MySql.html">FluentMigrator.Runner.Generators.MySql</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.MySql.dll</h6>
+  <h5 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MySql4Generator : GenericGenerator, IMigrationGenerator</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L33">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.#ctor">MySql4Generator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MySql4Generator()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_IQuoter_FluentMigrator_Runner_Generators_IDescriptionGenerator_Microsoft_Extensions_Options_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.%23ctor(FluentMigrator.Runner.Generators.IColumn%2CFluentMigrator.Runner.Generators.IQuoter%2CFluentMigrator.Runner.Generators.IDescriptionGenerator%2CMicrosoft.Extensions.Options.IOptions%7BFluentMigrator.Runner.Generators.GeneratorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L55">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_IQuoter_FluentMigrator_Runner_Generators_IDescriptionGenerator_Microsoft_Extensions_Options_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.#ctor(FluentMigrator.Runner.Generators.IColumn,FluentMigrator.Runner.Generators.IQuoter,FluentMigrator.Runner.Generators.IDescriptionGenerator,Microsoft.Extensions.Options.IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})">MySql4Generator(IColumn, IQuoter, IDescriptionGenerator, IOptions&lt;GeneratorOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MySql4Generator([NotNull] IColumn column, [NotNull] IQuoter quoter, [NotNull] IDescriptionGenerator descriptionGenerator, [NotNull] IOptions&lt;GeneratorOptions&gt; generatorOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IColumn.html">IColumn</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IQuoter.html">IQuoter</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IDescriptionGenerator.html">IDescriptionGenerator</a></td>
+        <td><span class="parametername">descriptionGenerator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="FluentMigrator.Runner.Generators.GeneratorOptions.html">GeneratorOptions</a>&gt;</td>
+        <td><span class="parametername">generatorOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor_FluentMigrator_Runner_Generators_MySql_MySqlQuoter_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.%23ctor(FluentMigrator.Runner.Generators.MySql.MySqlQuoter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L38">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor_FluentMigrator_Runner_Generators_MySql_MySqlQuoter_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.#ctor(FluentMigrator.Runner.Generators.MySql.MySqlQuoter)">MySql4Generator(MySqlQuoter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MySql4Generator([NotNull] MySqlQuoter quoter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.MySql.MySqlQuoter.html">MySqlQuoter</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor_FluentMigrator_Runner_Generators_MySql_MySqlQuoter_Microsoft_Extensions_Options_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.%23ctor(FluentMigrator.Runner.Generators.MySql.MySqlQuoter%2CMicrosoft.Extensions.Options.IOptions%7BFluentMigrator.Runner.Generators.GeneratorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L44">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator__ctor_FluentMigrator_Runner_Generators_MySql_MySqlQuoter_Microsoft_Extensions_Options_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.#ctor(FluentMigrator.Runner.Generators.MySql.MySqlQuoter,Microsoft.Extensions.Options.IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})">MySql4Generator(MySqlQuoter, IOptions&lt;GeneratorOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MySql4Generator([NotNull] MySqlQuoter quoter, [NotNull] IOptions&lt;GeneratorOptions&gt; generatorOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.MySql.MySqlQuoter.html">MySqlQuoter</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="FluentMigrator.Runner.Generators.GeneratorOptions.html">GeneratorOptions</a>&gt;</td>
+        <td><span class="parametername">generatorOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_AlterColumn.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.AlterColumn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L64">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_AlterColumn_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.AlterColumn*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_AlterColumn" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.AlterColumn">AlterColumn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string AlterColumn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AlterColumn">GenericGenerator.AlterColumn</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_DeleteConstraint.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.DeleteConstraint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L65">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_DeleteConstraint_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.DeleteConstraint*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_DeleteConstraint" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.DeleteConstraint">DeleteConstraint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DeleteConstraint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DeleteConstraint">GenericGenerator.DeleteConstraint</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_AlterDefaultConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.AlterDefaultConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L106">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_AlterDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.AlterDefaultConstraintExpression)">Generate(AlterDefaultConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(AlterDefaultConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.AlterDefaultConstraintExpression.html">AlterDefaultConstraintExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_AlterDefaultConstraintExpression_">GeneratorBase.Generate(AlterDefaultConstraintExpression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_AlterTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.AlterTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L88">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_AlterTableExpression_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.AlterTableExpression)">Generate(AlterTableExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(AlterTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.AlterTableExpression.html">AlterTableExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_AlterTableExpression_">GeneratorBase.Generate(AlterTableExpression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_CreateSequenceExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.CreateSequenceExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L117">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_CreateSequenceExpression_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.CreateSequenceExpression)">Generate(CreateSequenceExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateSequenceExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateSequenceExpression.html">CreateSequenceExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateSequenceExpression_">GenericGenerator.Generate(CreateSequenceExpression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_CreateTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.CreateTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L68">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_CreateTableExpression_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.CreateTableExpression)">Generate(CreateTableExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateTableExpression.html">CreateTableExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateTableExpression_">GenericGenerator.Generate(CreateTableExpression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_DeleteConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.DeleteConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L127">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_DeleteConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.DeleteConstraintExpression)">Generate(DeleteConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteConstraintExpression.html">DeleteConstraintExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteConstraintExpression_">GenericGenerator.Generate(DeleteConstraintExpression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_DeleteDefaultConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.DeleteDefaultConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L141">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_DeleteDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.DeleteDefaultConstraintExpression)">Generate(DeleteDefaultConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteDefaultConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteDefaultConstraintExpression.html">DeleteDefaultConstraintExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_DeleteDefaultConstraintExpression_">GeneratorBase.Generate(DeleteDefaultConstraintExpression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_DeleteForeignKeyExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.DeleteForeignKeyExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L136">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_DeleteForeignKeyExpression_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.DeleteForeignKeyExpression)">Generate(DeleteForeignKeyExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteForeignKeyExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteForeignKeyExpression.html">DeleteForeignKeyExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteForeignKeyExpression_">GenericGenerator.Generate(DeleteForeignKeyExpression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_DeleteIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.DeleteIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L96">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_DeleteIndexExpression_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.DeleteIndexExpression)">Generate(DeleteIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteIndexExpression.html">DeleteIndexExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteIndexExpression_">GenericGenerator.Generate(DeleteIndexExpression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_DeleteSequenceExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.DeleteSequenceExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L122">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_DeleteSequenceExpression_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.DeleteSequenceExpression)">Generate(DeleteSequenceExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteSequenceExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteSequenceExpression.html">DeleteSequenceExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteSequenceExpression_">GenericGenerator.Generate(DeleteSequenceExpression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_RenameColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.RenameColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L101">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_MySql_MySql4Generator_Generate_FluentMigrator_Expressions_RenameColumnExpression_" data-uid="FluentMigrator.Runner.Generators.MySql.MySql4Generator.Generate(FluentMigrator.Expressions.RenameColumnExpression)">Generate(RenameColumnExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(RenameColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.RenameColumnExpression.html">RenameColumnExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_RenameColumnExpression_">GenericGenerator.Generate(RenameColumnExpression)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_MySql_MySql4Generator.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.MySql.MySql4Generator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.MySql/Generators/MySql/MySql4Generator.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

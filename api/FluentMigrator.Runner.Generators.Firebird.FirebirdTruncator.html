@@ -1,0 +1,1304 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FirebirdTruncator
+   | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FirebirdTruncator
+   | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.33.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator">
+  
+  
+  <h1 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator" class="text-break">Class FirebirdTruncator
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">FirebirdTruncator</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Generators.Firebird.html">FluentMigrator.Runner.Generators.Firebird</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.Firebird.dll</h6>
+  <h5 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FirebirdTruncator</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator__ctor_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.%23ctor(System.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L35">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator__ctor_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator__ctor_System_Boolean_System_Boolean_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.#ctor(System.Boolean,System.Boolean)">FirebirdTruncator(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FirebirdTruncator(bool enabled, bool packKeyNames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">packKeyNames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Pack_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Pack(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L269">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Pack_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Pack*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Pack_System_String_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Pack(System.String)">Pack(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Pack(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_AlterColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.AlterColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L81">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_AlterColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.AlterColumnExpression)">Truncate(AlterColumnExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(AlterColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.AlterColumnExpression.html">AlterColumnExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_AlterDefaultConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.AlterDefaultConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L153">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_AlterDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.AlterDefaultConstraintExpression)">Truncate(AlterDefaultConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(AlterDefaultConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.AlterDefaultConstraintExpression.html">AlterDefaultConstraintExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_AlterSchemaExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.AlterSchemaExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L42">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_AlterSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.AlterSchemaExpression)">Truncate(AlterSchemaExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(AlterSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.AlterSchemaExpression.html">AlterSchemaExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_AlterTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.AlterTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L51">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_AlterTableExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.AlterTableExpression)">Truncate(AlterTableExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(AlterTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.AlterTableExpression.html">AlterTableExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L75">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateColumnExpression)">Truncate(CreateColumnExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(CreateColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateColumnExpression.html">CreateColumnExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L125">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateConstraintExpression)">Truncate(CreateConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(CreateConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateConstraintExpression.html">CreateConstraintExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateForeignKeyExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateForeignKeyExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L144">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateForeignKeyExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateForeignKeyExpression)">Truncate(CreateForeignKeyExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(CreateForeignKeyExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateForeignKeyExpression.html">CreateForeignKeyExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L108">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateIndexExpression)">Truncate(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateIndexExpression.html">CreateIndexExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateSchemaExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateSchemaExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L41">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateSchemaExpression)">Truncate(CreateSchemaExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(CreateSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateSchemaExpression.html">CreateSchemaExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateSequenceExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateSequenceExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L170">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateSequenceExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateSequenceExpression)">Truncate(CreateSequenceExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(CreateSequenceExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateSequenceExpression.html">CreateSequenceExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L45">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_CreateTableExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.CreateTableExpression)">Truncate(CreateTableExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(CreateTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateTableExpression.html">CreateTableExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L87">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteColumnExpression)">Truncate(DeleteColumnExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(DeleteColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteColumnExpression.html">DeleteColumnExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L130">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteConstraintExpression)">Truncate(DeleteConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(DeleteConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteConstraintExpression.html">DeleteConstraintExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteDataExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteDataExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L197">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteDataExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteDataExpression)">Truncate(DeleteDataExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(DeleteDataExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteDataExpression.html">DeleteDataExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteDefaultConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteDefaultConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L159">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteDefaultConstraintExpression)">Truncate(DeleteDefaultConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(DeleteDefaultConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteDefaultConstraintExpression.html">DeleteDefaultConstraintExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteForeignKeyExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteForeignKeyExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L148">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteForeignKeyExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteForeignKeyExpression)">Truncate(DeleteForeignKeyExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(DeleteForeignKeyExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteForeignKeyExpression.html">DeleteForeignKeyExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L113">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteIndexExpression)">Truncate(DeleteIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(DeleteIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteIndexExpression.html">DeleteIndexExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteSchemaExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteSchemaExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L43">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteSchemaExpression)">Truncate(DeleteSchemaExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(DeleteSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteSchemaExpression.html">DeleteSchemaExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteSequenceExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteSequenceExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L175">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteSequenceExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteSequenceExpression)">Truncate(DeleteSequenceExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(DeleteSequenceExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteSequenceExpression.html">DeleteSequenceExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L56">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_DeleteTableExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.DeleteTableExpression)">Truncate(DeleteTableExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(DeleteTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteTableExpression.html">DeleteTableExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_InsertDataExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.InsertDataExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L180">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_InsertDataExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.InsertDataExpression)">Truncate(InsertDataExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(InsertDataExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.InsertDataExpression.html">InsertDataExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_RenameColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.RenameColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L93">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_RenameColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.RenameColumnExpression)">Truncate(RenameColumnExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(RenameColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.RenameColumnExpression.html">RenameColumnExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_RenameTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.RenameTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L61">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_RenameTableExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.RenameTableExpression)">Truncate(RenameTableExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(RenameTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.RenameTableExpression.html">RenameTableExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_UpdateDataExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.UpdateDataExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L214">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Expressions_UpdateDataExpression_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Expressions.UpdateDataExpression)">Truncate(UpdateDataExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(UpdateDataExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.UpdateDataExpression.html">UpdateDataExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Model_ColumnDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Model.ColumnDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L67">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Model_ColumnDefinition_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Model.ColumnDefinition)">Truncate(ColumnDefinition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(ColumnDefinition column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Model_ConstraintDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Model.ConstraintDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L118">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Model_ConstraintDefinition_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Model.ConstraintDefinition)">Truncate(ConstraintDefinition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(ConstraintDefinition constraint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Model.ConstraintDefinition.html">ConstraintDefinition</a></td>
+        <td><span class="parametername">constraint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Model_ForeignKeyDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Model.ForeignKeyDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L135">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Model_ForeignKeyDefinition_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Model.ForeignKeyDefinition)">Truncate(ForeignKeyDefinition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(ForeignKeyDefinition foreignKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Model.ForeignKeyDefinition.html">ForeignKeyDefinition</a></td>
+        <td><span class="parametername">foreignKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Model_IndexDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Model.IndexDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L100">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Model_IndexDefinition_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Model.IndexDefinition)">Truncate(IndexDefinition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(IndexDefinition index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Model.IndexDefinition.html">IndexDefinition</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Model_SequenceDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Model.SequenceDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L165">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_FluentMigrator_Model_SequenceDefinition_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(FluentMigrator.Model.SequenceDefinition)">Truncate(SequenceDefinition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Truncate(SequenceDefinition sequence)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Model.SequenceDefinition.html">SequenceDefinition</a></td>
+        <td><span class="parametername">sequence</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L254">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_Truncate_System_String_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.Truncate(System.String)">Truncate(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Truncate(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_TruncateColumns_System_Collections_Generic_ICollection_FluentMigrator_Model_ColumnDefinition__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.TruncateColumns(System.Collections.Generic.ICollection%7BFluentMigrator.Model.ColumnDefinition%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L246">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_TruncateColumns_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.TruncateColumns*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_TruncateColumns_System_Collections_Generic_ICollection_FluentMigrator_Model_ColumnDefinition__" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.TruncateColumns(System.Collections.Generic.ICollection{FluentMigrator.Model.ColumnDefinition})">TruncateColumns(ICollection&lt;ColumnDefinition&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TruncateColumns(ICollection&lt;ColumnDefinition&gt; columns)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
+        <td><span class="parametername">columns</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_TruncateNames_System_Collections_Generic_ICollection_System_String__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.TruncateNames(System.Collections.Generic.ICollection%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L236">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_TruncateNames_" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.TruncateNames*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator_TruncateNames_System_Collections_Generic_ICollection_System_String__" data-uid="FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator.TruncateNames(System.Collections.Generic.ICollection{System.String})">TruncateNames(ICollection&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;string&gt; TruncateNames(ICollection&lt;string&gt; names)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">names</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Firebird_FirebirdTruncator.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Firebird.FirebirdTruncator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Firebird/Generators/Firebird/FirebirdTruncator.cs/#L30" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

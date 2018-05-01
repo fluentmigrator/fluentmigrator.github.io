@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Dealing with Multiple Database Types | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Dealing with Multiple Database Types | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.33.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="multi-db-support.md">
+<h1 id="dealing-with-multiple-database-types">Dealing with multiple database types</h1>
+
+<p>FluentMigrator allows you to target multiple database types from the same migration project. Every FluentMigrator project is database agnostic and can be run against any of the supported database types.</p>
+<p>However, there are times when only some migrations in a project need to be executed against one of the database types. For supporting that scenario <strong>FluentMigrator</strong> includes the <strong>IfDatabase</strong> expression.</p>
+<h1 id="using-ifdatabase">Using IfDatabase</h1>
+<p>Suppose you have a migration that executes a script file to create a view:</p>
+<pre><code class="lang-cs">public class CreateViewsMigration : Migration
+{
+    public override void Up()
+    {
+        Execute.Script(&quot;CreateViewsMigrationUp.sql&quot;);
+    }
+
+    public override void Down()
+    {
+        Execute.Script(&quot;CreateViewsMigrationDown.sql&quot;);
+    }
+}
+</code></pre>
+<p>However the project needs to <strong>create some views in an SqlServer database and others in an Oracle database</strong>, but you want both tasks to be part of the same migration, <strong>sharing the same migration number</strong> in both databases. You handle this by creating scripts for each database and specifying which one needs to be executed:</p>
+<pre><code class="lang-cs">public class CreateViewsMigration : Migration
+{
+     public override void Up()
+     {
+        IfDatabase(&quot;oracle&quot;).Execute.Script(&quot;CreateViewsOracleMigrationUp.sql&quot;);
+        IfDatabase(&quot;sqlserver&quot;).Execute.Script(&quot;CreateViewsSqlServerMigrationUp.sql&quot;);
+     }
+
+     public override void Down()
+     {
+         IfDatabase(&quot;oracle&quot;).Execute.Script(&quot;CreateViewsOracleMigrationDown.sql&quot;);
+         IfDatabase(&quot;sqlserver&quot;).Execute.Script(&quot;CreateViewsSqlServerMigrationDown.sql&quot;);
+     }
+}
+</code></pre>
+<h1 id="supported-databases">Supported databases</h1>
+<table>
+<thead>
+<tr>
+<th>Database</th>
+<th>Identifier</th>
+<th>Alternative identifier(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft SQL Server 2016</td>
+<td>SqlServer2016</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2014</td>
+<td>SqlServer2014</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2012</td>
+<td>SqlServer2012</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2008</td>
+<td>SqlServer2008</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2005</td>
+<td>SqlServer2005</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2000</td>
+<td>SqlServer2000</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server Compact Edition</td>
+<td>SqlServerCe</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>PostgreSQL</td>
+<td>Postgres</td>
+<td></td>
+</tr>
+<tr>
+<td>MySQL 4</td>
+<td>MySql4</td>
+<td>MySql</td>
+</tr>
+<tr>
+<td>MySQL 5</td>
+<td>MySql5</td>
+<td>MySql</td>
+</tr>
+<tr>
+<td>Oracle</td>
+<td>Oracle</td>
+<td></td>
+</tr>
+<tr>
+<td>Oracle (managed ADO.NET)</td>
+<td>OracleManaged</td>
+<td>Oracle</td>
+</tr>
+<tr>
+<td>Oracle (DotConnect ADO.NET)</td>
+<td>OracleDotConnect</td>
+<td>Oracle</td>
+</tr>
+<tr>
+<td>Microsoft JET Engine (Access)</td>
+<td>Jet</td>
+<td></td>
+</tr>
+<tr>
+<td>SQLite</td>
+<td>Sqlite</td>
+<td></td>
+</tr>
+<tr>
+<td>Firebird</td>
+<td>Firebird</td>
+<td></td>
+</tr>
+<tr>
+<td>Amazon Redshift</td>
+<td>Redshift</td>
+<td></td>
+</tr>
+<tr>
+<td>SAP Hana</td>
+<td>Hana</td>
+<td></td>
+</tr>
+<tr>
+<td>SAP SQL Anywhere</td>
+<td>SqlAnywhere16</td>
+<td>SqlAnywhere</td>
+</tr>
+<tr>
+<td>DB2</td>
+<td>DB2</td>
+<td></td>
+</tr>
+<tr>
+<td>DB2 iSeries</td>
+<td>DB2 iSeries</td>
+<td>DB2</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/docfx_project/articles/multi-db-support.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

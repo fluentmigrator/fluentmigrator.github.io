@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FluentMigratorRunnerLogger
+   | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FluentMigratorRunnerLogger
+   | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.33.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger">
+  
+  
+  <h1 id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger" class="text-break">Class FluentMigratorRunnerLogger
+  </h1>
+  <div class="markdown level0 summary"><p>Logger that provides some default formatting</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html">FluentMigratorLogger</a></div>
+    <div class="level2"><span class="xref">FluentMigratorRunnerLogger</span></div>
+      <div class="level3"><a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorConsoleLogger.html">FluentMigratorConsoleLogger</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html#FluentMigrator_Runner_Logging_FluentMigratorLogger_Log__1_Microsoft_Extensions_Logging_LogLevel_Microsoft_Extensions_Logging_EventId___0_System_Exception_System_Func___0_System_Exception_System_String__">FluentMigratorLogger.Log&lt;TState&gt;(LogLevel, EventId, TState, Exception, Func&lt;TState, Exception, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html#FluentMigrator_Runner_Logging_FluentMigratorLogger_IsEnabled_Microsoft_Extensions_Logging_LogLevel_">FluentMigratorLogger.IsEnabled(LogLevel)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html#FluentMigrator_Runner_Logging_FluentMigratorLogger_BeginScope__1___0_">FluentMigratorLogger.BeginScope&lt;TState&gt;(TState)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Logging.html">FluentMigrator.Runner.Logging</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
+  <h5 id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FluentMigratorRunnerLogger : FluentMigratorLogger, ILogger</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger__ctor_System_IO_TextWriter_System_IO_TextWriter_FluentMigrator_Runner_FluentMigratorLoggerOptions_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.%23ctor(System.IO.TextWriter%2CSystem.IO.TextWriter%2CFluentMigrator.Runner.FluentMigratorLoggerOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Core/Logging/FluentMigratorRunnerLogger.cs/#L31">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger__ctor_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger__ctor_System_IO_TextWriter_System_IO_TextWriter_FluentMigrator_Runner_FluentMigratorLoggerOptions_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.#ctor(System.IO.TextWriter,System.IO.TextWriter,FluentMigrator.Runner.FluentMigratorLoggerOptions)">FluentMigratorRunnerLogger(TextWriter, TextWriter, FluentMigratorLoggerOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FluentMigratorRunnerLogger(TextWriter output, TextWriter error, FluentMigratorLoggerOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.FluentMigratorLoggerOptions.html">FluentMigratorLoggerOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteElapsedTime_System_TimeSpan_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteElapsedTime(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Core/Logging/FluentMigratorRunnerLogger.cs/#L84">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteElapsedTime_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteElapsedTime*"></a>
+  <h4 id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteElapsedTime_System_TimeSpan_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteElapsedTime(System.TimeSpan)">WriteElapsedTime(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Writes the elapsed time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteElapsedTime(TimeSpan timeSpan)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">timeSpan</span></td>
+        <td><p>The elapsed time</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html#FluentMigrator_Runner_Logging_FluentMigratorLogger_WriteElapsedTime_System_TimeSpan_">FluentMigratorLogger.WriteElapsedTime(TimeSpan)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteEmphasize_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteEmphasize(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Core/Logging/FluentMigratorRunnerLogger.cs/#L53">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteEmphasize_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteEmphasize*"></a>
+  <h4 id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteEmphasize_System_String_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteEmphasize(System.String)">WriteEmphasize(String)</h4>
+  <div class="markdown level1 summary"><p>Writes an emphasized text</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteEmphasize(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to write</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html#FluentMigrator_Runner_Logging_FluentMigratorLogger_WriteEmphasize_System_String_">FluentMigratorLogger.WriteEmphasize(String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteEmptySql.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteEmptySql%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Core/Logging/FluentMigratorRunnerLogger.cs/#L72">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteEmptySql_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteEmptySql*"></a>
+  <h4 id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteEmptySql" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteEmptySql">WriteEmptySql()</h4>
+  <div class="markdown level1 summary"><p>Called when an attempt was made to write an empty SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteEmptySql()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html#FluentMigrator_Runner_Logging_FluentMigratorLogger_WriteEmptySql">FluentMigratorLogger.WriteEmptySql()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteError_System_Exception_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteError(System.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Core/Logging/FluentMigratorRunnerLogger.cs/#L39">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteError_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteError*"></a>
+  <h4 id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteError_System_Exception_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteError(System.Exception)">WriteError(Exception)</h4>
+  <div class="markdown level1 summary"><p>Writes an exception message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteError(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception containing the message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html#FluentMigrator_Runner_Logging_FluentMigratorLogger_WriteError_System_Exception_">FluentMigratorLogger.WriteError(Exception)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteError_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteError(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Core/Logging/FluentMigratorRunnerLogger.cs/#L90">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteError_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteError*"></a>
+  <h4 id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteError_System_String_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteError(System.String)">WriteError(String)</h4>
+  <div class="markdown level1 summary"><p>Writes an error message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteError(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The error message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html#FluentMigrator_Runner_Logging_FluentMigratorLogger_WriteError_System_String_">FluentMigratorLogger.WriteError(String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteHeading_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteHeading(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Core/Logging/FluentMigratorRunnerLogger.cs/#L45">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteHeading_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteHeading*"></a>
+  <h4 id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteHeading_System_String_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteHeading(System.String)">WriteHeading(String)</h4>
+  <div class="markdown level1 summary"><p>Writes a heading</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteHeading(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The heading message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html#FluentMigrator_Runner_Logging_FluentMigratorLogger_WriteHeading_System_String_">FluentMigratorLogger.WriteHeading(String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteSay_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteSay(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Core/Logging/FluentMigratorRunnerLogger.cs/#L78">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteSay_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteSay*"></a>
+  <h4 id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteSay_System_String_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteSay(System.String)">WriteSay(String)</h4>
+  <div class="markdown level1 summary"><p>Writes a message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteSay(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html#FluentMigrator_Runner_Logging_FluentMigratorLogger_WriteSay_System_String_">FluentMigratorLogger.WriteSay(String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteSql_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteSql(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Core/Logging/FluentMigratorRunnerLogger.cs/#L59">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteSql_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteSql*"></a>
+  <h4 id="FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger_WriteSql_System_String_" data-uid="FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger.WriteSql(System.String)">WriteSql(String)</h4>
+  <div class="markdown level1 summary"><p>Writes an SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteSql(string sql)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>The SQL statement</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Logging.FluentMigratorLogger.html#FluentMigrator_Runner_Logging_FluentMigratorLogger_WriteSql_System_String_">FluentMigratorLogger.WriteSql(String)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">Microsoft.Extensions.Logging.ILogger</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.LoggingUtilities.html#FluentMigrator_Runner_LoggingUtilities_LogElapsedTime_Microsoft_Extensions_Logging_ILogger_System_TimeSpan_">LoggingUtilities.LogElapsedTime(ILogger, TimeSpan)</a>
+  </div>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.LoggingUtilities.html#FluentMigrator_Runner_LoggingUtilities_LogEmphasized_Microsoft_Extensions_Logging_ILogger_System_String_">LoggingUtilities.LogEmphasized(ILogger, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.LoggingUtilities.html#FluentMigrator_Runner_LoggingUtilities_LogHeader_Microsoft_Extensions_Logging_ILogger_System_String_">LoggingUtilities.LogHeader(ILogger, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.LoggingUtilities.html#FluentMigrator_Runner_LoggingUtilities_LogSql_Microsoft_Extensions_Logging_ILogger_System_String_">LoggingUtilities.LogSql(ILogger, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.LoggingUtilities.html#FluentMigrator_Runner_LoggingUtilities_LogSay_Microsoft_Extensions_Logging_ILogger_System_String_">LoggingUtilities.LogSay(ILogger, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Logging_FluentMigratorRunnerLogger.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Logging.FluentMigratorRunnerLogger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner.Core/Logging/FluentMigratorRunnerLogger.cs/#L25" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

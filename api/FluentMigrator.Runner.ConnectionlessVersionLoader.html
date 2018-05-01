@@ -1,0 +1,835 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConnectionlessVersionLoader
+   | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConnectionlessVersionLoader
+   | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.33.2.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader">
+  
+  
+  <h1 id="FluentMigrator_Runner_ConnectionlessVersionLoader" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader" class="text-break">Class ConnectionlessVersionLoader
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ConnectionlessVersionLoader</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.Runner.IVersionLoader.html">IVersionLoader</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.html">FluentMigrator.Runner</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
+  <h5 id="FluentMigrator_Runner_ConnectionlessVersionLoader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConnectionlessVersionLoader : IVersionLoader</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader__ctor_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_IMigrationRunnerConventions_Microsoft_Extensions_Options_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__FluentMigrator_Runner_IMigrationInformationLoader_FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.%23ctor(FluentMigrator.Runner.Processors.IProcessorAccessor%2CFluentMigrator.Runner.IMigrationRunnerConventions%2CMicrosoft.Extensions.Options.IOptions%7BFluentMigrator.Runner.Initialization.RunnerOptions%7D%2CFluentMigrator.Runner.IMigrationInformationLoader%2CFluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L82">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader__ctor_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader__ctor_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_IMigrationRunnerConventions_Microsoft_Extensions_Options_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__FluentMigrator_Runner_IMigrationInformationLoader_FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.#ctor(FluentMigrator.Runner.Processors.IProcessorAccessor,FluentMigrator.Runner.IMigrationRunnerConventions,Microsoft.Extensions.Options.IOptions{FluentMigrator.Runner.Initialization.RunnerOptions},FluentMigrator.Runner.IMigrationInformationLoader,FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData)">ConnectionlessVersionLoader(IProcessorAccessor, IMigrationRunnerConventions, IOptions&lt;RunnerOptions&gt;, IMigrationInformationLoader, IVersionTableMetaData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectionlessVersionLoader([NotNull] IProcessorAccessor processorAccessor, [NotNull] IMigrationRunnerConventions conventions, [NotNull] IOptions&lt;RunnerOptions&gt; runnerOptions, [NotNull] IMigrationInformationLoader migrationInformationLoader, [NotNull] IVersionTableMetaData versionTableMetaData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Processors.IProcessorAccessor.html">IProcessorAccessor</a></td>
+        <td><span class="parametername">processorAccessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunnerConventions.html">IMigrationRunnerConventions</a></td>
+        <td><span class="parametername">conventions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="FluentMigrator.Runner.Initialization.RunnerOptions.html">RunnerOptions</a>&gt;</td>
+        <td><span class="parametername">runnerOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationInformationLoader.html">IMigrationInformationLoader</a></td>
+        <td><span class="parametername">migrationInformationLoader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a></td>
+        <td><span class="parametername">versionTableMetaData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_AlreadyCreatedVersionSchema.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.AlreadyCreatedVersionSchema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L123">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_AlreadyCreatedVersionSchema_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.AlreadyCreatedVersionSchema*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_AlreadyCreatedVersionSchema" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.AlreadyCreatedVersionSchema">AlreadyCreatedVersionSchema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlreadyCreatedVersionSchema { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_AlreadyCreatedVersionTable.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.AlreadyCreatedVersionTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L132">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_AlreadyCreatedVersionTable_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.AlreadyCreatedVersionTable*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_AlreadyCreatedVersionTable" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.AlreadyCreatedVersionTable">AlreadyCreatedVersionTable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlreadyCreatedVersionTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_Assemblies.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.Assemblies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L105">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_Assemblies_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.Assemblies*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_Assemblies" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.Assemblies">Assemblies</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+[CanBeNull]
+protected IAssemblyCollection Assemblies { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Infrastructure.IAssemblyCollection.html">IAssemblyCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_Conventions.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.Conventions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L109">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_Conventions_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.Conventions*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_Conventions" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.Conventions">Conventions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMigrationRunnerConventions Conventions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunnerConventions.html">IMigrationRunnerConventions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_Runner.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.Runner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L117">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_Runner_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.Runner*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_Runner" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.Runner">Runner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+[CanBeNull]
+public IMigrationRunner Runner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunner.html">IMigrationRunner</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_StartVersion.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.StartVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L110">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_StartVersion_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.StartVersion*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_StartVersion" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.StartVersion">StartVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long StartVersion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_TargetVersion.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.TargetVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L111">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_TargetVersion_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.TargetVersion*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_TargetVersion" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.TargetVersion">TargetVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long TargetVersion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_VersionDescriptionMigration.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.VersionDescriptionMigration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L115">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionDescriptionMigration_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionDescriptionMigration*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionDescriptionMigration" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionDescriptionMigration">VersionDescriptionMigration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMigration VersionDescriptionMigration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.IMigration.html">IMigration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_VersionInfo.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.VersionInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L120">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionInfo_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionInfo*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionInfo" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionInfo">VersionInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IVersionInfo VersionInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Versioning.IVersionInfo.html">IVersionInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_VersionMigration.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.VersionMigration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L113">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionMigration_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionMigration*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionMigration" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionMigration">VersionMigration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMigration VersionMigration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.IMigration.html">IMigration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_VersionSchemaMigration.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.VersionSchemaMigration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L112">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionSchemaMigration_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionSchemaMigration*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionSchemaMigration" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionSchemaMigration">VersionSchemaMigration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VersionSchemaMigration VersionSchemaMigration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Versioning.VersionSchemaMigration.html">VersionSchemaMigration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_VersionTableMetaData.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.VersionTableMetaData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L121">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionTableMetaData_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionTableMetaData*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionTableMetaData" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionTableMetaData">VersionTableMetaData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IVersionTableMetaData VersionTableMetaData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_VersionUniqueMigration.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.VersionUniqueMigration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L114">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionUniqueMigration_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionUniqueMigration*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_VersionUniqueMigration" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.VersionUniqueMigration">VersionUniqueMigration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMigration VersionUniqueMigration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.IMigration.html">IMigration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_CreateVersionInfoInsertionData_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.CreateVersionInfoInsertionData(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L197">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_CreateVersionInfoInsertionData_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.CreateVersionInfoInsertionData*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_CreateVersionInfoInsertionData_System_Int64_System_String_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.CreateVersionInfoInsertionData(System.Int64,System.String)">CreateVersionInfoInsertionData(Int64, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual InsertionDataDefinition CreateVersionInfoInsertionData(long version, string description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Model.InsertionDataDefinition.html">InsertionDataDefinition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_DeleteVersion_System_Int64_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.DeleteVersion(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L137">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_DeleteVersion_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.DeleteVersion*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_DeleteVersion_System_Int64_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.DeleteVersion(System.Int64)">DeleteVersion(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteVersion(long version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_GetVersionTableMetaData.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.GetVersionTableMetaData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L147">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_GetVersionTableMetaData_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.GetVersionTableMetaData*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_GetVersionTableMetaData" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.GetVersionTableMetaData">GetVersionTableMetaData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IVersionTableMetaData GetVersionTableMetaData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_LoadVersionInfo.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.LoadVersionInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L152">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_LoadVersionInfo_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.LoadVersionInfo*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_LoadVersionInfo" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.LoadVersionInfo">LoadVersionInfo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadVersionInfo()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_RemoveVersionTable.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.RemoveVersionTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L170">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_RemoveVersionTable_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.RemoveVersionTable*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_RemoveVersionTable" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.RemoveVersionTable">RemoveVersionTable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveVersionTable()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_UpdateVersionInfo_System_Int64_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.UpdateVersionInfo(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L182">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_UpdateVersionInfo_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.UpdateVersionInfo*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_UpdateVersionInfo_System_Int64_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.UpdateVersionInfo(System.Int64)">UpdateVersionInfo(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateVersionInfo(long version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader_UpdateVersionInfo_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader.UpdateVersionInfo(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L187">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ConnectionlessVersionLoader_UpdateVersionInfo_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.UpdateVersionInfo*"></a>
+  <h4 id="FluentMigrator_Runner_ConnectionlessVersionLoader_UpdateVersionInfo_System_Int64_System_String_" data-uid="FluentMigrator.Runner.ConnectionlessVersionLoader.UpdateVersionInfo(System.Int64,System.String)">UpdateVersionInfo(Int64, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateVersionInfo(long version, string description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.IVersionLoader.html">IVersionLoader</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_ConnectionlessVersionLoader.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ConnectionlessVersionLoader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/feature/docfx/src/FluentMigrator.Runner/ConnectionlessVersionLoader.cs/#L37" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

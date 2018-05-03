@@ -2382,7 +2382,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Firebird.FirebirdQuoter.html",
-          "hash": "KycFt13EvMfKrClMa7x+lw=="
+          "hash": "htwnGqgazvvW1XseKlySKw=="
         }
       },
       "is_incremental": false,
@@ -6223,17 +6223,17 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ResourceDocumentProcessor": {

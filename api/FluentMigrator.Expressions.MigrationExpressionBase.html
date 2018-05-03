@@ -119,7 +119,6 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Expressions.IMigrationExpression.html">IMigrationExpression</a></div>
-    <div><a class="xref" href="FluentMigrator.Infrastructure.ICanBeValidated.html">ICanBeValidated</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -146,45 +145,10 @@
   <h6><strong>Assembly</strong>: FluentMigrator.Abstractions.dll</h6>
   <h5 id="FluentMigrator_Expressions_MigrationExpressionBase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class MigrationExpressionBase : IMigrationExpression, ICanBeValidated</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class MigrationExpressionBase : IMigrationExpression</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Expressions_MigrationExpressionBase_CollectValidationErrors_System_Collections_Generic_ICollection_System_String__.md&amp;value=---%0Auid%3A%20FluentMigrator.Expressions.MigrationExpressionBase.CollectValidationErrors(System.Collections.Generic.ICollection%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Abstractions/Expressions/MigrationExpressionBase.cs/#L33">View Source</a>
-  </span>
-  <a id="FluentMigrator_Expressions_MigrationExpressionBase_CollectValidationErrors_" data-uid="FluentMigrator.Expressions.MigrationExpressionBase.CollectValidationErrors*"></a>
-  <h4 id="FluentMigrator_Expressions_MigrationExpressionBase_CollectValidationErrors_System_Collections_Generic_ICollection_System_String__" data-uid="FluentMigrator.Expressions.MigrationExpressionBase.CollectValidationErrors(System.Collections.Generic.ICollection{System.String})">CollectValidationErrors(ICollection&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Collect validation errors</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the System.ComponentModel.DataAnnotations.Validator instead&quot;)]
-public virtual void CollectValidationErrors(ICollection&lt;string&gt; errors)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td><span class="parametername">errors</span></td>
-        <td><p>The collection of error messages</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Expressions_MigrationExpressionBase_ExecuteWith_FluentMigrator_IMigrationProcessor_.md&amp;value=---%0Auid%3A%20FluentMigrator.Expressions.MigrationExpressionBase.ExecuteWith(FluentMigrator.IMigrationProcessor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -224,7 +188,7 @@ public virtual void CollectValidationErrors(ICollection&lt;string&gt; errors)</c
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Expressions_MigrationExpressionBase_Reverse.md&amp;value=---%0Auid%3A%20FluentMigrator.Expressions.MigrationExpressionBase.Reverse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Abstractions/Expressions/MigrationExpressionBase.cs/#L40">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Abstractions/Expressions/MigrationExpressionBase.cs/#L33">View Source</a>
   </span>
   <a id="FluentMigrator_Expressions_MigrationExpressionBase_Reverse_" data-uid="FluentMigrator.Expressions.MigrationExpressionBase.Reverse*"></a>
   <h4 id="FluentMigrator_Expressions_MigrationExpressionBase_Reverse" data-uid="FluentMigrator.Expressions.MigrationExpressionBase.Reverse">Reverse()</h4>
@@ -256,7 +220,7 @@ public virtual void CollectValidationErrors(ICollection&lt;string&gt; errors)</c
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Expressions_MigrationExpressionBase_ToString.md&amp;value=---%0Auid%3A%20FluentMigrator.Expressions.MigrationExpressionBase.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Abstractions/Expressions/MigrationExpressionBase.cs/#L46">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Abstractions/Expressions/MigrationExpressionBase.cs/#L39">View Source</a>
   </span>
   <a id="FluentMigrator_Expressions_MigrationExpressionBase_ToString_" data-uid="FluentMigrator.Expressions.MigrationExpressionBase.ToString*"></a>
   <h4 id="FluentMigrator_Expressions_MigrationExpressionBase_ToString" data-uid="FluentMigrator.Expressions.MigrationExpressionBase.ToString">ToString()</h4>
@@ -287,18 +251,9 @@ public virtual void CollectValidationErrors(ICollection&lt;string&gt; errors)</c
   <div>
       <a class="xref" href="FluentMigrator.Expressions.IMigrationExpression.html">IMigrationExpression</a>
   </div>
-  <div>
-      <a class="xref" href="FluentMigrator.Infrastructure.ICanBeValidated.html">ICanBeValidated</a>
-  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="FluentMigrator.Runner.ConventionSetExtensions.html#FluentMigrator_Runner_ConventionSetExtensions_Apply__1___0_FluentMigrator_Runner_Conventions_IConventionSet_">ConventionSetExtensions.Apply&lt;T&gt;(T, IConventionSet)</a>
-  </div>
-  <div>
-      <a class="xref" href="FluentMigrator.LegacyValidationExtensions.html#FluentMigrator_LegacyValidationExtensions_CollectErrors_FluentMigrator_Infrastructure_ICanBeValidated_System_Collections_Generic_ICollection_System_String__System_IServiceProvider_">LegacyValidationExtensions.CollectErrors(ICanBeValidated, ICollection&lt;String&gt;, IServiceProvider)</a>
-  </div>
-  <div>
-      <a class="xref" href="FluentMigrator.LegacyValidationExtensions.html#FluentMigrator_LegacyValidationExtensions_TryCollectResults_FluentMigrator_Infrastructure_ICanBeValidated_System_Collections_Generic_ICollection_System_ComponentModel_DataAnnotations_ValidationResult__System_IServiceProvider_System_Collections_Generic_IDictionary_System_Object_System_Object__">LegacyValidationExtensions.TryCollectResults(ICanBeValidated, ICollection&lt;ValidationResult&gt;, IServiceProvider, IDictionary&lt;Object, Object&gt;)</a>
   </div>
 </article>
           </div>

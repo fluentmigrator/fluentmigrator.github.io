@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.AutoReversingMigration.html",
-          "hash": "ZBIfUUPJ7xIEczzRcFUKLQ=="
+          "hash": "7KrmJVIu/jIzhD6JZyHnVA=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.AutoScriptMigration.html",
-          "hash": "O4GeUW3/nG3L6wQ35O+HWQ=="
+          "hash": "Gu58WQFCmyqSHi2PG3tnrA=="
         }
       },
       "is_incremental": false,
@@ -122,23 +122,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.ExplicitUnicodeString.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.ExplicitUnicodeString.html",
-          "hash": "t8qDkdBYd5W6PI6uqw36Lw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Expressions.AlterColumnExpression.yml",
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.AlterColumnExpression.html",
-          "hash": "sc8g4B1O+L6Y49l4tfOxUw=="
+          "hash": "VdVTEbQ2ncXHcBoYM0O9PQ=="
         }
       },
       "is_incremental": false,
@@ -150,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.AlterDefaultConstraintExpression.html",
-          "hash": "ysJdNx5CHXzqhSwtvv3dMA=="
+          "hash": "OEjMUTs2doJt12DONr4qnA=="
         }
       },
       "is_incremental": false,
@@ -162,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.AlterSchemaExpression.html",
-          "hash": "KnqunfsM+zuiEd29xT2V7g=="
+          "hash": "qBFImuaLZMCjYW+DInV54Q=="
         }
       },
       "is_incremental": false,
@@ -174,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.AlterTableExpression.html",
-          "hash": "dZQ4nUm1wYaXG/QYGq6Eqw=="
+          "hash": "910lnrGhMh3N7UQWIBzUew=="
         }
       },
       "is_incremental": false,
@@ -186,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.CreateColumnExpression.html",
-          "hash": "/ZCWUu9+jkSYGK6aKm24sA=="
+          "hash": "6NyS6qiLPsXph6442qzHgg=="
         }
       },
       "is_incremental": false,
@@ -198,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.CreateConstraintExpression.html",
-          "hash": "XqLZPd57srpp5rnbzbApkQ=="
+          "hash": "W1XqvqZHqvVEeePQh6fNdA=="
         }
       },
       "is_incremental": false,
@@ -210,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.CreateForeignKeyExpression.html",
-          "hash": "HIYshN7divbOgIXLDSArYg=="
+          "hash": "a4pKTSC2Ouu9JQF5GkJSCw=="
         }
       },
       "is_incremental": false,
@@ -222,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.CreateIndexExpression.html",
-          "hash": "dAlf2hXGH5omqL3KbAAFHw=="
+          "hash": "UM93J5AteKeW91Uy+6D2zQ=="
         }
       },
       "is_incremental": false,
@@ -234,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.CreateSchemaExpression.html",
-          "hash": "PTs3rI+LevscHEjFxb0BcQ=="
+          "hash": "vcCMDVkcDyJECqlM8vuipQ=="
         }
       },
       "is_incremental": false,
@@ -246,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.CreateSequenceExpression.html",
-          "hash": "KAE4II/s836/a0FAM4NMvg=="
+          "hash": "8YM6q2O2I7sby1LUAmSagg=="
         }
       },
       "is_incremental": false,
@@ -258,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.CreateTableExpression.html",
-          "hash": "y1V2ZtLcMNwNlBHaZ8Kllw=="
+          "hash": "LpsWNVGQgUSkeva5NuU1Fw=="
         }
       },
       "is_incremental": false,
@@ -270,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.DeleteColumnExpression.html",
-          "hash": "C4IpoDiRsJuLXqxMPQymiw=="
+          "hash": "vYNG+IAX1HpJ4SsafVEUtA=="
         }
       },
       "is_incremental": false,
@@ -282,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.DeleteConstraintExpression.html",
-          "hash": "R4icTp6xFqtHDJ/6r+1Z0Q=="
+          "hash": "WSA3/DEjXwsszRQ5ULcRZA=="
         }
       },
       "is_incremental": false,
@@ -294,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.DeleteDataExpression.html",
-          "hash": "bNpIofhhvtE07uSD2orYUA=="
+          "hash": "+ZLNvQVvaql3PyhKTZFWGg=="
         }
       },
       "is_incremental": false,
@@ -306,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.DeleteDefaultConstraintExpression.html",
-          "hash": "yUhUbTNOc7586nR2BJrJww=="
+          "hash": "amyLodrBW9JAnA069pYxqA=="
         }
       },
       "is_incremental": false,
@@ -318,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.DeleteForeignKeyExpression.html",
-          "hash": "fQb/V2rna3Yapf37mEN4Cw=="
+          "hash": "SY0/mvLZ4ZdyWz11VpmYRQ=="
         }
       },
       "is_incremental": false,
@@ -330,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.DeleteIndexExpression.html",
-          "hash": "9ata4SWK+tUwBfDjVpBU5w=="
+          "hash": "JJM9VbjTTacRIvfEXyaheA=="
         }
       },
       "is_incremental": false,
@@ -342,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.DeleteSchemaExpression.html",
-          "hash": "56KZKfHJ168RjtWsuI5Thg=="
+          "hash": "FEjuJ/2Wnd60lfI2kU8KCg=="
         }
       },
       "is_incremental": false,
@@ -354,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.DeleteSequenceExpression.html",
-          "hash": "I5SESlzia2JYcrOq6juK0A=="
+          "hash": "3jTvrtYGwzk6PSIvuYq2MQ=="
         }
       },
       "is_incremental": false,
@@ -366,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.DeleteTableExpression.html",
-          "hash": "0CiSdr2urEScgdRPVdeYrQ=="
+          "hash": "lMkDn5KnnF+qcEfxkGcvqQ=="
         }
       },
       "is_incremental": false,
@@ -378,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpression.html",
-          "hash": "zkwPVoIcr5BkkX2TvuF+7Q=="
+          "hash": "3ADCwmX79dv1Jk2rx/ovVQ=="
         }
       },
       "is_incremental": false,
@@ -390,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpressionBase.html",
-          "hash": "EVM2ETBnuP2Tcrz+bclhdw=="
+          "hash": "PoNi9WoFGXrGzEbWfUfdmg=="
         }
       },
       "is_incremental": false,
@@ -402,7 +390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.ExecuteSqlScriptExpression.html",
-          "hash": "qjbYZw19LE7tHO/r7Rdp/w=="
+          "hash": "Z3Zxg1h1H1z1clhrFsjEVQ=="
         }
       },
       "is_incremental": false,
@@ -414,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.ExecuteSqlScriptExpressionBase.html",
-          "hash": "2j5T2xqUA+I0O/yrh5/tvQ=="
+          "hash": "noM2ao1sBOCIz3SLGgpJNQ=="
         }
       },
       "is_incremental": false,
@@ -426,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.ExecuteSqlStatementExpression.html",
-          "hash": "PnniutLCPfrhQyneSDAjwA=="
+          "hash": "goIpAjgZo400niIuJhn03g=="
         }
       },
       "is_incremental": false,
@@ -510,7 +498,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.IMigrationExpression.html",
-          "hash": "BpjGg+FzX3oLh0q6cW216A=="
+          "hash": "faVxXpyaziArHN57OFaO4w=="
         }
       },
       "is_incremental": false,
@@ -546,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.InsertDataExpression.html",
-          "hash": "8XTLJOWy0xj0iRoQHRbqtA=="
+          "hash": "SzTNZKeWm4p+4SixxkGlxA=="
         }
       },
       "is_incremental": false,
@@ -558,7 +546,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.MigrationExpressionBase.html",
-          "hash": "LnNiGMRhML3WHuGg6apOdA=="
+          "hash": "0zeMmCGa+xtxWEGAj1Jr3A=="
         }
       },
       "is_incremental": false,
@@ -570,7 +558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.PerformDBOperationExpression.html",
-          "hash": "eruQpbU8dvnaO0IjxZVAOQ=="
+          "hash": "hSP1MOqiTcuDlPgdr5KiDQ=="
         }
       },
       "is_incremental": false,
@@ -582,7 +570,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.RenameColumnExpression.html",
-          "hash": "vxaX7OGethBGGpmHDtGhPA=="
+          "hash": "d+awzSPhZAwIVNHF/9KHwA=="
         }
       },
       "is_incremental": false,
@@ -594,7 +582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.RenameTableExpression.html",
-          "hash": "l7ZFhyhIkztKQ+XsmsZSXA=="
+          "hash": "xHbxP60gHo6/EItZhImT+A=="
         }
       },
       "is_incremental": false,
@@ -606,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Expressions.UpdateDataExpression.html",
-          "hash": "I+ouVOtJL0WsrJB0ku6Hww=="
+          "hash": "pdqV8kz8x5uE0SUfikwpYQ=="
         }
       },
       "is_incremental": false,
@@ -630,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.ForwardOnlyMigration.html",
-          "hash": "QCyAeuq2oy5mKWodVXP+CQ=="
+          "hash": "92f1tRARfOJ9HIferz+g2g=="
         }
       },
       "is_incremental": false,
@@ -642,7 +630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.IMigration.html",
-          "hash": "dMDsip2wfE6XxCyElcx0lA=="
+          "hash": "/nM7yJa0qMqvxoHB+8GOtg=="
         }
       },
       "is_incremental": false,
@@ -654,7 +642,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.IMigrationGenerator.html",
-          "hash": "5v+wmbwWxIC7gueJrcATOA=="
+          "hash": "/9GC8KXPdCAPT/huiN15OQ=="
         }
       },
       "is_incremental": false,
@@ -666,19 +654,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.IMigrationProcessor.html",
-          "hash": "2IfyMvR84bdXLkMiZEQYiQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.IMigrationProcessorOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.IMigrationProcessorOptions.html",
-          "hash": "dIsF82xciM3eFeOgu59bsQ=="
+          "hash": "zmdx6p13iYozxL26+ua16w=="
         }
       },
       "is_incremental": false,
@@ -698,23 +674,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Infrastructure.AssemblyCollection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Infrastructure.AssemblyCollection.html",
-          "hash": "yM3fxEM3+D6xACAhrVSfmA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Infrastructure.DefaultEmbeddedResourceProvider.yml",
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Infrastructure.DefaultEmbeddedResourceProvider.html",
-          "hash": "+SnLBLrLJ/CAizDsFfahLA=="
+          "hash": "eivCca4O8o3Ff+KB4uli6w=="
         }
       },
       "is_incremental": false,
@@ -794,30 +758,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Infrastructure.IAssemblyCollection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Infrastructure.IAssemblyCollection.html",
-          "hash": "74esoLK/7tJzFsbl+1rFaw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Infrastructure.ICanBeValidated.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Infrastructure.ICanBeValidated.html",
-          "hash": "xyHAjmzdE80fC6DKBx6gvA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Infrastructure.IEmbeddedResourceProvider.yml",
       "output": {
         ".html": {
@@ -834,7 +774,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Infrastructure.IMigrationContext.html",
-          "hash": "/AM4S0QBt2uxg65+uvpaoQ=="
+          "hash": "Ji1f2Vc1AXWNfdfrzt1buw=="
         }
       },
       "is_incremental": false,
@@ -866,23 +806,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Infrastructure.ManifestResourceNameWithAssembly.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Infrastructure.ManifestResourceNameWithAssembly.html",
-          "hash": "W+dQunmp4bx44DunBm4cVQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Infrastructure.MigrationContext.yml",
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Infrastructure.MigrationContext.html",
-          "hash": "LpZJm0NyqM3AICWtm8PNFg=="
+          "hash": "0whsdek3JuS+mSf+5F0FGg=="
         }
       },
       "is_incremental": false,
@@ -914,35 +842,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Infrastructure.SingleAssembly.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Infrastructure.SingleAssembly.html",
-          "hash": "ad/r9dni5SMx6r2ayjnGCg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Infrastructure.yml",
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Infrastructure.html",
-          "hash": "xe8XcQDlsJHQsd/92jsUtA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.LegacyValidationExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.LegacyValidationExtensions.html",
-          "hash": "jRK7YKjCpY5npVx9jBohDw=="
+          "hash": "Z0XOAn2XfNWusv74cDekFw=="
         }
       },
       "is_incremental": false,
@@ -966,7 +870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Migration.html",
-          "hash": "GcNpmkN/pr2GbkZA8JAGVw=="
+          "hash": "+LKpBrkmlS7RyDOyoKRN0Q=="
         }
       },
       "is_incremental": false,
@@ -990,7 +894,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.MigrationBase.html",
-          "hash": "WmdW3X8AZrObS2z+Tj2vdQ=="
+          "hash": "BI05+/QfO4pKC5CJgbddsA=="
         }
       },
       "is_incremental": false,
@@ -1038,7 +942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Model.ColumnDefinition.UndefinedDefaultValue.html",
-          "hash": "70tO/ITfxmy1Jd4ctEyzwA=="
+          "hash": "0UHSCNOzgHcshOq+LOZhUg=="
         }
       },
       "is_incremental": false,
@@ -1050,7 +954,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Model.ColumnDefinition.html",
-          "hash": "BpAyDi2OQ3xQOqrsdgfgTA=="
+          "hash": "qrMnq1GW6WnZ90cgQNUswQ=="
         }
       },
       "is_incremental": false,
@@ -1074,7 +978,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Model.ConstraintDefinition.html",
-          "hash": "ahTF/vEXZ5EOUmk5to6XyQ=="
+          "hash": "zkYegMZcYS7DobTI7HmUKw=="
         }
       },
       "is_incremental": false,
@@ -1122,7 +1026,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Model.ForeignKeyDefinition.html",
-          "hash": "LQb8uDi7CN6YqWbLgFPwgw=="
+          "hash": "JECThZxN6bokK324zA+Okg=="
         }
       },
       "is_incremental": false,
@@ -1134,7 +1038,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Model.IndexColumnDefinition.html",
-          "hash": "YMPgiPvDI8HN4/DjRE43SA=="
+          "hash": "t/EbZlOH5IMuxd+Qb0xL6A=="
         }
       },
       "is_incremental": false,
@@ -1146,7 +1050,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Model.IndexDefinition.html",
-          "hash": "5M0+odygOQL2jZlrgbNMVw=="
+          "hash": "TTnZS+X2sN/ilJSvLQpTAw=="
         }
       },
       "is_incremental": false,
@@ -1158,7 +1062,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Model.IndexIncludeDefinition.html",
-          "hash": "ZdVoXcgDJ8jiAzobVB8/Xw=="
+          "hash": "TCRCBN6j5r85ak7YeT2TxA=="
         }
       },
       "is_incremental": false,
@@ -1182,7 +1086,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Model.SequenceDefinition.html",
-          "hash": "WrcnWqQ9gzcoEN6faxW6QQ=="
+          "hash": "whgvLnH9B1OdvED2umsHHg=="
         }
       },
       "is_incremental": false,
@@ -1231,138 +1135,6 @@
         ".html": {
           "relative_path": "api/FluentMigrator.RawSql.html",
           "hash": "kOg7KMf1W45LFhl5kVqy0A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.AnnouncerExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.AnnouncerExtensions.html",
-          "hash": "YAnIv/jygc6zsbyv/wahlg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Announcers.Announcer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Announcers.Announcer.html",
-          "hash": "zkgylIuI7yy/OG2lmEbP7Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Announcers.AnnouncerOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Announcers.AnnouncerOptions.html",
-          "hash": "WyVmOUIZSsXfXK+D5jOrFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Announcers.CompositeAnnouncer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Announcers.CompositeAnnouncer.html",
-          "hash": "NYYG0OL13z1E6ZftRTSGdw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Announcers.ConsoleAnnouncer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Announcers.ConsoleAnnouncer.html",
-          "hash": "HhOxWc/Ps7K8Ys/rRxi/7Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Announcers.LoggerAnnouncer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Announcers.LoggerAnnouncer.html",
-          "hash": "Jgmy61BbKabua9PkLGl0lA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Announcers.NullAnnouncer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Announcers.NullAnnouncer.html",
-          "hash": "4U6hWYL+W/DHc8WlTlZtXw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Announcers.TextWriterAnnouncer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Announcers.TextWriterAnnouncer.html",
-          "hash": "VPQLHDEfnrxZ651lBSvxwg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Announcers.TextWriterAnnouncerOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Announcers.TextWriterAnnouncerOptions.html",
-          "hash": "M9FpJNRwbl+EmEUyqlxbxA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Announcers.TextWriterWithGoAnnouncer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Announcers.TextWriterWithGoAnnouncer.html",
-          "hash": "3+1ik12iLHOrX+EkZV/QDA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Announcers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Announcers.html",
-          "hash": "0RV/4zs8fX53fBKAkeQo0A=="
         }
       },
       "is_incremental": false,
@@ -1754,18 +1526,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.CompatabilityMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.CompatabilityMode.html",
-          "hash": "4f5V1jzBgf3UnnO3tggJ6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Runner.CompatibilityMode.yml",
       "output": {
         ".html": {
@@ -1782,7 +1542,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.ConnectionlessVersionLoader.html",
-          "hash": "QlP5kIiJcX4hzV6r5Y1wow=="
+          "hash": "cemahWKkGwpmYItQgfEeeA=="
         }
       },
       "is_incremental": false,
@@ -2058,7 +1818,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.DefaultConventionSet.html",
-          "hash": "IMfamlKEkDMNC/5A3eJZ7g=="
+          "hash": "aOcyvr2Cn6PuTg+d66mdXg=="
         }
       },
       "is_incremental": false,
@@ -2070,7 +1830,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.DefaultMigrationInformationLoader.html",
-          "hash": "8ZQqAFSoBsnSmvW5Cfa3Zw=="
+          "hash": "4ip999KDnI7XC7BUguM/eA=="
         }
       },
       "is_incremental": false,
@@ -2210,11 +1970,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FluentMigrator.Runner.GeneratorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FluentMigrator.Runner.GeneratorExtensions.html",
+          "hash": "2QKQ92ivnXev5kJ2apVnSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Runner.Generators.Base.ColumnBase.yml",
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Base.ColumnBase.html",
-          "hash": "WZKqsXV2TPRaEkXmZ6NGhQ=="
+          "hash": "EKiBRaP5MHprTYveV+K00A=="
         }
       },
       "is_incremental": false,
@@ -2226,7 +1998,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Base.GeneratorBase.html",
-          "hash": "7qxYpEdFrTkFVTyyMwdXAg=="
+          "hash": "edy7/tV0EaeqhLNTFQbvVg=="
         }
       },
       "is_incremental": false,
@@ -2238,7 +2010,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Base.TypeMapBase.html",
-          "hash": "dVbMOPsXZFmhbhyqfCtilQ=="
+          "hash": "kCLLrx+VVVv7qqto6oWENQ=="
         }
       },
       "is_incremental": false,
@@ -2251,18 +2023,6 @@
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Base.html",
           "hash": "c9DXG08XhILoxgbWiZw/aA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Generators.CompatabilityModeExtension.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Generators.CompatabilityModeExtension.html",
-          "hash": "aC+wZaZxGev5I+t/DmYksg=="
         }
       },
       "is_incremental": false,
@@ -2286,7 +2046,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.DB2.Db2Generator.html",
-          "hash": "z9ZKeo3sgaFeKJsKnWHjLA=="
+          "hash": "f4nFlrwcotN4WFGrTiGjug=="
         }
       },
       "is_incremental": false,
@@ -2310,7 +2070,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.DB2.iSeries.Db2ISeriesGenerator.html",
-          "hash": "sWP//83l1sYkpPtynNHINw=="
+          "hash": "R5jPpM32/dZ8Ah1vDrAV+g=="
         }
       },
       "is_incremental": false,
@@ -2370,7 +2130,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Firebird.FirebirdGenerator.html",
-          "hash": "9KVDZPXc0zKM5BUTYkzn0g=="
+          "hash": "ETykt/ng1YOqopkLAYWDGg=="
         }
       },
       "is_incremental": false,
@@ -2442,7 +2202,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Generic.GenericGenerator.html",
-          "hash": "1ZYWXT38DzWszcFXJQ1SVg=="
+          "hash": "b4kZN9VX4Tq+3wEGrl9o+Q=="
         }
       },
       "is_incremental": false,
@@ -2454,7 +2214,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Generic.GenericQuoter.html",
-          "hash": "4kFze8U+gFOaWVlESlU3eQ=="
+          "hash": "pBeeweR2R2MWoREC5iPzWw=="
         }
       },
       "is_incremental": false,
@@ -2490,7 +2250,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Hana.HanaGenerator.html",
-          "hash": "RW15i9GEuga3cX1xFnK/ow=="
+          "hash": "uWSFtD8KIO7I3sEORL4Ayg=="
         }
       },
       "is_incremental": false,
@@ -2574,7 +2334,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.ITypeMap.html",
-          "hash": "VjdKD4pUUs0th3tNAtUCng=="
+          "hash": "AKGLvgzIwmZ83RAbUL/DaA=="
         }
       },
       "is_incremental": false,
@@ -2586,7 +2346,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Jet.JetGenerator.html",
-          "hash": "QFWERBt+vxhVJYvfW2sxAw=="
+          "hash": "H5BYy7JioV/kaRvvObereg=="
         }
       },
       "is_incremental": false,
@@ -2618,23 +2378,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Generators.MigrationGeneratorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Generators.MigrationGeneratorFactory.html",
-          "hash": "vlkDmIfZ/V/zzgiEDD1Vdw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Runner.Generators.MySql.MySql4Generator.yml",
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.MySql.MySql4Generator.html",
-          "hash": "0l4POthwZoHfBjFoX2dZ7w=="
+          "hash": "0IDmp+Z8Ws6SaNnV9DwHLg=="
         }
       },
       "is_incremental": false,
@@ -2646,7 +2394,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.MySql.MySql5Generator.html",
-          "hash": "Rw/VH7Nix61uK/1krtXjGA=="
+          "hash": "y+EtZEH8XYJe2pH3cV6k3Q=="
         }
       },
       "is_incremental": false,
@@ -2694,7 +2442,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Oracle.OracleGenerator.html",
-          "hash": "NLVKEFhhQB8M3vNAVXlHaQ=="
+          "hash": "1G/wvXFPeunHZJ2XetpE6Q=="
         }
       },
       "is_incremental": false,
@@ -2742,7 +2490,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Oracle.OracleTypeMap.html",
-          "hash": "gVHNbJqDG7aZ0o6Wd9B1aQ=="
+          "hash": "QjYyprKhremnIobJD9lurw=="
         }
       },
       "is_incremental": false,
@@ -2778,7 +2526,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.html",
-          "hash": "tNWwNArK/WkS2MNR3/UX5A=="
+          "hash": "tUVdOFlDcI7KEtbAhRA7vA=="
         }
       },
       "is_incremental": false,
@@ -2826,7 +2574,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.Redshift.RedshiftGenerator.html",
-          "hash": "1Fz++WiOuwIf4IETVbG+Jw=="
+          "hash": "N34ID0VbtuHqPWfJ09JMSA=="
         }
       },
       "is_incremental": false,
@@ -2862,7 +2610,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SQLite.SQLiteGenerator.html",
-          "hash": "+39YO/ziy+YIoF96Md5/eA=="
+          "hash": "hL9BwxWRs6GDw2UfCyMvXw=="
         }
       },
       "is_incremental": false,
@@ -2922,7 +2670,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlAnywhere.SqlAnywhere16Generator.html",
-          "hash": "eKsi9pq6fHFPL+s5aVqrWg=="
+          "hash": "Fn0EGUsBZUJKto732I7NgQ=="
         }
       },
       "is_incremental": false,
@@ -2934,7 +2682,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlAnywhere.SqlAnywhere16TypeMap.html",
-          "hash": "RZDP3w66voHYx7XVPAkhnA=="
+          "hash": "xbOcNuDVQoFwPs5YI7nlsw=="
         }
       },
       "is_incremental": false,
@@ -2970,7 +2718,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html",
-          "hash": "3i7+J6+jQk5Rh5k7JbIkyg=="
+          "hash": "qVHtUOhkOzRszLs6/SYGUA=="
         }
       },
       "is_incremental": false,
@@ -2994,7 +2742,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlServer.SqlServer2000TypeMap.html",
-          "hash": "HmHKSoZ95cFnkc/hk3jQAA=="
+          "hash": "z+4rMzlmHOHRzczoAeL+Yw=="
         }
       },
       "is_incremental": false,
@@ -3018,7 +2766,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.html",
-          "hash": "vf0qcFHcKa6fU6c6Hic98Q=="
+          "hash": "MXR6rAIGsdPoXEX15MyOjw=="
         }
       },
       "is_incremental": false,
@@ -3042,7 +2790,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlServer.SqlServer2005TypeMap.html",
-          "hash": "FKuWmaFdw05UTrSfPZ78BA=="
+          "hash": "Ej7AgfwRVCE5jhfcbK0Blg=="
         }
       },
       "is_incremental": false,
@@ -3054,7 +2802,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlServer.SqlServer2008Generator.html",
-          "hash": "SBu4L2r46uuWODd9P0xrgQ=="
+          "hash": "/x/Oexi6Ee6WgUZOZ4pikw=="
         }
       },
       "is_incremental": false,
@@ -3078,7 +2826,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlServer.SqlServer2012Generator.html",
-          "hash": "ATbLyqMdrXbtq09go64JMw=="
+          "hash": "fi871ON/6wUmJNp1YuSdwA=="
         }
       },
       "is_incremental": false,
@@ -3090,7 +2838,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlServer.SqlServer2014Generator.html",
-          "hash": "nkMHbZH7wGjFuxEqbCcK+w=="
+          "hash": "/rwXWMfwi1rM1qy5BfooXA=="
         }
       },
       "is_incremental": false,
@@ -3102,7 +2850,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlServer.SqlServer2016Generator.html",
-          "hash": "CpkZnGyRHxYzrXm8sT7DQg=="
+          "hash": "U1K4AtL8FChB95hZbych9A=="
         }
       },
       "is_incremental": false,
@@ -3114,7 +2862,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlServer.SqlServerCeGenerator.html",
-          "hash": "S5/k5jz2lBptrCR1g/dF+g=="
+          "hash": "uW1aiR/SOhB79ViovCWfVQ=="
         }
       },
       "is_incremental": false,
@@ -3126,7 +2874,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.SqlServer.SqlServerCeTypeMap.html",
-          "hash": "TBoBNVANL66KZZ0eVB+A9A=="
+          "hash": "pvf9iEtYAenCr7S7HXGptg=="
         }
       },
       "is_incremental": false,
@@ -3150,7 +2898,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Generators.html",
-          "hash": "Mgt4sXZe8ntdd4mI97cGWA=="
+          "hash": "l9K11SrW/n//l+koUoogfA=="
         }
       },
       "is_incremental": false,
@@ -3194,18 +2942,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.IAnnouncer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.IAnnouncer.html",
-          "hash": "iMguCttCvPcGJGfHwxECcQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Runner.IMaintenanceLoader.yml",
       "output": {
         ".html": {
@@ -3234,7 +2970,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.IMigrationRunner.html",
-          "hash": "StY9MqeKMTS0IxJVy7n2Lw=="
+          "hash": "e0Vp28X/3OfzfeQ743olvQ=="
         }
       },
       "is_incremental": false,
@@ -3258,7 +2994,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.IMigrationRunnerConventions.html",
-          "hash": "CmWThq0T/IWlQXHYEXMoZw=="
+          "hash": "LDk4E92mBZCKBCmvB2DVkw=="
         }
       },
       "is_incremental": false,
@@ -3294,7 +3030,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.IProfileLoader.html",
-          "hash": "gn11blyfxq2kd1SZe9cdDA=="
+          "hash": "RxlTD9TfK2zwIxRZd1o49w=="
         }
       },
       "is_incremental": false,
@@ -3318,7 +3054,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.IVersionLoader.html",
-          "hash": "aczxymtr6qa2rUbgnoWYIg=="
+          "hash": "z4v1iJUUdSmu7ydPX+5zJw=="
         }
       },
       "is_incremental": false,
@@ -3330,19 +3066,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Infrastructure.DefaultMigrationRunnerConventions.html",
-          "hash": "oPtHUWHHSJBnhpfY+RIp2A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Infrastructure.IHostAbstraction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Infrastructure.IHostAbstraction.html",
-          "hash": "gCwbNEn4Ha9n9T0qOip4rw=="
+          "hash": "j206anua5O3tFOzmaH9nnA=="
         }
       },
       "is_incremental": false,
@@ -3354,7 +3078,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Infrastructure.RuntimeHost.html",
-          "hash": "jpHg7RSuhu4w4BeHAbUuLw=="
+          "hash": "4QiRVswAe9QYoAS2QwCTug=="
         }
       },
       "is_incremental": false,
@@ -3366,19 +3090,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Infrastructure.html",
-          "hash": "agwY5Al/zTsScnWo/ph3AQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Initialization.AssemblyCollectionService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Initialization.AssemblyCollectionService.html",
-          "hash": "aeJ1pMz+pQi3EI+IDaxyLg=="
+          "hash": "wG4GPfguUxS7GeXMO9ZiRg=="
         }
       },
       "is_incremental": false,
@@ -3414,7 +3126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Initialization.AssemblyLoader.AssemblyLoaderFromFile.html",
-          "hash": "UI6GpZGeHDUWyIUEHsuwLw=="
+          "hash": "BydGheqc+AagUm/1eZV9tA=="
         }
       },
       "is_incremental": false,
@@ -3474,7 +3186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Initialization.AssemblySource.html",
-          "hash": "4U931a5s010G8TieawUxIQ=="
+          "hash": "Ymv//XfTFbWX44liwpNDIQ=="
         }
       },
       "is_incremental": false,
@@ -3554,18 +3266,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Initialization.DefaultConnectionStringProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Initialization.DefaultConnectionStringProvider.html",
-          "hash": "tXTH0GaE/5YgcoxJrZM+Yw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Runner.Initialization.IAssemblyLoadEngine.yml",
       "output": {
         ".html": {
@@ -3607,18 +3307,6 @@
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Initialization.IConnectionStringAccessor.html",
           "hash": "ai5pylqvFKtNR/FfwTPWzA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Initialization.IConnectionStringProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Initialization.IConnectionStringProvider.html",
-          "hash": "GM6FNsWTf0i8EjB8e8VMHg=="
         }
       },
       "is_incremental": false,
@@ -3674,18 +3362,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Initialization.IRunnerContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Initialization.IRunnerContext.html",
-          "hash": "Dw9G7qIeMaw3tgWzZ3U4pA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Runner.Initialization.IVersionTableMetaDataAccessor.yml",
       "output": {
         ".html": {
@@ -3702,55 +3378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Initialization.MigrationSource.html",
-          "hash": "reSy9yU8ioFleLr5+8lHUA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Initialization.NetFramework.AppConfigConnectionStringAccessorOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Initialization.NetFramework.AppConfigConnectionStringAccessorOptions.html",
-          "hash": "m0Tm410/oP9kqBilMNjwQA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Initialization.NetFramework.AppConfigConnectionStringReader.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Initialization.NetFramework.AppConfigConnectionStringReader.html",
-          "hash": "9bZD0AlMKhsSVHrHprAp2w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Initialization.NetFramework.INetConfigManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Initialization.NetFramework.INetConfigManager.html",
-          "hash": "cDLlXW17uDIVAEO/f8s/Og=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Initialization.NetFramework.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Initialization.NetFramework.html",
-          "hash": "hh0yzbjmLGMnJF97OHrTMg=="
+          "hash": "n/SGvJo5Di50YFk7/semfQ=="
         }
       },
       "is_incremental": false,
@@ -3806,23 +3434,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Initialization.RunnerContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Initialization.RunnerContext.html",
-          "hash": "WUQCfogYz/Y9+dIlt1iHyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/FluentMigrator.Runner.Initialization.RunnerOptions.yml",
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Initialization.RunnerOptions.html",
-          "hash": "HWeE1g8BqjP+Xil+0TmoAg=="
+          "hash": "OnfPOaxZ8u1Pz/68tRzLrA=="
         }
       },
       "is_incremental": false,
@@ -3834,7 +3450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Initialization.TaskExecutor.html",
-          "hash": "FbJEAUBw2Ykd6vjKEjBSLg=="
+          "hash": "Ig7hqpW47IgAeHyq/l8d8A=="
         }
       },
       "is_incremental": false,
@@ -3858,7 +3474,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Initialization.html",
-          "hash": "Hastbf0iPOgayg/AW3VRSA=="
+          "hash": "NIS0nlQsf5UhNWxSiNlYUQ=="
         }
       },
       "is_incremental": false,
@@ -3871,18 +3487,6 @@
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.JetRunnerBuilderExtensions.html",
           "hash": "DAnU9VTprVOFxbATXNG/EQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Logging.AnnouncerFluentMigratorLogger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Logging.AnnouncerFluentMigratorLogger.html",
-          "hash": "5BBdrfCE4XMpHoU6qa9byA=="
         }
       },
       "is_incremental": false,
@@ -3918,7 +3522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Logging.FluentMigratorLogger.html",
-          "hash": "XA9JybXZt0bL+A3bQh/eTQ=="
+          "hash": "TN887+/Bwe/3zufnCG/UzA=="
         }
       },
       "is_incremental": false,
@@ -3990,7 +3594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Logging.html",
-          "hash": "fJdA3W/Vj18sYyOOgQu6kw=="
+          "hash": "Ev0q7eRVup+/Rik4jnk6tw=="
         }
       },
       "is_incremental": false,
@@ -4014,7 +3618,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.MaintenanceLoader.html",
-          "hash": "CHd/lW+VlOK+x+HS1Hj9rQ=="
+          "hash": "s7mhZJ9Ixu4kdUEi0lHWUg=="
         }
       },
       "is_incremental": false,
@@ -4026,7 +3630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.MigrationRunner.html",
-          "hash": "Mkkvp+Im3J+ksWqrj8CnQg=="
+          "hash": "Hqzqk9VQaioRmlPMS6JGOw=="
         }
       },
       "is_incremental": false,
@@ -4050,7 +3654,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.MigrationRunnerConventions.html",
-          "hash": "aXpx1gOtwK6eLUFM1DBkdQ=="
+          "hash": "Qc8WYVKOJyWNOhSb0AZilg=="
         }
       },
       "is_incremental": false,
@@ -4074,7 +3678,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.MigrationValidator.html",
-          "hash": "ZnVk64SxUH392vFmJgP9lA=="
+          "hash": "QSdLX8wtUH+FN8bCTWCarA=="
         }
       },
       "is_incremental": false,
@@ -4134,19 +3738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.ConnectionlessProcessor.html",
-          "hash": "VMFulr+4DsbRc2VUayydAg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.ConnectionlessProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.ConnectionlessProcessorFactory.html",
-          "hash": "FUX/39pF6O92jrYzm8Nhvw=="
+          "hash": "4mBcec39FIhK+tnR5Igiyw=="
         }
       },
       "is_incremental": false,
@@ -4158,7 +3750,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.DB2.Db2DbFactory.html",
-          "hash": "nE6b8YezDj4rUssPrHiw7A=="
+          "hash": "8gSUZ9cdt7vsPLXH1EPdSA=="
         }
       },
       "is_incremental": false,
@@ -4170,19 +3762,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.DB2.Db2Processor.html",
-          "hash": "UlK3wNW3HbYPoOcAED+kgw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.DB2.Db2ProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.DB2.Db2ProcessorFactory.html",
-          "hash": "j2mGk/wfzxRluhrSyKXzZA=="
+          "hash": "i6YWUMlMbC8oplK9dRG39A=="
         }
       },
       "is_incremental": false,
@@ -4194,7 +3774,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.DB2.iSeries.Db2ISeriesDbFactory.html",
-          "hash": "Hgcifmg+Lx2nskRMVDMq2A=="
+          "hash": "HDll4vVpax4FkDzqXDeuFw=="
         }
       },
       "is_incremental": false,
@@ -4206,19 +3786,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.DB2.iSeries.Db2ISeriesProcessor.html",
-          "hash": "LC4MaJZD4jtUhAOwP9odHQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.DB2.iSeries.Db2ISeriesProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.DB2.iSeries.Db2ISeriesProcessorFactory.html",
-          "hash": "t39Er/rba+lGC0clP6k41Q=="
+          "hash": "PQSC65qLnzARQQc28w69sA=="
         }
       },
       "is_incremental": false,
@@ -4230,7 +3798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.DB2.iSeries.html",
-          "hash": "dyj5j4vPdIftdmTuHO2mEA=="
+          "hash": "qQkwFAJdihO+jDPEYLjITQ=="
         }
       },
       "is_incremental": false,
@@ -4242,7 +3810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.DB2.html",
-          "hash": "gxAk9NE1b+YKsV9dVEOIaQ=="
+          "hash": "C3gLSPowqp0KA/ilIOihoQ=="
         }
       },
       "is_incremental": false,
@@ -4266,7 +3834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.DbFactoryBase.html",
-          "hash": "u1C+hvw2Rbt6fGVLGaGq/A=="
+          "hash": "IdMh7/EkR8u1ro+30LfH2w=="
         }
       },
       "is_incremental": false,
@@ -4278,7 +3846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory.html",
-          "hash": "k4Sfd7qN2pkQnRzU2MFNDw=="
+          "hash": "0SfSFCCiSVNgdsg0DspNGQ=="
         }
       },
       "is_incremental": false,
@@ -4290,19 +3858,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.html",
-          "hash": "pdNv7aVip95eC8KX00b5FA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessorFactory.html",
-          "hash": "7vwW/PPbWJkPZzDR4d+JTg=="
+          "hash": "PKxoRNYyRusZOtGbTvxNIQ=="
         }
       },
       "is_incremental": false,
@@ -4314,7 +3870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.DotConnectOracle.html",
-          "hash": "+ZXmCRxaxjnwf0xpOzsRxQ=="
+          "hash": "WoJB3A2BqzHK72YWNDMVSg=="
         }
       },
       "is_incremental": false,
@@ -4374,7 +3930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Firebird.FirebirdDbFactory.html",
-          "hash": "5qYTGq11vMpcwv/aDfWExA=="
+          "hash": "tTbLQCP3gBld/ibPfcauTA=="
         }
       },
       "is_incremental": false,
@@ -4410,19 +3966,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Firebird.FirebirdProcessor.html",
-          "hash": "8ha2ZP3JCNWA1cMUQHUhWg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.Firebird.FirebirdProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.Firebird.FirebirdProcessorFactory.html",
-          "hash": "VqxL+XghSuGNqGsBza6ycA=="
+          "hash": "84neVaqvEY0NL1RGI4SPUA=="
         }
       },
       "is_incremental": false,
@@ -4518,7 +4062,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Firebird.html",
-          "hash": "hB5rUIVrki2FmWumJT1naQ=="
+          "hash": "+LbFGlXuVlEqFMtarDspIQ=="
         }
       },
       "is_incremental": false,
@@ -4530,7 +4074,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.GenericProcessorBase.html",
-          "hash": "lYoa1r9NRqQODXHbxwp1pg=="
+          "hash": "14z0ZaWadFQo7FGTbofDWQ=="
         }
       },
       "is_incremental": false,
@@ -4542,7 +4086,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Hana.HanaDbFactory.html",
-          "hash": "wnzK+wxHJ7cy6h81hNO1ZQ=="
+          "hash": "nfMXZvEP6sy6IHuryamZJA=="
         }
       },
       "is_incremental": false,
@@ -4554,19 +4098,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Hana.HanaProcessor.html",
-          "hash": "qareW6XiGgjdzsdGh8fYYg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.Hana.HanaProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.Hana.HanaProcessorFactory.html",
-          "hash": "NCTtkDeUxnwwPY+DRFa9FQ=="
+          "hash": "oPW9pyJeHtz4hm7awZAmHQ=="
         }
       },
       "is_incremental": false,
@@ -4578,31 +4110,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Hana.html",
-          "hash": "A9ikNzrd+RAY1DW2cjwqpQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.IDbFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.IDbFactory.html",
-          "hash": "a8Xo7K63lhtsk08GQ0/tKQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.IMigrationProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.IMigrationProcessorFactory.html",
-          "hash": "1YYh0cCFfP7gh7DVFuK/og=="
+          "hash": "HkZWNtFgc6ImjsNhtH4P9w=="
         }
       },
       "is_incremental": false,
@@ -4626,19 +4134,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Jet.JetProcessor.html",
-          "hash": "szWIyPiiGneacmYgkCU/iA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.Jet.JetProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.Jet.JetProcessorFactory.html",
-          "hash": "Ao+uX+RYtqa9oYFa7DLp7g=="
+          "hash": "Hp0momBF6xhmvEX5QC3taA=="
         }
       },
       "is_incremental": false,
@@ -4650,31 +4146,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Jet.html",
-          "hash": "FL/KEg/Fi4un6HHE1K860g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.MigrationProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.MigrationProcessorFactory.html",
-          "hash": "Sargr3x0YVk7co0O7CAqqQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.MigrationProcessorFactoryProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.MigrationProcessorFactoryProvider.html",
-          "hash": "lXxuHHQ74fqpGrEG8Vi2Pw=="
+          "hash": "GAXalA85Y64ql+UEf/UWEQ=="
         }
       },
       "is_incremental": false,
@@ -4686,19 +4158,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.MySql.MySql4Processor.html",
-          "hash": "BlKP+4AMk/8JZokfAyEUEg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.MySql.MySql4ProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.MySql.MySql4ProcessorFactory.html",
-          "hash": "CzQtimBYfhNoAwesIBHblA=="
+          "hash": "jR9t4fnXpmQIlboqTKEIjg=="
         }
       },
       "is_incremental": false,
@@ -4710,19 +4170,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.MySql.MySql5Processor.html",
-          "hash": "JKboV3iprCb7FcWUhRxaJQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.MySql.MySql5ProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.MySql.MySql5ProcessorFactory.html",
-          "hash": "YYx/YeuZLhXba14A7u3cLw=="
+          "hash": "++IoThhz3GnBGFFn7wLgfw=="
         }
       },
       "is_incremental": false,
@@ -4734,7 +4182,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.MySql.MySqlDbFactory.html",
-          "hash": "+pjiMAj4B+SBVtDV9YI3DQ=="
+          "hash": "TfVR3//ZmZHNkkYsvtk9Iw=="
         }
       },
       "is_incremental": false,
@@ -4746,7 +4194,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.MySql.MySqlProcessor.html",
-          "hash": "QV386pQJoXqw6vI12Oyf+Q=="
+          "hash": "bganmlvAR9O3sGvn5LUIJg=="
         }
       },
       "is_incremental": false,
@@ -4758,7 +4206,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.MySql.html",
-          "hash": "kkAHpyrShAcDAABhX3jw1g=="
+          "hash": "XEFFqviUeoT7tsCngmWP1w=="
         }
       },
       "is_incremental": false,
@@ -4770,7 +4218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Oracle.OracleBaseDbFactory.html",
-          "hash": "iLJd4cX6/rvP2VRbfhqQLg=="
+          "hash": "Va5R2cz8JmCkB35mwMNKxg=="
         }
       },
       "is_incremental": false,
@@ -4782,7 +4230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Oracle.OracleDbFactory.html",
-          "hash": "tYdNTKiNYIRnSHV3grfQhg=="
+          "hash": "JDqc9kGvcyF7KXfZT6ZAYw=="
         }
       },
       "is_incremental": false,
@@ -4794,7 +4242,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory.html",
-          "hash": "txIRBP1HIk0Ov8FKa4m7tw=="
+          "hash": "mt8hhWpyyaTbC8oHs1Tesg=="
         }
       },
       "is_incremental": false,
@@ -4806,19 +4254,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.html",
-          "hash": "sM5G2ZtprYt8A4ew9hckDQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessorFactory.html",
-          "hash": "DXxvj4YmSH874i+Yp9oSJw=="
+          "hash": "7SQ7teVuE2GH1qGOb2wUDg=="
         }
       },
       "is_incremental": false,
@@ -4830,7 +4266,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Oracle.OracleProcessor.html",
-          "hash": "g5UKeM3WyF20wygg7DKf7Q=="
+          "hash": "ObN1EyjW0Oi2Ad/xl2quFw=="
         }
       },
       "is_incremental": false,
@@ -4842,19 +4278,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Oracle.OracleProcessorBase.html",
-          "hash": "MHkmVrgvRzuwx7xkgUlHhw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.Oracle.OracleProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.Oracle.OracleProcessorFactory.html",
-          "hash": "WC0HCxdjVHchZ2uHC1dRcg=="
+          "hash": "Vuo+GNb2Bb4IUY1oVi51jg=="
         }
       },
       "is_incremental": false,
@@ -4866,7 +4290,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Oracle.html",
-          "hash": "J4brciEOWxeBYVHHw320Lg=="
+          "hash": "+Yw75Ls9d+xz7Z36gFriqA=="
         }
       },
       "is_incremental": false,
@@ -4878,7 +4302,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory.html",
-          "hash": "QMtFeSlGkTYwCwT48Vt32w=="
+          "hash": "m1jAiSQk7ZU4KmUmWgHD9A=="
         }
       },
       "is_incremental": false,
@@ -4890,19 +4314,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.html",
-          "hash": "g4Z0dUJLNpOaBNcgswNPAg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.Postgres.PostgresProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.Postgres.PostgresProcessorFactory.html",
-          "hash": "VTbkh1G15uWTVTtCuQhYtA=="
+          "hash": "KYCCkNwtoIXo61i5k+K0yQ=="
         }
       },
       "is_incremental": false,
@@ -4914,7 +4326,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Postgres.html",
-          "hash": "ODYAcG8upR4xNUxqlhu6JQ=="
+          "hash": "6hKvG9lLI+twLqcO35aHdA=="
         }
       },
       "is_incremental": false,
@@ -4926,7 +4338,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.ProcessorBase.html",
-          "hash": "4H7lyiwUKjJI11sqSjSopQ=="
+          "hash": "uiOuU1CPwx6D+7gA4eBHZQ=="
         }
       },
       "is_incremental": false,
@@ -4938,7 +4350,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.ProcessorOptions.html",
-          "hash": "hJIuvFvEipuibFIAeoDpzA=="
+          "hash": "lyBYxv4it2GSQHC4Om+IGw=="
         }
       },
       "is_incremental": false,
@@ -4950,7 +4362,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Redshift.RedshiftDbFactory.html",
-          "hash": "nLtPPM8toK6KOfhJQRBj3g=="
+          "hash": "TAvWtii6UVSKvc6SAY2RWg=="
         }
       },
       "is_incremental": false,
@@ -4962,19 +4374,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Redshift.RedshiftProcessor.html",
-          "hash": "8aTUz46CkWnj39sjJR63uQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.Redshift.RedshiftProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.Redshift.RedshiftProcessorFactory.html",
-          "hash": "p6+N383Bv1sfQyFsv52/3A=="
+          "hash": "8oQG/WRHNK//fMOtw8xjAQ=="
         }
       },
       "is_incremental": false,
@@ -4986,7 +4386,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.Redshift.html",
-          "hash": "mM8zewT0hq345dRGNSIA3g=="
+          "hash": "IOb2DoVYOsF8cRS0VzEibw=="
         }
       },
       "is_incremental": false,
@@ -4998,7 +4398,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.TestEntry.html",
-          "hash": "5Wyn8SMmgZHfPoRmLl09oA=="
+          "hash": "uxgwh+bIQC2Jrp4RWxdfpQ=="
         }
       },
       "is_incremental": false,
@@ -5010,7 +4410,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.html",
-          "hash": "qQYEt8q+f1uZDYh3I7SvkA=="
+          "hash": "dSe6dU6ff3dOpJMJFsYo+g=="
         }
       },
       "is_incremental": false,
@@ -5022,7 +4422,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SQLite.SQLiteDbFactory.html",
-          "hash": "YCOw361ErL3yfgNpEK+uVA=="
+          "hash": "ox2bSg/La8Gzq5Ky8rrGhQ=="
         }
       },
       "is_incremental": false,
@@ -5034,19 +4434,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SQLite.SQLiteProcessor.html",
-          "hash": "MaOVDHOp6Na5oZ8DpfoF5A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.SQLite.SQLiteProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.SQLite.SQLiteProcessorFactory.html",
-          "hash": "JYNe/2EXZmbJ/aTOPQKL2Q=="
+          "hash": "5mBuem2svH7UME71WUDyWA=="
         }
       },
       "is_incremental": false,
@@ -5058,7 +4446,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SQLite.html",
-          "hash": "fm0Ww5eqjPDO3KH2nGkXqQ=="
+          "hash": "B+SdQrfljLu0OanihwNCFA=="
         }
       },
       "is_incremental": false,
@@ -5094,19 +4482,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlAnywhere.SqlAnywhere16Processor.html",
-          "hash": "bfTcEftG7gqS9IuU6goqeg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.SqlAnywhere.SqlAnywhere16ProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.SqlAnywhere.SqlAnywhere16ProcessorFactory.html",
-          "hash": "PhSEGJLfeZ+VpxnvuNc55A=="
+          "hash": "a+Ui/1/F2UTz9dj05bXGXg=="
         }
       },
       "is_incremental": false,
@@ -5118,7 +4494,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlAnywhere.SqlAnywhereDbFactory.html",
-          "hash": "LfLT3GLgh74Gh/R0E6r6sg=="
+          "hash": "WIIgzo7sCwThLpHSZ+3Cqw=="
         }
       },
       "is_incremental": false,
@@ -5130,7 +4506,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlAnywhere.SqlAnywhereProcessor.html",
-          "hash": "uI287tKKsNPZtBvAfH6Qkw=="
+          "hash": "QMEEWzAGPEXlykgz/qW5kw=="
         }
       },
       "is_incremental": false,
@@ -5142,7 +4518,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlAnywhere.html",
-          "hash": "cu+SwSWuiO/99gxYqFn2DQ=="
+          "hash": "JJ6JvPB26Iq/1zigAaIWXQ=="
         }
       },
       "is_incremental": false,
@@ -5154,19 +4530,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2000Processor.html",
-          "hash": "xStqMbyuXRh0owtSo7I5oQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2000ProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2000ProcessorFactory.html",
-          "hash": "r7TXnrlIb1lxRsByG4RNMg=="
+          "hash": "0XtekLMc/jkTsdXaBd6AZg=="
         }
       },
       "is_incremental": false,
@@ -5178,19 +4542,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2005Processor.html",
-          "hash": "9J1AoYwUwM1ovlPbaPefpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2005ProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2005ProcessorFactory.html",
-          "hash": "ZVL3jMZVluOiG6nsEbtNZw=="
+          "hash": "Lhixuxp2KBEFmcPK464jSQ=="
         }
       },
       "is_incremental": false,
@@ -5202,19 +4554,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2008Processor.html",
-          "hash": "inMjTpmyjFNElkVz1e3SWw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2008ProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2008ProcessorFactory.html",
-          "hash": "4Q4DiZolYfHkv+Vg2DQaPA=="
+          "hash": "2esaYJuhC7apZQDTL8vcFg=="
         }
       },
       "is_incremental": false,
@@ -5226,19 +4566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2012Processor.html",
-          "hash": "K4xltyRT2VedXHksh5wLdQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2012ProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2012ProcessorFactory.html",
-          "hash": "6EweX8vxYZoUYtFmc9n3Lw=="
+          "hash": "n3V3nn/zIPSPy+IEkeq87A=="
         }
       },
       "is_incremental": false,
@@ -5250,19 +4578,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2014Processor.html",
-          "hash": "/s6KxBusbiPDIh5Nqz1nHg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2014ProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2014ProcessorFactory.html",
-          "hash": "8oJTqnXj73aVSTgTuE8woA=="
+          "hash": "rFgm57pIsK8qn5cSsYwpdw=="
         }
       },
       "is_incremental": false,
@@ -5274,19 +4590,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2016Processor.html",
-          "hash": "azwD0g+VibEkJPCHXj+IgA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2016ProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServer2016ProcessorFactory.html",
-          "hash": "DfnqniFyLjGbWgnwqFOXlQ=="
+          "hash": "ThHSxtELMN+Zxp/e20DtHw=="
         }
       },
       "is_incremental": false,
@@ -5298,7 +4602,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServerCeDbFactory.html",
-          "hash": "OM8XK6wsVD29plIXxga1dg=="
+          "hash": "jID87BmviqyEmkNbaXv6rg=="
         }
       },
       "is_incremental": false,
@@ -5310,31 +4614,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServerCeProcessor.html",
-          "hash": "7DsgbyuwFjDOW+F5zlmrTw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServerCeProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServerCeProcessorFactory.html",
-          "hash": "UN1hY9i2N2CF0GdDFp1eIQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServerDbFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServerDbFactory.html",
-          "hash": "NwYj6MOJwmWcBPb3/I8WAg=="
+          "hash": "KYMs/Y+x0GdY2HwiHFuLWw=="
         }
       },
       "is_incremental": false,
@@ -5346,19 +4626,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServerProcessor.html",
-          "hash": "lLrBEahi82ci6G5Dy17XAg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServerProcessorFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.SqlServerProcessorFactory.html",
-          "hash": "rTk468aWyn8hDEyiY1BD/A=="
+          "hash": "FV/6LK64X8LMLQUeMjBX4Q=="
         }
       },
       "is_incremental": false,
@@ -5370,7 +4638,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.SqlServer.html",
-          "hash": "ZMO1yJ5Op5TeQ9AgC/oavA=="
+          "hash": "COb65CmORin4zrhvxXAreQ=="
         }
       },
       "is_incremental": false,
@@ -5382,7 +4650,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Processors.html",
-          "hash": "fYyjv5GCjedBqLQSyoHL3g=="
+          "hash": "Vn/le/EZkyj3nrbNPNpSIA=="
         }
       },
       "is_incremental": false,
@@ -5394,7 +4662,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.ProfileLoader.html",
-          "hash": "F8D0csKDtfC7fwLtPdlEmA=="
+          "hash": "xSAbvkuqwYD5Bzv9AZzZCA=="
         }
       },
       "is_incremental": false,
@@ -5514,7 +4782,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.VersionLoader.html",
-          "hash": "M/GeZHAgHkH8uS1B0fcUqg=="
+          "hash": "aNM3pj4A9VTSIkvvp2xNiA=="
         }
       },
       "is_incremental": false,
@@ -5526,7 +4794,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.VersionTableInfo.DefaultVersionTableMetaData.html",
-          "hash": "8jCVrWk6T68ZQFNr3MHupg=="
+          "hash": "nWuy0CZFOVonEVUMXvt4EA=="
         }
       },
       "is_incremental": false,
@@ -5538,7 +4806,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html",
-          "hash": "7JmY5ufhbcwWcpaEv+G6og=="
+          "hash": "LXcIBr5OUTH2eV/vbBf2AA=="
         }
       },
       "is_incremental": false,
@@ -5586,7 +4854,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Versioning.VersionDescriptionMigration.html",
-          "hash": "UcTT7C8mVMcTq0iUetxV1g=="
+          "hash": "lBsU93kKlTfvnyISb94WMg=="
         }
       },
       "is_incremental": false,
@@ -5610,7 +4878,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Versioning.VersionMigration.html",
-          "hash": "wufITwtjSqgdQMZZezzQ3g=="
+          "hash": "5JF7+wnFB1UpdrmMXnAKBg=="
         }
       },
       "is_incremental": false,
@@ -5622,7 +4890,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Versioning.VersionSchemaMigration.html",
-          "hash": "APc0n+gP8IgqAtKGLLrCxg=="
+          "hash": "ieOYeOfHdiDw9TGdLDdhhQ=="
         }
       },
       "is_incremental": false,
@@ -5634,7 +4902,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.Versioning.VersionUniqueMigration.html",
-          "hash": "b6HUWU9k36KStDdL6AapAw=="
+          "hash": "r4ULab9AcDOeQH9qWuc40Q=="
         }
       },
       "is_incremental": false,
@@ -5658,7 +4926,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.Runner.html",
-          "hash": "igPQ/01daP7U8t3Sie16qQ=="
+          "hash": "pI/fP2RZK49Avzw3kuzO/g=="
         }
       },
       "is_incremental": false,
@@ -5862,7 +5130,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FluentMigrator.html",
-          "hash": "fkZ8oo3b/klpKqnX+rwp6A=="
+          "hash": "nwHTyJXUTpVL/RAMawRPPg=="
         }
       },
       "is_incremental": false,
@@ -5874,7 +5142,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.FluentMigratorServiceCollectionExtensions.html",
-          "hash": "yGjIhFWMbdNvlriFRniBQg=="
+          "hash": "bAWUpvd9Z3fP3PL1Nnv7XA=="
         }
       },
       "is_incremental": false,
@@ -5910,7 +5178,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "xQjq2FChjpiS0i6zaThkHg=="
+          "hash": "iUFU0ZCRUwB6bwX4EyUe4g=="
         }
       },
       "is_incremental": false,
@@ -6001,12 +5269,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/guides/upgrades/guide-2.0-to-3.0.md",
       "output": {
         ".html": {
           "relative_path": "articles/guides/upgrades/guide-2.0-to-3.0.html",
-          "hash": "FcmPcnY4THA0wATrN8/nTQ=="
+          "hash": "G5nH/0B+nomTw7HzzJefZg=="
         }
       },
       "is_incremental": false,
@@ -6109,12 +5380,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/obsolete/app-context.md",
       "output": {
         ".html": {
           "relative_path": "articles/obsolete/app-context.html",
-          "hash": "i+1LQqrsl77KFlZgQYUuKw=="
+          "hash": "t0Y0VLQwGgPYsfcwtrJsCA=="
         }
       },
       "is_incremental": false,
@@ -6259,22 +5533,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

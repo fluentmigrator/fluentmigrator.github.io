@@ -10,6 +10,9 @@ references:
 - uid: db-functions
   name: Database functions
   href: articles/db-functions.html
+- uid: dotnet-fm
+  name: dotnet-fm tool
+  href: articles/runners/dotnet-fm.html
 - uid: fluent-interface.md
   name: Fluent Interface
   href: articles/fluent-interface.html

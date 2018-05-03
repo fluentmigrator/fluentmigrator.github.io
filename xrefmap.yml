@@ -16693,6 +16693,19 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.CreateIndex
   nameWithType: SqlServer2005Generator.CreateIndex
+- uid: FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.CreateSchema
+  name: CreateSchema
+  href: api/FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_CreateSchema
+  commentId: P:FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.CreateSchema
+  fullName: FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.CreateSchema
+  nameWithType: SqlServer2005Generator.CreateSchema
+- uid: FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.CreateSchema*
+  name: CreateSchema
+  href: api/FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_CreateSchema_
+  commentId: Overload:FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.CreateSchema
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.CreateSchema
+  nameWithType: SqlServer2005Generator.CreateSchema
 - uid: FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.DropIndex
   name: DropIndex
   href: api/FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_DropIndex
@@ -24125,6 +24138,135 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDbFactory.FirebirdDbFactory
   nameWithType: FirebirdDbFactory.FirebirdDbFactory
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker
+  name: FirebirdDDLLockTracker
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html
+  commentId: T:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker
+  nameWithType: FirebirdDDLLockTracker
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.#ctor(FluentMigrator.Runner.Generators.IQuoter)
+  name: FirebirdDDLLockTracker(IQuoter)
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker__ctor_FluentMigrator_Runner_Generators_IQuoter_
+  commentId: M:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.#ctor(FluentMigrator.Runner.Generators.IQuoter)
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.FirebirdDDLLockTracker(FluentMigrator.Runner.Generators.IQuoter)
+  nameWithType: FirebirdDDLLockTracker.FirebirdDDLLockTracker(IQuoter)
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.#ctor*
+  name: FirebirdDDLLockTracker
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker__ctor_
+  commentId: Overload:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.FirebirdDDLLockTracker
+  nameWithType: FirebirdDDLLockTracker.FirebirdDDLLockTracker
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.Clear
+  name: Clear()
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker_Clear
+  commentId: M:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.Clear
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.Clear()
+  nameWithType: FirebirdDDLLockTracker.Clear()
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.Clear*
+  name: Clear
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker_Clear_
+  commentId: Overload:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.Clear
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.Clear
+  nameWithType: FirebirdDDLLockTracker.Clear
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsColumnRegistered(System.String,System.String)
+  name: IsColumnRegistered(String, String)
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker_IsColumnRegistered_System_String_System_String_
+  commentId: M:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsColumnRegistered(System.String,System.String)
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsColumnRegistered(System.String, System.String)
+  nameWithType: FirebirdDDLLockTracker.IsColumnRegistered(String, String)
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsColumnRegistered*
+  name: IsColumnRegistered
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker_IsColumnRegistered_
+  commentId: Overload:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsColumnRegistered
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsColumnRegistered
+  nameWithType: FirebirdDDLLockTracker.IsColumnRegistered
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsTableRegistered(System.String)
+  name: IsTableRegistered(String)
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker_IsTableRegistered_System_String_
+  commentId: M:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsTableRegistered(System.String)
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsTableRegistered(System.String)
+  nameWithType: FirebirdDDLLockTracker.IsTableRegistered(String)
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsTableRegistered*
+  name: IsTableRegistered
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker_IsTableRegistered_
+  commentId: Overload:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsTableRegistered
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.IsTableRegistered
+  nameWithType: FirebirdDDLLockTracker.IsTableRegistered
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterColumn(System.String,System.String)
+  name: TryRegisterColumn(String, String)
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker_TryRegisterColumn_System_String_System_String_
+  commentId: M:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterColumn(System.String,System.String)
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterColumn(System.String, System.String)
+  nameWithType: FirebirdDDLLockTracker.TryRegisterColumn(String, String)
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterColumn*
+  name: TryRegisterColumn
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker_TryRegisterColumn_
+  commentId: Overload:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterColumn
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterColumn
+  nameWithType: FirebirdDDLLockTracker.TryRegisterColumn
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterTable(System.String)
+  name: TryRegisterTable(String)
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker_TryRegisterTable_System_String_
+  commentId: M:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterTable(System.String)
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterTable(System.String)
+  nameWithType: FirebirdDDLLockTracker.TryRegisterTable(String)
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterTable*
+  name: TryRegisterTable
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.html#FluentMigrator_Runner_Processors_Firebird_FirebirdDDLLockTracker_TryRegisterTable_
+  commentId: Overload:FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterTable
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdDDLLockTracker.TryRegisterTable
+  nameWithType: FirebirdDDLLockTracker.TryRegisterTable
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer
+  name: FirebirdIdentifierComparer
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.html
+  commentId: T:FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer
+  nameWithType: FirebirdIdentifierComparer
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.#ctor(FluentMigrator.Runner.Generators.IQuoter)
+  name: FirebirdIdentifierComparer(IQuoter)
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.html#FluentMigrator_Runner_Processors_Firebird_FirebirdIdentifierComparer__ctor_FluentMigrator_Runner_Generators_IQuoter_
+  commentId: M:FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.#ctor(FluentMigrator.Runner.Generators.IQuoter)
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.FirebirdIdentifierComparer(FluentMigrator.Runner.Generators.IQuoter)
+  nameWithType: FirebirdIdentifierComparer.FirebirdIdentifierComparer(IQuoter)
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.#ctor*
+  name: FirebirdIdentifierComparer
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.html#FluentMigrator_Runner_Processors_Firebird_FirebirdIdentifierComparer__ctor_
+  commentId: Overload:FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.FirebirdIdentifierComparer
+  nameWithType: FirebirdIdentifierComparer.FirebirdIdentifierComparer
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.Equals(System.String,System.String)
+  name: Equals(String, String)
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.html#FluentMigrator_Runner_Processors_Firebird_FirebirdIdentifierComparer_Equals_System_String_System_String_
+  commentId: M:FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.Equals(System.String,System.String)
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.Equals(System.String, System.String)
+  nameWithType: FirebirdIdentifierComparer.Equals(String, String)
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.Equals*
+  name: Equals
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.html#FluentMigrator_Runner_Processors_Firebird_FirebirdIdentifierComparer_Equals_
+  commentId: Overload:FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.Equals
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.Equals
+  nameWithType: FirebirdIdentifierComparer.Equals
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.GetHashCode(System.String)
+  name: GetHashCode(String)
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.html#FluentMigrator_Runner_Processors_Firebird_FirebirdIdentifierComparer_GetHashCode_System_String_
+  commentId: M:FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.GetHashCode(System.String)
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.GetHashCode(System.String)
+  nameWithType: FirebirdIdentifierComparer.GetHashCode(String)
+- uid: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.GetHashCode*
+  name: GetHashCode
+  href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.html#FluentMigrator_Runner_Processors_Firebird_FirebirdIdentifierComparer_GetHashCode_
+  commentId: Overload:FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.GetHashCode
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Firebird.FirebirdIdentifierComparer.GetHashCode
+  nameWithType: FirebirdIdentifierComparer.GetHashCode
 - uid: FluentMigrator.Runner.Processors.Firebird.FirebirdOptions
   name: FirebirdOptions
   href: api/FluentMigrator.Runner.Processors.Firebird.FirebirdOptions.html
@@ -32198,6 +32340,19 @@ references:
   commentId: T:FluentMigrator.SqlServer.SqlServerExtensions
   fullName: FluentMigrator.SqlServer.SqlServerExtensions
   nameWithType: SqlServerExtensions
+- uid: FluentMigrator.SqlServer.SqlServerExtensions.Authorization(FluentMigrator.Builders.Create.Schema.ICreateSchemaOptionsSyntax,System.String)
+  name: Authorization(ICreateSchemaOptionsSyntax, String)
+  href: api/FluentMigrator.SqlServer.SqlServerExtensions.html#FluentMigrator_SqlServer_SqlServerExtensions_Authorization_FluentMigrator_Builders_Create_Schema_ICreateSchemaOptionsSyntax_System_String_
+  commentId: M:FluentMigrator.SqlServer.SqlServerExtensions.Authorization(FluentMigrator.Builders.Create.Schema.ICreateSchemaOptionsSyntax,System.String)
+  fullName: FluentMigrator.SqlServer.SqlServerExtensions.Authorization(FluentMigrator.Builders.Create.Schema.ICreateSchemaOptionsSyntax, System.String)
+  nameWithType: SqlServerExtensions.Authorization(ICreateSchemaOptionsSyntax, String)
+- uid: FluentMigrator.SqlServer.SqlServerExtensions.Authorization*
+  name: Authorization
+  href: api/FluentMigrator.SqlServer.SqlServerExtensions.html#FluentMigrator_SqlServer_SqlServerExtensions_Authorization_
+  commentId: Overload:FluentMigrator.SqlServer.SqlServerExtensions.Authorization
+  isSpec: "True"
+  fullName: FluentMigrator.SqlServer.SqlServerExtensions.Authorization
+  nameWithType: SqlServerExtensions.Authorization
 - uid: FluentMigrator.SqlServer.SqlServerExtensions.Clustered(FluentMigrator.Builders.Create.Constraint.ICreateConstraintOptionsSyntax)
   name: Clustered(ICreateConstraintOptionsSyntax)
   href: api/FluentMigrator.SqlServer.SqlServerExtensions.html#FluentMigrator_SqlServer_SqlServerExtensions_Clustered_FluentMigrator_Builders_Create_Constraint_ICreateConstraintOptionsSyntax_
@@ -32398,6 +32553,12 @@ references:
   commentId: F:FluentMigrator.SqlServer.SqlServerExtensions.RowGuidColumn
   fullName: FluentMigrator.SqlServer.SqlServerExtensions.RowGuidColumn
   nameWithType: SqlServerExtensions.RowGuidColumn
+- uid: FluentMigrator.SqlServer.SqlServerExtensions.SchemaAuthorization
+  name: SchemaAuthorization
+  href: api/FluentMigrator.SqlServer.SqlServerExtensions.html#FluentMigrator_SqlServer_SqlServerExtensions_SchemaAuthorization
+  commentId: F:FluentMigrator.SqlServer.SqlServerExtensions.SchemaAuthorization
+  fullName: FluentMigrator.SqlServer.SqlServerExtensions.SchemaAuthorization
+  nameWithType: SqlServerExtensions.SchemaAuthorization
 - uid: FluentMigrator.SqlServer.SqlServerExtensions.UniqueNullsDistinct(FluentMigrator.Builders.Create.Index.ICreateIndexOptionsSyntax,System.Boolean)
   name: UniqueNullsDistinct(ICreateIndexOptionsSyntax, Boolean)
   href: api/FluentMigrator.SqlServer.SqlServerExtensions.html#FluentMigrator_SqlServer_SqlServerExtensions_UniqueNullsDistinct_FluentMigrator_Builders_Create_Index_ICreateIndexOptionsSyntax_System_Boolean_

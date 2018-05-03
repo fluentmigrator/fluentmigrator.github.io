@@ -1,0 +1,532 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Upgrade Guide from 2.0 to 3.0 | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Upgrade Guide from 2.0 to 3.0 | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="upgrade-guide-2.0-to-3.0">
+<h1 id="upgrading-from-2x-to-30">Upgrading from 2.x to 3.0</h1>
+
+<p>The upgrade from 2.x to 3.0 should be very smooth, because the API was kept mostly unchanged.</p>
+<h1 id="what-is-new">What is new?</h1>
+<p>FluentMigrator now uses dependency injection and other standard libraries from the ASP.NET Core project extensively. This results in a simpler API, well-defined extension points and in general more flexibility.</p>
+<h2 id="new-in-process-runner-initialization">New in-process runner initialization</h2>
+<pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
+    // Logging is the replacement for the old IAnnouncer
+    .AddLogging(lb =&gt; lb.AddFluentMigratorConsole())
+    // Registration of all FluentMigrator-specific services
+    .AddFluentMigratorCore()
+    // Configure the runner
+    .ConfigureRunner(
+        builder =&gt; builder
+            // Use SQLite
+            .AddSQLite()
+            // The SQLite connection string
+            .WithGlobalConnectionString(&quot;Data Source=test.db&quot;)
+            // Specify the assembly with the migrations
+            .WithMigrationsIn(typeof(MyMigration).Assembly))
+    .BuildServiceProvider();
+
+// Put the database update into a scope to ensure
+// that all resources will be disposed.
+using (var scope = serviceProvider.CreateScope())
+{
+    // Instantiate the runner
+    var runner = scope.ServiceProvider.GetRequiredService&lt;IMigrationRunner&gt;();
+
+    // Execute the migrations
+    runner.MigrateUp();
+}
+</code></pre>
+<h2 id="dotnet-fm-as-global-net-core-cli-tool"><code>dotnet-fm</code> as global .NET Core CLI tool</h2>
+<p>The <code>dotnet-fm</code> tool is now a global tool and therefore requires the .NET Core 2.1-preview2 tooling. This allows the usage of <code>dotnet fm migrate</code> from other directories than the project directory.</p>
+<h2 id="connection-string-handling-changes">Connection string handling changes</h2>
+<p>The library assumes that in <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.ProcessorOptions.html#FluentMigrator_Runner_Processors_ProcessorOptions_ConnectionString">ProcessorOptions.ConnectionString</a>
+is either a connection string or a connection string identifier.
+This are the steps to load the real connection string.</p>
+<ul>
+<li>Queries all <a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.IConnectionStringReader.html">IConnectionStringReader</a> implementations
+<ul>
+<li>When a connection string is returned by one of the readers, then this
+connection string will be used</li>
+<li>When no connection string is returned, try reading from the next <a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.IConnectionStringReader.html">IConnectionStringReader</a></li>
+</ul>
+</li>
+<li>When no reader returned a connection string, then return <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.ProcessorOptions.html#FluentMigrator_Runner_Processors_ProcessorOptions_ConnectionString">ProcessorOptions.ConnectionString</a></li>
+</ul>
+<p>The connection string stored in <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.ProcessorOptions.html#FluentMigrator_Runner_Processors_ProcessorOptions_ConnectionString">ProcessorOptions.ConnectionString</a> might be overridden
+by registering the <a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.IConnectionStringReader.html">IConnectionStringReader</a> instance <code>PassThroughConnectionStringReader</code>
+as scoped service.</p>
+<p>When no connection string could be found, the <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.SelectingProcessorAccessor.html">SelectingProcessorAccessor</a> returns
+a <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.ConnectionlessProcessor.html">ConnectionlessProcessor</a> instead of the previously selected processor.</p>
+<h2 id="custom-migration-expression-validation">Custom migration expression validation</h2>
+<p>There is a new service <a class="xref" href="../../../api/FluentMigrator.Validation.IMigrationExpressionValidator.html">IMigrationExpressionValidator</a> with a default implementation <a class="xref" href="../../../api/FluentMigrator.Validation.DefaultMigrationExpressionValidator.html">DefaultMigrationExpressionValidator</a> that validates the migration expressions before executing them.</p>
+<p>This feature allows - for example - forbidding data deletions in a production environment.</p>
+<h2 id="using-systemcomponentmodeldataannotations-for-validation">Using <code>System.ComponentModel.DataAnnotations</code> for validation</h2>
+<h1 id="breaking-changes">Breaking Changes</h1>
+<p>Version 3.0 dropped support for all .NET Framework versions below 4.6.1 and the timeout values are now stored as <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>.</p>
+<h2 id="minimum-net-framework-461">Minimum: .NET Framework 4.6.1</h2>
+<p>Dropping the support for all .NET Framework versions below 4.6.1 was required, because the package now relies on the following libraries:</p>
+<ul>
+<li><a href="https://github.com/aspnet/DependencyInjection/">Microsoft.Extensions.DependencyInjection</a></li>
+<li><a href="https://github.com/aspnet/Options/">Microsoft.Extensions.Options</a></li>
+<li><a href="https://github.com/aspnet/Logging/">Microsoft.Extensions.Logging</a></li>
+<li><a href="https://github.com/aspnet/Configuration/">Microsoft.Extensions.Configuration</a></li>
+</ul>
+<h2 id="processoroptionstimeout-is-now-a-timespan"><code>ProcessorOptions.Timeout</code> is now a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></h2>
+<p>This change is part of the ongoing effort to make the API easier to understand, because it might not be clear if an <code>int timeout</code> is the timeout in milliseconds, seconds, etc..</p>
+<h2 id="icanbevalidated-not-used-anymore"><code>ICanBeValidated</code> not used anymore</h2>
+<p>The library now uses <code>System.ComponentModel.DataAnnotations</code> for validation - for example the <code>[Required]</code> attribute for expression fields that are - one might've guessed it - required.</p>
+<h2 id="migrationgeneratorfactory-not-used-anymore"><code>MigrationGeneratorFactory</code> not used anymore</h2>
+<p>The selection of the SQL generator happens using the <a class="xref" href="../../../api/FluentMigrator.Runner.Generators.IGeneratorAccessor.html">IGeneratorAccessor</a> service.</p>
+<h2 id="migrationprocessorfactoryprovider-not-used-anymore"><code>MigrationProcessorFactoryProvider</code> not used anymore</h2>
+<p>The selection of the migration processor is done with the <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.IProcessorAccessor.html">IProcessorAccessor</a> service.</p>
+<h1 id="obsolete-api">Obsolete API</h1>
+<p>Due to the introduction of dependency injection, some important migration runner related parts of the API have been deprecated. This section convers this topic and shows how to switch to the new dependency injection based API.</p>
+<h2 id="migration-runner-initialization">Migration runner initialization</h2>
+<p>This section shows the runner initialization both with dependency injection and with the <code>IRunnerContext</code>.</p>
+<div class="tabGroup" id="tabgroup_CeZOj-G++Q">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_di" role="tab" aria-controls="tabpanel_CeZOj-G++Q_di" data-tab="di" tabindex="0" aria-selected="true">New (with dependency injection)</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_obsolete" role="tab" aria-controls="tabpanel_CeZOj-G++Q_obsolete" data-tab="obsolete" tabindex="-1">Obsolete (with <code>IRunnerContext</code>)</a>
+</li>
+</ul>
+<section id="tabpanel_CeZOj-G++Q_di" role="tabpanel" data-tab="di">
+
+<pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
+    // Logging is the replacement for the old IAnnouncer
+    .AddLogging(lb =&gt; lb.AddFluentMigratorConsole())
+    // Registration of all FluentMigrator-specific services
+    .AddFluentMigratorCore()
+    // Configure the runner
+    .ConfigureRunner(
+        builder =&gt; builder
+            // Use SQLite
+            .AddSQLite()
+            // The SQLite connection string
+            .WithGlobalConnectionString(&quot;Data Source=test.db&quot;)
+            // Specify the assembly with the migrations
+            .WithMigrationsIn(typeof(MyMigration).Assembly))
+    .BuildServiceProvider();
+</code></pre>
+<p>The runner can now be created and used with:</p>
+<pre><code class="lang-cs">// Put the database update into a scope to ensure
+// that all resources will be disposed.
+using (var scope = serviceProvider.CreateScope())
+{
+    // Instantiate the runner
+    var runner = scope.ServiceProvider.GetRequiredService&lt;IMigrationRunner&gt;();
+
+    // Execute the migrations
+    runner.MigrateUp();
+}
+</code></pre>
+</section>
+<section id="tabpanel_CeZOj-G++Q_obsolete" role="tabpanel" data-tab="obsolete" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-cs">// Create the announcer to output the migration messages
+var announcer = new ConsoleAnnouncer();
+
+// Processor specific options (usually none are needed)
+var options = new ProcessorOptions();
+
+// Use SQLite
+var processorFactory = new SQLiteProcessorFactory();
+
+// Initialize the processor
+using (var processor = processorFactory.Create(
+    // The SQLite connection string
+    &quot;Data Source=test.db&quot;,
+    announcer,
+    options))
+{
+    // Configure the runner
+    var context = new RunnerContext(announcer);
+
+    // Create the migration runner
+    var runner = new MigrationRunner(
+        // Specify the assembly with the migrations
+        typeof(MyMigration).Assembly,
+        context,
+        processor);
+
+    // Run the migrations
+    runner.MigrateUp();
+}
+</code></pre>
+</section>
+</div>
+<h3 id="differences-explained">Differences explained</h3>
+<h4 id="dependency-injection">Dependency Injection</h4>
+<ul>
+<li>Allows fluent configuration</li>
+<li>Uses standard libraries
+<ul>
+<li>Dependency Injection</li>
+<li>Options</li>
+<li>Logging</li>
+</ul>
+</li>
+<li>Uses pluggable APIs
+<ul>
+<li>May use a different DI container under the hood (AutoFac, etc...)</li>
+<li>May use standard logging frameworks (log4net, nlog, etc...)</li>
+</ul>
+</li>
+</ul>
+<h4 id="obsolete-api-1">Obsolete API</h4>
+<ul>
+<li>Clunky</li>
+<li>Re-inventing the wheel</li>
+</ul>
+<h2 id="iannouncer"><code>IAnnouncer</code></h2>
+<p>The <a class="xref" href="../../../api/FluentMigrator.Runner.IAnnouncer.html">IAnnouncer</a> interface (and its implementations) were replaced by <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> and its implementations.</p>
+<h3 id="logger-registration">Logger registration</h3>
+<p>You can comfortably register the default <a class="xref" href="../../../api/FluentMigrator.Runner.Logging.FluentMigratorConsoleLogger.html">FluentMigratorConsoleLogger</a>:</p>
+<pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
+    .AddLogging(lb =&gt; lb.AddFluentMigratorConsole())
+    .BuildServiceProvider();
+</code></pre>
+<h3 id="configuring-the-logger-output">Configuring the logger output</h3>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Loggers derived from <a class="xref" href="../../../api/FluentMigrator.Runner.Logging.FluentMigratorLogger.html">FluentMigratorLogger</a> may
+use other logger option classes!</p>
+</div>
+<h4 id="enabling-output-of-elapsed-time">Enabling output of elapsed time</h4>
+<pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
+    .AddLogging(lb =&gt; lb.AddFluentMigratorConsole())
+    .Configure&lt;FluentMigratorLoggerOptions&gt;(cfg =&gt; {
+        cfg.ShowElapsedTime = true;
+    })
+    .BuildServiceProvider();
+</code></pre>
+<h4 id="enabling-output-of-sql">Enabling output of SQL</h4>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Logging the SQL messages might be a security risk. Don't store sensitive data unhashed/unencrypted!</p>
+</div>
+<pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
+    .AddLogging(lb =&gt; lb.AddFluentMigratorConsole())
+    .Configure&lt;FluentMigratorLoggerOptions&gt;(cfg =&gt; {
+        cfg.ShowSql = true;
+    })
+    .BuildServiceProvider();
+</code></pre>
+<h3 id="logger-usage">Logger usage</h3>
+<p>You don't use the loggers directly any more. Instead, you just create a constructor parameter with a type of <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> or <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>.</p>
+<pre><code class="lang-cs">public class MyMigration : ForwardOnlyMigration {
+    private readonly ILogger&lt;MyMigration&gt; _logger;
+
+    public MyMigration(ILogger&lt;MyMigration&gt; logger) {
+        _logger = logger;
+    }
+
+    public void Up() {
+        _logger.LogInformation(&quot;Creating Up migration expressions&quot;);
+    }
+}
+</code></pre>
+<h3 id="other-loggers">Other loggers</h3>
+<p>There are several other loggers, like:</p>
+<ul>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Logging.LogFileFluentMigratorLoggerProvider.html">LogFileFluentMigratorLoggerProvider</a> for logging SQL statements into a file</li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Logging.SqlScriptFluentMigratorLoggerProvider.html">SqlScriptFluentMigratorLoggerProvider</a> for logging SQL statements into a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></li>
+</ul>
+<h4 id="registration-of-logfilefluentmigratorloggerprovider">Registration of <a class="xref" href="../../../api/FluentMigrator.Runner.Logging.LogFileFluentMigratorLoggerProvider.html">LogFileFluentMigratorLoggerProvider</a></h4>
+<pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
+    .AddSingleton&lt;ILoggerProvider, LogFileFluentMigratorLoggerProvider&gt;()
+    .Configure&lt;LogFileFluentMigratorLoggerOptions&gt;(opt =&gt; {
+        opt.OutputFileName = &quot;sqlscript.sql&quot;;
+    })
+    .BuildServiceProvider();
+</code></pre>
+<h2 id="imigrationrunnerconventionsgetmigrationinfo"><a class="xref" href="../../../api/FluentMigrator.Runner.IMigrationRunnerConventions.html#FluentMigrator_Runner_IMigrationRunnerConventions_GetMigrationInfo">IMigrationRunnerConventions.GetMigrationInfo</a></h2>
+<p>This function was replaced by <a class="xref" href="../../../api/FluentMigrator.Runner.IMigrationRunnerConventions.html#FluentMigrator_Runner_IMigrationRunnerConventions_GetMigrationInfoForMigration">IMigrationRunnerConventions.GetMigrationInfoForMigration</a>, because the instantiation will be done using the dependency injection framework.</p>
+<h2 id="iprofileloaderapplyprofiles"><a class="xref" href="../../../api/FluentMigrator.Runner.IProfileLoader.html#FluentMigrator_Runner_IProfileLoader_ApplyProfiles">IProfileLoader.ApplyProfiles</a></h2>
+<p>This function was replaced by <a class="xref" href="../../../api/FluentMigrator.Runner.IProfileLoader.html#FluentMigrator_Runner_IProfileLoader_ApplyProfiles_FluentMigrator_Runner_IMigrationRunner_">IProfileLoader.ApplyProfiles(IMigrationRunner)</a> to avoid circular dependencies.</p>
+<h2 id="iprofileloaderfindprofilesiniassemblycollection-string"><a class="xref" href="../../../api/FluentMigrator.Runner.IProfileLoader.html#FluentMigrator_Runner_IProfileLoader_FindProfilesIn_FluentMigrator_Infrastructure_IAssemblyCollection_System_String_">IProfileLoader.FindProfilesIn(IAssemblyCollection, String)</a></h2>
+<p>This function is not used anymore.</p>
+<h2 id="imigrationprocessoroptions"><a class="xref" href="../../../api/FluentMigrator.IMigrationProcessorOptions.html">IMigrationProcessorOptions</a></h2>
+<p>This interface is not used anymore. We use <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.ProcessorOptions.html">ProcessorOptions</a> instead.</p>
+<h2 id="imigrationprocessorfactory"><a class="xref" href="../../../api/FluentMigrator.Runner.Processors.IMigrationProcessorFactory.html">IMigrationProcessorFactory</a></h2>
+<p>The factories aren't needed anymore. The registered services provide everything that they need for their configuration.</p>
+<h2 id="irunnercontext-and-runnercontext"><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a> and <a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerContext.html">RunnerContext</a></h2>
+<p>This properties of this interface/class were refactored into several classes.</p>
+<h3 id="properties-moved-into-runneroptions">Properties moved into <a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerOptions.html">RunnerOptions</a></h3>
+<ul>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_ApplicationContext">ApplicationContext</a> (<strong>obsolete!</strong>)</li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_AllowBreakingChange">AllowBreakingChange</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_NoConnection">NoConnection</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_Profile">Profile</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_StartVersion">StartVersion</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_Steps">Steps</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_Tags">Tags</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_Task">Task</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_TransactionPerSession">TransactionPerSession</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_Version">Version</a></li>
+</ul>
+<h3 id="properties-moved-into-processoroptions">Properties moved into <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.ProcessorOptions.html">ProcessorOptions</a></h3>
+<ul>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Processors.ProcessorOptions.html#FluentMigrator_Runner_Processors_ProcessorOptions_ConnectionString">ConnectionString</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Processors.ProcessorOptions.html#FluentMigrator_Runner_Processors_ProcessorOptions_PreviewOnly">PreviewOnly</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Processors.ProcessorOptions.html#FluentMigrator_Runner_Processors_ProcessorOptions_ProviderSwitches">ProviderSwitches</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Processors.ProcessorOptions.html#FluentMigrator_Runner_Processors_ProcessorOptions_Timeout">Timeout</a></li>
+</ul>
+<h3 id="properties-moved-into-typefilteroptions">Properties moved into <a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.TypeFilterOptions.html">TypeFilterOptions</a></h3>
+<ul>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.TypeFilterOptions.html#FluentMigrator_Runner_Initialization_TypeFilterOptions_Namespace">Namespace</a></li>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.TypeFilterOptions.html#FluentMigrator_Runner_Initialization_TypeFilterOptions_NestedNamespaces">NestedNamespaces</a></li>
+</ul>
+<h3 id="properties-moved-into-appconfigconnectionstringaccessoroptions">Properties moved into <a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.NetFramework.AppConfigConnectionStringAccessorOptions.html">AppConfigConnectionStringAccessorOptions</a></h3>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>This class only works under the full .NET Framework and is marked as obsolete!
+Provide access to an <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a> service.
+The FluentMigrator library will use it to call the <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationextensions.getconnectionstring#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetConnectionString_Microsoft_Extensions_Configuration_IConfiguration_System_String_">GetConnectionString</a> extension method.</p>
+</div>
+<ul>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.NetFramework.AppConfigConnectionStringAccessorOptions.html#FluentMigrator_Runner_Initialization_NetFramework_AppConfigConnectionStringAccessorOptions_ConnectionStringConfigPath">ConnectionStringPath ➔ ConnectionStringConfigPath</a></li>
+</ul>
+<h3 id="properties-moved-into-selectingprocessoraccessoroptions">Properties moved into <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions.html">SelectingProcessorAccessorOptions</a></h3>
+<ul>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions.html#FluentMigrator_Runner_Processors_SelectingProcessorAccessorOptions_ProcessorId">Database ➔ ProcessorId</a></li>
+</ul>
+<h3 id="properties-moved-into-assemblysourceoptions">Properties moved into <a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.AssemblySourceOptions.html">AssemblySourceOptions</a></h3>
+<ul>
+<li><a class="xref" href="../../../api/FluentMigrator.Runner.Initialization.AssemblySourceOptions.html#FluentMigrator_Runner_Initialization_AssemblySourceOptions_AssemblyNames">Targets ➔ AssemblyNames</a></li>
+</ul>
+<h3 id="properties-with-no-direct-replacement">Properties with no direct replacement</h3>
+<ul>
+<li><code>Announcer</code>: Get your <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> with dependency injection instead</li>
+<li><code>StopWatch</code>: Get your <a class="xref" href="../../../api/FluentMigrator.Runner.IStopWatch.html">IStopWatch</a> with dependency injection instead</li>
+</ul>
+<h3 id="workingdirectory">WorkingDirectory</h3>
+<p>This is set directly by the creation of a DefaultConventionSet and adding it as singleton to the service collection.</p>
+<pre><code class="lang-cs">var conventionSet = new DefaultConventionSet(defaultSchemaName: null, WorkingDirectory);
+services.AddSingleton&lt;IConventionSet&gt;(conventionSet)
+</code></pre>
+<h3 id="defaultschemaname">DefaultSchemaName</h3>
+<p>This is set directly by the creation of a DefaultConventionSet and adding it as singleton to the service collection.</p>
+<pre><code class="lang-cs">var conventionSet = new DefaultConventionSet(DefaultSchemaName, workingDirectory: null);
+services.AddSingleton&lt;IConventionSet&gt;(conventionSet)
+</code></pre>
+<h2 id="compatabilitymode-renamed-to-compatibilitymode"><code>CompatabilityMode</code> renamed to <a class="xref" href="../../../api/FluentMigrator.Runner.CompatibilityMode.html">CompatibilityMode</a></h2>
+<p>The spelling has been fixed.</p>
+<h2 id="applicationcontext"><code>ApplicationContext</code></h2>
+<p>It is not needed anymore due to the dependency injection providing all services one may need.</p>
+<h2 id="manifestresourcenamewithassembly-replaced-by-valuetuple"><code>ManifestResourceNameWithAssembly</code> replaced by <code>ValueTuple</code></h2>
+<p>This class was overkill.</p>
+<h2 id="migrationgeneratorfactory"><code>MigrationGeneratorFactory</code></h2>
+<p>This isn't needed anymore, because all factories must be added dynamically using the <a class="xref" href="../../../api/Microsoft.Extensions.DependencyInjection.FluentMigratorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_FluentMigratorServiceCollectionExtensions_ConfigureRunner_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_FluentMigrator_Runner_IMigrationRunnerBuilder__">ConfigureRunner</a> extension method.</p>
+<p><a id="factory-example"></a>Example:</p>
+<pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
+    // Registration of all FluentMigrator-specific services
+    .AddFluentMigratorCore()
+    // Configure the runner
+    .ConfigureRunner(
+        builder =&gt; builder
+            // Add database support
+            .AddSQLite()
+            .AddSqlServer2008()
+            .AddFirebird()
+            /* TODO: More configuration */
+    )
+    /* TODO: Add more services */
+    .BuildServiceProvider();
+</code></pre>
+<h3 id="selecting-the-database">Selecting the database</h3>
+<p>The key is the <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.IProcessorAccessor.html">IProcessorAccessor</a> service and its
+default implementation <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.SelectingProcessorAccessor.html">SelectingProcessorAccessor</a>,
+which is configured using the <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions.html">SelectingProcessorAccessorOptions</a>.</p>
+<blockquote>
+<p>[!INFO]
+When the <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions.html">SelectingProcessorAccessorOptions</a> aren't configured,
+then the value from the <a class="xref" href="../../../api/FluentMigrator.Runner.Generators.SelectingGeneratorAccessorOptions.html">SelectingGeneratorAccessorOptions</a>
+is used.</p>
+</blockquote>
+<blockquote>
+<p>[!INFO]
+When neiter a processor nor generator ID was specified, then the added processor
+will be used - but only where there is only one! When no processor or more than
+one was specified, then an exception gets thrown.</p>
+</blockquote>
+<pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
+    // Registration of all FluentMigrator-specific services
+    .AddFluentMigratorCore()
+    // Configure the runner
+    .ConfigureRunner(
+        builder =&gt; builder
+            // Add database support
+            .AddSQLite()
+            .AddSqlServer2008()
+            .AddFirebird()
+            /* TODO: More configuration */
+    )
+    .Configure&lt;SelectingProcessorAccessorOptions&gt;(cfg =&gt; {
+        // Selects SQLite from the set of supported databases
+        cfg.ProcessorId = &quot;sqlite&quot;;
+    })
+    /* TODO: Add more services */
+    .BuildServiceProvider();
+</code></pre>
+<h2 id="migrationprocessorfactoryprovider"><code>MigrationProcessorFactoryProvider</code></h2>
+<p>This isn't needed anymore, because all processor factory providers must be added dynamically using the <a class="xref" href="../../../api/Microsoft.Extensions.DependencyInjection.FluentMigratorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_FluentMigratorServiceCollectionExtensions_ConfigureRunner_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_FluentMigrator_Runner_IMigrationRunnerBuilder__">ConfigureRunner</a> extension method.</p>
+<p>You can find an example <a href="#factory-example">above</a>.</p>
+<h3 id="selecting-the-database-1">Selecting the database</h3>
+<p>The key is the <a class="xref" href="../../../api/FluentMigrator.Runner.Generators.IGeneratorAccessor.html">IGeneratorAccessor</a> service and its
+default implementation <a class="xref" href="../../../api/FluentMigrator.Runner.Generators.SelectingGeneratorAccessor.html">SelectingGeneratorAccessor</a>,
+which is configured using the <a class="xref" href="../../../api/FluentMigrator.Runner.Generators.SelectingGeneratorAccessorOptions.html">SelectingGeneratorAccessorOptions</a>.</p>
+<blockquote>
+<p>[!INFO]
+When the <a class="xref" href="../../../api/FluentMigrator.Runner.Generators.SelectingGeneratorAccessorOptions.html">SelectingGeneratorAccessorOptions</a> aren't configured,
+then the value from the <a class="xref" href="../../../api/FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions.html">SelectingProcessorAccessorOptions</a>
+is used.</p>
+</blockquote>
+<blockquote>
+<p>[!INFO]
+When neiter a generator nor processor ID was specified, then the added generator
+will be used - but only where there is only one! When no generator or more than
+one was specified, then an exception gets thrown.</p>
+</blockquote>
+<pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
+    // Registration of all FluentMigrator-specific services
+    .AddFluentMigratorCore()
+    // Configure the runner
+    .ConfigureRunner(
+        builder =&gt; builder
+            // Add database support
+            .AddSQLite()
+            .AddSqlServer2008()
+            .AddFirebird()
+            /* TODO: More configuration */
+    )
+    .Configure&lt;SelectingGeneratorAccessorOptions&gt;(cfg =&gt; {
+        // Selects SQLite from the set of supported databases
+        cfg.GeneratorId = &quot;sqlite&quot;;
+    })
+    /* TODO: Add more services */
+    .BuildServiceProvider();
+</code></pre>
+<h2 id="itypemapgettypemapdbtype-int-int"><code>ITypeMap.GetTypeMap(DbType, int, int)</code></h2>
+<p>Sometimes, it is possible that a given database type needs a precision of 0, so we cannot use 0 an indicator for an unspecified value anymore. Therefore, we provide an <a class="xref" href="../../../api/FluentMigrator.Runner.Generators.ITypeMap.html#FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_System_Data_DbType_System_Nullable_System_Int32__System_Nullable_System_Int32__">overload using nullable integer values</a>.</p>
+<h2 id="idbfactory"><code>IDbFactory</code></h2>
+<p>The implementations will remain, but the interface will be gone.</p>
+<h2 id="icanbevalidated"><code>ICanBeValidated</code></h2>
+<p>The library now uses <code>System.ComponentModel.DataAnnotations</code> for validation - for example the <code>[Required]</code> attribute for expression fields that are - one might've guessed it - required.</p>
+<h2 id="migrationrunnermaintenanceloader-is-read-only"><code>MigrationRunner.MaintenanceLoader</code> is read-only</h2>
+<p>Don't set the maintenance loader directly. Just register your own as a service.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/docfx_project/articles/guides/upgrades/guide-2.0-to-3.0.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

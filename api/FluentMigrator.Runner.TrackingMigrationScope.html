@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TrackingMigrationScope
    | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.33.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -62,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -81,7 +83,8 @@
   
   <h1 id="FluentMigrator_Runner_TrackingMigrationScope" data-uid="FluentMigrator.Runner.TrackingMigrationScope" class="text-break">Class TrackingMigrationScope
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A migration scope that encapsulates database changes in a transaction</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -131,11 +134,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_TrackingMigrationScope__ctor_System_Action_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.TrackingMigrationScope.%23ctor(System.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L25">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L30">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_TrackingMigrationScope__ctor_" data-uid="FluentMigrator.Runner.TrackingMigrationScope.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_TrackingMigrationScope__ctor_System_Action_" data-uid="FluentMigrator.Runner.TrackingMigrationScope.#ctor(System.Action)">TrackingMigrationScope(Action)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.TrackingMigrationScope.html">TrackingMigrationScope</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -154,7 +158,8 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
         <td><span class="parametername">disposalAction</span></td>
-        <td></td>
+        <td><p>Called after the scope was cancelled</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -165,11 +170,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_TrackingMigrationScope_IsActive.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.TrackingMigrationScope.IsActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L37">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L44">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_TrackingMigrationScope_IsActive_" data-uid="FluentMigrator.Runner.TrackingMigrationScope.IsActive*"></a>
   <h4 id="FluentMigrator_Runner_TrackingMigrationScope_IsActive" data-uid="FluentMigrator.Runner.TrackingMigrationScope.IsActive">IsActive</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the migration scope is active?</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -190,6 +196,9 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="FluentMigrator_Runner_TrackingMigrationScope_IsActive_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A migration scope is considered active when it is the outmost scope.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -197,37 +206,45 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_TrackingMigrationScope_Cancel.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.TrackingMigrationScope.Cancel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L46">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L55">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_TrackingMigrationScope_Cancel_" data-uid="FluentMigrator.Runner.TrackingMigrationScope.Cancel*"></a>
   <h4 id="FluentMigrator_Runner_TrackingMigrationScope_Cancel" data-uid="FluentMigrator.Runner.TrackingMigrationScope.Cancel">Cancel()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Marks the scope as cancelled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Cancel()</code></pre>
   </div>
+  <h5 id="FluentMigrator_Runner_TrackingMigrationScope_Cancel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This usually involves the rollback of a transaction.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_TrackingMigrationScope_Complete.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.TrackingMigrationScope.Complete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L39">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L47">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_TrackingMigrationScope_Complete_" data-uid="FluentMigrator.Runner.TrackingMigrationScope.Complete*"></a>
   <h4 id="FluentMigrator_Runner_TrackingMigrationScope_Complete" data-uid="FluentMigrator.Runner.TrackingMigrationScope.Complete">Complete()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Marks the scope as complete.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Complete()</code></pre>
   </div>
+  <h5 id="FluentMigrator_Runner_TrackingMigrationScope_Complete_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This usually involves the commit a transaction.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_TrackingMigrationScope_Dispose.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.TrackingMigrationScope.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L31">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L37">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_TrackingMigrationScope_Dispose_" data-uid="FluentMigrator.Runner.TrackingMigrationScope.Dispose*"></a>
   <h4 id="FluentMigrator_Runner_TrackingMigrationScope_Dispose" data-uid="FluentMigrator.Runner.TrackingMigrationScope.Dispose">Dispose()</h4>
@@ -242,11 +259,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_TrackingMigrationScope_DoCancel.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.TrackingMigrationScope.DoCancel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L57">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L72">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_TrackingMigrationScope_DoCancel_" data-uid="FluentMigrator.Runner.TrackingMigrationScope.DoCancel*"></a>
   <h4 id="FluentMigrator_Runner_TrackingMigrationScope_DoCancel" data-uid="FluentMigrator.Runner.TrackingMigrationScope.DoCancel">DoCancel()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when <a class="xref" href="FluentMigrator.Runner.TrackingMigrationScope.html#FluentMigrator_Runner_TrackingMigrationScope_Cancel">Cancel()</a> was called and the scope was active</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -257,11 +275,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_TrackingMigrationScope_DoComplete.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.TrackingMigrationScope.DoComplete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L53">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L65">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_TrackingMigrationScope_DoComplete_" data-uid="FluentMigrator.Runner.TrackingMigrationScope.DoComplete*"></a>
   <h4 id="FluentMigrator_Runner_TrackingMigrationScope_DoComplete" data-uid="FluentMigrator.Runner.TrackingMigrationScope.DoComplete">DoComplete()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when <a class="xref" href="FluentMigrator.Runner.TrackingMigrationScope.html#FluentMigrator_Runner_TrackingMigrationScope_Complete">Complete()</a> was called and the scope was active</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -285,7 +304,7 @@
                     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_TrackingMigrationScope.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.TrackingMigrationScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/TrackingMigrationScope.cs/#L22" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

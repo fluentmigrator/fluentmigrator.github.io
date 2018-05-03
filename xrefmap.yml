@@ -4,6 +4,9 @@ references:
 - uid: app-context
   name: 'ApplicationContext: Passing parameters to Migrations'
   href: articles/obsolete/app-context.html
+- uid: contribution
+  name: How to contribute
+  href: articles/guides/contribution.html
 - uid: db-functions
   name: Database functions
   href: articles/db-functions.html
@@ -32748,6 +32751,12 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Validation.IValidationChildren.Children
   nameWithType: IValidationChildren.Children
+- uid: glossary
+  name: Glossary
+  href: articles/glossary.html
+- uid: guides-overview
+  name: FluentMigrator Guides
+  href: articles/guides/overview.html
 - uid: Microsoft.Extensions.DependencyInjection
   name: Microsoft.Extensions.DependencyInjection
   href: api/Microsoft.Extensions.DependencyInjection.html
@@ -32825,9 +32834,12 @@ references:
 - uid: sql-server-extensions.md
   name: SQL Server specific extensions
   href: articles/extensions/sql-server-extensions.html
+- uid: upgrade-guide-1.6-to-2.0
+  name: Upgrade Guide from 1.6 to 2.0
+  href: articles/guides/upgrades/guide-1.6-to-2.0.html
 - uid: upgrade-guide-2.0-to-3.0
   name: Upgrade Guide from 2.0 to 3.0
-  href: articles/upgrades/guide-2.0-to-3.0.html
+  href: articles/guides/upgrades/guide-2.0-to-3.0.html
 - uid: version-table-metadata
   name: Custom metadata for the VersionInfo table
   href: articles/version-table-metadata.html

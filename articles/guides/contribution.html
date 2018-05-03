@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to contribute | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How to contribute | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="contribution">
+<h1 id="how-to-contribute">How to contribute</h1>
+
+<ol>
+<li><a href="https://github.com/fluentmigrator/fluentmigrator">Fork on GitHub</a></li>
+<li><a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell">Create a branch</a></li>
+<li>Code (and add tests)</li>
+<li>Create a pull request on GitHub
+<ul>
+<li>Target the <code>develop</code> branch for API-breaking changes</li>
+<li>Target the <code>master</code> branch for non-API-breaking changes and/or hotfixes</li>
+</ul>
+</li>
+<li>Get the pull request merged</li>
+<li>Done</li>
+</ol>
+<h1 id="how-to-build-the-code">How to build the code</h1>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You must install <a href="http://www.mono-project.com/">mono</a> on non-Windows platforms!</p>
+</div>
+<pre><code>dotnet build FluentMigrator.sln
+</code></pre>
+<h1 id="how-to-test-the-code">How to test the code</h1>
+<h2 id="windows">Windows</h2>
+<pre><code>dotnet test test\FluentMigrator.Tests\FluentMigrator.Tests.csproj
+</code></pre>
+<h2 id="linux-macos">Linux, MacOS</h2>
+<pre><code>dotnet test test/FluentMigrator.Tests/FluentMigrator.Tests.csproj --filter &quot;TestCategory!=NotWorkingOnMono&quot;
+</code></pre>
+<h2 id="enabling-integration-tests">Enabling integration tests</h2>
+<p>Only integration tests for two databases are enabled by default:</p>
+<ul>
+<li>SQL Server Compact Edition
+<ul>
+<li>Only runs on Windows due to inability to load the needed DLLs</li>
+</ul>
+</li>
+<li>SQLite
+<ul>
+<li>This requires an installed <code>Mono.Data.Sqlite</code> package on Linux</li>
+</ul>
+</li>
+</ul>
+<p>Every database can be configured using the <code>dotnet user-secrets</code> tool.</p>
+<p>Enabling PostgreSQL integration tests might look like this:</p>
+<ol>
+<li>Create a user <code>fluentmigrator</code> with password <code>fluentmigrator</code></li>
+<li>Add a database <code>FluentMigrator</code> with the owner <code>fluentmigrator</code></li>
+<li>Type the following instructions:</li>
+</ol>
+<pre><code class="lang-bash"># change into the test project directory
+cd test/FluentMigrator.Tests
+# Set the PostgreSQL connection string
+dotnet user-secrets set &quot;TestConnectionStrings:Postgres:ConnectionString&quot; &quot;Server=127.0.0.1;Port=5432;Database=FluentMigrator;User Id=fluentmigrator;Password=fluentmigrator&quot;
+# Enable the PostgreSQL integration tests
+dotnet user-secrets set &quot;TestConnectionStrings:Postgres:IsEnabled&quot; True
+</code></pre>
+<p>When you run the unit tests, the integration tests for PostgreSQL are run as well.</p>
+<h1 id="how-to-create-nuget-packages">How to create NuGet packages</h1>
+<pre><code>dotnet pack ./FluentMigrator.sln --output &quot;absolute-path-to-output-directory&quot;
+</code></pre>
+<h1 id="resharperrider-specific-support">ReSharper/Rider specific support</h1>
+<p>There is a new template <code>ctorc</code> which creates a StyleCop-compatible constructor summary.</p>
+<h1 id="code-style">Code style</h1>
+<p>Please use an editor that supports the <a href="https://raw.githubusercontent.com/fluentmigrator/fluentmigrator/master/.editorconfig">.editorconfig</a>
+and/or the ReSharper/Rider settings <a href="https://raw.githubusercontent.com/fluentmigrator/fluentmigrator/master/FluentMigrator.sln.DotSettings">FluentMigrator.sln.DotSettings</a>.</p>
+<h2 id="generic">Generic</h2>
+<ul>
+<li>Use spaces for indention</li>
+<li>Add a &quot;new line&quot; character when the last line is not empty</li>
+<li>Remove trailing whitespace characters</li>
+</ul>
+<h2 id="for-c">For C#</h2>
+<ul>
+<li>Indent size is 4 characters</li>
+<li>Use <code>var</code> for built-in types</li>
+<li>Use <code>var</code> when the type is apparent</li>
+<li>Prefer braces</li>
+<li>Sort using directives</li>
+<li><code>System</code> using directives first</li>
+<li>Empty line between using directive groups</li>
+<li>Line break before open brace</li>
+<li>Add a license header region to every *.cs file</li>
+</ul>
+<pre><code class="lang-cs">#region License
+//
+// Copyright (c) 2018, Fluent Migrator Project
+//
+// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+#endregion
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/docfx_project/articles/guides/contribution.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

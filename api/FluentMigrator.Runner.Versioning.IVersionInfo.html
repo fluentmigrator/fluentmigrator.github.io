@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IVersionInfo
    | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.33.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -62,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -81,7 +83,8 @@
   
   <h1 id="FluentMigrator_Runner_Versioning_IVersionInfo" data-uid="FluentMigrator.Runner.Versioning.IVersionInfo" class="text-break">Interface IVersionInfo
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Interface to query/update migration information</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Versioning.html">FluentMigrator.Runner.Versioning</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
@@ -96,11 +99,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Versioning_IVersionInfo_AddAppliedMigration_System_Int64_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Versioning.IVersionInfo.AddAppliedMigration(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/Versioning/IVersionInfo.cs/#L5">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/Versioning/IVersionInfo.cs/#L12">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Versioning_IVersionInfo_AddAppliedMigration_" data-uid="FluentMigrator.Runner.Versioning.IVersionInfo.AddAppliedMigration*"></a>
   <h4 id="FluentMigrator_Runner_Versioning_IVersionInfo_AddAppliedMigration_System_Int64_" data-uid="FluentMigrator.Runner.Versioning.IVersionInfo.AddAppliedMigration(System.Int64)">AddAppliedMigration(Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a migration version number as applied</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -119,7 +123,8 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">migration</span></td>
-        <td></td>
+        <td><p>The version number</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -128,11 +133,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Versioning_IVersionInfo_AppliedMigrations.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Versioning.IVersionInfo.AppliedMigrations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/Versioning/IVersionInfo.cs/#L6">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/Versioning/IVersionInfo.cs/#L18">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Versioning_IVersionInfo_AppliedMigrations_" data-uid="FluentMigrator.Runner.Versioning.IVersionInfo.AppliedMigrations*"></a>
   <h4 id="FluentMigrator_Runner_Versioning_IVersionInfo_AppliedMigrations" data-uid="FluentMigrator.Runner.Versioning.IVersionInfo.AppliedMigrations">AppliedMigrations()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the version numbers of all applied migrations</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -149,7 +155,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
-        <td></td>
+        <td><p>the version numbers of all applied migrations</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -158,11 +165,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Versioning_IVersionInfo_HasAppliedMigration_System_Int64_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Versioning.IVersionInfo.HasAppliedMigration(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/Versioning/IVersionInfo.cs/#L7">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/Versioning/IVersionInfo.cs/#L25">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Versioning_IVersionInfo_HasAppliedMigration_" data-uid="FluentMigrator.Runner.Versioning.IVersionInfo.HasAppliedMigration*"></a>
   <h4 id="FluentMigrator_Runner_Versioning_IVersionInfo_HasAppliedMigration_System_Int64_" data-uid="FluentMigrator.Runner.Versioning.IVersionInfo.HasAppliedMigration(System.Int64)">HasAppliedMigration(Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether a migration with the given version number has been applied</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -181,7 +189,8 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">migration</span></td>
-        <td></td>
+        <td><p>The migration version number to validate</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -196,7 +205,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p><code>true</code> when the migration with the given version number has been applied</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,11 +215,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Versioning_IVersionInfo_Latest.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Versioning.IVersionInfo.Latest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/Versioning/IVersionInfo.cs/#L8">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/Versioning/IVersionInfo.cs/#L31">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Versioning_IVersionInfo_Latest_" data-uid="FluentMigrator.Runner.Versioning.IVersionInfo.Latest*"></a>
   <h4 id="FluentMigrator_Runner_Versioning_IVersionInfo_Latest" data-uid="FluentMigrator.Runner.Versioning.IVersionInfo.Latest">Latest()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the version number of the latest migration that has been applied</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -226,7 +237,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td></td>
+        <td><p>The version number</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -241,7 +253,7 @@
                     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Versioning_IVersionInfo.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Versioning.IVersionInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/Versioning/IVersionInfo.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/Versioning/IVersionInfo.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

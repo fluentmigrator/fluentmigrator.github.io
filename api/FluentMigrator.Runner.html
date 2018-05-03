@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace FluentMigrator.Runner
    | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.33.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -62,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -139,7 +141,8 @@
       <section><p>Extension methods for <a class="xref" href="FluentMigrator.Runner.IMigrationRunnerBuilder.html">IMigrationRunnerBuilder</a></p>
 </section>
       <h4><a class="xref" href="FluentMigrator.Runner.NoOpMigrationScope.html">NoOpMigrationScope</a></h4>
-      <section></section>
+      <section><p>A &quot;no-operation&quot; migration scope</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.OracleRunnerBuilderExtensions.html">OracleRunnerBuilderExtensions</a></h4>
       <section><p>Extension methods for <a class="xref" href="FluentMigrator.Runner.IMigrationRunnerBuilder.html">IMigrationRunnerBuilder</a></p>
 </section>
@@ -170,9 +173,11 @@
       <h4><a class="xref" href="FluentMigrator.Runner.StopWatch.html">StopWatch</a></h4>
       <section></section>
       <h4><a class="xref" href="FluentMigrator.Runner.TrackingMigrationScope.html">TrackingMigrationScope</a></h4>
-      <section></section>
+      <section><p>A migration scope that encapsulates database changes in a transaction</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.TransactionalMigrationScope.html">TransactionalMigrationScope</a></h4>
-      <section></section>
+      <section><p>A migration scope encapsulating migrations in a transaction</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.VersionLoader.html">VersionLoader</a></h4>
       <section></section>
     <h3 id="interfaces">Interfaces
@@ -184,23 +189,27 @@
       <h4><a class="xref" href="FluentMigrator.Runner.IMigrationInformationLoader.html">IMigrationInformationLoader</a></h4>
       <section></section>
       <h4><a class="xref" href="FluentMigrator.Runner.IMigrationRunner.html">IMigrationRunner</a></h4>
-      <section></section>
+      <section><p>The migration runner</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.IMigrationRunnerBuilder.html">IMigrationRunnerBuilder</a></h4>
       <section><p>An interface for configuring migration runner services</p>
 </section>
       <h4><a class="xref" href="FluentMigrator.Runner.IMigrationRunnerConventions.html">IMigrationRunnerConventions</a></h4>
       <section></section>
       <h4><a class="xref" href="FluentMigrator.Runner.IMigrationScope.html">IMigrationScope</a></h4>
-      <section></section>
+      <section><p>A migration scope that encapsulates database changes in a transaction</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.IMigrationScopeStarter.html">IMigrationScopeStarter</a></h4>
-      <section></section>
+      <section><p>Manually start a migration scope</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.IProfileLoader.html">IProfileLoader</a></h4>
       <section><p>Interface to load migrations tagged with a profile name</p>
 </section>
       <h4><a class="xref" href="FluentMigrator.Runner.IStopWatch.html">IStopWatch</a></h4>
       <section></section>
       <h4><a class="xref" href="FluentMigrator.Runner.IVersionLoader.html">IVersionLoader</a></h4>
-      <section></section>
+      <section><p>Manages the version table and the stored versions</p>
+</section>
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="FluentMigrator.Runner.CompatabilityMode.html">CompatabilityMode</a></h4>

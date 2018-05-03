@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ColumnBase
    | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.33.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -62,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -81,7 +83,8 @@
   
   <h1 id="FluentMigrator_Runner_Generators_Base_ColumnBase" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase" class="text-break">Class ColumnBase
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The base class for column definitions</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -129,11 +132,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase__ctor_FluentMigrator_Runner_Generators_ITypeMap_FluentMigrator_Runner_Generators_IQuoter_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.%23ctor(FluentMigrator.Runner.Generators.ITypeMap%2CFluentMigrator.Runner.Generators.IQuoter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L31">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L43">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase__ctor_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase__ctor_FluentMigrator_Runner_Generators_ITypeMap_FluentMigrator_Runner_Generators_IQuoter_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.#ctor(FluentMigrator.Runner.Generators.ITypeMap,FluentMigrator.Runner.Generators.IQuoter)">ColumnBase(ITypeMap, IQuoter)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.Generators.Base.ColumnBase.html">ColumnBase</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -152,12 +156,14 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Runner.Generators.ITypeMap.html">ITypeMap</a></td>
         <td><span class="parametername">typeMap</span></td>
-        <td></td>
+        <td><p>The type map</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="FluentMigrator.Runner.Generators.IQuoter.html">IQuoter</a></td>
         <td><span class="parametername">quoter</span></td>
-        <td></td>
+        <td><p>The quoter</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -168,11 +174,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_ClauseOrder.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.ClauseOrder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L29">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L36">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_ClauseOrder_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.ClauseOrder*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_ClauseOrder" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.ClauseOrder">ClauseOrder</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the clause order</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,11 +205,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_ForeignKeyConstraint.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.ForeignKeyConstraint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L38">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L62">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_ForeignKeyConstraint_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.ForeignKeyConstraint*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_ForeignKeyConstraint" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.ForeignKeyConstraint">ForeignKeyConstraint</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The default foreign key constraint format</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -228,11 +236,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_Quoter.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.Quoter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L40">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L67">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_Quoter_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.Quoter*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_Quoter" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.Quoter">Quoter</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the quoter</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -260,11 +269,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_AddPrimaryKeyConstraint_System_String_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.AddPrimaryKeyConstraint(System.String%2CSystem.Collections.Generic.IEnumerable%7BFluentMigrator.Model.ColumnDefinition%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L226">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L316">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_AddPrimaryKeyConstraint_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.AddPrimaryKeyConstraint*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_AddPrimaryKeyConstraint_System_String_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.AddPrimaryKeyConstraint(System.String,System.Collections.Generic.IEnumerable{FluentMigrator.Model.ColumnDefinition})">AddPrimaryKeyConstraint(String, IEnumerable&lt;ColumnDefinition&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates the primary key constraint SQL fragment</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -283,12 +293,14 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableName</span></td>
-        <td></td>
+        <td><p>The table name</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
         <td><span class="parametername">primaryKeyColumns</span></td>
-        <td></td>
+        <td><p>The primary key column defintions</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -303,7 +315,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -312,11 +325,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_FormatCascade_System_String_System_Data_Rule_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.FormatCascade(System.String%2CSystem.Data.Rule)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L120">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L195">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatCascade_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatCascade*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatCascade_System_String_System_Data_Rule_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatCascade(System.String,System.Data.Rule)">FormatCascade(String, Rule)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Formats the foreign key cascading SQL fragment</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -335,12 +349,14 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">onWhat</span></td>
-        <td></td>
+        <td><p>The action this cascade clause applies to (update or delete)</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.rule">Rule</a></td>
         <td><span class="parametername">rule</span></td>
-        <td></td>
+        <td><p>The cascade rule</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -355,7 +371,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The formatted SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -364,11 +381,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_FormatCollation_FluentMigrator_Model_ColumnDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.FormatCollation(FluentMigrator.Model.ColumnDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L108">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L184">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatCollation_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatCollation*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatCollation_FluentMigrator_Model_ColumnDefinition_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatCollation(FluentMigrator.Model.ColumnDefinition)">FormatCollation(ColumnDefinition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Formats the collation of a text column</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -387,7 +405,8 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a></td>
         <td><span class="parametername">column</span></td>
-        <td></td>
+        <td><p>The column definition</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -402,7 +421,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -411,11 +431,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_FormatDefaultValue_FluentMigrator_Model_ColumnDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.FormatDefaultValue(FluentMigrator.Model.ColumnDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L78">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L139">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatDefaultValue_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatDefaultValue*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatDefaultValue_FluentMigrator_Model_ColumnDefinition_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatDefaultValue(FluentMigrator.Model.ColumnDefinition)">FormatDefaultValue(ColumnDefinition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Formats the column default value</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -434,7 +455,8 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a></td>
         <td><span class="parametername">column</span></td>
-        <td></td>
+        <td><p>The column definition</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -449,7 +471,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The formatted column default value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -458,11 +481,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_FormatForeignKey_FluentMigrator_Model_ForeignKeyDefinition_System_Func_FluentMigrator_Model_ForeignKeyDefinition_System_String__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.FormatForeignKey(FluentMigrator.Model.ForeignKeyDefinition%2CSystem.Func%7BFluentMigrator.Model.ForeignKeyDefinition%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L146">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L223">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatForeignKey_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatForeignKey*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatForeignKey_FluentMigrator_Model_ForeignKeyDefinition_System_Func_FluentMigrator_Model_ForeignKeyDefinition_System_String__" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatForeignKey(FluentMigrator.Model.ForeignKeyDefinition,System.Func{FluentMigrator.Model.ForeignKeyDefinition,System.String})">FormatForeignKey(ForeignKeyDefinition, Func&lt;ForeignKeyDefinition, String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Formats the foreign key SQL fragment optionally using a custom foreign key name generator</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -481,12 +505,14 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ForeignKeyDefinition.html">ForeignKeyDefinition</a></td>
         <td><span class="parametername">foreignKey</span></td>
-        <td></td>
+        <td><p>The foreign key definition</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="FluentMigrator.Model.ForeignKeyDefinition.html">ForeignKeyDefinition</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">fkNameGeneration</span></td>
-        <td></td>
+        <td><p>The custom foreign key name generator</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -501,7 +527,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -510,11 +537,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_FormatIdentity_FluentMigrator_Model_ColumnDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.FormatIdentity(FluentMigrator.Model.ColumnDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L100">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L166">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatIdentity_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatIdentity*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatIdentity_FluentMigrator_Model_ColumnDefinition_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatIdentity(FluentMigrator.Model.ColumnDefinition)">FormatIdentity(ColumnDefinition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Formats the identity SQL fragment</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -533,7 +561,8 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a></td>
         <td><span class="parametername">column</span></td>
-        <td></td>
+        <td><p>The column definition</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -548,7 +577,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The formatted identity SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -557,11 +587,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_FormatNullable_FluentMigrator_Model_ColumnDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.FormatNullable(FluentMigrator.Model.ColumnDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L68">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L124">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatNullable_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatNullable*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatNullable_FluentMigrator_Model_ColumnDefinition_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatNullable(FluentMigrator.Model.ColumnDefinition)">FormatNullable(ColumnDefinition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Formats the (not) null constraint</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -580,7 +611,8 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a></td>
         <td><span class="parametername">column</span></td>
-        <td></td>
+        <td><p>The column definition</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -595,7 +627,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The formatted (not) null constraint</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -604,11 +637,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_FormatPrimaryKey_FluentMigrator_Model_ColumnDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.FormatPrimaryKey(FluentMigrator.Model.ColumnDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L102">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L173">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatPrimaryKey_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatPrimaryKey*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatPrimaryKey_FluentMigrator_Model_ColumnDefinition_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatPrimaryKey(FluentMigrator.Model.ColumnDefinition)">FormatPrimaryKey(ColumnDefinition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Formats the primary key constraint directly attached to the column</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -627,7 +661,8 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a></td>
         <td><span class="parametername">column</span></td>
-        <td></td>
+        <td><p>The column definition</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -642,7 +677,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The primary key constraint SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -651,11 +687,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_FormatString_FluentMigrator_Model_ColumnDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.FormatString(FluentMigrator.Model.ColumnDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L53">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L99">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatString_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatString*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatString_FluentMigrator_Model_ColumnDefinition_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatString(FluentMigrator.Model.ColumnDefinition)">FormatString(ColumnDefinition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Formats the column name</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -674,7 +711,8 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a></td>
         <td><span class="parametername">column</span></td>
-        <td></td>
+        <td><p>The column defintiion</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -689,7 +727,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The (probably) quoted column name</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -698,11 +737,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_FormatType_FluentMigrator_Model_ColumnDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.FormatType(FluentMigrator.Model.ColumnDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L58">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L109">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatType_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatType*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatType_FluentMigrator_Model_ColumnDefinition_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatType(FluentMigrator.Model.ColumnDefinition)">FormatType(ColumnDefinition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Formats the column type</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -721,7 +761,8 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a></td>
         <td><span class="parametername">column</span></td>
-        <td></td>
+        <td><p>The column definition</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -736,7 +777,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The formatted column type</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -745,11 +787,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_Generate_FluentMigrator_Model_ColumnDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.Generate(FluentMigrator.Model.ColumnDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L184">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L262">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_Generate_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_Generate_FluentMigrator_Model_ColumnDefinition_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.Generate(FluentMigrator.Model.ColumnDefinition)">Generate(ColumnDefinition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates the complete column defintion SQL fragment</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -768,7 +811,8 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a></td>
         <td><span class="parametername">column</span></td>
-        <td></td>
+        <td><p>The column definition</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -783,7 +827,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -792,11 +837,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_Generate_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.Generate(System.Collections.Generic.IEnumerable%7BFluentMigrator.Model.ColumnDefinition%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L200">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L279">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_Generate_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_Generate_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__System_String_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.Generate(System.Collections.Generic.IEnumerable{FluentMigrator.Model.ColumnDefinition},System.String)">Generate(IEnumerable&lt;ColumnDefinition&gt;, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generate the SQL fragment for all column definitions</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -815,12 +861,14 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
         <td><span class="parametername">columns</span></td>
-        <td></td>
+        <td><p>The column definitions</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableName</span></td>
-        <td></td>
+        <td><p>The table name</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -835,7 +883,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -844,11 +893,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_GenerateForeignKeyName_FluentMigrator_Model_ForeignKeyDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.GenerateForeignKeyName(FluentMigrator.Model.ForeignKeyDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L141">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L217">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_GenerateForeignKeyName_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GenerateForeignKeyName*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_GenerateForeignKeyName_FluentMigrator_Model_ForeignKeyDefinition_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GenerateForeignKeyName(FluentMigrator.Model.ForeignKeyDefinition)">GenerateForeignKeyName(ForeignKeyDefinition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates the default foreign key name</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -867,7 +917,8 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ForeignKeyDefinition.html">ForeignKeyDefinition</a></td>
         <td><span class="parametername">foreignKey</span></td>
-        <td></td>
+        <td><p>The foreign key definition</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -882,7 +933,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -891,7 +943,7 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_GetPrimaryKeyConstraintName_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.GetPrimaryKeyConstraintName(System.Collections.Generic.IEnumerable%7BFluentMigrator.Model.ColumnDefinition%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L240">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L330">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetPrimaryKeyConstraintName_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetPrimaryKeyConstraintName*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetPrimaryKeyConstraintName_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__System_String_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetPrimaryKeyConstraintName(System.Collections.Generic.IEnumerable{FluentMigrator.Model.ColumnDefinition},System.String)">GetPrimaryKeyConstraintName(IEnumerable&lt;ColumnDefinition&gt;, String)</h4>
@@ -947,11 +999,12 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_GetTypeMap_System_Data_DbType_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.GetTypeMap(System.Data.DbType%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L42">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L76">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetTypeMap_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetTypeMap*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetTypeMap_System_Data_DbType_System_Int32_System_Int32_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetTypeMap(System.Data.DbType,System.Int32,System.Int32)">GetTypeMap(DbType, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the formatted type from the type map</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -971,17 +1024,20 @@ protected string GetTypeMap(DbType value, int size, int precision)</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.dbtype">DbType</a></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The database type</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">size</span></td>
-        <td></td>
+        <td><p>The size (or precision)</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">precision</span></td>
-        <td></td>
+        <td><p>The precision (or scale)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -996,7 +1052,8 @@ protected string GetTypeMap(DbType value, int size, int precision)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The formatted column type</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1005,11 +1062,12 @@ protected string GetTypeMap(DbType value, int size, int precision)</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_GetTypeMap_System_Data_DbType_System_Nullable_System_Int32__System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.GetTypeMap(System.Data.DbType%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L48">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L89">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetTypeMap_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetTypeMap*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetTypeMap_System_Data_DbType_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetTypeMap(System.Data.DbType,System.Nullable{System.Int32},System.Nullable{System.Int32})">GetTypeMap(DbType, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the formatted type from the type map</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1028,17 +1086,20 @@ protected string GetTypeMap(DbType value, int size, int precision)</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.dbtype">DbType</a></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The database type</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">size</span></td>
-        <td></td>
+        <td><p>The size (or precision)</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">precision</span></td>
-        <td></td>
+        <td><p>The precision (or scale)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1053,7 +1114,8 @@ protected string GetTypeMap(DbType value, int size, int precision)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The formatted column type</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1062,11 +1124,12 @@ protected string GetTypeMap(DbType value, int size, int precision)</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase_ShouldPrimaryKeysBeAddedSeparately_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase.ShouldPrimaryKeysBeAddedSeparately(System.Collections.Generic.IEnumerable%7BFluentMigrator.Model.ColumnDefinition%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L220">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L304">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_ShouldPrimaryKeysBeAddedSeparately_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.ShouldPrimaryKeysBeAddedSeparately*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_ShouldPrimaryKeysBeAddedSeparately_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.ShouldPrimaryKeysBeAddedSeparately(System.Collections.Generic.IEnumerable{FluentMigrator.Model.ColumnDefinition})">ShouldPrimaryKeysBeAddedSeparately(IEnumerable&lt;ColumnDefinition&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether the primary key constraint should be added separately</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1085,7 +1148,8 @@ protected string GetTypeMap(DbType value, int size, int precision)</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
         <td><span class="parametername">primaryKeyColumns</span></td>
-        <td></td>
+        <td><p>The primary key column defintions</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1100,7 +1164,8 @@ protected string GetTypeMap(DbType value, int size, int precision)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p><code>true</code> when the primary key constraint should be added separately</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1119,7 +1184,7 @@ protected string GetTypeMap(DbType value, int size, int precision)</code></pre>
                     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_Base_ColumnBase.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Base.ColumnBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L26" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/Base/ColumnBase.cs/#L29" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

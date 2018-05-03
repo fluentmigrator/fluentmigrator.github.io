@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IMigrationRunner
    | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.33.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -62,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -81,7 +83,8 @@
   
   <h1 id="FluentMigrator_Runner_IMigrationRunner" data-uid="FluentMigrator.Runner.IMigrationRunner" class="text-break">Interface IMigrationRunner
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The migration runner</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -102,15 +105,17 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_MigrationAssemblies.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.MigrationAssemblies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L30">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L46">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_MigrationAssemblies_" data-uid="FluentMigrator.Runner.IMigrationRunner.MigrationAssemblies*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_MigrationAssemblies" data-uid="FluentMigrator.Runner.IMigrationRunner.MigrationAssemblies">MigrationAssemblies</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the assemblies searched for migrations, profile migrations, etc...</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Obsolete]
+[CanBeNull]
 IAssemblyCollection MigrationAssemblies { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -133,15 +138,17 @@ IAssemblyCollection MigrationAssemblies { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_MigrationLoader.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.MigrationLoader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L28">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L40">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_MigrationLoader_" data-uid="FluentMigrator.Runner.IMigrationRunner.MigrationLoader*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_MigrationLoader" data-uid="FluentMigrator.Runner.IMigrationRunner.MigrationLoader">MigrationLoader</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the migration loader to be used by this migration runner</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IMigrationInformationLoader MigrationLoader { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[NotNull]
+IMigrationInformationLoader MigrationLoader { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,15 +170,17 @@ IAssemblyCollection MigrationAssemblies { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_Processor.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.Processor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L26">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L34">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_Processor_" data-uid="FluentMigrator.Runner.IMigrationRunner.Processor*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_Processor" data-uid="FluentMigrator.Runner.IMigrationRunner.Processor">Processor</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the migration processor used by this runner</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IMigrationProcessor Processor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[NotNull]
+IMigrationProcessor Processor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -193,15 +202,17 @@ IAssemblyCollection MigrationAssemblies { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_RunnerContext.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.RunnerContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L33">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L53">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_RunnerContext_" data-uid="FluentMigrator.Runner.IMigrationRunner.RunnerContext*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_RunnerContext" data-uid="FluentMigrator.Runner.IMigrationRunner.RunnerContext">RunnerContext</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the runner context</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Obsolete]
+[CanBeNull]
 IRunnerContext RunnerContext { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -226,15 +237,16 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_Down_FluentMigrator_IMigration_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.Down(FluentMigrator.IMigration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L37">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L67">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_Down_" data-uid="FluentMigrator.Runner.IMigrationRunner.Down*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_Down_FluentMigrator_IMigration_" data-uid="FluentMigrator.Runner.IMigrationRunner.Down(FluentMigrator.IMigration)">Down(IMigration)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes an <code>Down</code> migration</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Down(IMigration migration)</code></pre>
+    <pre><code class="lang-csharp hljs">void Down([NotNull] IMigration migration)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -249,7 +261,8 @@ IRunnerContext RunnerContext { get; }</code></pre>
       <tr>
         <td><a class="xref" href="FluentMigrator.IMigration.html">IMigration</a></td>
         <td><span class="parametername">migration</span></td>
-        <td></td>
+        <td><p>The migration to execute</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -258,11 +271,12 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_HasMigrationsToApplyDown_System_Int64_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.HasMigrationsToApplyDown(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L46">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L123">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_HasMigrationsToApplyDown_" data-uid="FluentMigrator.Runner.IMigrationRunner.HasMigrationsToApplyDown*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_HasMigrationsToApplyDown_System_Int64_" data-uid="FluentMigrator.Runner.IMigrationRunner.HasMigrationsToApplyDown(System.Int64)">HasMigrationsToApplyDown(Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> when there are migrations to revert</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -281,7 +295,8 @@ IRunnerContext RunnerContext { get; }</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">version</span></td>
-        <td></td>
+        <td><p>The target version</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -296,7 +311,8 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p><code>true</code> when there are migrations to revert</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -305,11 +321,12 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_HasMigrationsToApplyRollback.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.HasMigrationsToApplyRollback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L47">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L129">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_HasMigrationsToApplyRollback_" data-uid="FluentMigrator.Runner.IMigrationRunner.HasMigrationsToApplyRollback*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_HasMigrationsToApplyRollback" data-uid="FluentMigrator.Runner.IMigrationRunner.HasMigrationsToApplyRollback">HasMigrationsToApplyRollback()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Are there migrations available for a rollback?</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -326,7 +343,8 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p><code>true</code> when there are migrations available for a rollback</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -335,15 +353,16 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_HasMigrationsToApplyUp_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.HasMigrationsToApplyUp(System.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L45">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L116">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_HasMigrationsToApplyUp_" data-uid="FluentMigrator.Runner.IMigrationRunner.HasMigrationsToApplyUp*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_HasMigrationsToApplyUp_System_Nullable_System_Int64__" data-uid="FluentMigrator.Runner.IMigrationRunner.HasMigrationsToApplyUp(System.Nullable{System.Int64})">HasMigrationsToApplyUp(Nullable&lt;Int64&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> when there are migrations to apply</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool HasMigrationsToApplyUp(long? version = default (long? ))</code></pre>
+    <pre><code class="lang-csharp hljs">bool HasMigrationsToApplyUp(long? version = default(long? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -358,7 +377,8 @@ IRunnerContext RunnerContext { get; }</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
         <td><span class="parametername">version</span></td>
-        <td></td>
+        <td><p>The target version (or <code>null</code> if the last one should be used)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -373,7 +393,8 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p><code>true</code> when there are migrations to apply</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -382,11 +403,12 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_ListMigrations.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.ListMigrations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L44">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L109">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_ListMigrations_" data-uid="FluentMigrator.Runner.IMigrationRunner.ListMigrations*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_ListMigrations" data-uid="FluentMigrator.Runner.IMigrationRunner.ListMigrations">ListMigrations()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>List all migrations to the logger</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,11 +419,12 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_MigrateDown_System_Int64_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.MigrateDown(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L42">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L96">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_MigrateDown_" data-uid="FluentMigrator.Runner.IMigrationRunner.MigrateDown*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_MigrateDown_System_Int64_" data-uid="FluentMigrator.Runner.IMigrationRunner.MigrateDown(System.Int64)">MigrateDown(Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Migrate down to the given version</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -420,7 +443,8 @@ IRunnerContext RunnerContext { get; }</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">version</span></td>
-        <td></td>
+        <td><p>The version to migrate down to</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -429,11 +453,12 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_MigrateUp.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.MigrateUp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L38">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L72">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_MigrateUp_" data-uid="FluentMigrator.Runner.IMigrationRunner.MigrateUp*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_MigrateUp" data-uid="FluentMigrator.Runner.IMigrationRunner.MigrateUp">MigrateUp()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes all found (and unapplied) migrations</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -444,11 +469,12 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_MigrateUp_System_Int64_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.MigrateUp(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L39">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L78">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_MigrateUp_" data-uid="FluentMigrator.Runner.IMigrationRunner.MigrateUp*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_MigrateUp_System_Int64_" data-uid="FluentMigrator.Runner.IMigrationRunner.MigrateUp(System.Int64)">MigrateUp(Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes all found (and unapplied) migrations up to the given version</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -467,7 +493,8 @@ IRunnerContext RunnerContext { get; }</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">version</span></td>
-        <td></td>
+        <td><p>The target version to migrate to (inclusive)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -476,11 +503,12 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_Rollback_System_Int32_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.Rollback(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L40">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L84">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_Rollback_" data-uid="FluentMigrator.Runner.IMigrationRunner.Rollback*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_Rollback_System_Int32_" data-uid="FluentMigrator.Runner.IMigrationRunner.Rollback(System.Int32)">Rollback(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Rollback the given number of steps</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -499,7 +527,8 @@ IRunnerContext RunnerContext { get; }</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">steps</span></td>
-        <td></td>
+        <td><p>The number of steps to rollback</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -508,11 +537,12 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_RollbackToVersion_System_Int64_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.RollbackToVersion(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L41">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L90">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_RollbackToVersion_" data-uid="FluentMigrator.Runner.IMigrationRunner.RollbackToVersion*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_RollbackToVersion_System_Int64_" data-uid="FluentMigrator.Runner.IMigrationRunner.RollbackToVersion(System.Int64)">RollbackToVersion(Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Rollback to a given version</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -531,7 +561,8 @@ IRunnerContext RunnerContext { get; }</code></pre>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">version</span></td>
-        <td></td>
+        <td><p>The target version to rollback to</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -540,15 +571,16 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_Up_FluentMigrator_IMigration_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.Up(FluentMigrator.IMigration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L36">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L61">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_Up_" data-uid="FluentMigrator.Runner.IMigrationRunner.Up*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_Up_FluentMigrator_IMigration_" data-uid="FluentMigrator.Runner.IMigrationRunner.Up(FluentMigrator.IMigration)">Up(IMigration)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes an <code>Up</code> migration</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Up(IMigration migration)</code></pre>
+    <pre><code class="lang-csharp hljs">void Up([NotNull] IMigration migration)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -563,7 +595,8 @@ IRunnerContext RunnerContext { get; }</code></pre>
       <tr>
         <td><a class="xref" href="FluentMigrator.IMigration.html">IMigration</a></td>
         <td><span class="parametername">migration</span></td>
-        <td></td>
+        <td><p>The migration to execute</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -572,16 +605,20 @@ IRunnerContext RunnerContext { get; }</code></pre>
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner_ValidateVersionOrder.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner.ValidateVersionOrder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L43">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L104">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_IMigrationRunner_ValidateVersionOrder_" data-uid="FluentMigrator.Runner.IMigrationRunner.ValidateVersionOrder*"></a>
   <h4 id="FluentMigrator_Runner_IMigrationRunner_ValidateVersionOrder" data-uid="FluentMigrator.Runner.IMigrationRunner.ValidateVersionOrder">ValidateVersionOrder()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Validate that there were no missing migration versions</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void ValidateVersionOrder()</code></pre>
   </div>
+  <h5 id="FluentMigrator_Runner_IMigrationRunner_ValidateVersionOrder_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Throws an exception if a missing migration was found.</p>
+</div>
 </article>
           </div>
           
@@ -593,7 +630,7 @@ IRunnerContext RunnerContext { get; }</code></pre>
                     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_IMigrationRunner.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.IMigrationRunner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L24" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner/IMigrationRunner.cs/#L29" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

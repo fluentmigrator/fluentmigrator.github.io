@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IColumn
    | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.33.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -62,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -81,7 +83,8 @@
   
   <h1 id="FluentMigrator_Runner_Generators_IColumn" data-uid="FluentMigrator.Runner.Generators.IColumn" class="text-break">Interface IColumn
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Interface for column-oriented SQL fragment generation</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Generators.html">FluentMigrator.Runner.Generators</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
@@ -96,15 +99,17 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_IColumn_FormatCascade_System_String_System_Data_Rule_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.IColumn.FormatCascade(System.String%2CSystem.Data.Rule)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L15">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L74">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_IColumn_FormatCascade_" data-uid="FluentMigrator.Runner.Generators.IColumn.FormatCascade*"></a>
   <h4 id="FluentMigrator_Runner_Generators_IColumn_FormatCascade_System_String_System_Data_Rule_" data-uid="FluentMigrator.Runner.Generators.IColumn.FormatCascade(System.String,System.Data.Rule)">FormatCascade(String, Rule)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Formats the foreign key cascading SQL fragment</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string FormatCascade(string onWhat, Rule rule)</code></pre>
+    <pre><code class="lang-csharp hljs">[NotNull]
+string FormatCascade([NotNull] string onWhat, Rule rule)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -119,12 +124,14 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">onWhat</span></td>
-        <td></td>
+        <td><p>The action this cascade clause applies to (update or delete)</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.rule">Rule</a></td>
         <td><span class="parametername">rule</span></td>
-        <td></td>
+        <td><p>The cascade rule</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -139,7 +146,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The formatted SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -148,15 +156,17 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_IColumn_FormatForeignKey_FluentMigrator_Model_ForeignKeyDefinition_System_Func_FluentMigrator_Model_ForeignKeyDefinition_System_String__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.IColumn.FormatForeignKey(FluentMigrator.Model.ForeignKeyDefinition%2CSystem.Func%7BFluentMigrator.Model.ForeignKeyDefinition%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L14">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L65">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_IColumn_FormatForeignKey_" data-uid="FluentMigrator.Runner.Generators.IColumn.FormatForeignKey*"></a>
   <h4 id="FluentMigrator_Runner_Generators_IColumn_FormatForeignKey_FluentMigrator_Model_ForeignKeyDefinition_System_Func_FluentMigrator_Model_ForeignKeyDefinition_System_String__" data-uid="FluentMigrator.Runner.Generators.IColumn.FormatForeignKey(FluentMigrator.Model.ForeignKeyDefinition,System.Func{FluentMigrator.Model.ForeignKeyDefinition,System.String})">FormatForeignKey(ForeignKeyDefinition, Func&lt;ForeignKeyDefinition, String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Formats the foreign key SQL fragment optionally using a custom foreign key name generator</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string FormatForeignKey(ForeignKeyDefinition foreignKey, Func&lt;ForeignKeyDefinition, string&gt; fkNameGeneration)</code></pre>
+    <pre><code class="lang-csharp hljs">[NotNull]
+string FormatForeignKey([NotNull] ForeignKeyDefinition foreignKey, [NotNull] Func&lt;ForeignKeyDefinition, string&gt; fkNameGeneration)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -171,12 +181,14 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ForeignKeyDefinition.html">ForeignKeyDefinition</a></td>
         <td><span class="parametername">foreignKey</span></td>
-        <td></td>
+        <td><p>The foreign key definition</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="FluentMigrator.Model.ForeignKeyDefinition.html">ForeignKeyDefinition</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">fkNameGeneration</span></td>
-        <td></td>
+        <td><p>The custom foreign key name generator</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -191,7 +203,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -200,15 +213,17 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_IColumn_Generate_FluentMigrator_Model_ColumnDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.IColumn.Generate(FluentMigrator.Model.ColumnDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L11">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L39">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_IColumn_Generate_" data-uid="FluentMigrator.Runner.Generators.IColumn.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_IColumn_Generate_FluentMigrator_Model_ColumnDefinition_" data-uid="FluentMigrator.Runner.Generators.IColumn.Generate(FluentMigrator.Model.ColumnDefinition)">Generate(ColumnDefinition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates the complete column defintion SQL fragment</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Generate(ColumnDefinition column)</code></pre>
+    <pre><code class="lang-csharp hljs">[NotNull]
+string Generate([NotNull] ColumnDefinition column)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -223,7 +238,8 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a></td>
         <td><span class="parametername">column</span></td>
-        <td></td>
+        <td><p>The column definition</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -238,7 +254,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -247,15 +264,17 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_IColumn_Generate_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.IColumn.Generate(System.Collections.Generic.IEnumerable%7BFluentMigrator.Model.ColumnDefinition%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L12">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L48">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_IColumn_Generate_" data-uid="FluentMigrator.Runner.Generators.IColumn.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_IColumn_Generate_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__System_String_" data-uid="FluentMigrator.Runner.Generators.IColumn.Generate(System.Collections.Generic.IEnumerable{FluentMigrator.Model.ColumnDefinition},System.String)">Generate(IEnumerable&lt;ColumnDefinition&gt;, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generate the SQL fragment for all column definitions</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Generate(IEnumerable&lt;ColumnDefinition&gt; columns, string tableName)</code></pre>
+    <pre><code class="lang-csharp hljs">[NotNull]
+string Generate([NotNull, ItemNotNull] IEnumerable&lt;ColumnDefinition&gt; columns, [NotNull] string tableName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -270,12 +289,14 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
         <td><span class="parametername">columns</span></td>
-        <td></td>
+        <td><p>The column definitions</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableName</span></td>
-        <td></td>
+        <td><p>The table name</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -290,7 +311,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -299,15 +321,17 @@
     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_IColumn_GenerateForeignKeyName_FluentMigrator_Model_ForeignKeyDefinition_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.IColumn.GenerateForeignKeyName(FluentMigrator.Model.ForeignKeyDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L13">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L56">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_IColumn_GenerateForeignKeyName_" data-uid="FluentMigrator.Runner.Generators.IColumn.GenerateForeignKeyName*"></a>
   <h4 id="FluentMigrator_Runner_Generators_IColumn_GenerateForeignKeyName_FluentMigrator_Model_ForeignKeyDefinition_" data-uid="FluentMigrator.Runner.Generators.IColumn.GenerateForeignKeyName(FluentMigrator.Model.ForeignKeyDefinition)">GenerateForeignKeyName(ForeignKeyDefinition)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates the default foreign key name</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string GenerateForeignKeyName(ForeignKeyDefinition foreignKey)</code></pre>
+    <pre><code class="lang-csharp hljs">[NotNull]
+string GenerateForeignKeyName([NotNull] ForeignKeyDefinition foreignKey)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -322,7 +346,8 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Model.ForeignKeyDefinition.html">ForeignKeyDefinition</a></td>
         <td><span class="parametername">foreignKey</span></td>
-        <td></td>
+        <td><p>The foreign key definition</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -337,7 +362,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p>The SQL fragment</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -352,7 +378,7 @@
                     <a href="https://github.com/fluentmigrator/fluentmigrator/new/develop/docfx_project/apidoc/new?filename=FluentMigrator_Runner_Generators_IColumn.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.IColumn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/src/FluentMigrator.Runner.Core/Generators/IColumn.cs/#L32" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

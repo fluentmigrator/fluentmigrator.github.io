@@ -32998,6 +32998,9 @@ references:
 - uid: sql-server-extensions.md
   name: SQL Server specific extensions
   href: articles/extensions/sql-server-extensions.html
+- uid: tech-fluent-api
+  name: Fluent API
+  href: articles/technical/fluent-api.html
 - uid: upgrade-guide-1.6-to-2.0
   name: Upgrade Guide from 1.6 to 2.0
   href: articles/guides/upgrades/guide-1.6-to-2.0.html

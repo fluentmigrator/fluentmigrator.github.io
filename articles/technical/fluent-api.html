@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Fluent API | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Fluent API | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="tech-fluent-api">
+<h1 id="how-does-the-fluent-api-work">How does the fluent API work?</h1>
+
+<p>The starting points for the fluent API are the following classes:</p>
+<ul>
+<li><a class="xref" href="../../api/v3.x/FluentMigrator.MigrationBase.html">MigrationBase</a>: database modeling</li>
+<li><a class="xref" href="../../api/v3.x/FluentMigrator.Migration.html">Migration</a>: data modification and script execution</li>
+</ul>
+<h1 id="supported-expressions">Supported expressions</h1>
+<h2 id="create-icreateexpressionroot">Create (<a href="xref:FluentMigrator.Builders.Create.ICreateExpressionRoot">ICreateExpressionRoot</a>)</h2>
+<p>Create a database object.</p>
+<h3 id="icreateexpressionroot"><a href="xref:FluentMigrator.Builders.Create.ICreateExpressionRoot">ICreateExpressionRoot</a></h3>
+<pre><code>Create -+- Schema ------------- name --- ICreateSchemaOptionsSyntax ---
+        |
+        +- Table -------------- name --- ICreateTableWithColumnOrSchemaOrDescriptionSyntax ---
+        |
+        +- Column ------------- name --- ICreateColumnOnTableSyntax ---
+        |
+        +- ForeignKey -------+--------+- ICreateForeignKeyFromTableSyntax ---
+        |                    |        |
+        |                    +- name -+
+        |
+        +- Index ------------+--------+- ICreateIndexForTableSyntax ---
+        |                    |        |
+        |                    +- name -+
+        |
+        +- Sequence ----------- name --- ICreateSequenceInSchemaSyntax ---
+        |
+        +- PrimaryKey -------+--------+- ICreateConstraintOnTableSyntax ---
+        |                    |        |
+        |                    +- name -+
+        |
+        +- UniqueConstraint -+--------+- ICreateConstraintOnTableSyntax ---
+                             |        |
+                             +- name -+
+</code></pre>
+<h3 id="icreateschemaoptionssyntax">ICreateSchemaOptionsSyntax</h3>
+<p>This is just an extension point.</p>
+<h3 id="icreatetablewithcolumnorschemaordescriptionsyntax">ICreateTableWithColumnOrSchemaOrDescriptionSyntax</h3>
+<pre><code>--------+-----------------------------+- ICreateTableWithColumnOrSchemaSyntax ---
+        |                             |
+        +- WithDescription ---- name -+
+</code></pre>
+<h3 id="icreatetablewithcolumnorschemasyntax">ICreateTableWithColumnOrSchemaSyntax</h3>
+<pre><code>--------+-----------------------------+- ICreateTableWithColumnSyntax ---
+        |                             |
+        +- InSchema ----------- name -+
+</code></pre>
+<h3 id="icreatetablewithcolumnsyntax">ICreateTableWithColumnSyntax</h3>
+<pre><code>---------- WithColumn --------- name --- ICreateTableColumnAsTypeSyntax ---
+</code></pre>
+<h3 id="icreatetablecolumnastypesyntax">ICreateTableColumnAsTypeSyntax</h3>
+<pre><code>---------- IColumnTypeSyntax ---- TNext: ICreateTableColumnOptionOrWithColumnSyntax ---
+</code></pre>
+<h3 id="icreatecolumnoptionsyntax">ICreateColumnOptionSyntax</h3>
+<pre><code>--------+-------------------------------+- IColumnOptionSyntax -+--&gt; TNext: ICreateColumnOptionSyntax
+        |                               |                       |
+        +- SetExistingRowsTo --- value -+                       +--&gt; TNextFk: ICreateColumnOptionOrForeignKeyCascadeSyntax
+</code></pre>
+<h3 id="icreatecolumnoptionorforeignkeycascadesyntax">ICreateColumnOptionOrForeignKeyCascadeSyntax</h3>
+<pre><code>--------+--&gt; ICreateColumnOptionSyntax
+        |
+        +- IForeignKeyCascadeSyntax -+--&gt; TNext: ICreateColumnOptionSyntax
+                                     |
+                                     +--&gt; TNextFk: ICreateColumnOptionOrForeignKeyCascadeSyntax
+</code></pre>
+<h3 id="icreatetablecolumnoptionorwithcolumnsyntax">ICreateTableColumnOptionOrWithColumnSyntax</h3>
+<pre><code>--------+- ICreateTableWithColumnSyntax -------------------------------------------------------------------+-
+        |                                                                                                  |
+        +- IColumnOptionSyntax -+- TNext: ICreateTableColumnOptionOrWithColumnSyntax ----------------------+
+                                |                                                                          |
+                                +- TNextFk: ICreateTableColumnOptionOrForeignKeyCascadeOrWithColumnSyntax -+
+</code></pre>
+<h3 id="icreatetablecolumnoptionorforeignkeycascadeorwithcolumnsyntax">ICreateTableColumnOptionOrForeignKeyCascadeOrWithColumnSyntax</h3>
+<pre><code>--------+--&gt; ICreateTableColumnOptionOrWithColumnSyntax
+        |
+        +- IForeignKeyCascadeSyntax -+--&gt; TNext: ICreateTableColumnOptionOrWithColumnSyntax
+                                     |
+                                     +--&gt; TNextFk: ICreateTableColumnOptionOrForeignKeyCascadeOrWithColumnSyntax
+</code></pre>
+<h3 id="icreatecolumnontablesyntax">ICreateColumnOnTableSyntax</h3>
+<pre><code>---------- OnTable --- name ---&gt; ICreateColumnAsTypeOrInSchemaSyntax
+</code></pre>
+<h3 id="icreatecolumnastypeorinschemasyntax">ICreateColumnAsTypeOrInSchemaSyntax</h3>
+<pre><code>--------+---------------------+--&gt; ICreateColumnAsTypeSyntax
+        |                     |
+        +- InSchema --- name -+
+</code></pre>
+<h3 id="icreatecolumnastypesyntax">ICreateColumnAsTypeSyntax</h3>
+<pre><code>---------- IColumnTypeSyntax ---&gt; ICreateColumnOptionSyntax
+</code></pre>
+<h3 id="icreateforeignkeyfromtablesyntax">ICreateForeignKeyFromTableSyntax</h3>
+<pre><code></code></pre>
+<h2 id="alter-ialterexpressionroot">Alter (<a href="xref:FluentMigrator.Builders.Alter.IAlterExpressionRoot">IAlterExpressionRoot</a>)</h2>
+<p>Alter a database object.</p>
+<h2 id="delete-ideleteexpressionroot">Delete (<a href="xref:FluentMigrator.Builders.Delete.IDeleteExpressionRoot">IDeleteExpressionRoot</a>)</h2>
+<p>Delete a database object or data.</p>
+<h2 id="rename-irenameexpressionroot">Rename (<a href="xref:FluentMigrator.Builders.Rename.IRenameExpressionRoot">IRenameExpressionRoot</a>)</h2>
+<p>Rename a database object.</p>
+<h2 id="schema-ischemaexpressionroot">Schema (<a href="xref:FluentMigrator.Builders.Schema.ISchemaExpressionRoot">ISchemaExpressionRoot</a>)</h2>
+<p>Schema-oriented starting point for expressions.</p>
+<h2 id="ifdatabase-iifdatabaseexpressionroot">IfDatabase (<a href="xref:FluentMigrator.Builders.IfDatabase.IIfDatabaseExpressionRoot">IIfDatabaseExpressionRoot</a>)</h2>
+<p>Create database-specific expressions.</p>
+<h2 id="insert-iinsertexpressionroot">Insert (<a href="xref:FluentMigrator.Builders.Insert.IInsertExpressionRoot">IInsertExpressionRoot</a>)</h2>
+<p>Insert data.</p>
+<h2 id="update-iupdateexpressionroot">Update (<a href="xref:FluentMigrator.Builders.Update.IUpdateExpressionRoot">IUpdateExpressionRoot</a>)</h2>
+<p>Update data.</p>
+<h2 id="execute-iexecuteexpressionroot">Execute (<a href="xref:FluentMigrator.Builders.Execute.IExecuteExpressionRoot">IExecuteExpressionRoot</a>)</h2>
+<p>Execute SQL statements/scripts.</p>
+<h1 id="generic-interfaces">Generic interfaces</h1>
+<h2 id="icolumntypesyntaxtnext">IColumnTypeSyntax&lt;TNext&gt;</h2>
+<pre><code>--------+- AsAnsiString -+--------+-------------+---------------+-&gt; TNext
+        |                |        |             |               |
+        |                +- size -+- collation -+               |
+        |                                                       |
+        +- AsBinary -----+--------+-----------------------------+
+        |                |        |                             |
+        |                +- size -+                             |
+        |                                                       |
+        +- AsBoolean -------------------------------------------+
+        |                                                       |
+        +- AsByte ----------------------------------------------+
+        |                                                       |
+        +- AsCurrency ------------------------------------------+
+        |                                                       |
+        +- AsDate ----------------------------------------------+
+        |                                                       |
+        +- AsDateTime ------------------------------------------+
+        |                                                       |
+        +- AsDateTime2 -----------------------------------------+
+        |                                                       |
+        +- AsDateTimeOffset ------------------------------------+
+        |                                                       |
+        +- AsDecimal -------------------------------------------+
+        |                                                       |
+        +- AsDouble --------------------------------------------+
+        |                                                       |
+        +- AsGuid ----------------------------------------------+
+        |                                                       |
+        +- AsFixedLengthString --- size -----+-------------+----+
+        |                                    |             |    |
+        |                                    +- collation -+    |
+        |                                                       |
+        +- AsFixedLengthAnsiString --- size -+-------------+----+
+        |                                    |             |    |
+        |                                    +- collation -+    |
+        |                                                       |
+        +- AsFloat ---------------------------------------------+
+        |                                                       |
+        +- AsInt16 ---------------------------------------------+
+        |                                                       |
+        +- AsInt32 ---------------------------------------------+
+        |                                                       |
+        +- AsInt64 ---------------------------------------------+
+        |                                                       |
+        +- AsString -----+--------+-------------+---------------+
+        |                |        |             |               |
+        |                +- size -+- collation -+               |
+        |                                                       |
+        +- AsTime ----------------------------------------------+
+        |                                                       |
+        +- AsXml --------+--------+-----------------------------+
+        |                |        |                             |
+        |                +- size -+                             |
+        |                                                       |
+        +- AsCustom --- customType -----------------------------+
+</code></pre>
+<h2 id="icolumnoptionsyntaxtnexttnextfk">IColumnOptionSyntax&lt;TNext,TNextFk&gt;</h2>
+<pre><code>--------+- WithDefault --- method --------------------------------------+--&gt; TNext
+        |                                                               |
+        +- WithDefaultValue --- value ----------------------------------+
+        |                                                               |
+        +- WithColumnDescription --- description -----------------------+
+        |                                                               |
+        +- Identity ----------------------------------------------------+
+        |                                                               |
+        +- Indexed -----------------------------------------------------+
+        |                                                               |
+        +- PrimaryKey -+--------+---------------------------------------+
+        |              |        |                                       |
+        |              +- name -+                                       |
+        |                                                               |
+        +- Nullable ----------------------------------------------------+
+        |                                                               |
+        +- NotNullable -------------------------------------------------+
+        |                                                               |
+        +- Unique -----+--------+---------------------------------------+
+        |              |        |
+        |              +- name -+
+        |
+        +- ForeignKey ---+-------------------------------------------+--+--&gt; TNextFk
+        |                |                                           |  |
+        |                +-----------------------+- table --- column-+  |
+        |                |                       |                      |
+        |                +- name -+-+----------+-+                      |
+        |                           |          |                        |
+        |                           +- schema -+                        |
+        |                                                               |
+        +- ReferencedBy -+-----------------------+- table --- column-+--+
+                         |                       |
+                         +- name -+-+----------+-+
+                                    |          |
+                                    +- schema -+
+</code></pre>
+<h2 id="iforeignkeycascadesyntaxtnexttnextfk">IForeignKeyCascadeSyntax&lt;TNext,TNextFk&gt;</h2>
+<pre><code>--------+- OnDeleteOrUpdate --- rule ---&gt; TNext
+        |
+        +- OnDelete --- rule -+---------&gt; TNextFk
+        |                     |
+        +- OnUpdate --- rule -+
+</code></pre>
+<h1 id="planned-changes">Planned changes</h1>
+<ul>
+<li>Differentiate between <code>Delete</code> and <code>Drop</code></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/technical/fluent-api.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

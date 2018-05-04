@@ -48,7 +48,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "MsJQd7TYnwjobxVu7nd43A=="
+          "hash": "8iEvAJYSQ/zUEIlQgM0HDA=="
         }
       },
       "is_incremental": false,
@@ -87,6 +87,1618 @@
         ".html": {
           "relative_path": "api/v2.x/FluentMigrator.AutoScriptMigration.html",
           "hash": "K8n6W17C9vJuScAhLELuqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.IAlterColumnAsTypeOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.IAlterColumnAsTypeOrInSchemaSyntax.html",
+          "hash": "29KHJ+ZXS9UFdzBtX0ZL9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.IAlterColumnAsTypeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.IAlterColumnAsTypeSyntax.html",
+          "hash": "NLsP3WcUjWn+0WEZAt/Kkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOnTableSyntax.html",
+          "hash": "4bm95j6dyz7Ms4KkrS0g8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOptionOrForeignKeyCascadeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOptionOrForeignKeyCascadeSyntax.html",
+          "hash": "j7AbT3gN1YE3k+kyWdTKOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOptionSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOptionSyntax.html",
+          "hash": "0AMwf66IBuR2w0v/T0YtFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Column.html",
+          "hash": "Zt4D2Sr2gDTm3KivDGXSeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.IAlterExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.IAlterExpressionRoot.html",
+          "hash": "JXPelq1ZVlSLcu6sW0nHpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnOrSchemaOrDescriptionSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnOrSchemaOrDescriptionSyntax.html",
+          "hash": "zb40trzzGUsBaA21vWrZog=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnOrSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnOrSchemaSyntax.html",
+          "hash": "m8QYlxlZ3dKB6MjUlNiYew=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnSyntax.html",
+          "hash": "qx6yXKOWhS8H0VdGKAd38w=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnAsTypeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnAsTypeSyntax.html",
+          "hash": "Wiy7DrpFFWNBh2SaTHJ+dA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnOptionOrAddColumnOrAlterColumnOrForeignKeyCascadeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnOptionOrAddColumnOrAlterColumnOrForeignKeyCascadeSyntax.html",
+          "hash": "/KZOzOX+YeptZNSIKSmP3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnOptionOrAddColumnOrAlterColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnOptionOrAddColumnOrAlterColumnSyntax.html",
+          "hash": "j7D4RN1rT/sA2DXZnUr3iQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.Table.html",
+          "hash": "tcLQ5aLm/NWSHayJPbka2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Alter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Alter.html",
+          "hash": "w9EVVLOugpqTzGtVIU6Ahw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.ICreateColumnAsTypeOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.ICreateColumnAsTypeOrInSchemaSyntax.html",
+          "hash": "XoMKbOp/zaSTh3GEIQQLyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.ICreateColumnAsTypeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.ICreateColumnAsTypeSyntax.html",
+          "hash": "e3IHnubNyakY77yIN2DSzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.ICreateColumnOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.ICreateColumnOnTableSyntax.html",
+          "hash": "I+XSe+sqhrhwgfI/CyvWzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.ICreateColumnOptionOrForeignKeyCascadeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.ICreateColumnOptionOrForeignKeyCascadeSyntax.html",
+          "hash": "m/pLkXQkeAU7d2r9h8RqUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.ICreateColumnOptionSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.ICreateColumnOptionSyntax.html",
+          "hash": "+nWatYag1LR4Q8tbaY4xhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Column.html",
+          "hash": "4zRG28Kxx7IxR5cHfNfmWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintColumnsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintColumnsSyntax.html",
+          "hash": "iu7S+DOhEDcLwbyiaQcPtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintOnTableSyntax.html",
+          "hash": "110SEdUFqyT+F7rGruV+aA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintOptionsSyntax.html",
+          "hash": "+noScAHCCDj9hLQWpl5pAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintWithSchemaOrColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintWithSchemaOrColumnSyntax.html",
+          "hash": "t5gI9bZxp+AOCpi9wBfTQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintWithSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintWithSchemaSyntax.html",
+          "hash": "DTZqhG/kXBops5thRxR2Og=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Constraint.html",
+          "hash": "nxjzLhVSj+l2KPoOwgFFyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyCascadeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyCascadeSyntax.html",
+          "hash": "a7Qbiaa1deLqivSXH8COmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyForeignColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyForeignColumnOrInSchemaSyntax.html",
+          "hash": "QvtjfdquYaV9RRZ2tteCcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyForeignColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyForeignColumnSyntax.html",
+          "hash": "LmMI7JM8PpYjdDHmgn8CjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyFromTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyFromTableSyntax.html",
+          "hash": "9bQdIGLa2Qn/iCWXZbikFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyPrimaryColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyPrimaryColumnOrInSchemaSyntax.html",
+          "hash": "DUPh8//EnKQTm4fVrU/wSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyPrimaryColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyPrimaryColumnSyntax.html",
+          "hash": "lYa521DcpAutFlOvSWpbgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyToTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyToTableSyntax.html",
+          "hash": "1+7P/Ifu+nAcpbRZiRsmqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.ForeignKey.html",
+          "hash": "trLnXWUycY8f1tQMa9v38Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.ICreateExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.ICreateExpressionRoot.html",
+          "hash": "jG+7WbePjzkZiIpOVt7Pjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexColumnOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexColumnOptionsSyntax.html",
+          "hash": "p0f+stNDsbnlBP7MLddFOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexColumnUniqueOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexColumnUniqueOptionsSyntax.html",
+          "hash": "FPtv8riIVEoNL7fHfzhZ7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexForTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexForTableSyntax.html",
+          "hash": "yMciVyAc0eTwStTM4NSUGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexMoreColumnOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexMoreColumnOptionsSyntax.html",
+          "hash": "w80TOtKAi7Oqs3wiDS3Qfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexNonKeyColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexNonKeyColumnSyntax.html",
+          "hash": "Cj509F+nH96mqaPUZfkGiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexOnColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexOnColumnOrInSchemaSyntax.html",
+          "hash": "eQghPlsxYMQ9hwD1CCmsLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexOnColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexOnColumnSyntax.html",
+          "hash": "aa2pUnBfD3QQf13NTxJHpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.ICreateIndexOptionsSyntax.html",
+          "hash": "sePTAwlT/6+5lMFNoWk4wQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Index.html",
+          "hash": "ufZSgHOUWI03cBTxaXSqeg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Schema.ICreateSchemaOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Schema.ICreateSchemaOptionsSyntax.html",
+          "hash": "eTjkJlBfLbYGz6Ws057dtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Schema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Schema.html",
+          "hash": "8jlAov2UTTf+gk2phFLSPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Sequence.ICreateSequenceInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Sequence.ICreateSequenceInSchemaSyntax.html",
+          "hash": "H475+7Kq3cj7vEBIv0yvqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Sequence.ICreateSequenceSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Sequence.ICreateSequenceSyntax.html",
+          "hash": "Nk4bmD9zbPUuW2KlnQ/HLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Sequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Sequence.html",
+          "hash": "hpf6WEcYh4eQ87XYDgtObQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnAsTypeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnAsTypeSyntax.html",
+          "hash": "Yo5HGdjZMJry4ga3jGNrDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnOptionOrForeignKeyCascadeOrWithColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnOptionOrForeignKeyCascadeOrWithColumnSyntax.html",
+          "hash": "RY/LX3ZEcfHM037vnyUbIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnOptionOrWithColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnOptionOrWithColumnSyntax.html",
+          "hash": "YYDPClZDaQvOfOREZ+Ch5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnOrSchemaOrDescriptionSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnOrSchemaOrDescriptionSyntax.html",
+          "hash": "d3ttfSOsMC6V3QJ4fvVfTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnOrSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnOrSchemaSyntax.html",
+          "hash": "CHAhdJWMHTxCuYzGXXwaww=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnSyntax.html",
+          "hash": "iExbkzgTcl1JXo0XqRdXKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.Table.html",
+          "hash": "XytBQwicvqpjoGSNb34bdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Create.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Create.html",
+          "hash": "7IdJRIyQu7S5TiLLKuH2kQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Column.IDeleteColumnFromTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Column.IDeleteColumnFromTableSyntax.html",
+          "hash": "+qpy5JxPR5VgAHEDdgyJCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Column.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Column.html",
+          "hash": "Wv8jF/m0cd3PTERykcLjxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintColumnSyntax.html",
+          "hash": "acgzBhmFUgnAjA870W6XaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintInSchemaOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintInSchemaOptionsSyntax.html",
+          "hash": "dWjtjvJDrHZo5ZAfK4nPnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintOnTableSyntax.html",
+          "hash": "8ogsBHYiwvvbH2u2/FAo0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Constraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Constraint.html",
+          "hash": "EAuOBEaf01SPHzUB+cQqHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnColumnOrInSchemaSyntax.html",
+          "hash": "yuTTLw+jLYWZ3xduHtEyEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnColumnSyntax.html",
+          "hash": "QON8tkaWKnqAdIN+VAjdrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnTableSyntax.html",
+          "hash": "o4BPxI33eGigD4Gt0qSwEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.DefaultConstraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.DefaultConstraint.html",
+          "hash": "85MiV4wJBDl9jjfgImJHQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyForeignColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyForeignColumnOrInSchemaSyntax.html",
+          "hash": "0M8NUlhqmgEhk3BcwN8ccw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyForeignColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyForeignColumnSyntax.html",
+          "hash": "7OaXdLRMq4fozqyOZckLnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyFromTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyFromTableSyntax.html",
+          "hash": "mwng/4VJrFGrcGSmrKLI2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyOnTableSyntax.html",
+          "hash": "ERYkoBnlcQMO3batylcePQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyPrimaryColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyPrimaryColumnSyntax.html",
+          "hash": "ZSZan6JkUghREJ7aXx0IJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyToTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyToTableSyntax.html",
+          "hash": "VLx3wrSjRNenD2C9lY9ihg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.ForeignKey.html",
+          "hash": "z4ELxE7iQ3IqLo+1/+rjcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.IDeleteDataOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.IDeleteDataOrInSchemaSyntax.html",
+          "hash": "NTUYGLFMk7vLCN04Hh/rag=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.IDeleteDataSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.IDeleteDataSyntax.html",
+          "hash": "1io8RHeXUX1nfX1hWZymWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.IDeleteExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.IDeleteExpressionRoot.html",
+          "hash": "/hOq7vD3g/fxmk8LMo5GrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexForTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexForTableSyntax.html",
+          "hash": "ZI19jSFDfEhYu2mo+CBX1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOnColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOnColumnOrInSchemaSyntax.html",
+          "hash": "6nOUFqyMSasLJIKa27AKCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOnColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOnColumnSyntax.html",
+          "hash": "bEaSRZs/TFXOXh/n7fvkIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOptionsSyntax.html",
+          "hash": "kEVHtPymlHrZFAyAuYVUgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.Index.html",
+          "hash": "sL6kazxdOibXi7v3O+3rCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Delete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Delete.html",
+          "hash": "16D1ggrMjJsp3PPPqI2jHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Execute.IExecuteExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Execute.IExecuteExpressionRoot.html",
+          "hash": "xsYxz6+iNmNKCF8DH1UcjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Execute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Execute.html",
+          "hash": "GYa/0uO3G180+L8cVHFWjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.IColumnExpressionBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.IColumnExpressionBuilder.html",
+          "hash": "Im7BXBiblgwEZ9dMfsV6mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.IColumnOptionSyntax-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.IColumnOptionSyntax-2.html",
+          "hash": "2duSiYYdLDwSG+yp3nncPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.IColumnTypeSyntax-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.IColumnTypeSyntax-1.html",
+          "hash": "dWez0Z8fl4WijO/KXnQ+9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.IForeignKeyCascadeSyntax-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.IForeignKeyCascadeSyntax-2.html",
+          "hash": "tTCoKG/GLNeoDMJevHnTfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.IInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.IInSchemaSyntax.html",
+          "hash": "zuwZtOFhVjURQLLPT7i1VQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.IfDatabase.IIfDatabaseExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.IfDatabase.IIfDatabaseExpressionRoot.html",
+          "hash": "0p4llxjf3HoQSHsMJX5iYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.IfDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.IfDatabase.html",
+          "hash": "kc56HJ2NEh6sq3q8NcahUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Insert.IInsertDataOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Insert.IInsertDataOrInSchemaSyntax.html",
+          "hash": "5Hovs4cVtPfxwkCuxThD5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Insert.IInsertDataSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Insert.IInsertDataSyntax.html",
+          "hash": "vax6Q00Uk7VLlE7H/r+akw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Insert.IInsertExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Insert.IInsertExpressionRoot.html",
+          "hash": "0JfmM6ncl00tT/A2LZRkcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Insert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Insert.html",
+          "hash": "sjhtrx6hUXa4/v1iYnKK+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Column.IRenameColumnToOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Column.IRenameColumnToOrInSchemaSyntax.html",
+          "hash": "iZM3+GgBF2iZm2G7xPKNQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Column.IRenameColumnToSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Column.IRenameColumnToSyntax.html",
+          "hash": "eizdazOq9hO3N3GUCOd+zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Column.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Column.html",
+          "hash": "tv5CB0lG4mXOhj+BGfgAEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Rename.IRenameColumnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Rename.IRenameColumnTableSyntax.html",
+          "hash": "Qy+BybLVwbVfZUCgRe5q8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Rename.IRenameExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Rename.IRenameExpressionRoot.html",
+          "hash": "FOmxhVD+1/q3nhzTStecOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Table.IRenameTableToOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Table.IRenameTableToOrInSchemaSyntax.html",
+          "hash": "5eeLAjXsAOWpOxa7sRSd/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Table.IRenameTableToSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Table.IRenameTableToSyntax.html",
+          "hash": "nVN90pQBfhzOuf0nOa2h3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Rename.Table.html",
+          "hash": "6dpvH2PJdWJTXcfARw70HA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Rename.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Rename.html",
+          "hash": "CsSZb/F26s3QNPJmmjI1aA=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Column.ISchemaColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Column.ISchemaColumnSyntax.html",
+          "hash": "xDG1nRaqxAOOx89U4TnEFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Column.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Column.html",
+          "hash": "32jRzh+cnQtwP5atDCNejw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Constraint.ISchemaConstraintSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Constraint.ISchemaConstraintSyntax.html",
+          "hash": "t2tGVBzfxsbWxDxIZAqKHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Constraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Constraint.html",
+          "hash": "YgZ3rrQl5+u72lXLt1jbfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.ISchemaExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.ISchemaExpressionRoot.html",
+          "hash": "ew7zH97lxZ+SdT4Xa3DjTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Index.ISchemaIndexSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Index.ISchemaIndexSyntax.html",
+          "hash": "e7d5vYQgtIdmH+SCfjKjxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Index.html",
+          "hash": "p4jATQGhk9qKBeDNLHecrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Schema.ISchemaSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Schema.ISchemaSchemaSyntax.html",
+          "hash": "yubXSxmAq1Ovb8arK91VPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Schema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Schema.html",
+          "hash": "KBbniqhSfd2sKsc6DM+wNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Table.ISchemaTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Table.ISchemaTableSyntax.html",
+          "hash": "+Kov3+w1OQH1TeCVqQrAmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.Table.html",
+          "hash": "B9LPBBS3l31agG0mpUfsTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Schema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Schema.html",
+          "hash": "MkPMbCorzMClLaYWu64DEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Update.IUpdateExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Update.IUpdateExpressionRoot.html",
+          "hash": "sUVF8TfjLL0f1vNO7VpTlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Update.IUpdateSetOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Update.IUpdateSetOrInSchemaSyntax.html",
+          "hash": "18iuPOPO1wcHlM6zhXBlug=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Update.IUpdateSetSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Update.IUpdateSetSyntax.html",
+          "hash": "zBtUNgLI7TUCQdLCVakexQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Update.IUpdateWhereSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Update.IUpdateWhereSyntax.html",
+          "hash": "J7hrcEVsFUF1N3nH3/mGYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.Update.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.Update.html",
+          "hash": "sxbi8tXyHII5yIltR1GAhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": "v2.x",
+      "group": "v2.x"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v2.x/FluentMigrator.Builders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v2.x/FluentMigrator.Builders.html",
+          "hash": "dqgGxPJ+1NPIlU0Zw4+vFQ=="
         }
       },
       "is_incremental": false,
@@ -1009,7 +2621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v2.x/FluentMigrator.Migration.html",
-          "hash": "0mwhiTytLOWOSxdhpbKTEQ=="
+          "hash": "p4K0TbjcQEN67FGMPjqsDg=="
         }
       },
       "is_incremental": false,
@@ -1035,7 +2647,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v2.x/FluentMigrator.MigrationBase.html",
-          "hash": "q3wUsp/Z/U304FHluvV4xw=="
+          "hash": "9r+O2h1CfJWdKBnBWvILHQ=="
         }
       },
       "is_incremental": false,
@@ -5026,7 +6638,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v2.x/FluentMigrator.SqlAnywhere.SqlAnywhereExtensions.html",
-          "hash": "6Gf91aEIZ4j4BIQkjObS/g=="
+          "hash": "Psw4FE+w6BTR8WNUlm+/zg=="
         }
       },
       "is_incremental": false,
@@ -5078,7 +6690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v2.x/FluentMigrator.SqlServer.SqlServerExtensions.html",
-          "hash": "zoYjuETb7XJGVIPNTC58cA=="
+          "hash": "gTNDTLVrslskSOMXzl0j6A=="
         }
       },
       "is_incremental": false,
@@ -5208,7 +6820,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v2.x/toc.html",
-          "hash": "r79YXmOpbJ3wePj30XcUdQ=="
+          "hash": "M9RnugcUSieJKhkFdGaDnA=="
         }
       },
       "is_incremental": false,
@@ -5246,6 +6858,1494 @@
         ".html": {
           "relative_path": "api/v3.x/FluentMigrator.AutoScriptMigration.html",
           "hash": "8/DKXBvwMTZ19ywhYJdkOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.IAlterColumnAsTypeOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.IAlterColumnAsTypeOrInSchemaSyntax.html",
+          "hash": "AflXywpAVCcsw3rd0sbDUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.IAlterColumnAsTypeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.IAlterColumnAsTypeSyntax.html",
+          "hash": "/837uQfUfHl1CXNgw6Jo0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOnTableSyntax.html",
+          "hash": "pyzF3975SPgqzGYxQgwVMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOptionOrForeignKeyCascadeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOptionOrForeignKeyCascadeSyntax.html",
+          "hash": "cwdd+0SLc5zZnrVlZJ2/3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOptionSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.IAlterColumnOptionSyntax.html",
+          "hash": "X0eqVMT7TbDEe+8Cp1P4vg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Column.html",
+          "hash": "0CVU9BnImP3EvOpVf3UhrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.IAlterExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.IAlterExpressionRoot.html",
+          "hash": "RgObRObzfDopfHWFHmZuLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnOrSchemaOrDescriptionSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnOrSchemaOrDescriptionSyntax.html",
+          "hash": "/ZeoyRjYflY1ZSUcwVty+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnOrSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnOrSchemaSyntax.html",
+          "hash": "cn17FB/vKz6pUKh7DWD0Rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableAddColumnOrAlterColumnSyntax.html",
+          "hash": "SygZqNrQJ72s2gtRlSy74A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnAsTypeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnAsTypeSyntax.html",
+          "hash": "joDqDY9IDsT3r4b1G4vdCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnOptionOrAddColumnOrAlterColumnOrForeignKeyCascadeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnOptionOrAddColumnOrAlterColumnOrForeignKeyCascadeSyntax.html",
+          "hash": "v4l9A0T+8rJIC4tWZrM2dQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnOptionOrAddColumnOrAlterColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.IAlterTableColumnOptionOrAddColumnOrAlterColumnSyntax.html",
+          "hash": "dt4DmU1S97MrGvmKuUVLRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.Table.html",
+          "hash": "cJ+RHaEF7vQffhmUj0xqkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Alter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Alter.html",
+          "hash": "3RbI228FhJdpMeQRER84GQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.ICreateColumnAsTypeOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.ICreateColumnAsTypeOrInSchemaSyntax.html",
+          "hash": "+97oSMNn5dwwmx0H50gVhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.ICreateColumnAsTypeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.ICreateColumnAsTypeSyntax.html",
+          "hash": "apc8+99zjj8/4R2UNRbmKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.ICreateColumnOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.ICreateColumnOnTableSyntax.html",
+          "hash": "5pdp1jkAmVnO6ugCHVIjvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.ICreateColumnOptionOrForeignKeyCascadeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.ICreateColumnOptionOrForeignKeyCascadeSyntax.html",
+          "hash": "dQr1fprUJhpLrhTL90SULQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.ICreateColumnOptionSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.ICreateColumnOptionSyntax.html",
+          "hash": "gFjfZ1kNv4iS4chhiUdMkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Column.html",
+          "hash": "CLOKsG+OGibC/IXCYgciVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintColumnsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintColumnsSyntax.html",
+          "hash": "CSdYqvAFZLEtqottTVcmlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintOnTableSyntax.html",
+          "hash": "gZHAFhP0M8prgkkbg0jW5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintOptionsSyntax.html",
+          "hash": "ksLcgJqXH53XnY+VRUgGFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintWithSchemaOrColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintWithSchemaOrColumnSyntax.html",
+          "hash": "T4YhxEH4e748cjSbBefxcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintWithSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.ICreateConstraintWithSchemaSyntax.html",
+          "hash": "KhWNZ9h+Y4YzliSiigfHNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Constraint.html",
+          "hash": "opcPZmoX/zff8k7S38+OAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyCascadeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyCascadeSyntax.html",
+          "hash": "lY0zZZqEqJyj9KoDQW7kdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyForeignColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyForeignColumnOrInSchemaSyntax.html",
+          "hash": "yfymj7S3FsP1mHzQaOYh3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyForeignColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyForeignColumnSyntax.html",
+          "hash": "44heL/6O1aFCNg8F2l/NUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyFromTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyFromTableSyntax.html",
+          "hash": "2wqDTJE+YShZenheqKnoqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyPrimaryColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyPrimaryColumnOrInSchemaSyntax.html",
+          "hash": "iOnKdCgw22XPX9z8YvvzgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyPrimaryColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyPrimaryColumnSyntax.html",
+          "hash": "5ms6wV03nYzqzIxIbEE2SQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyToTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyToTableSyntax.html",
+          "hash": "PDoB94R/NnmlyPAsbpflqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.ForeignKey.html",
+          "hash": "iBBiy8cx8XKPY2MP4saG4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.ICreateExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.ICreateExpressionRoot.html",
+          "hash": "zIbD5vqjDPpMWBVQ+hRodg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexColumnOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexColumnOptionsSyntax.html",
+          "hash": "5kx50PQ76pnfjfKO+kelvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexColumnUniqueOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexColumnUniqueOptionsSyntax.html",
+          "hash": "litn0uuk0YJg642a6OwcMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexForTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexForTableSyntax.html",
+          "hash": "OndQ1uE2f1B1CARFzq/tVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexMoreColumnOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexMoreColumnOptionsSyntax.html",
+          "hash": "oGWxceYdbfZRVU4leFfQag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexNonKeyColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexNonKeyColumnSyntax.html",
+          "hash": "FkYWSBEhncdQ28KivAqCyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexOnColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexOnColumnOrInSchemaSyntax.html",
+          "hash": "krch/tMwevc4v0s9ULQn6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexOnColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexOnColumnSyntax.html",
+          "hash": "wLvUNuXWST2ksTUTgHFXzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.ICreateIndexOptionsSyntax.html",
+          "hash": "Z6CCiGlPXgXIP8G2OH8AQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Index.html",
+          "hash": "xLihT6u7CdKhm72v3uB2KA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Schema.ICreateSchemaOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Schema.ICreateSchemaOptionsSyntax.html",
+          "hash": "9N42IAE7/7gOZhDkezYviQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Schema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Schema.html",
+          "hash": "NELggiofrwkd5ijiVlx5Cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Sequence.ICreateSequenceInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Sequence.ICreateSequenceInSchemaSyntax.html",
+          "hash": "Z9ofpt1up2qGouT78F9JKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Sequence.ICreateSequenceSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Sequence.ICreateSequenceSyntax.html",
+          "hash": "qpPR3bejyIgh3XFtF3D0Lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Sequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Sequence.html",
+          "hash": "b4MRLzOrm9q2FXqEPVRdDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnAsTypeSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnAsTypeSyntax.html",
+          "hash": "puySV+CUkkcby3yzR5QZVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnOptionOrForeignKeyCascadeOrWithColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnOptionOrForeignKeyCascadeOrWithColumnSyntax.html",
+          "hash": "02GfO/VzLkYQLKvREoXxGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnOptionOrWithColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableColumnOptionOrWithColumnSyntax.html",
+          "hash": "zWXhhvLRT3NgOjpv08tuTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnOrSchemaOrDescriptionSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnOrSchemaOrDescriptionSyntax.html",
+          "hash": "tRmKlqIO9GGRpVBL1Lt4tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnOrSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnOrSchemaSyntax.html",
+          "hash": "nzDW3+wm32A3VnGaKmYQNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.ICreateTableWithColumnSyntax.html",
+          "hash": "7Qev+RKAtpB87FGHWVReMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.Table.html",
+          "hash": "xoJa2R1aP4wy1xMomuupbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Create.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Create.html",
+          "hash": "wJTyPJozgyWldDmsspo66w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Column.IDeleteColumnFromTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Column.IDeleteColumnFromTableSyntax.html",
+          "hash": "dgRbYVLuzog7EVlEcKXGag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Column.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Column.html",
+          "hash": "x2W/EHVMZLieXRSB8O1t6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintColumnSyntax.html",
+          "hash": "uM09Pu4gSVUqYmsd6Ypr2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintInSchemaOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintInSchemaOptionsSyntax.html",
+          "hash": "vnggoixjL2PnMMBvAm67ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Constraint.IDeleteConstraintOnTableSyntax.html",
+          "hash": "+2PrOjt+YPYaRpSYArjTtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Constraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Constraint.html",
+          "hash": "ppxLMwNWLS+nz6V4cqyGMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnColumnOrInSchemaSyntax.html",
+          "hash": "GRRoLJfNZpb41E85R7oAGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnColumnSyntax.html",
+          "hash": "SSKWx6YcUtqzhBH/DPGKNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.DefaultConstraint.IDeleteDefaultConstraintOnTableSyntax.html",
+          "hash": "VfR5KlafIIc22iN8rytcEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.DefaultConstraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.DefaultConstraint.html",
+          "hash": "hgG5Mu8AGLTBCCFlaAupDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyForeignColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyForeignColumnOrInSchemaSyntax.html",
+          "hash": "5UbnErAL25d8jczzN947AQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyForeignColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyForeignColumnSyntax.html",
+          "hash": "h+Z/0PlVP7eWlOw5/2dHgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyFromTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyFromTableSyntax.html",
+          "hash": "uaOjXIjmDkliqDtoBEuTJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyOnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyOnTableSyntax.html",
+          "hash": "WnPyrb0p/jVXqa6F9hx/OA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyPrimaryColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyPrimaryColumnSyntax.html",
+          "hash": "Pb/8Cp0eYWAXXp4Cu3VtXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyToTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.IDeleteForeignKeyToTableSyntax.html",
+          "hash": "ESPegIOeB3JnImVoIysLrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.ForeignKey.html",
+          "hash": "8n/3v0McttnD+omh03BdZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.IDeleteDataOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.IDeleteDataOrInSchemaSyntax.html",
+          "hash": "IPYoXIrDg0keEBXKfakt2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.IDeleteDataSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.IDeleteDataSyntax.html",
+          "hash": "Pqv3Qn/dcHGLIKmv9EnQ7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.IDeleteExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.IDeleteExpressionRoot.html",
+          "hash": "QVVFvLOBmkvyVpBLQ03/VA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexForTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexForTableSyntax.html",
+          "hash": "d4EI9uourNpITAI6nNpsaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOnColumnOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOnColumnOrInSchemaSyntax.html",
+          "hash": "UsE0MyT6hSMICCaktImBSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOnColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOnColumnSyntax.html",
+          "hash": "QarDfBwYEIqHGIGGxO6czQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOptionsSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Index.IDeleteIndexOptionsSyntax.html",
+          "hash": "rNHTn0ZTEvdLcSymLR6/Jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.Index.html",
+          "hash": "esd1Lrxe6Zp9scl4XN/AiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Delete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Delete.html",
+          "hash": "ACJtr8iV/kcGJXcKoLz5Wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Execute.IExecuteExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Execute.IExecuteExpressionRoot.html",
+          "hash": "PIV7N47rEu/5l4fQy6/NwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Execute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Execute.html",
+          "hash": "ipk3r8nbrand/L0uNCCJdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.IColumnExpressionBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.IColumnExpressionBuilder.html",
+          "hash": "BWRA4A68ZL+m1AQuqCXYNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.IColumnOptionSyntax-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.IColumnOptionSyntax-2.html",
+          "hash": "L+tPXC+N6xX7PjLI+M1+sQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.IColumnTypeSyntax-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.IColumnTypeSyntax-1.html",
+          "hash": "Oej0bpSGEPJ/0ND09O/8Fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.IForeignKeyCascadeSyntax-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.IForeignKeyCascadeSyntax-2.html",
+          "hash": "RLOwn2g2XZntL61thvD3xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.IInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.IInSchemaSyntax.html",
+          "hash": "ulZTkybtSAiXgMt1RU2K8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.IfDatabase.IIfDatabaseExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.IfDatabase.IIfDatabaseExpressionRoot.html",
+          "hash": "t39V3XCti/VH6ZqQCvrzkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.IfDatabase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.IfDatabase.html",
+          "hash": "NckZl+9GaJn7FW5OfPUlzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Insert.IInsertDataOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Insert.IInsertDataOrInSchemaSyntax.html",
+          "hash": "JrHyhYrmrCp7y/zcANrkNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Insert.IInsertDataSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Insert.IInsertDataSyntax.html",
+          "hash": "OgH+eMRjmd581PFEpUIvRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Insert.IInsertExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Insert.IInsertExpressionRoot.html",
+          "hash": "iiDaNQHhNu2rtKNrZd5VwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Insert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Insert.html",
+          "hash": "OVLudBHqY15KkCwLZxlQRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Column.IRenameColumnToOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Column.IRenameColumnToOrInSchemaSyntax.html",
+          "hash": "iwKf1+Jg/kL9odmUNWa8yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Column.IRenameColumnToSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Column.IRenameColumnToSyntax.html",
+          "hash": "p/yLgIePbPyKm6GbyBRAZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Column.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Column.html",
+          "hash": "34x5NNXn2t65nyJiGfmUgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Rename.IRenameColumnTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Rename.IRenameColumnTableSyntax.html",
+          "hash": "PstNw6Ib6pQljicTu1Wp/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Rename.IRenameExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Rename.IRenameExpressionRoot.html",
+          "hash": "rMmSaUFoWGoXNrplFFA/5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Table.IRenameTableToOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Table.IRenameTableToOrInSchemaSyntax.html",
+          "hash": "8JBow3gVYDrNBSq2tpZYXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Table.IRenameTableToSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Table.IRenameTableToSyntax.html",
+          "hash": "0rfZxIYId2h+dzM5XirnHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Rename.Table.html",
+          "hash": "e/PqBmVwShQauSTuVvOiPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Rename.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Rename.html",
+          "hash": "Tfh7Lw+3LuJ3gr/0i2eyTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Column.ISchemaColumnSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Column.ISchemaColumnSyntax.html",
+          "hash": "oLigeQNtaJ4N40LUq4M0EQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Column.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Column.html",
+          "hash": "v08r+BAulyWk8Y+XTA96ZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Constraint.ISchemaConstraintSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Constraint.ISchemaConstraintSyntax.html",
+          "hash": "efnmjEzP2pDMePibPwCsDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Constraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Constraint.html",
+          "hash": "P9Ir18CBeIloGEq0hbKiPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.ISchemaExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.ISchemaExpressionRoot.html",
+          "hash": "Va59NpgA81o8BWO62XRlPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Index.ISchemaIndexSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Index.ISchemaIndexSyntax.html",
+          "hash": "aR7fVvzfpJrFGgj19kGatg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Index.html",
+          "hash": "iW/mVVamc2TxRcSistMZwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Schema.ISchemaSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Schema.ISchemaSchemaSyntax.html",
+          "hash": "8aYY3Mppg81jewdrNlivVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Schema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Schema.html",
+          "hash": "4pL5TiNhcFmvJeZ6cACqCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Table.ISchemaTableSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Table.ISchemaTableSyntax.html",
+          "hash": "AWq9hxUXzqLSjL9NqRWXJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.Table.html",
+          "hash": "fZEC28VbSmtCBfYNQ5xwNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Schema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Schema.html",
+          "hash": "TikL6kHWsXpaKL1TKAqgUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Update.IUpdateExpressionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Update.IUpdateExpressionRoot.html",
+          "hash": "nrWqsM9Lo4sU9IQetK64TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Update.IUpdateSetOrInSchemaSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Update.IUpdateSetOrInSchemaSyntax.html",
+          "hash": "48gu+fvy9jefb5N2EU8yFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Update.IUpdateSetSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Update.IUpdateSetSyntax.html",
+          "hash": "hD+aOrPv21noRcroWZHEjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Update.IUpdateWhereSyntax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Update.IUpdateWhereSyntax.html",
+          "hash": "rTTZSGe9RlUJASkNHcRpDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.Update.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.Update.html",
+          "hash": "VBrsM6cazzyXhakWjjdJKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/v3.x/FluentMigrator.Builders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/v3.x/FluentMigrator.Builders.html",
+          "hash": "R20GCo0EKffiSOJZ2jVNJw=="
         }
       },
       "is_incremental": false,
@@ -6169,7 +9269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v3.x/FluentMigrator.Migration.html",
-          "hash": "UVd8EwJIIegM+hAhuRNKBQ=="
+          "hash": "4eC7VrndOH/DaWxMAeuwbQ=="
         }
       },
       "is_incremental": false,
@@ -6193,7 +9293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v3.x/FluentMigrator.MigrationBase.html",
-          "hash": "6YjvuT10D28NvyyHj4vL9A=="
+          "hash": "+FXU0DU8o54PeTAZ3BgRwg=="
         }
       },
       "is_incremental": false,
@@ -10873,7 +13973,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v3.x/FluentMigrator.SqlAnywhere.SqlAnywhereExtensions.html",
-          "hash": "2+pqsrg/tZfDkM8mVXu3qQ=="
+          "hash": "HU81MIgwy27K61bOo6RSxg=="
         }
       },
       "is_incremental": false,
@@ -10921,7 +14021,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v3.x/FluentMigrator.SqlServer.SqlServerExtensions.html",
-          "hash": "FHBWQhUoU/5LEWdbjUM9Cg=="
+          "hash": "Dli7OoNFc2I9hEIuqeXnUg=="
         }
       },
       "is_incremental": false,
@@ -11372,30 +14472,60 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
-      "source_relative_path": "articles/technical/fluent-api.md",
+      "source_relative_path": "articles/technical/fluent-api-alter.md",
       "output": {
         ".html": {
-          "relative_path": "articles/technical/fluent-api.html",
-          "hash": "2HmqIGKVL5YLKqCZpHifWQ=="
+          "relative_path": "articles/technical/fluent-api-alter.html",
+          "hash": "YdbHu8r9oADVQ61jkL79rQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/technical/fluent-api-common.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/technical/fluent-api-common.html",
+          "hash": "OH+qGJJRgk6FP5RHtCYMsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/technical/fluent-api-create.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/technical/fluent-api-create.html",
+          "hash": "kOaIW7n5r43FhL0jNkcXMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/technical/fluent-api.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/technical/fluent-api.html",
+          "hash": "LsPEf6cL4btLGgfnsmR1rA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "eXd5m+mYqDXFv1aY1DJCjA=="
+          "hash": "R8Z5zVYyytcmF7oXt7FXgQ=="
         }
       },
       "is_incremental": false,
@@ -11468,11 +14598,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -11480,6 +14605,11 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {

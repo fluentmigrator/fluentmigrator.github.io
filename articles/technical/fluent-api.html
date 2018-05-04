@@ -85,208 +85,24 @@
 <li><a class="xref" href="../../api/v3.x/FluentMigrator.Migration.html">Migration</a>: data modification and script execution</li>
 </ul>
 <h1 id="supported-expressions">Supported expressions</h1>
-<h2 id="create-icreateexpressionroot">Create (<a href="xref:FluentMigrator.Builders.Create.ICreateExpressionRoot">ICreateExpressionRoot</a>)</h2>
+<h2 id="create"><a class="xref" href="fluent-api-create.html">Create</a></h2>
 <p>Create a database object.</p>
-<h3 id="icreateexpressionroot"><a href="xref:FluentMigrator.Builders.Create.ICreateExpressionRoot">ICreateExpressionRoot</a></h3>
-<pre><code>Create -+- Schema ------------- name --- ICreateSchemaOptionsSyntax ---
-        |
-        +- Table -------------- name --- ICreateTableWithColumnOrSchemaOrDescriptionSyntax ---
-        |
-        +- Column ------------- name --- ICreateColumnOnTableSyntax ---
-        |
-        +- ForeignKey -------+--------+- ICreateForeignKeyFromTableSyntax ---
-        |                    |        |
-        |                    +- name -+
-        |
-        +- Index ------------+--------+- ICreateIndexForTableSyntax ---
-        |                    |        |
-        |                    +- name -+
-        |
-        +- Sequence ----------- name --- ICreateSequenceInSchemaSyntax ---
-        |
-        +- PrimaryKey -------+--------+- ICreateConstraintOnTableSyntax ---
-        |                    |        |
-        |                    +- name -+
-        |
-        +- UniqueConstraint -+--------+- ICreateConstraintOnTableSyntax ---
-                             |        |
-                             +- name -+
-</code></pre>
-<h3 id="icreateschemaoptionssyntax">ICreateSchemaOptionsSyntax</h3>
-<p>This is just an extension point.</p>
-<h3 id="icreatetablewithcolumnorschemaordescriptionsyntax">ICreateTableWithColumnOrSchemaOrDescriptionSyntax</h3>
-<pre><code>--------+-----------------------------+- ICreateTableWithColumnOrSchemaSyntax ---
-        |                             |
-        +- WithDescription ---- name -+
-</code></pre>
-<h3 id="icreatetablewithcolumnorschemasyntax">ICreateTableWithColumnOrSchemaSyntax</h3>
-<pre><code>--------+-----------------------------+- ICreateTableWithColumnSyntax ---
-        |                             |
-        +- InSchema ----------- name -+
-</code></pre>
-<h3 id="icreatetablewithcolumnsyntax">ICreateTableWithColumnSyntax</h3>
-<pre><code>---------- WithColumn --------- name --- ICreateTableColumnAsTypeSyntax ---
-</code></pre>
-<h3 id="icreatetablecolumnastypesyntax">ICreateTableColumnAsTypeSyntax</h3>
-<pre><code>---------- IColumnTypeSyntax ---- TNext: ICreateTableColumnOptionOrWithColumnSyntax ---
-</code></pre>
-<h3 id="icreatecolumnoptionsyntax">ICreateColumnOptionSyntax</h3>
-<pre><code>--------+-------------------------------+- IColumnOptionSyntax -+--&gt; TNext: ICreateColumnOptionSyntax
-        |                               |                       |
-        +- SetExistingRowsTo --- value -+                       +--&gt; TNextFk: ICreateColumnOptionOrForeignKeyCascadeSyntax
-</code></pre>
-<h3 id="icreatecolumnoptionorforeignkeycascadesyntax">ICreateColumnOptionOrForeignKeyCascadeSyntax</h3>
-<pre><code>--------+--&gt; ICreateColumnOptionSyntax
-        |
-        +- IForeignKeyCascadeSyntax -+--&gt; TNext: ICreateColumnOptionSyntax
-                                     |
-                                     +--&gt; TNextFk: ICreateColumnOptionOrForeignKeyCascadeSyntax
-</code></pre>
-<h3 id="icreatetablecolumnoptionorwithcolumnsyntax">ICreateTableColumnOptionOrWithColumnSyntax</h3>
-<pre><code>--------+- ICreateTableWithColumnSyntax -------------------------------------------------------------------+-
-        |                                                                                                  |
-        +- IColumnOptionSyntax -+- TNext: ICreateTableColumnOptionOrWithColumnSyntax ----------------------+
-                                |                                                                          |
-                                +- TNextFk: ICreateTableColumnOptionOrForeignKeyCascadeOrWithColumnSyntax -+
-</code></pre>
-<h3 id="icreatetablecolumnoptionorforeignkeycascadeorwithcolumnsyntax">ICreateTableColumnOptionOrForeignKeyCascadeOrWithColumnSyntax</h3>
-<pre><code>--------+--&gt; ICreateTableColumnOptionOrWithColumnSyntax
-        |
-        +- IForeignKeyCascadeSyntax -+--&gt; TNext: ICreateTableColumnOptionOrWithColumnSyntax
-                                     |
-                                     +--&gt; TNextFk: ICreateTableColumnOptionOrForeignKeyCascadeOrWithColumnSyntax
-</code></pre>
-<h3 id="icreatecolumnontablesyntax">ICreateColumnOnTableSyntax</h3>
-<pre><code>---------- OnTable --- name ---&gt; ICreateColumnAsTypeOrInSchemaSyntax
-</code></pre>
-<h3 id="icreatecolumnastypeorinschemasyntax">ICreateColumnAsTypeOrInSchemaSyntax</h3>
-<pre><code>--------+---------------------+--&gt; ICreateColumnAsTypeSyntax
-        |                     |
-        +- InSchema --- name -+
-</code></pre>
-<h3 id="icreatecolumnastypesyntax">ICreateColumnAsTypeSyntax</h3>
-<pre><code>---------- IColumnTypeSyntax ---&gt; ICreateColumnOptionSyntax
-</code></pre>
-<h3 id="icreateforeignkeyfromtablesyntax">ICreateForeignKeyFromTableSyntax</h3>
-<pre><code></code></pre>
-<h2 id="alter-ialterexpressionroot">Alter (<a href="xref:FluentMigrator.Builders.Alter.IAlterExpressionRoot">IAlterExpressionRoot</a>)</h2>
+<h2 id="alter"><a class="xref" href="fluent-api-alter.html">Alter</a></h2>
 <p>Alter a database object.</p>
-<h2 id="delete-ideleteexpressionroot">Delete (<a href="xref:FluentMigrator.Builders.Delete.IDeleteExpressionRoot">IDeleteExpressionRoot</a>)</h2>
+<h2 id="delete-ideleteexpressionroot">Delete (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Delete.IDeleteExpressionRoot.html">IDeleteExpressionRoot</a>)</h2>
 <p>Delete a database object or data.</p>
-<h2 id="rename-irenameexpressionroot">Rename (<a href="xref:FluentMigrator.Builders.Rename.IRenameExpressionRoot">IRenameExpressionRoot</a>)</h2>
+<h2 id="rename-irenameexpressionroot">Rename (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Rename.IRenameExpressionRoot.html">IRenameExpressionRoot</a>)</h2>
 <p>Rename a database object.</p>
-<h2 id="schema-ischemaexpressionroot">Schema (<a href="xref:FluentMigrator.Builders.Schema.ISchemaExpressionRoot">ISchemaExpressionRoot</a>)</h2>
+<h2 id="schema-ischemaexpressionroot">Schema (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Schema.ISchemaExpressionRoot.html">ISchemaExpressionRoot</a>)</h2>
 <p>Schema-oriented starting point for expressions.</p>
-<h2 id="ifdatabase-iifdatabaseexpressionroot">IfDatabase (<a href="xref:FluentMigrator.Builders.IfDatabase.IIfDatabaseExpressionRoot">IIfDatabaseExpressionRoot</a>)</h2>
+<h2 id="ifdatabase-iifdatabaseexpressionroot">IfDatabase (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.IfDatabase.IIfDatabaseExpressionRoot.html">IIfDatabaseExpressionRoot</a>)</h2>
 <p>Create database-specific expressions.</p>
-<h2 id="insert-iinsertexpressionroot">Insert (<a href="xref:FluentMigrator.Builders.Insert.IInsertExpressionRoot">IInsertExpressionRoot</a>)</h2>
+<h2 id="insert-iinsertexpressionroot">Insert (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Insert.IInsertExpressionRoot.html">IInsertExpressionRoot</a>)</h2>
 <p>Insert data.</p>
-<h2 id="update-iupdateexpressionroot">Update (<a href="xref:FluentMigrator.Builders.Update.IUpdateExpressionRoot">IUpdateExpressionRoot</a>)</h2>
+<h2 id="update-iupdateexpressionroot">Update (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Update.IUpdateExpressionRoot.html">IUpdateExpressionRoot</a>)</h2>
 <p>Update data.</p>
-<h2 id="execute-iexecuteexpressionroot">Execute (<a href="xref:FluentMigrator.Builders.Execute.IExecuteExpressionRoot">IExecuteExpressionRoot</a>)</h2>
+<h2 id="execute-iexecuteexpressionroot">Execute (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Execute.IExecuteExpressionRoot.html">IExecuteExpressionRoot</a>)</h2>
 <p>Execute SQL statements/scripts.</p>
-<h1 id="generic-interfaces">Generic interfaces</h1>
-<h2 id="icolumntypesyntaxtnext">IColumnTypeSyntax&lt;TNext&gt;</h2>
-<pre><code>--------+- AsAnsiString -+--------+-------------+---------------+-&gt; TNext
-        |                |        |             |               |
-        |                +- size -+- collation -+               |
-        |                                                       |
-        +- AsBinary -----+--------+-----------------------------+
-        |                |        |                             |
-        |                +- size -+                             |
-        |                                                       |
-        +- AsBoolean -------------------------------------------+
-        |                                                       |
-        +- AsByte ----------------------------------------------+
-        |                                                       |
-        +- AsCurrency ------------------------------------------+
-        |                                                       |
-        +- AsDate ----------------------------------------------+
-        |                                                       |
-        +- AsDateTime ------------------------------------------+
-        |                                                       |
-        +- AsDateTime2 -----------------------------------------+
-        |                                                       |
-        +- AsDateTimeOffset ------------------------------------+
-        |                                                       |
-        +- AsDecimal -------------------------------------------+
-        |                                                       |
-        +- AsDouble --------------------------------------------+
-        |                                                       |
-        +- AsGuid ----------------------------------------------+
-        |                                                       |
-        +- AsFixedLengthString --- size -----+-------------+----+
-        |                                    |             |    |
-        |                                    +- collation -+    |
-        |                                                       |
-        +- AsFixedLengthAnsiString --- size -+-------------+----+
-        |                                    |             |    |
-        |                                    +- collation -+    |
-        |                                                       |
-        +- AsFloat ---------------------------------------------+
-        |                                                       |
-        +- AsInt16 ---------------------------------------------+
-        |                                                       |
-        +- AsInt32 ---------------------------------------------+
-        |                                                       |
-        +- AsInt64 ---------------------------------------------+
-        |                                                       |
-        +- AsString -----+--------+-------------+---------------+
-        |                |        |             |               |
-        |                +- size -+- collation -+               |
-        |                                                       |
-        +- AsTime ----------------------------------------------+
-        |                                                       |
-        +- AsXml --------+--------+-----------------------------+
-        |                |        |                             |
-        |                +- size -+                             |
-        |                                                       |
-        +- AsCustom --- customType -----------------------------+
-</code></pre>
-<h2 id="icolumnoptionsyntaxtnexttnextfk">IColumnOptionSyntax&lt;TNext,TNextFk&gt;</h2>
-<pre><code>--------+- WithDefault --- method --------------------------------------+--&gt; TNext
-        |                                                               |
-        +- WithDefaultValue --- value ----------------------------------+
-        |                                                               |
-        +- WithColumnDescription --- description -----------------------+
-        |                                                               |
-        +- Identity ----------------------------------------------------+
-        |                                                               |
-        +- Indexed -----------------------------------------------------+
-        |                                                               |
-        +- PrimaryKey -+--------+---------------------------------------+
-        |              |        |                                       |
-        |              +- name -+                                       |
-        |                                                               |
-        +- Nullable ----------------------------------------------------+
-        |                                                               |
-        +- NotNullable -------------------------------------------------+
-        |                                                               |
-        +- Unique -----+--------+---------------------------------------+
-        |              |        |
-        |              +- name -+
-        |
-        +- ForeignKey ---+-------------------------------------------+--+--&gt; TNextFk
-        |                |                                           |  |
-        |                +-----------------------+- table --- column-+  |
-        |                |                       |                      |
-        |                +- name -+-+----------+-+                      |
-        |                           |          |                        |
-        |                           +- schema -+                        |
-        |                                                               |
-        +- ReferencedBy -+-----------------------+- table --- column-+--+
-                         |                       |
-                         +- name -+-+----------+-+
-                                    |          |
-                                    +- schema -+
-</code></pre>
-<h2 id="iforeignkeycascadesyntaxtnexttnextfk">IForeignKeyCascadeSyntax&lt;TNext,TNextFk&gt;</h2>
-<pre><code>--------+- OnDeleteOrUpdate --- rule ---&gt; TNext
-        |
-        +- OnDelete --- rule -+---------&gt; TNextFk
-        |                     |
-        +- OnUpdate --- rule -+
-</code></pre>
 <h1 id="planned-changes">Planned changes</h1>
 <ul>
 <li>Differentiate between <code>Delete</code> and <code>Drop</code></li>

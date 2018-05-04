@@ -1,0 +1,834 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VersionLoader
+   | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VersionLoader
+   | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.VersionLoader">
+  
+  
+  <h1 id="FluentMigrator_Runner_VersionLoader" data-uid="FluentMigrator.Runner.VersionLoader" class="text-break">Class VersionLoader
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">VersionLoader</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.Runner.IVersionLoader.html">IVersionLoader</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.html">FluentMigrator.Runner</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
+  <h5 id="FluentMigrator_Runner_VersionLoader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VersionLoader : IVersionLoader</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader__ctor_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_Conventions_IConventionSet_FluentMigrator_Runner_IMigrationRunnerConventions_FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_FluentMigrator_Runner_IMigrationRunner_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.%23ctor(FluentMigrator.Runner.Processors.IProcessorAccessor%2CFluentMigrator.Runner.Conventions.IConventionSet%2CFluentMigrator.Runner.IMigrationRunnerConventions%2CFluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData%2CFluentMigrator.Runner.IMigrationRunner)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L99">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader__ctor_" data-uid="FluentMigrator.Runner.VersionLoader.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader__ctor_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_Conventions_IConventionSet_FluentMigrator_Runner_IMigrationRunnerConventions_FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_FluentMigrator_Runner_IMigrationRunner_" data-uid="FluentMigrator.Runner.VersionLoader.#ctor(FluentMigrator.Runner.Processors.IProcessorAccessor,FluentMigrator.Runner.Conventions.IConventionSet,FluentMigrator.Runner.IMigrationRunnerConventions,FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData,FluentMigrator.Runner.IMigrationRunner)">VersionLoader(IProcessorAccessor, IConventionSet, IMigrationRunnerConventions, IVersionTableMetaData, IMigrationRunner)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VersionLoader(IProcessorAccessor processorAccessor, IConventionSet conventionSet, IMigrationRunnerConventions conventions, IVersionTableMetaData versionTableMetaData, IMigrationRunner runner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Processors.IProcessorAccessor.html">IProcessorAccessor</a></td>
+        <td><span class="parametername">processorAccessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Conventions.IConventionSet.html">IConventionSet</a></td>
+        <td><span class="parametername">conventionSet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunnerConventions.html">IMigrationRunnerConventions</a></td>
+        <td><span class="parametername">conventions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a></td>
+        <td><span class="parametername">versionTableMetaData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunner.html">IMigrationRunner</a></td>
+        <td><span class="parametername">runner</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_AlreadyCreatedVersionSchema.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.AlreadyCreatedVersionSchema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L158">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_AlreadyCreatedVersionSchema_" data-uid="FluentMigrator.Runner.VersionLoader.AlreadyCreatedVersionSchema*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_AlreadyCreatedVersionSchema" data-uid="FluentMigrator.Runner.VersionLoader.AlreadyCreatedVersionSchema">AlreadyCreatedVersionSchema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlreadyCreatedVersionSchema { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_AlreadyCreatedVersionTable.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.AlreadyCreatedVersionTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L161">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_AlreadyCreatedVersionTable_" data-uid="FluentMigrator.Runner.VersionLoader.AlreadyCreatedVersionTable*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_AlreadyCreatedVersionTable" data-uid="FluentMigrator.Runner.VersionLoader.AlreadyCreatedVersionTable">AlreadyCreatedVersionTable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlreadyCreatedVersionTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_AlreadyMadeVersionDescription.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.AlreadyMadeVersionDescription%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L165">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_AlreadyMadeVersionDescription_" data-uid="FluentMigrator.Runner.VersionLoader.AlreadyMadeVersionDescription*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_AlreadyMadeVersionDescription" data-uid="FluentMigrator.Runner.VersionLoader.AlreadyMadeVersionDescription">AlreadyMadeVersionDescription</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlreadyMadeVersionDescription { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_AlreadyMadeVersionUnique.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.AlreadyMadeVersionUnique%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L163">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_AlreadyMadeVersionUnique_" data-uid="FluentMigrator.Runner.VersionLoader.AlreadyMadeVersionUnique*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_AlreadyMadeVersionUnique" data-uid="FluentMigrator.Runner.VersionLoader.AlreadyMadeVersionUnique">AlreadyMadeVersionUnique</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlreadyMadeVersionUnique { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_Assemblies.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.Assemblies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L50">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_Assemblies_" data-uid="FluentMigrator.Runner.VersionLoader.Assemblies*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_Assemblies" data-uid="FluentMigrator.Runner.VersionLoader.Assemblies">Assemblies</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+protected IAssemblyCollection Assemblies { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IAssemblyCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_OwnsVersionSchema.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.OwnsVersionSchema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L167">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_OwnsVersionSchema_" data-uid="FluentMigrator.Runner.VersionLoader.OwnsVersionSchema*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_OwnsVersionSchema" data-uid="FluentMigrator.Runner.VersionLoader.OwnsVersionSchema">OwnsVersionSchema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OwnsVersionSchema { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_Runner.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.Runner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L56">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_Runner_" data-uid="FluentMigrator.Runner.VersionLoader.Runner*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_Runner" data-uid="FluentMigrator.Runner.VersionLoader.Runner">Runner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMigrationRunner Runner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunner.html">IMigrationRunner</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_VersionDescriptionMigration.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.VersionDescriptionMigration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L61">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_VersionDescriptionMigration_" data-uid="FluentMigrator.Runner.VersionLoader.VersionDescriptionMigration*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_VersionDescriptionMigration" data-uid="FluentMigrator.Runner.VersionLoader.VersionDescriptionMigration">VersionDescriptionMigration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMigration VersionDescriptionMigration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IMigration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_VersionInfo.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.VersionInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L152">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_VersionInfo_" data-uid="FluentMigrator.Runner.VersionLoader.VersionInfo*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_VersionInfo" data-uid="FluentMigrator.Runner.VersionLoader.VersionInfo">VersionInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IVersionInfo VersionInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Versioning.IVersionInfo.html">IVersionInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_VersionMigration.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.VersionMigration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L59">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_VersionMigration_" data-uid="FluentMigrator.Runner.VersionLoader.VersionMigration*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_VersionMigration" data-uid="FluentMigrator.Runner.VersionLoader.VersionMigration">VersionMigration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMigration VersionMigration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IMigration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_VersionSchemaMigration.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.VersionSchemaMigration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L58">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_VersionSchemaMigration_" data-uid="FluentMigrator.Runner.VersionLoader.VersionSchemaMigration*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_VersionSchemaMigration" data-uid="FluentMigrator.Runner.VersionLoader.VersionSchemaMigration">VersionSchemaMigration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VersionSchemaMigration VersionSchemaMigration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Versioning.VersionSchemaMigration.html">VersionSchemaMigration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_VersionTableMetaData.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.VersionTableMetaData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L54">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_VersionTableMetaData_" data-uid="FluentMigrator.Runner.VersionLoader.VersionTableMetaData*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_VersionTableMetaData" data-uid="FluentMigrator.Runner.VersionLoader.VersionTableMetaData">VersionTableMetaData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IVersionTableMetaData VersionTableMetaData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_VersionUniqueMigration.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.VersionUniqueMigration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L60">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_VersionUniqueMigration_" data-uid="FluentMigrator.Runner.VersionLoader.VersionUniqueMigration*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_VersionUniqueMigration" data-uid="FluentMigrator.Runner.VersionLoader.VersionUniqueMigration">VersionUniqueMigration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMigration VersionUniqueMigration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IMigration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_CreateVersionInfoInsertionData_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.CreateVersionInfoInsertionData(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L142">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_CreateVersionInfoInsertionData_" data-uid="FluentMigrator.Runner.VersionLoader.CreateVersionInfoInsertionData*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_CreateVersionInfoInsertionData_System_Int64_System_String_" data-uid="FluentMigrator.Runner.VersionLoader.CreateVersionInfoInsertionData(System.Int64,System.String)">CreateVersionInfoInsertionData(Int64, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual InsertionDataDefinition CreateVersionInfoInsertionData(long version, string description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InsertionDataDefinition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_DeleteVersion_System_Int64_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.DeleteVersion(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L218">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_DeleteVersion_" data-uid="FluentMigrator.Runner.VersionLoader.DeleteVersion*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_DeleteVersion_System_Int64_" data-uid="FluentMigrator.Runner.VersionLoader.DeleteVersion(System.Int64)">DeleteVersion(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteVersion(long version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_GetVersionTableMetaData.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.GetVersionTableMetaData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L136">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_GetVersionTableMetaData_" data-uid="FluentMigrator.Runner.VersionLoader.GetVersionTableMetaData*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_GetVersionTableMetaData" data-uid="FluentMigrator.Runner.VersionLoader.GetVersionTableMetaData">GetVersionTableMetaData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IVersionTableMetaData GetVersionTableMetaData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_LoadVersionInfo.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.LoadVersionInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L169">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_LoadVersionInfo_" data-uid="FluentMigrator.Runner.VersionLoader.LoadVersionInfo*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_LoadVersionInfo" data-uid="FluentMigrator.Runner.VersionLoader.LoadVersionInfo">LoadVersionInfo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadVersionInfo()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_RemoveVersionTable.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.RemoveVersionTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L206">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_RemoveVersionTable_" data-uid="FluentMigrator.Runner.VersionLoader.RemoveVersionTable*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_RemoveVersionTable" data-uid="FluentMigrator.Runner.VersionLoader.RemoveVersionTable">RemoveVersionTable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveVersionTable()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_UpdateVersionInfo_System_Int64_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.UpdateVersionInfo(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L121">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_UpdateVersionInfo_" data-uid="FluentMigrator.Runner.VersionLoader.UpdateVersionInfo*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_UpdateVersionInfo_System_Int64_" data-uid="FluentMigrator.Runner.VersionLoader.UpdateVersionInfo(System.Int64)">UpdateVersionInfo(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateVersionInfo(long version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader_UpdateVersionInfo_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader.UpdateVersionInfo(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L126">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_VersionLoader_UpdateVersionInfo_" data-uid="FluentMigrator.Runner.VersionLoader.UpdateVersionInfo*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader_UpdateVersionInfo_System_Int64_System_String_" data-uid="FluentMigrator.Runner.VersionLoader.UpdateVersionInfo(System.Int64,System.String)">UpdateVersionInfo(Int64, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateVersionInfo(long version, string description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.IVersionLoader.html">IVersionLoader</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_VersionLoader.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.VersionLoader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/VersionLoader.cs/#L37" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

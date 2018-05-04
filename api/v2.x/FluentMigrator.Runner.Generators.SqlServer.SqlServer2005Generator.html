@@ -1,0 +1,1213 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SqlServer2005Generator
+   | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SqlServer2005Generator
+   | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator">
+  
+  
+  <h1 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator" class="text-break">Class SqlServer2005Generator
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html">GeneratorBase</a></div>
+    <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html">GenericGenerator</a></div>
+    <div class="level3"><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html">SqlServer2000Generator</a></div>
+    <div class="level4"><span class="xref">SqlServer2005Generator</span></div>
+      <div class="level5"><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2008Generator.html">SqlServer2008Generator</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_RenameTable">SqlServer2000Generator.RenameTable</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_RenameColumn">SqlServer2000Generator.RenameColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_CreateConstraint">SqlServer2000Generator.CreateConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_GetClusterTypeString_CreateIndexExpression_">SqlServer2000Generator.GetClusterTypeString(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_GetConstraintClusteringString_CreateConstraintExpression_">SqlServer2000Generator.GetConstraintClusteringString(CreateConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_Generate_RenameTableExpression_">SqlServer2000Generator.Generate(RenameTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_Generate_RenameColumnExpression_">SqlServer2000Generator.Generate(RenameColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_Generate_DeleteColumnExpression_">SqlServer2000Generator.Generate(DeleteColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_BuildDelete_DeleteColumnExpression_System_String_System_Text_StringBuilder_">SqlServer2000Generator.BuildDelete(DeleteColumnExpression, String, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_Generate_AlterDefaultConstraintExpression_">SqlServer2000Generator.Generate(AlterDefaultConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_Generate_InsertDataExpression_">SqlServer2000Generator.Generate(InsertDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_IsUsingIdentityInsert_InsertDataExpression_">SqlServer2000Generator.IsUsingIdentityInsert(InsertDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_Generate_CreateSequenceExpression_">SqlServer2000Generator.Generate(CreateSequenceExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_Generate_DeleteSequenceExpression_">SqlServer2000Generator.Generate(DeleteSequenceExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_compatabilityMode">GenericGenerator.compatabilityMode</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateTable">GenericGenerator.CreateTable</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropTable">GenericGenerator.DropTable</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropColumn">GenericGenerator.DropColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AlterColumn">GenericGenerator.AlterColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateSchema">GenericGenerator.CreateSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AlterSchema">GenericGenerator.AlterSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropSchema">GenericGenerator.DropSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_InsertData">GenericGenerator.InsertData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_UpdateData">GenericGenerator.UpdateData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DeleteData">GenericGenerator.DeleteData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DeleteConstraint">GenericGenerator.DeleteConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GetUniqueString_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.GetUniqueString(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GetClusterTypeString_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.GetClusterTypeString(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateTableExpression_">GenericGenerator.Generate(CreateTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteTableExpression_">GenericGenerator.Generate(DeleteTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_RenameTableExpression_">GenericGenerator.Generate(RenameTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateColumnExpression_">GenericGenerator.Generate(CreateColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_AlterColumnExpression_">GenericGenerator.Generate(AlterColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteColumnExpression_">GenericGenerator.Generate(DeleteColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_RenameColumnExpression_">GenericGenerator.Generate(RenameColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.Generate(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteIndexExpression_">GenericGenerator.Generate(DeleteIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateForeignKeyExpression_">GenericGenerator.Generate(CreateForeignKeyExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateConstraintExpression_">GenericGenerator.Generate(CreateConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteConstraintExpression_">GenericGenerator.Generate(DeleteConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GenerateForeignKeyName_FluentMigrator_Model_ForeignKeyDefinition_">GenericGenerator.GenerateForeignKeyName(ForeignKeyDefinition)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteForeignKeyExpression_">GenericGenerator.Generate(DeleteForeignKeyExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_InsertDataExpression_">GenericGenerator.Generate(InsertDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AppendSqlStatementEndToken_System_Text_StringBuilder_">GenericGenerator.AppendSqlStatementEndToken(StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GenerateColumnNamesAndValues_FluentMigrator_Expressions_InsertDataExpression_">GenericGenerator.GenerateColumnNamesAndValues(InsertDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_ValidateAdditionalFeatureCompatibility_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___">GenericGenerator.ValidateAdditionalFeatureCompatibility(IEnumerable&lt;KeyValuePair&lt;String, Object&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_UpdateDataExpression_">GenericGenerator.Generate(UpdateDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteDataExpression_">GenericGenerator.Generate(DeleteDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateSchemaExpression_">GenericGenerator.Generate(CreateSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteSchemaExpression_">GenericGenerator.Generate(DeleteSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_AlterSchemaExpression_">GenericGenerator.Generate(AlterSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateSequenceExpression_">GenericGenerator.Generate(CreateSequenceExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteSequenceExpression_">GenericGenerator.Generate(DeleteSequenceExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_AlterDefaultConstraintExpression_">GeneratorBase.Generate(AlterDefaultConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_DeleteDefaultConstraintExpression_">GeneratorBase.Generate(DeleteDefaultConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_AlterTableExpression_">GeneratorBase.Generate(AlterTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Column">GeneratorBase.Column</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Quoter">GeneratorBase.Quoter</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_DescriptionGenerator">GeneratorBase.DescriptionGenerator</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.html">FluentMigrator.Runner.Generators.SqlServer</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.SqlServer.dll</h6>
+  <h5 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SqlServer2005Generator : SqlServer2000Generator, IMigrationGenerator</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator__ctor_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator__ctor" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.#ctor">SqlServer2005Generator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqlServer2005Generator()</code></pre>
+  </div>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator__ctor_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_IQuoter_FluentMigrator_Runner_Generators_IDescriptionGenerator_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.#ctor(FluentMigrator.Runner.Generators.IColumn,FluentMigrator.Runner.Generators.IQuoter,FluentMigrator.Runner.Generators.IDescriptionGenerator)">SqlServer2005Generator(IColumn, IQuoter, IDescriptionGenerator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SqlServer2005Generator(IColumn column, IQuoter quoter, IDescriptionGenerator descriptionGenerator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IColumn.html">IColumn</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IQuoter.html">IQuoter</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IDescriptionGenerator.html">IDescriptionGenerator</a></td>
+        <td><span class="parametername">descriptionGenerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_AddColumn_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.AddColumn*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_AddColumn" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.AddColumn">AddColumn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string AddColumn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_AddColumn">SqlServer2000Generator.AddColumn</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_CreateForeignKeyConstraint_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.CreateForeignKeyConstraint*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_CreateForeignKeyConstraint" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.CreateForeignKeyConstraint">CreateForeignKeyConstraint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string CreateForeignKeyConstraint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateForeignKeyConstraint">GenericGenerator.CreateForeignKeyConstraint</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_CreateIndex_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.CreateIndex*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_CreateIndex" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.CreateIndex">CreateIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string CreateIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateIndex">GenericGenerator.CreateIndex</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_DropIndex_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.DropIndex*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_DropIndex" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.DropIndex">DropIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DropIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_DropIndex">SqlServer2000Generator.DropIndex</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_IdentityInsert_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.IdentityInsert*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_IdentityInsert" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.IdentityInsert">IdentityInsert</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string IdentityInsert { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_IdentityInsert">SqlServer2000Generator.IdentityInsert</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_AlterColumnExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(AlterColumnExpression)">Generate(AlterColumnExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(AlterColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AlterColumnExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_AlterSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(AlterSchemaExpression)">Generate(AlterSchemaExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(AlterSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AlterSchemaExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_AlterTableExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(AlterTableExpression)">Generate(AlterTableExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(AlterTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AlterTableExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_CreateColumnExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(CreateColumnExpression)">Generate(CreateColumnExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateColumnExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_CreateConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(CreateConstraintExpression)">Generate(CreateConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateConstraintExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_Generate_CreateConstraintExpression_">SqlServer2000Generator.Generate(CreateConstraintExpression)</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_CreateForeignKeyExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(CreateForeignKeyExpression)">Generate(CreateForeignKeyExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateForeignKeyExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateForeignKeyExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(CreateIndexExpression)">Generate(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateIndexExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_CreateSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(CreateSchemaExpression)">Generate(CreateSchemaExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateSchemaExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_CreateTableExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(CreateTableExpression)">Generate(CreateTableExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateTableExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_DeleteConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(DeleteConstraintExpression)">Generate(DeleteConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DeleteConstraintExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_DeleteDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(DeleteDefaultConstraintExpression)">Generate(DeleteDefaultConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteDefaultConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DeleteDefaultConstraintExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_Generate_DeleteDefaultConstraintExpression_">SqlServer2000Generator.Generate(DeleteDefaultConstraintExpression)</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_DeleteIndexExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(DeleteIndexExpression)">Generate(DeleteIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DeleteIndexExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_Generate_DeleteSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.Generate(DeleteSchemaExpression)">Generate(DeleteSchemaExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DeleteSchemaExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_GetIncludeString_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.GetIncludeString*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_GetIncludeString_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.GetIncludeString(CreateIndexExpression)">GetIncludeString(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetIncludeString(CreateIndexExpression column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateIndexExpression</span></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_GetWithOptions_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.GetWithOptions*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_GetWithOptions_ISupportAdditionalFeatures_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.GetWithOptions(ISupportAdditionalFeatures)">GetWithOptions(ISupportAdditionalFeatures)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetWithOptions(ISupportAdditionalFeatures expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISupportAdditionalFeatures</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_IsAdditionalFeatureSupported_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.IsAdditionalFeatureSupported*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_SqlServer_SqlServer2005Generator_IsAdditionalFeatureSupported_System_String_" data-uid="FluentMigrator.Runner.Generators.SqlServer.SqlServer2005Generator.IsAdditionalFeatureSupported(System.String)">IsAdditionalFeatureSupported(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsAdditionalFeatureSupported(string feature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">feature</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Generator.html#FluentMigrator_Runner_Generators_SqlServer_SqlServer2000Generator_IsAdditionalFeatureSupported_System_String_">SqlServer2000Generator.IsAdditionalFeatureSupported(String)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

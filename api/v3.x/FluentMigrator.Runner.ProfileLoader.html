@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ProfileLoader
+   | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ProfileLoader
+   | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.ProfileLoader">
+  
+  
+  <h1 id="FluentMigrator_Runner_ProfileLoader" data-uid="FluentMigrator.Runner.ProfileLoader" class="text-break">Class ProfileLoader
+  </h1>
+  <div class="markdown level0 summary"><p>The default implementation of the <a class="xref" href="FluentMigrator.Runner.IProfileLoader.html">IProfileLoader</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ProfileLoader</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.Runner.IProfileLoader.html">IProfileLoader</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.html">FluentMigrator.Runner</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
+  <h5 id="FluentMigrator_Runner_ProfileLoader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ProfileLoader : IProfileLoader</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_ProfileLoader__ctor_FluentMigrator_Runner_Initialization_IRunnerContext_FluentMigrator_Runner_IMigrationRunner_FluentMigrator_Runner_IMigrationRunnerConventions_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ProfileLoader.%23ctor(FluentMigrator.Runner.Initialization.IRunnerContext%2CFluentMigrator.Runner.IMigrationRunner%2CFluentMigrator.Runner.IMigrationRunnerConventions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/ProfileLoader.cs/#L72">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ProfileLoader__ctor_" data-uid="FluentMigrator.Runner.ProfileLoader.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_ProfileLoader__ctor_FluentMigrator_Runner_Initialization_IRunnerContext_FluentMigrator_Runner_IMigrationRunner_FluentMigrator_Runner_IMigrationRunnerConventions_" data-uid="FluentMigrator.Runner.ProfileLoader.#ctor(FluentMigrator.Runner.Initialization.IRunnerContext,FluentMigrator.Runner.IMigrationRunner,FluentMigrator.Runner.IMigrationRunnerConventions)">ProfileLoader(IRunnerContext, IMigrationRunner, IMigrationRunnerConventions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.ProfileLoader.html">ProfileLoader</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public ProfileLoader(IRunnerContext runnerContext, IMigrationRunner runner, IMigrationRunnerConventions conventions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a></td>
+        <td><span class="parametername">runnerContext</span></td>
+        <td><p>The migration runner context</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunner.html">IMigrationRunner</a></td>
+        <td><span class="parametername">runner</span></td>
+        <td><p>The migration runner</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunnerConventions.html">IMigrationRunnerConventions</a></td>
+        <td><span class="parametername">conventions</span></td>
+        <td><p>The migration runner conventions</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_ProfileLoader__ctor_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__FluentMigrator_Runner_Initialization_IProfileSource_System_IServiceProvider_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ProfileLoader.%23ctor(IOptions%7BFluentMigrator.Runner.Initialization.RunnerOptions%7D%2CFluentMigrator.Runner.Initialization.IProfileSource%2CSystem.IServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/ProfileLoader.cs/#L57">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ProfileLoader__ctor_" data-uid="FluentMigrator.Runner.ProfileLoader.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_ProfileLoader__ctor_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__FluentMigrator_Runner_Initialization_IProfileSource_System_IServiceProvider_" data-uid="FluentMigrator.Runner.ProfileLoader.#ctor(IOptions{FluentMigrator.Runner.Initialization.RunnerOptions},FluentMigrator.Runner.Initialization.IProfileSource,System.IServiceProvider)">ProfileLoader(IOptions&lt;RunnerOptions&gt;, IProfileSource, IServiceProvider)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.ProfileLoader.html">ProfileLoader</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProfileLoader(IOptions&lt;RunnerOptions&gt; options, IProfileSource source, IServiceProvider serviceProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FluentMigrator.Runner.Initialization.RunnerOptions.html">RunnerOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The runner options</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IProfileSource.html">IProfileSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The profile source</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="parametername">serviceProvider</span></td>
+        <td><p>The service provider</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_ProfileLoader_Profiles.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ProfileLoader.Profiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/ProfileLoader.cs/#L103">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ProfileLoader_Profiles_" data-uid="FluentMigrator.Runner.ProfileLoader.Profiles*"></a>
+  <h4 id="FluentMigrator_Runner_ProfileLoader_Profiles" data-uid="FluentMigrator.Runner.ProfileLoader.Profiles">Profiles</h4>
+  <div class="markdown level1 summary"><p>Gets all found profiles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IMigration&gt; Profiles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">IMigration</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_ProfileLoader_SupportsParameterlessApplyProfile.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ProfileLoader.SupportsParameterlessApplyProfile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/ProfileLoader.cs/#L106">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ProfileLoader_SupportsParameterlessApplyProfile_" data-uid="FluentMigrator.Runner.ProfileLoader.SupportsParameterlessApplyProfile*"></a>
+  <h4 id="FluentMigrator_Runner_ProfileLoader_SupportsParameterlessApplyProfile" data-uid="FluentMigrator.Runner.ProfileLoader.SupportsParameterlessApplyProfile">SupportsParameterlessApplyProfile</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance allows a call to <a class="xref" href="FluentMigrator.Runner.IProfileLoader.html#FluentMigrator_Runner_IProfileLoader_ApplyProfiles">ApplyProfiles()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool SupportsParameterlessApplyProfile { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_ProfileLoader_ApplyProfiles.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ProfileLoader.ApplyProfiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/ProfileLoader.cs/#L110">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ProfileLoader_ApplyProfiles_" data-uid="FluentMigrator.Runner.ProfileLoader.ApplyProfiles*"></a>
+  <h4 id="FluentMigrator_Runner_ProfileLoader_ApplyProfiles" data-uid="FluentMigrator.Runner.ProfileLoader.ApplyProfiles">ApplyProfiles()</h4>
+  <div class="markdown level1 summary"><p>Apply all loaded profiles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void ApplyProfiles()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_ProfileLoader_ApplyProfiles_FluentMigrator_Runner_IMigrationRunner_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ProfileLoader.ApplyProfiles(FluentMigrator.Runner.IMigrationRunner)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/ProfileLoader.cs/#L126">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ProfileLoader_ApplyProfiles_" data-uid="FluentMigrator.Runner.ProfileLoader.ApplyProfiles*"></a>
+  <h4 id="FluentMigrator_Runner_ProfileLoader_ApplyProfiles_FluentMigrator_Runner_IMigrationRunner_" data-uid="FluentMigrator.Runner.ProfileLoader.ApplyProfiles(FluentMigrator.Runner.IMigrationRunner)">ApplyProfiles(IMigrationRunner)</h4>
+  <div class="markdown level1 summary"><p>Apply all loaded profiles with the given runner</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyProfiles(IMigrationRunner runner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunner.html">IMigrationRunner</a></td>
+        <td><span class="parametername">runner</span></td>
+        <td><p>The migration ruinner</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_ProfileLoader_FindProfilesIn_IAssemblyCollection_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ProfileLoader.FindProfilesIn(IAssemblyCollection%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/ProfileLoader.cs/#L82">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_ProfileLoader_FindProfilesIn_" data-uid="FluentMigrator.Runner.ProfileLoader.FindProfilesIn*"></a>
+  <h4 id="FluentMigrator_Runner_ProfileLoader_FindProfilesIn_IAssemblyCollection_System_String_" data-uid="FluentMigrator.Runner.ProfileLoader.FindProfilesIn(IAssemblyCollection,System.String)">FindProfilesIn(IAssemblyCollection, String)</h4>
+  <div class="markdown level1 summary"><p>Find all profile name tagged migrations in the given assembly collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public IEnumerable&lt;IMigration&gt; FindProfilesIn(IAssemblyCollection assemblies, string profile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IAssemblyCollection</span></td>
+        <td><span class="parametername">assemblies</span></td>
+        <td><p>The assemblies to load the profile tagged migrations from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">profile</span></td>
+        <td><p>The profile name to search the migrations for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">IMigration</span>&gt;</td>
+        <td><p>The found migrations</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.IProfileLoader.html">IProfileLoader</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_ProfileLoader.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.ProfileLoader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/ff6a369ac6549359c4f23706766bea50ba226297/src/FluentMigrator.Runner/ProfileLoader.cs/#L38" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

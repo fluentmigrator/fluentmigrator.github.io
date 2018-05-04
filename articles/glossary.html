@@ -91,8 +91,8 @@
 <p>A migration must have:</p>
 <ul>
 <li><code>public</code> visibility</li>
-<li><a class="xref" href="../api/FluentMigrator.IMigration.html">IMigration</a> as implemented interface (The <a class="xref" href="../api/FluentMigrator.Migration.html">Migration class</a> already implements it)</li>
-<li><a class="xref" href="../api/FluentMigrator.MaintenanceAttribute.html">MaintenanceAttribute</a></li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.IMigration.html">IMigration</a> as implemented interface (The <a class="xref" href="../api/v3.x/FluentMigrator.Migration.html">Migration class</a> already implements it)</li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.MaintenanceAttribute.html">MaintenanceAttribute</a></li>
 </ul>
 </div>
 <h1 id="migration">Migration</h1>
@@ -102,23 +102,23 @@
 <p>A migration must have:</p>
 <ul>
 <li><code>public</code> visibility</li>
-<li><a class="xref" href="../api/FluentMigrator.IMigration.html">IMigration</a> as implemented interface (The <a class="xref" href="../api/FluentMigrator.Migration.html">Migration class</a> already implements it)</li>
-<li><a class="xref" href="../api/FluentMigrator.MigrationAttribute.html">MigrationAttribute</a></li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.IMigration.html">IMigration</a> as implemented interface (The <a class="xref" href="../api/v3.x/FluentMigrator.Migration.html">Migration class</a> already implements it)</li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.MigrationAttribute.html">MigrationAttribute</a></li>
 </ul>
 </div>
 <h1 id="migration-expression">Migration Expression</h1>
 <p>An expression created from within a <a href="#migration">migration</a> that gets used to
 produce an SQL statement (using a <a href="#migration-generator">migration generator</a>)
 that gets executed by a <a href="#migration-processor">migration processor</a>.</p>
-<p>A migration expression always implements <a class="xref" href="../api/FluentMigrator.Expressions.IMigrationExpression.html">IMigrationExpression</a>.</p>
+<p>A migration expression always implements <a class="xref" href="../api/v3.x/FluentMigrator.Expressions.IMigrationExpression.html">IMigrationExpression</a>.</p>
 <h1 id="migration-generator">Migration Generator</h1>
 <p>Translates an <a href="#migration-expression">expression</a> created from within a <a href="#migration">migration</a>
 to one or more SQL statements.</p>
-<p>A migration generator always implements <a class="xref" href="../api/FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a>.</p>
+<p>A migration generator always implements <a class="xref" href="../api/v3.x/FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a>.</p>
 <h1 id="migration-processor">Migration Processor</h1>
 <p>Passes the <a href="#migration-expression">expressions</a> to a <a href="#migration-generator">migration generator</a>
 and then executes the resulting SQL statements.</p>
-<p>A migration processor always implements <a class="xref" href="../api/FluentMigrator.IMigrationProcessor.html">IMigrationProcessor</a>.</p>
+<p>A migration processor always implements <a class="xref" href="../api/v3.x/FluentMigrator.IMigrationProcessor.html">IMigrationProcessor</a>.</p>
 <h1 id="profile">Profile</h1>
 <p>A profile is used to selectively apply migrations.</p>
 <div class="WARNING">
@@ -130,8 +130,8 @@ and then executes the resulting SQL statements.</p>
 <p>A profile must have:</p>
 <ul>
 <li><code>public</code> visibility</li>
-<li><a class="xref" href="../api/FluentMigrator.IMigration.html">IMigration</a> as implemented interface (The <a class="xref" href="../api/FluentMigrator.Migration.html">Migration class</a> already implements it)</li>
-<li><a class="xref" href="../api/FluentMigrator.ProfileAttribute.html">ProfileAttribute</a></li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.IMigration.html">IMigration</a> as implemented interface (The <a class="xref" href="../api/v3.x/FluentMigrator.Migration.html">Migration class</a> already implements it)</li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.ProfileAttribute.html">ProfileAttribute</a></li>
 </ul>
 </div>
 </article>
@@ -142,7 +142,7 @@ and then executes the resulting SQL statements.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/docfx_project/articles/glossary.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/glossary.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

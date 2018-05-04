@@ -79,11 +79,11 @@
             <article class="content wrap" id="_content" data-uid="raw-sql">
 <h1 id="raw-sql-helper">Raw SQL helper</h1>
 
-<p>When using the <code>Insert.IntoTable</code> expression, or when setting the default column value, all row data that is a string is quoted and saved in the database. If you want to use an sql expression instead then the <a class="xref" href="../api/FluentMigrator.RawSql.html">RawSql</a> helper class is what you need.</p>
+<p>When using the <code>Insert.IntoTable</code> expression, or when setting the default column value, all row data that is a string is quoted and saved in the database. If you want to use an sql expression instead then the <a class="xref" href="../api/v3.x/FluentMigrator.RawSql.html">RawSql</a> helper class is what you need.</p>
 <p>For example, if I want to use a Microsoft SQL Server function like <code>CURRENT_USER</code> and try to insert like this:</p>
 <pre><code class="lang-c#">Insert.IntoTable(&quot;Users&quot;).Row(new { Username = &quot;CURRENT_USER&quot; });
 </code></pre>
-<p>The result will be that the Username column will get the value <code>CURRENT_USER</code> as a string. To execute the function you can use the <a class="xref" href="../api/FluentMigrator.RawSql.html#FluentMigrator_RawSql_Insert_System_String_">RawSql.Insert</a> method like this:</p>
+<p>The result will be that the Username column will get the value <code>CURRENT_USER</code> as a string. To execute the function you can use the <a class="xref" href="../api/v3.x/FluentMigrator.RawSql.html#FluentMigrator_RawSql_Insert_System_String_">RawSql.Insert</a> method like this:</p>
 <pre><code class="lang-c#">Insert.IntoTable(&quot;User&quot;).Row(new { Username = RawSql.Insert(&quot;CURRENT_USER&quot;) });
 </code></pre>
 <p>This will result in the Username column being set to the current username. Be aware that by using an sql server specific function like <code>CURRENT_USER</code> that this expression is not portable anymore and will not work against another database (like PostgreSQL).</p>
@@ -95,7 +95,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/docfx_project/articles/raw-sql.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/raw-sql.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

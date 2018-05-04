@@ -82,10 +82,10 @@
 <p>There are two modes, Transaction-Per-Session and Transaction-Per-Migration. The default mode for FluentMigrator is Transaction-Per-Migration.</p>
 <h2 id="transaction-per-migration">Transaction-Per-Migration</h2>
 <p>This mode means that each migration is run in its own transaction and allows selected migrations to be run with no transaction. This allows migrations to be able to do tasks like creating full-text indexes which cannot be run in a transaction.</p>
-<p>This mode can be used in combination with the new <a class="xref" href="../../api/FluentMigrator.TransactionBehavior.html">TransactionBehavior</a> attribute.</p>
+<p>This mode can be used in combination with the new <a class="xref" href="../../api/v3.x/FluentMigrator.TransactionBehavior.html">TransactionBehavior</a> attribute.</p>
 <pre><code class="lang-cs">[Migration(201304210958, TransactionBehavior.None)]
 </code></pre>
-<p>For this migration it will be run outside of a transaction. The default value for <a class="xref" href="../../api/FluentMigrator.TransactionBehavior.html">TransactionBehavior</a> is <a class="xref" href="../../api/FluentMigrator.TransactionBehavior.html#FluentMigrator_TransactionBehavior_Default">Default</a> which means the migration will be run in a transaction.</p>
+<p>For this migration it will be run outside of a transaction. The default value for <a class="xref" href="../../api/v3.x/FluentMigrator.TransactionBehavior.html">TransactionBehavior</a> is <a class="xref" href="../../api/v3.x/FluentMigrator.TransactionBehavior.html#FluentMigrator_TransactionBehavior_Default">Default</a> which means the migration will be run in a transaction.</p>
 <h2 id="transaction-per-session">Transaction-Per-Session</h2>
 <p>Up to this release, there has been one mode, Transaction-Per-Session. This means that if two migrations or more migrations are run together during the same task (e.g. migrate up or down) then this occurs in the same transaction and if one of the migrations fails then all the migrations are rolled back.</p>
 <p>Transaction-Per-Session is the old default and if you want to use this mode then there are switches for the Command-Line runner, MSBuild runner, or .NET CLI tool to enable it.</p>
@@ -97,7 +97,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/develop/docfx_project/articles/migration/migration-transaction-behavior.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/migration/migration-transaction-behavior.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

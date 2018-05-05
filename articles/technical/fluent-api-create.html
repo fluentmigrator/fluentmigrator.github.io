@@ -143,26 +143,6 @@ Create -+- Schema ------------- name --- ICreateSchemaOptionsSyntax ---
 <ul>
 <li><a class="xref" href="fluent-api-common.html#icolumntypesyntaxtnext">IColumnTypeSyntax</a></li>
 </ul>
-<h2 id="icreatecolumnoptionsyntax">ICreateColumnOptionSyntax</h2>
-<pre>
---------+-------------------------------+- IColumnOptionSyntax -+--> TNext: ICreateColumnOptionSyntax
-        |                               |                       |
-        +- SetExistingRowsTo --- value -+                       +--> TNextFk: ICreateColumnOptionOrForeignKeyCascadeSyntax
-</pre>
-<ul>
-<li><a class="xref" href="fluent-api-common.html#icolumnoptionsyntaxtnexttnextfk">IColumnOptionSyntax</a></li>
-</ul>
-<h2 id="icreatecolumnoptionorforeignkeycascadesyntax">ICreateColumnOptionOrForeignKeyCascadeSyntax</h2>
-<pre>
---------+--> ICreateColumnOptionSyntax
-        |
-        +- IForeignKeyCascadeSyntax -+--> TNext: ICreateColumnOptionSyntax
-                                     |
-                                     +--> TNextFk: ICreateColumnOptionOrForeignKeyCascadeSyntax
-</pre>
-<ul>
-<li><a class="xref" href="fluent-api-common.html#iforeignkeycascadesyntaxtnexttnextfk">IForeignKeyCascadeSyntax</a></li>
-</ul>
 <h2 id="icreatetablecolumnoptionorwithcolumnsyntax">ICreateTableColumnOptionOrWithColumnSyntax</h2>
 <pre>
 --------+- ICreateTableWithColumnSyntax -------------------------------------------------------------------+-
@@ -203,6 +183,26 @@ Create -+- Schema ------------- name --- ICreateSchemaOptionsSyntax ---
 <ul>
 <li><a class="xref" href="fluent-api-common.html#icolumntypesyntaxtnext">IColumnTypeSyntax</a></li>
 <li><a href="#icreatecolumnoptionsyntax">ICreateColumnOptionSyntax</a></li>
+</ul>
+<h2 id="icreatecolumnoptionsyntax">ICreateColumnOptionSyntax</h2>
+<pre>
+--------+-------------------------------+- IColumnOptionSyntax -+--> TNext: ICreateColumnOptionSyntax
+        |                               |                       |
+        +- SetExistingRowsTo --- value -+                       +--> TNextFk: ICreateColumnOptionOrForeignKeyCascadeSyntax
+</pre>
+<ul>
+<li><a class="xref" href="fluent-api-common.html#icolumnoptionsyntaxtnexttnextfk">IColumnOptionSyntax</a></li>
+</ul>
+<h2 id="icreatecolumnoptionorforeignkeycascadesyntax">ICreateColumnOptionOrForeignKeyCascadeSyntax</h2>
+<pre>
+--------+--> ICreateColumnOptionSyntax
+        |
+        +- IForeignKeyCascadeSyntax -+--> TNext: ICreateColumnOptionSyntax
+                                     |
+                                     +--> TNextFk: ICreateColumnOptionOrForeignKeyCascadeSyntax
+</pre>
+<ul>
+<li><a class="xref" href="fluent-api-common.html#iforeignkeycascadesyntaxtnexttnextfk">IForeignKeyCascadeSyntax</a></li>
 </ul>
 <h1 id="foreignkey">ForeignKey</h1>
 <h2 id="icreateforeignkeyfromtablesyntax">ICreateForeignKeyFromTableSyntax</h2>

@@ -36427,6 +36427,9 @@ references:
 - uid: tech-fluent-api-create
   name: Fluent API (Create)
   href: articles/technical/fluent-api-create.html
+- uid: tech-fluent-api-delete
+  name: Fluent API (Delete)
+  href: articles/technical/fluent-api-delete.html
 - uid: upgrade-guide-1.6-to-2.0
   name: Upgrade Guide from 1.6 to 2.0
   href: articles/guides/upgrades/guide-1.6-to-2.0.html

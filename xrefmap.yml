@@ -2530,6 +2530,14 @@ references:
   fullName.vb: FluentMigrator.Builders.IColumnTypeSyntax(Of TNext).AsDateTimeOffset()
   nameWithType: IColumnTypeSyntax<TNext>.AsDateTimeOffset()
   nameWithType.vb: IColumnTypeSyntax(Of TNext).AsDateTimeOffset()
+- uid: FluentMigrator.Builders.IColumnTypeSyntax`1.AsDateTimeOffset(System.Int32)
+  name: AsDateTimeOffset(Int32)
+  href: api/v3.x/FluentMigrator.Builders.IColumnTypeSyntax-1.html#FluentMigrator_Builders_IColumnTypeSyntax_1_AsDateTimeOffset_System_Int32_
+  commentId: M:FluentMigrator.Builders.IColumnTypeSyntax`1.AsDateTimeOffset(System.Int32)
+  fullName: FluentMigrator.Builders.IColumnTypeSyntax<TNext>.AsDateTimeOffset(System.Int32)
+  fullName.vb: FluentMigrator.Builders.IColumnTypeSyntax(Of TNext).AsDateTimeOffset(System.Int32)
+  nameWithType: IColumnTypeSyntax<TNext>.AsDateTimeOffset(Int32)
+  nameWithType.vb: IColumnTypeSyntax(Of TNext).AsDateTimeOffset(Int32)
 - uid: FluentMigrator.Builders.IColumnTypeSyntax`1.AsDateTimeOffset*
   name: AsDateTimeOffset
   href: api/v3.x/FluentMigrator.Builders.IColumnTypeSyntax-1.html#FluentMigrator_Builders_IColumnTypeSyntax_1_AsDateTimeOffset_

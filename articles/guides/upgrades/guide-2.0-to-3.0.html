@@ -491,6 +491,16 @@ one was specified, then an exception gets thrown.</p>
 <p>The library now uses <code>System.ComponentModel.DataAnnotations</code> for validation - for example the <code>[Required]</code> attribute for expression fields that are - one might've guessed it - required.</p>
 <h2 id="migrationrunnermaintenanceloader-is-read-only"><code>MigrationRunner.MaintenanceLoader</code> is read-only</h2>
 <p>Don't set the maintenance loader directly. Just register your own as a service.</p>
+<h1 id="faq">FAQ</h1>
+<h2 id="how-do-i-use-my-own-iconventionset-or-other-service">How do I use my own <code>IConventionSet</code> (or other service)?</h2>
+<p>Just register them as your own service.</p>
+<p>Service                 | Scope
+------------------------+------------------
+<code>IConventionSet</code>        | Singleton
+<code>IAssemblyLoadEngine</code>   | Singleton
+<code>IAssemblySource</code>       | Singleton
+<code>IMaintenanceLoader</code>    | Singleton
+<code>IMigrationSource</code>      | Singleton</p>
 </article>
           </div>
           

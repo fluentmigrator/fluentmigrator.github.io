@@ -8,7 +8,7 @@
     <title>Starting with FluentMigrator | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Starting with FluentMigrator | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.35.4.0">
+    <meta name="generator" content="docfx 2.36.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -96,6 +96,12 @@ dotnet add package FluentMigrator.Runner.SQLite
 # ADO.NET support for the database
 dotnet add package Microsoft.Data.Sqlite
 </code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In versions older than 4.0, the <code>FluentMigrator.Runner</code> package
+references all database-specific packages due to backwards
+compatibility reasons.</p>
+</div>
 <h1 id="creating-your-first-migration">Creating your first migration</h1>
 <p>Create a file called <code>20180430_AddLogTable.cs</code> with the following contents:</p>
 <pre><code class="lang-cs" name="20180430121800_AddLogTable.cs" title="Your first migration">using FluentMigrator;
@@ -176,7 +182,7 @@ namespace test
                     // Set the connection string
                     .WithGlobalConnectionString(&quot;Data Source=test.db&quot;)
                     // Define the assembly containing the migrations
-                    .WithMigrationsIn(typeof(AddLogTable).Assembly))
+                    .ScanIn(typeof(AddLogTable).Assembly).For.Migrations())
                 // Enable logging to console in the FluentMigrator way
                 .AddLogging(lb =&gt; lb.AddFluentMigratorConsole())
                 // Build the service provider

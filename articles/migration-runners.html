@@ -8,7 +8,7 @@
     <title>Migration runners | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Migration runners | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.35.4.0">
+    <meta name="generator" content="docfx 2.36.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -121,7 +121,7 @@ namespace test
                     // Set the connection string
                     .WithGlobalConnectionString(&quot;Data Source=test.db&quot;)
                     // Define the assembly containing the migrations
-                    .WithMigrationsIn(typeof(AddLogTable).Assembly))
+                    .ScanIn(typeof(AddLogTable).Assembly).For.Migrations())
                 // Enable logging to console in the FluentMigrator way
                 .AddLogging(lb =&gt; lb.AddFluentMigratorConsole())
                 // Build the service provider

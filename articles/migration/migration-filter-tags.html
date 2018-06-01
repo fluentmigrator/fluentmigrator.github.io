@@ -8,7 +8,7 @@
     <title>Fluent Interface | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Fluent Interface | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.35.4.0">
+    <meta name="generator" content="docfx 2.36.1.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -112,7 +112,7 @@ public class DoSomeStuffToEuropeanStagingAndProdDbs : Migration { /* ... etc ...
     .ConfigureRunner(rb =&gt; rb
         .AddSqlServer2008()
         .WithGlobalConnectionString(&quot;server=.\\SQLEXPRESS;uid=testfm;pwd=test;Trusted_Connection=yes;database=FluentMigrator&quot;)
-        .WithMigrationsIn(typeof(DoSomeStuffToEuropeanStagingAndProdDbs).Assembly))
+        .ScanIn(typeof(DoSomeStuffToEuropeanStagingAndProdDbs).Assembly).For.Migrations())
     .AddLogging(lb =&gt; lb.AddFluentMigratorConsole())
     // Start of type filter configuration
     .Configure&lt;RunnerOptions&gt;(opt =&gt; {

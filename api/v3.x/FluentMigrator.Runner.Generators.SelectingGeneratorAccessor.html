@@ -129,19 +129,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_SelectingGeneratorAccessor__ctor_System_Collections_Generic_IEnumerable_FluentMigrator_IMigrationGenerator__IOptions_FluentMigrator_Runner_Generators_SelectingGeneratorAccessorOptions__IOptions_FluentMigrator_Runner_Processors_SelectingProcessorAccessorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.SelectingGeneratorAccessor.%23ctor(System.Collections.Generic.IEnumerable%7BFluentMigrator.IMigrationGenerator%7D%2CIOptions%7BFluentMigrator.Runner.Generators.SelectingGeneratorAccessorOptions%7D%2CIOptions%7BFluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_SelectingGeneratorAccessor__ctor_System_Collections_Generic_IEnumerable_FluentMigrator_IMigrationGenerator__IOptionsSnapshot_FluentMigrator_Runner_Generators_SelectingGeneratorAccessorOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_SelectingProcessorAccessorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.SelectingGeneratorAccessor.%23ctor(System.Collections.Generic.IEnumerable%7BFluentMigrator.IMigrationGenerator%7D%2CIOptionsSnapshot%7BFluentMigrator.Runner.Generators.SelectingGeneratorAccessorOptions%7D%2CIOptionsSnapshot%7BFluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Generators/SelectingGeneratorAccessor.cs/#L40">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Generators/SelectingGeneratorAccessor.cs/#L40">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_SelectingGeneratorAccessor__ctor_" data-uid="FluentMigrator.Runner.Generators.SelectingGeneratorAccessor.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_SelectingGeneratorAccessor__ctor_System_Collections_Generic_IEnumerable_FluentMigrator_IMigrationGenerator__IOptions_FluentMigrator_Runner_Generators_SelectingGeneratorAccessorOptions__IOptions_FluentMigrator_Runner_Processors_SelectingProcessorAccessorOptions__" data-uid="FluentMigrator.Runner.Generators.SelectingGeneratorAccessor.#ctor(System.Collections.Generic.IEnumerable{FluentMigrator.IMigrationGenerator},IOptions{FluentMigrator.Runner.Generators.SelectingGeneratorAccessorOptions},IOptions{FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions})">SelectingGeneratorAccessor(IEnumerable&lt;IMigrationGenerator&gt;, IOptions&lt;SelectingGeneratorAccessorOptions&gt;, IOptions&lt;SelectingProcessorAccessorOptions&gt;)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_SelectingGeneratorAccessor__ctor_System_Collections_Generic_IEnumerable_FluentMigrator_IMigrationGenerator__IOptionsSnapshot_FluentMigrator_Runner_Generators_SelectingGeneratorAccessorOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_SelectingProcessorAccessorOptions__" data-uid="FluentMigrator.Runner.Generators.SelectingGeneratorAccessor.#ctor(System.Collections.Generic.IEnumerable{FluentMigrator.IMigrationGenerator},IOptionsSnapshot{FluentMigrator.Runner.Generators.SelectingGeneratorAccessorOptions},IOptionsSnapshot{FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions})">SelectingGeneratorAccessor(IEnumerable&lt;IMigrationGenerator&gt;, IOptionsSnapshot&lt;SelectingGeneratorAccessorOptions&gt;, IOptionsSnapshot&lt;SelectingProcessorAccessorOptions&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.Generators.SelectingGeneratorAccessor.html">SelectingGeneratorAccessor</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SelectingGeneratorAccessor(IEnumerable&lt;IMigrationGenerator&gt; generators, IOptions&lt;SelectingGeneratorAccessorOptions&gt; options, IOptions&lt;SelectingProcessorAccessorOptions&gt; processorSelectorOptions)</code></pre>
+    <pre><code class="lang-csharp hljs">public SelectingGeneratorAccessor(IEnumerable&lt;IMigrationGenerator&gt; generators, IOptionsSnapshot&lt;SelectingGeneratorAccessorOptions&gt; options, IOptionsSnapshot&lt;SelectingProcessorAccessorOptions&gt; processorSelectorOptions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -160,13 +160,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FluentMigrator.Runner.Generators.SelectingGeneratorAccessorOptions.html">SelectingGeneratorAccessorOptions</a>&gt;</td>
+        <td><span class="xref">IOptionsSnapshot</span>&lt;<a class="xref" href="FluentMigrator.Runner.Generators.SelectingGeneratorAccessorOptions.html">SelectingGeneratorAccessorOptions</a>&gt;</td>
         <td><span class="parametername">options</span></td>
         <td><p>The options used to determine the generator to be returned</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions.html">SelectingProcessorAccessorOptions</a>&gt;</td>
+        <td><span class="xref">IOptionsSnapshot</span>&lt;<a class="xref" href="FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions.html">SelectingProcessorAccessorOptions</a>&gt;</td>
         <td><span class="parametername">processorSelectorOptions</span></td>
         <td><p>The processor selector options</p>
 </td>
@@ -180,7 +180,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_SelectingGeneratorAccessor_Generator.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.SelectingGeneratorAccessor.Generator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Generators/SelectingGeneratorAccessor.cs/#L68">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Generators/SelectingGeneratorAccessor.cs/#L68">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_SelectingGeneratorAccessor_Generator_" data-uid="FluentMigrator.Runner.Generators.SelectingGeneratorAccessor.Generator*"></a>
   <h4 id="FluentMigrator_Runner_Generators_SelectingGeneratorAccessor_Generator" data-uid="FluentMigrator.Runner.Generators.SelectingGeneratorAccessor.Generator">Generator</h4>
@@ -221,7 +221,7 @@
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_SelectingGeneratorAccessor.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.SelectingGeneratorAccessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Generators/SelectingGeneratorAccessor.cs/#L32" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Generators/SelectingGeneratorAccessor.cs/#L32" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

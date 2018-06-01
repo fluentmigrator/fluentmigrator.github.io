@@ -83,7 +83,8 @@
   
   <h1 id="FluentMigrator_Runner_Initialization_MigrationSource" data-uid="FluentMigrator.Runner.Initialization.MigrationSource" class="text-break">Class MigrationSource
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The default implementation of a <a class="xref" href="FluentMigrator.Runner.Initialization.IFilteringMigrationSource.html">IFilteringMigrationSource</a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,6 +93,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.Runner.Initialization.IFilteringMigrationSource.html">IFilteringMigrationSource</a></div>
     <div><a class="xref" href="FluentMigrator.Runner.Initialization.IMigrationSource.html">IMigrationSource</a></div>
   </div>
   <div class="inheritedMembers">
@@ -122,7 +124,7 @@
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
   <h5 id="FluentMigrator_Runner_Initialization_MigrationSource_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MigrationSource : IMigrationSource</code></pre>
+    <pre><code class="lang-csharp hljs">public class MigrationSource : IFilteringMigrationSource, IMigrationSource</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -131,7 +133,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_MigrationSource__ctor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_IMigrationRunnerConventions_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.MigrationSource.%23ctor(FluentMigrator.Runner.Initialization.IAssemblySource%2CFluentMigrator.Runner.IMigrationRunnerConventions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Initialization/MigrationSource.cs/#L63">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Initialization/MigrationSource.cs/#L72">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_MigrationSource__ctor_" data-uid="FluentMigrator.Runner.Initialization.MigrationSource.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Initialization_MigrationSource__ctor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_IMigrationRunnerConventions_" data-uid="FluentMigrator.Runner.Initialization.MigrationSource.#ctor(FluentMigrator.Runner.Initialization.IAssemblySource,FluentMigrator.Runner.IMigrationRunnerConventions)">MigrationSource(IAssemblySource, IMigrationRunnerConventions)</h4>
@@ -169,19 +171,19 @@ public MigrationSource(IAssemblySource source, IMigrationRunnerConventions conve
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_MigrationSource__ctor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_IMigrationRunnerConventions_System_IServiceProvider_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.MigrationSource.%23ctor(FluentMigrator.Runner.Initialization.IAssemblySource%2CFluentMigrator.Runner.IMigrationRunnerConventions%2CSystem.IServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_MigrationSource__ctor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_IMigrationRunnerConventions_System_IServiceProvider_System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Initialization_IMigrationSourceItem__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.MigrationSource.%23ctor(FluentMigrator.Runner.Initialization.IAssemblySource%2CFluentMigrator.Runner.IMigrationRunnerConventions%2CSystem.IServiceProvider%2CSystem.Collections.Generic.IEnumerable%7BFluentMigrator.Runner.Initialization.IMigrationSourceItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Initialization/MigrationSource.cs/#L48">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Initialization/MigrationSource.cs/#L55">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_MigrationSource__ctor_" data-uid="FluentMigrator.Runner.Initialization.MigrationSource.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Initialization_MigrationSource__ctor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_IMigrationRunnerConventions_System_IServiceProvider_" data-uid="FluentMigrator.Runner.Initialization.MigrationSource.#ctor(FluentMigrator.Runner.Initialization.IAssemblySource,FluentMigrator.Runner.IMigrationRunnerConventions,System.IServiceProvider)">MigrationSource(IAssemblySource, IMigrationRunnerConventions, IServiceProvider)</h4>
+  <h4 id="FluentMigrator_Runner_Initialization_MigrationSource__ctor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_IMigrationRunnerConventions_System_IServiceProvider_System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Initialization_IMigrationSourceItem__" data-uid="FluentMigrator.Runner.Initialization.MigrationSource.#ctor(FluentMigrator.Runner.Initialization.IAssemblySource,FluentMigrator.Runner.IMigrationRunnerConventions,System.IServiceProvider,System.Collections.Generic.IEnumerable{FluentMigrator.Runner.Initialization.IMigrationSourceItem})">MigrationSource(IAssemblySource, IMigrationRunnerConventions, IServiceProvider, IEnumerable&lt;IMigrationSourceItem&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.Initialization.ProfileSource.html">ProfileSource</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MigrationSource(IAssemblySource source, IMigrationRunnerConventions conventions, IServiceProvider serviceProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public MigrationSource(IAssemblySource source, IMigrationRunnerConventions conventions, IServiceProvider serviceProvider, IEnumerable&lt;IMigrationSourceItem&gt; sourceItems)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -211,6 +213,12 @@ public MigrationSource(IAssemblySource source, IMigrationRunnerConventions conve
         <td><p>The service provider</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Runner.Initialization.IMigrationSourceItem.html">IMigrationSourceItem</a>&gt;</td>
+        <td><span class="parametername">sourceItems</span></td>
+        <td><p>The additional migration source items</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
@@ -220,11 +228,13 @@ public MigrationSource(IAssemblySource source, IMigrationRunnerConventions conve
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_MigrationSource_GetMigrations.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.MigrationSource.GetMigrations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Initialization/MigrationSource.cs/#L73">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Initialization/MigrationSource.cs/#L83">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_MigrationSource_GetMigrations_" data-uid="FluentMigrator.Runner.Initialization.MigrationSource.GetMigrations*"></a>
   <h4 id="FluentMigrator_Runner_Initialization_MigrationSource_GetMigrations" data-uid="FluentMigrator.Runner.Initialization.MigrationSource.GetMigrations">GetMigrations()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the instances for all found types implementing <a class="xref" href="FluentMigrator.IMigration.html">IMigration</a> and having
+the <a class="xref" href="FluentMigrator.MigrationAttribute.html">MigrationAttribute</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,11 +251,66 @@ public MigrationSource(IAssemblySource source, IMigrationRunnerConventions conve
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.IMigration.html">IMigration</a>&gt;</td>
-        <td></td>
+        <td><p>the instances for all found types implementing <a class="xref" href="FluentMigrator.IMigration.html">IMigration</a> and having
+the <a class="xref" href="FluentMigrator.MigrationAttribute.html">MigrationAttribute</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_MigrationSource_GetMigrations_System_Func_System_Type_System_Boolean__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.MigrationSource.GetMigrations(System.Func%7BSystem.Type%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Initialization/MigrationSource.cs/#L89">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Initialization_MigrationSource_GetMigrations_" data-uid="FluentMigrator.Runner.Initialization.MigrationSource.GetMigrations*"></a>
+  <h4 id="FluentMigrator_Runner_Initialization_MigrationSource_GetMigrations_System_Func_System_Type_System_Boolean__" data-uid="FluentMigrator.Runner.Initialization.MigrationSource.GetMigrations(System.Func{System.Type,System.Boolean})">GetMigrations(Func&lt;Type, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns the instances for all found types implementing <a class="xref" href="FluentMigrator.IMigration.html">IMigration</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IMigration&gt; GetMigrations(Func&lt;Type, bool&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate used to select the types to instantiate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.IMigration.html">IMigration</a>&gt;</td>
+        <td><p>the instances for all found types implementing <a class="xref" href="FluentMigrator.IMigration.html">IMigration</a></p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.Initialization.IFilteringMigrationSource.html">IFilteringMigrationSource</a>
+  </div>
   <div>
       <a class="xref" href="FluentMigrator.Runner.Initialization.IMigrationSource.html">IMigrationSource</a>
   </div>
@@ -260,7 +325,7 @@ public MigrationSource(IAssemblySource source, IMigrationRunnerConventions conve
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_MigrationSource.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.MigrationSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Initialization/MigrationSource.cs/#L28" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Initialization/MigrationSource.cs/#L31" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

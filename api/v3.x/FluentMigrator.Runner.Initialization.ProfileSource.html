@@ -129,19 +129,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ProfileSource__ctor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_IMigrationRunnerConventions_System_IServiceProvider_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ProfileSource.%23ctor(FluentMigrator.Runner.Initialization.IAssemblySource%2CFluentMigrator.Runner.IMigrationRunnerConventions%2CSystem.IServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ProfileSource__ctor_FluentMigrator_Runner_Initialization_IFilteringMigrationSource_FluentMigrator_Runner_IMigrationRunnerConventions_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ProfileSource.%23ctor(FluentMigrator.Runner.Initialization.IFilteringMigrationSource%2CFluentMigrator.Runner.IMigrationRunnerConventions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Initialization/ProfileSource.cs/#L52">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Initialization/ProfileSource.cs/#L41">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_ProfileSource__ctor_" data-uid="FluentMigrator.Runner.Initialization.ProfileSource.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Initialization_ProfileSource__ctor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_IMigrationRunnerConventions_System_IServiceProvider_" data-uid="FluentMigrator.Runner.Initialization.ProfileSource.#ctor(FluentMigrator.Runner.Initialization.IAssemblySource,FluentMigrator.Runner.IMigrationRunnerConventions,System.IServiceProvider)">ProfileSource(IAssemblySource, IMigrationRunnerConventions, IServiceProvider)</h4>
+  <h4 id="FluentMigrator_Runner_Initialization_ProfileSource__ctor_FluentMigrator_Runner_Initialization_IFilteringMigrationSource_FluentMigrator_Runner_IMigrationRunnerConventions_" data-uid="FluentMigrator.Runner.Initialization.ProfileSource.#ctor(FluentMigrator.Runner.Initialization.IFilteringMigrationSource,FluentMigrator.Runner.IMigrationRunnerConventions)">ProfileSource(IFilteringMigrationSource, IMigrationRunnerConventions)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.Initialization.ProfileSource.html">ProfileSource</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ProfileSource(IAssemblySource source, IMigrationRunnerConventions conventions, IServiceProvider serviceProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public ProfileSource(IFilteringMigrationSource source, IMigrationRunnerConventions conventions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -154,7 +154,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IAssemblySource.html">IAssemblySource</a></td>
+        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IFilteringMigrationSource.html">IFilteringMigrationSource</a></td>
         <td><span class="parametername">source</span></td>
         <td><p>The assembly source</p>
 </td>
@@ -163,12 +163,6 @@
         <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunnerConventions.html">IMigrationRunnerConventions</a></td>
         <td><span class="parametername">conventions</span></td>
         <td><p>The migration runner conventios</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
-        <td><span class="parametername">serviceProvider</span></td>
-        <td><p>The service provider</p>
 </td>
       </tr>
     </tbody>
@@ -180,7 +174,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ProfileSource_GetProfiles_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ProfileSource.GetProfiles(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Initialization/ProfileSource.cs/#L63">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Initialization/ProfileSource.cs/#L50">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_ProfileSource_GetProfiles_" data-uid="FluentMigrator.Runner.Initialization.ProfileSource.GetProfiles*"></a>
   <h4 id="FluentMigrator_Runner_Initialization_ProfileSource_GetProfiles_System_String_" data-uid="FluentMigrator.Runner.Initialization.ProfileSource.GetProfiles(System.String)">GetProfiles(String)</h4>
@@ -237,7 +231,7 @@
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ProfileSource.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ProfileSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Initialization/ProfileSource.cs/#L32" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Initialization/ProfileSource.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

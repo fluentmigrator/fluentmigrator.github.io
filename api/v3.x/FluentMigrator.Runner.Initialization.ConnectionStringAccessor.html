@@ -129,18 +129,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ConnectionStringAccessor__ctor_IOptions_FluentMigrator_Runner_Processors_ProcessorOptions__System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Initialization_IConnectionStringReader__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ConnectionStringAccessor.%23ctor(IOptions%7BFluentMigrator.Runner.Processors.ProcessorOptions%7D%2CSystem.Collections.Generic.IEnumerable%7BFluentMigrator.Runner.Initialization.IConnectionStringReader%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ConnectionStringAccessor__ctor_IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_SelectingProcessorAccessorOptions__System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Initialization_IConnectionStringReader__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ConnectionStringAccessor.%23ctor(IOptionsSnapshot%7BFluentMigrator.Runner.Processors.ProcessorOptions%7D%2CIOptionsSnapshot%7BFluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions%7D%2CSystem.Collections.Generic.IEnumerable%7BFluentMigrator.Runner.Initialization.IConnectionStringReader%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Initialization/ConnectionStringAccessor.cs/#L34">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Initialization/ConnectionStringAccessor.cs/#L40">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_ConnectionStringAccessor__ctor_" data-uid="FluentMigrator.Runner.Initialization.ConnectionStringAccessor.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Initialization_ConnectionStringAccessor__ctor_IOptions_FluentMigrator_Runner_Processors_ProcessorOptions__System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Initialization_IConnectionStringReader__" data-uid="FluentMigrator.Runner.Initialization.ConnectionStringAccessor.#ctor(IOptions{FluentMigrator.Runner.Processors.ProcessorOptions},System.Collections.Generic.IEnumerable{FluentMigrator.Runner.Initialization.IConnectionStringReader})">ConnectionStringAccessor(IOptions&lt;ProcessorOptions&gt;, IEnumerable&lt;IConnectionStringReader&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="FluentMigrator_Runner_Initialization_ConnectionStringAccessor__ctor_IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_SelectingProcessorAccessorOptions__System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Initialization_IConnectionStringReader__" data-uid="FluentMigrator.Runner.Initialization.ConnectionStringAccessor.#ctor(IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},IOptionsSnapshot{FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions},System.Collections.Generic.IEnumerable{FluentMigrator.Runner.Initialization.IConnectionStringReader})">ConnectionStringAccessor(IOptionsSnapshot&lt;ProcessorOptions&gt;, IOptionsSnapshot&lt;SelectingProcessorAccessorOptions&gt;, IEnumerable&lt;IConnectionStringReader&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.Initialization.ConnectionStringAccessor.html">ConnectionStringAccessor</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConnectionStringAccessor(IOptions&lt;ProcessorOptions&gt; processorOptions, IEnumerable&lt;IConnectionStringReader&gt; readers)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConnectionStringAccessor(IOptionsSnapshot&lt;ProcessorOptions&gt; processorOptions, IOptionsSnapshot&lt;SelectingProcessorAccessorOptions&gt; processorSelectorOptions, IEnumerable&lt;IConnectionStringReader&gt; readers)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -153,14 +154,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FluentMigrator.Runner.Processors.ProcessorOptions.html">ProcessorOptions</a>&gt;</td>
+        <td><span class="xref">IOptionsSnapshot</span>&lt;<a class="xref" href="FluentMigrator.Runner.Processors.ProcessorOptions.html">ProcessorOptions</a>&gt;</td>
         <td><span class="parametername">processorOptions</span></td>
-        <td></td>
+        <td><p>The processor options containing the connection string or name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IOptionsSnapshot</span>&lt;<a class="xref" href="FluentMigrator.Runner.Processors.SelectingProcessorAccessorOptions.html">SelectingProcessorAccessorOptions</a>&gt;</td>
+        <td><span class="parametername">processorSelectorOptions</span></td>
+        <td><p>The selected processor (its ID is used as connection string name)</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Runner.Initialization.IConnectionStringReader.html">IConnectionStringReader</a>&gt;</td>
         <td><span class="parametername">readers</span></td>
-        <td></td>
+        <td><p>The registered connection string readers</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -171,7 +180,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ConnectionStringAccessor_ConnectionString.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ConnectionStringAccessor.ConnectionString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Initialization/ConnectionStringAccessor.cs/#L56">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Initialization/ConnectionStringAccessor.cs/#L67">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_ConnectionStringAccessor_ConnectionString_" data-uid="FluentMigrator.Runner.Initialization.ConnectionStringAccessor.ConnectionString*"></a>
   <h4 id="FluentMigrator_Runner_Initialization_ConnectionStringAccessor_ConnectionString" data-uid="FluentMigrator.Runner.Initialization.ConnectionStringAccessor.ConnectionString">ConnectionString</h4>
@@ -212,7 +221,7 @@
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ConnectionStringAccessor.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ConnectionStringAccessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/e3add7e10f9155399b20b229c2a23d447bcad1e7/src/FluentMigrator.Runner.Core/Initialization/ConnectionStringAccessor.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/b3d73ca7789e6a97b5530298e240ccc763f74187/src/FluentMigrator.Runner.Core/Initialization/ConnectionStringAccessor.cs/#L30" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

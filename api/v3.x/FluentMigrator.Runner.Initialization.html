@@ -93,6 +93,9 @@
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.AssemblyFileLoadEngine.html">AssemblyFileLoadEngine</a></h4>
       <section><p>Tries to load the assembly from a file</p>
 </section>
+      <h4><a class="xref" href="FluentMigrator.Runner.Initialization.AssemblyMigrationSourceItem.html">AssemblyMigrationSourceItem</a></h4>
+      <section><p>Implementation of <a class="xref" href="FluentMigrator.Runner.Initialization.IMigrationSourceItem.html">IMigrationSourceItem</a> that accepts a collection of assemnblies</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.AssemblyNameLoadEngine.html">AssemblyNameLoadEngine</a></h4>
       <section><p>Tries to load the assembly by name</p>
 </section>
@@ -111,15 +114,21 @@
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.AssemblySourceVersionTableMetaDataAccessor.html">AssemblySourceVersionTableMetaDataAccessor</a></h4>
       <section><p>Scans the given source assemblies and returns a found <a class="xref" href="FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> implementation</p>
 </section>
+      <h4><a class="xref" href="FluentMigrator.Runner.Initialization.AssemblyVersionTableMetaDataSourceItem.html">AssemblyVersionTableMetaDataSourceItem</a></h4>
+      <section><p>Implementation of <a class="xref" href="FluentMigrator.Runner.Initialization.IVersionTableMetaDataSourceItem.html">IVersionTableMetaDataSourceItem</a> that uses assemblies as source</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.html">ConfigurationConnectionStringReader</a></h4>
-      <section></section>
+      <section><p>Implementation of <a class="xref" href="FluentMigrator.Runner.Initialization.IConnectionStringReader.html">IConnectionStringReader</a> that interprets tries to
+get the connection string from an <see cref="!:IConfiguration"></see> or <see cref="!:IConfigurationRoot"></see>.</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.ConnectionStringAccessor.html">ConnectionStringAccessor</a></h4>
       <section><p>Default implementation of <a class="xref" href="FluentMigrator.Runner.Initialization.IConnectionStringAccessor.html">IConnectionStringAccessor</a></p>
 </section>
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.DefaultConnectionStringProvider.html">DefaultConnectionStringProvider</a></h4>
       <section></section>
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.MigrationSource.html">MigrationSource</a></h4>
-      <section></section>
+      <section><p>The default implementation of a <a class="xref" href="FluentMigrator.Runner.Initialization.IFilteringMigrationSource.html">IFilteringMigrationSource</a>.</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.PassThroughConnectionStringReader.html">PassThroughConnectionStringReader</a></h4>
       <section><p>A connection string provider that just passes through the given connection string</p>
 </section>
@@ -161,18 +170,37 @@
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IConnectionStringReader.html">IConnectionStringReader</a></h4>
       <section><p>Interface to access the connection string</p>
 </section>
+      <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IFilteringMigrationSource.html">IFilteringMigrationSource</a></h4>
+      <section><p>This is a specialization of <a class="xref" href="FluentMigrator.Runner.Initialization.IMigrationSource.html">IMigrationSource</a> that allows filtering the types beforehand</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IMigrationRunnerConventionsAccessor.html">IMigrationRunnerConventionsAccessor</a></h4>
       <section><p>Access to the <a class="xref" href="FluentMigrator.Runner.IMigrationRunnerConventions.html">IMigrationRunnerConventions</a></p>
 </section>
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IMigrationSource.html">IMigrationSource</a></h4>
-      <section></section>
+      <section><p>The source for all types implementing <a class="xref" href="FluentMigrator.IMigration.html">IMigration</a> and having the <a class="xref" href="FluentMigrator.MigrationAttribute.html">MigrationAttribute</a></p>
+</section>
+      <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IMigrationSourceItem.html">IMigrationSourceItem</a></h4>
+      <section><p>Interface to get the candidate types for <a class="xref" href="FluentMigrator.Runner.Initialization.MigrationSource.html">MigrationSource</a></p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IProfileSource.html">IProfileSource</a></h4>
       <section><p>Gets all types</p>
 </section>
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a></h4>
       <section></section>
+      <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IScanIn.html">IScanIn</a></h4>
+      <section><p>Interface to store the current source item</p>
+</section>
+      <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IScanInBuilder.html">IScanInBuilder</a></h4>
+      <section><p>Interface to define how the scanned assemblies are used</p>
+</section>
+      <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IScanInForBuilder.html">IScanInForBuilder</a></h4>
+      <section><p>Defines how the scanned assemblies are used</p>
+</section>
       <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IVersionTableMetaDataAccessor.html">IVersionTableMetaDataAccessor</a></h4>
       <section><p>Accessor for the <a class="xref" href="FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a></p>
+</section>
+      <h4><a class="xref" href="FluentMigrator.Runner.Initialization.IVersionTableMetaDataSourceItem.html">IVersionTableMetaDataSourceItem</a></h4>
+      <section><p>The source of types implementing the <a class="xref" href="FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> interface.</p>
 </section>
 </article>
           </div>

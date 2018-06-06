@@ -189,6 +189,11 @@ Delete.FromTable(&quot;Users&quot;).IsNull(&quot;Username&quot;); //Delete all r
 </thead>
 <tbody>
 <tr>
+<td>Microsoft SQL Server 2017</td>
+<td>SqlServer2016<sup>1)</sup></td>
+<td>SqlServer</td>
+</tr>
+<tr>
 <td>Microsoft SQL Server 2016</td>
 <td>SqlServer2016</td>
 <td>SqlServer</td>
@@ -295,6 +300,9 @@ Delete.FromTable(&quot;Users&quot;).IsNull(&quot;Username&quot;); //Delete all r
 </tr>
 </tbody>
 </table>
+<ul>
+<li><sup>1)</sup> All integration tests ran without error against an SQL Server 2017 using the SqlServer2016 dialect.</li>
+</ul>
 
 <p>Multiple database types (as specified above) can be passed into the IfDatabase Expression (see <a href="multi-db-support.html">Dealing with multiple database types</a> for more details).</p>
 <pre><code class="lang-cs">IfDatabase(&quot;SqlServer&quot;, &quot;Postgres&quot;)

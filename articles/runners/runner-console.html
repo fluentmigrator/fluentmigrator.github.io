@@ -101,6 +101,11 @@
 </thead>
 <tbody>
 <tr>
+<td>Microsoft SQL Server 2017</td>
+<td>SqlServer2016<sup>1)</sup></td>
+<td>SqlServer</td>
+</tr>
+<tr>
 <td>Microsoft SQL Server 2016</td>
 <td>SqlServer2016</td>
 <td>SqlServer</td>
@@ -207,6 +212,9 @@
 </tr>
 </tbody>
 </table>
+<ul>
+<li><sup>1)</sup> All integration tests ran without error against an SQL Server 2017 using the SqlServer2016 dialect.</li>
+</ul>
 <h2 id="--connectionstring---connection---conn--cvalue-required-can-be-a-connectionstringname"><code>--connectionString, --connection, --conn, -c=VALUE</code> (required, can be a <code>connectionStringName</code>)</h2>
 <p>The connection string to the server and database you want to execute your migrations against. This can be a full connection string or the name of the connection string stored in a config file.</p>
 <p>When specifying a named connection string, FluentMigrator searchs for it in this order:</p>

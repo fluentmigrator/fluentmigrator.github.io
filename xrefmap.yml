@@ -13,6 +13,9 @@ references:
 - uid: dotnet-fm
   name: dotnet-fm tool
   href: articles/runners/dotnet-fm.html
+- uid: faq
+  name: FAQ
+  href: articles/faq.html
 - uid: fluent-interface.md
   name: Fluent Interface
   href: articles/fluent-interface.html

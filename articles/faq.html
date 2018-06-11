@@ -5,21 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum ColumnModificationType
-   | FluentMigrator documentation </title>
+    <title>FAQ | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum ColumnModificationType
-   | FluentMigrator documentation ">
+    <meta name="title" content="FAQ | FluentMigrator documentation ">
     <meta name="generator" content="docfx 2.36.1.0">
     
-    <link rel="shortcut icon" href="../../images/favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
-    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:rel" content="../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -36,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -78,42 +76,143 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FluentMigrator.Model.ColumnModificationType">
-  
-  
-  <h1 id="FluentMigrator_Model_ColumnModificationType" data-uid="FluentMigrator.Model.ColumnModificationType" class="text-break">Enum ColumnModificationType
-  </h1>
-  <div class="markdown level0 summary"><p>Indicates wheter a column should be created or altered</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Model.html">FluentMigrator.Model</a></h6>
-  <h6><strong>Assembly</strong>: FluentMigrator.Abstractions.dll</h6>
-  <h5 id="FluentMigrator_Model_ColumnModificationType_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum ColumnModificationType</code></pre>
-  </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="FluentMigrator_Model_ColumnModificationType_Alter">Alter</td>
-        <td><p>The column in question should be altered</p>
-</td>
-      </tr>
-      <tr>
-        <td id="FluentMigrator_Model_ColumnModificationType_Create">Create</td>
-        <td><p>The column in question should be created</p>
-</td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+            <article class="content wrap" id="_content" data-uid="faq">
+
+
+<p>This FAQ will answer most common questions. Please <a href="https://github.com/fluentmigrator/fluentmigrator/issues">open an issue</a> if your question isn't answered here.</p>
+<h2 id="why-does-the-migrateexe-tool-say-no-migrations-found">Why does the <code>Migrate.exe</code> tool say <code>No migrations found</code>?</h2>
+<p>Possible reasons:</p>
+<ul>
+<li>Migration class isn't public</li>
+<li>Migration class isn't derived from <code>IMigration</code> (or <code>Migration</code>)</li>
+<li>Migration class isn't attributed with <code>MigrationAttribute</code></li>
+<li>The versions of the <code>Migrate.exe</code> tool (<code>FluentMigrator.Console</code> package) and the <code>FluentMigrator</code> package(s) referenced in your project are different.</li>
+</ul>
+<h2 id="what-are-the-supported-databases">What are the supported databases?</h2>
+<table>
+<thead>
+<tr>
+<th>Database</th>
+<th>Identifier</th>
+<th>Alternative identifier(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft SQL Server 2017</td>
+<td>SqlServer2016<sup>1)</sup></td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2016</td>
+<td>SqlServer2016</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2014</td>
+<td>SqlServer2014</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2012</td>
+<td>SqlServer2012</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2008</td>
+<td>SqlServer2008</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2005</td>
+<td>SqlServer2005</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2000</td>
+<td>SqlServer2000</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server Compact Edition</td>
+<td>SqlServerCe</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>PostgreSQL</td>
+<td>Postgres</td>
+<td></td>
+</tr>
+<tr>
+<td>MySQL 4</td>
+<td>MySql4</td>
+<td>MySql</td>
+</tr>
+<tr>
+<td>MySQL 5</td>
+<td>MySql5</td>
+<td>MySql</td>
+</tr>
+<tr>
+<td>Oracle</td>
+<td>Oracle</td>
+<td></td>
+</tr>
+<tr>
+<td>Oracle (managed ADO.NET)</td>
+<td>OracleManaged</td>
+<td>Oracle</td>
+</tr>
+<tr>
+<td>Oracle (DotConnect ADO.NET)</td>
+<td>OracleDotConnect</td>
+<td>Oracle</td>
+</tr>
+<tr>
+<td>Microsoft JET Engine (Access)</td>
+<td>Jet</td>
+<td></td>
+</tr>
+<tr>
+<td>SQLite</td>
+<td>Sqlite</td>
+<td></td>
+</tr>
+<tr>
+<td>Firebird</td>
+<td>Firebird</td>
+<td></td>
+</tr>
+<tr>
+<td>Amazon Redshift</td>
+<td>Redshift</td>
+<td></td>
+</tr>
+<tr>
+<td>SAP Hana</td>
+<td>Hana</td>
+<td></td>
+</tr>
+<tr>
+<td>SAP SQL Anywhere</td>
+<td>SqlAnywhere16</td>
+<td>SqlAnywhere</td>
+</tr>
+<tr>
+<td>DB2</td>
+<td>DB2</td>
+<td></td>
+</tr>
+<tr>
+<td>DB2 iSeries</td>
+<td>DB2 iSeries</td>
+<td>DB2</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><sup>1)</sup> All integration tests ran without error against an SQL Server 2017 using the SqlServer2016 dialect.</li>
+</ul>
 </article>
           </div>
           
@@ -122,10 +221,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Model_ColumnModificationType.md&amp;value=---%0Auid%3A%20FluentMigrator.Model.ColumnModificationType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Abstractions/Model/ColumnModificationType.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/faq.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -151,8 +247,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

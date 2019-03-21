@@ -8,7 +8,7 @@
     <title>Fluent Interface | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Fluent Interface | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -132,7 +132,7 @@ Execute.Sql(&quot;DELETE TABLE Users&quot;);
 Rename.Column(&quot;LastName&quot;).OnTable(&quot;Users&quot;).To(&quot;Surname&quot;);
 </code></pre>
 <h1 id="data-expressions">Data Expressions</h1>
-<p>Allows you to insert a row into a table using an anonymous type for the rows contents</p>
+<p>Allows you to insert a row into a table using an anonymous type for the row's contents</p>
 <pre><code class="lang-cs">Insert.IntoTable(&quot;Users&quot;).Row(new { FirstName = &quot;John&quot;, LastName = &quot;Smith&quot; });
 </code></pre>
 <pre><code class="lang-cs">Delete.FromTable(&quot;Users&quot;).AllRows(); // delete all rows
@@ -316,7 +316,7 @@ IfDatabase(&quot;Sqlite&quot;)
     .WithColumn(&quot;Name&quot;).AsString().NotNullable();
 </code></pre>
 <h1 id="schemaexists-expressions">Schema.Exists Expressions</h1>
-<p>You can write migrations conditional on the preexisting schema, which comes in handy for getting you out of certain jams. For instance, if you need to make a column but aren't sure if it already exists:</p>
+<p>You can write migrations conditional on the pre-existing schema, which comes in handy for getting you out of certain jams. For instance, if you need to make a column but aren't sure if it already exists:</p>
 <pre><code class="lang-cs">if (!Schema.Table(&quot;Users&quot;).Column(&quot;FirstName&quot;).Exists())
 {
     this.Create.Column(&quot;FirstName&quot;).OnTable(&quot;Users&quot;).AsAnsiString(128).Nullable();

@@ -8,7 +8,7 @@
     <title>ApplicationContext: Passing parameters to Migrations | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="ApplicationContext: Passing parameters to Migrations | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -95,7 +95,7 @@
 };
 </code></pre>
 <h2 id="to-use-the-applicationcontext">To use the ApplicationContext</h2>
-<p>Inside your migration, you can access the context via <code>this.ApplicationContext</code>.  So for instance:</p>
+<p>Inside your migration, you can access the context via <code>this.ApplicationContext</code>. So for instance:</p>
 <pre><code class="lang-cs">if ((string)this.ApplicationContext == &quot;MyArgument&quot;)
     this.Delete.Column(&quot;BadColumn&quot;).FromTable(&quot;MyTable&quot;);
 </code></pre>

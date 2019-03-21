@@ -8,7 +8,7 @@
     <title>Custom metadata for the VersionInfo table | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Custom metadata for the VersionInfo table | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -121,7 +121,7 @@
 </tr>
 </tbody>
 </table>
-<p>In the same assembly that your migrations are located, create a new class (it has to be public) that implements the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> interface and decorate the class with the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.VersionTableMetaDataAttribute.html">VersionTableMetaDataAttribute</a>. FluentMigrator will automatically find this and use it instead of the default settings.</p>
+<p>In the same assembly that your migrations are located, create a new class (it must be public) that implements the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> interface and decorate the class with the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.VersionTableMetaDataAttribute.html">VersionTableMetaDataAttribute</a>. FluentMigrator will automatically find this and use it instead of the default settings.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The custom <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> is filtered by the values in the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.Initialization.TypeFilterOptions.html">TypeFilterOptions</a>. This allows different <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> for every database.</p>

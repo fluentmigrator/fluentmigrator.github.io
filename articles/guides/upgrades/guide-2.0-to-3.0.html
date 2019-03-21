@@ -8,7 +8,7 @@
     <title>Upgrade Guide from 2.0 to 3.0 | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Upgrade Guide from 2.0 to 3.0 | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../../../images/favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -146,7 +146,7 @@ a <a class="xref" href="../../../api/v3.x/FluentMigrator.Runner.Processors.Conne
 <li><a href="https://github.com/aspnet/Configuration/">Microsoft.Extensions.Configuration</a></li>
 </ul>
 <h2 id="processoroptionstimeout-is-now-a-timespan"><code>ProcessorOptions.Timeout</code> is now a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></h2>
-<p>This change is part of the ongoing effort to make the API easier to understand, because it might not be clear if an <code>int timeout</code> is the timeout in milliseconds, seconds, etc..</p>
+<p>This change is part of the ongoing effort to make the API easier to understand, because it might not be clear if an <code>int timeout</code> is the timeout in milliseconds, seconds, et cetera.</p>
 <h2 id="icanbevalidated-not-used-anymore"><code>ICanBeValidated</code> not used anymore</h2>
 <p>The library now uses <code>System.ComponentModel.DataAnnotations</code> for validation - for example the <code>[Required]</code> attribute for expression fields that are - one might've guessed it - required.</p>
 <h2 id="migrationgeneratorfactory-not-used-anymore"><code>MigrationGeneratorFactory</code> not used anymore</h2>
@@ -327,7 +327,7 @@ use other logger option classes!</p>
 <h2 id="imigrationprocessorfactory"><a class="xref" href="../../../api/v3.x/FluentMigrator.Runner.Processors.IMigrationProcessorFactory.html">IMigrationProcessorFactory</a></h2>
 <p>The factories aren't needed anymore. The registered services provide everything that they need for their configuration.</p>
 <h2 id="irunnercontext-and-runnercontext"><a class="xref" href="../../../api/v3.x/FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a> and <a class="xref" href="../../../api/v3.x/FluentMigrator.Runner.Initialization.RunnerContext.html">RunnerContext</a></h2>
-<p>This properties of this interface/class were refactored into several classes.</p>
+<p>The properties of this interface/class were refactored into several classes.</p>
 <h3 id="properties-moved-into-runneroptions">Properties moved into <a class="xref" href="../../../api/v3.x/FluentMigrator.Runner.Initialization.RunnerOptions.html">RunnerOptions</a></h3>
 <ul>
 <li><a class="xref" href="../../../api/v3.x/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_ApplicationContext">ApplicationContext</a> (<strong>obsolete!</strong>)</li>
@@ -422,7 +422,7 @@ is used.</p>
 </div>
 <div class="NOTE">
 <h5>Note</h5>
-<p>When neiter a processor nor generator ID was specified, then the added processor
+<p>When neither a processor nor generator ID was specified, then the added processor
 will be used - but only where there is only one! When no processor or more than
 one was specified, then an exception gets thrown.</p>
 </div>
@@ -460,7 +460,7 @@ is used.</p>
 </div>
 <div class="NOTE">
 <h5>Note</h5>
-<p>When neiter a generator nor processor ID was specified, then the added generator
+<p>When neither a generator nor processor ID was specified, then the added generator
 will be used - but only where there is only one! When no generator or more than
 one was specified, then an exception gets thrown.</p>
 </div>

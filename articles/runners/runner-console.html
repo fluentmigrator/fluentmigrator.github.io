@@ -8,7 +8,7 @@
     <title>Command Line Runner | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Command Line Runner | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.40.12.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -217,9 +217,9 @@
 </ul>
 <h2 id="--connectionstring---connection---conn--cvalue-required-can-be-a-connectionstringname"><code>--connectionString, --connection, --conn, -c=VALUE</code> (required, can be a <code>connectionStringName</code>)</h2>
 <p>The connection string to the server and database you want to execute your migrations against. This can be a full connection string or the name of the connection string stored in a config file.</p>
-<p>When specifying a named connection string, FluentMigrator searchs for it in this order:</p>
+<p>When specifying a named connection string, FluentMigrator searches for it in this order:</p>
 <ol>
-<li>The specified config file via <code>--connectionStringConfigPath</code>](#cscp)` parameter</li>
+<li>The specified config file via <code>--connectionStringConfigPath</code>](#cscp) parameter</li>
 <li>Target assembly's config file</li>
 <li>Machine.config config file</li>
 </ol>
@@ -242,7 +242,7 @@
 <li><code>migrate</code> (same as migrate:up)</li>
 <li><code>migrate:down</code> (used in conjunction with the <code>--version</code> switch. <em>Warning:</em> if you don't supply <code>--version</code> this will revert <em>all</em> migrations)</li>
 <li><code>rollback</code> (per default this rollbacks one step. Use the <code>--steps</code> switch to rollback more steps)</li>
-<li><code>rollback:toversion</code> (used in conjuction with the <code>--version</code> switch. Will rollback all versions down to the specified version, not including the specified version. The Migration attribute contains the version that should be used with the <code>--version</code> switch.)</li>
+<li><code>rollback:toversion</code> (used in conjunction with the <code>--version</code> switch. Will rollback all versions down to the specified version, not including the specified version. The Migration attribute contains the version that should be used with the <code>--version</code> switch.)</li>
 <li><code>rollback:all</code></li>
 <li><code>listmigrations</code></li>
 </ul>
@@ -276,7 +276,7 @@
 <h2 id="--transaction-per-session---tps-optional"><code>--transaction-per-session, --tps</code> (optional)</h2>
 <p>The default transaction is one transaction per migration so the default for this switch is false. Run migrations in one transaction per session (task) instead. This is a boolean switch so it does not take a value.</p>
 <h2 id="--stoponerror"><code>--stopOnError</code></h2>
-<p>Pauses migration execution until the user input if any error occured. Default is false.</p>
+<p>Pauses migration execution until the user input if any error occurred. Default is false.</p>
 <h2 id="--allow-breaking-changes"><code>--allow-breaking-changes</code></h2>
 <p>Allows execution of migrations marked as breaking changes. Default is false.</p>
 <h2 id="--help--h--"><code>--help, -h, -?</code></h2>

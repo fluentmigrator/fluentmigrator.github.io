@@ -5481,14 +5481,14 @@ references:
   fullName: FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpressionBase
   nameWithType: ExecuteEmbeddedSqlScriptExpressionBase
 - uid: FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpressionBase.GetQualifiedResourcePath(System.Collections.Generic.IReadOnlyCollection{System.ValueTuple{System.String,System.Reflection.Assembly}},System.String[])
-  name: GetQualifiedResourcePath(IReadOnlyCollection<>, String[])
+  name: GetQualifiedResourcePath(IReadOnlyCollection<(String name, Assembly assembly)>, String[])
   href: api/v3.x/FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpressionBase.html#FluentMigrator_Expressions_ExecuteEmbeddedSqlScriptExpressionBase_GetQualifiedResourcePath_System_Collections_Generic_IReadOnlyCollection_System_ValueTuple_System_String_System_Reflection_Assembly___System_String___
   commentId: M:FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpressionBase.GetQualifiedResourcePath(System.Collections.Generic.IReadOnlyCollection{System.ValueTuple{System.String,System.Reflection.Assembly}},System.String[])
-  name.vb: GetQualifiedResourcePath(IReadOnlyCollection(Of ), String())
-  fullName: FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpressionBase.GetQualifiedResourcePath(System.Collections.Generic.IReadOnlyCollection<System.>, System.String[])
-  fullName.vb: FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpressionBase.GetQualifiedResourcePath(System.Collections.Generic.IReadOnlyCollection(Of System.), System.String())
-  nameWithType: ExecuteEmbeddedSqlScriptExpressionBase.GetQualifiedResourcePath(IReadOnlyCollection<>, String[])
-  nameWithType.vb: ExecuteEmbeddedSqlScriptExpressionBase.GetQualifiedResourcePath(IReadOnlyCollection(Of ), String())
+  name.vb: GetQualifiedResourcePath(IReadOnlyCollection(Of (name As String, assembly As Assembly)), String())
+  fullName: FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpressionBase.GetQualifiedResourcePath(System.Collections.Generic.IReadOnlyCollection<System.ValueTuple<System.String, System.Reflection.Assembly>>, System.String[])
+  fullName.vb: FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpressionBase.GetQualifiedResourcePath(System.Collections.Generic.IReadOnlyCollection(Of System.ValueTuple(Of System.String, System.Reflection.Assembly)), System.String())
+  nameWithType: ExecuteEmbeddedSqlScriptExpressionBase.GetQualifiedResourcePath(IReadOnlyCollection<(String name, Assembly assembly)>, String[])
+  nameWithType.vb: ExecuteEmbeddedSqlScriptExpressionBase.GetQualifiedResourcePath(IReadOnlyCollection(Of (name As String, assembly As Assembly)), String())
 - uid: FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpressionBase.GetQualifiedResourcePath*
   name: GetQualifiedResourcePath
   href: api/v3.x/FluentMigrator.Expressions.ExecuteEmbeddedSqlScriptExpressionBase.html#FluentMigrator_Expressions_ExecuteEmbeddedSqlScriptExpressionBase_GetQualifiedResourcePath_

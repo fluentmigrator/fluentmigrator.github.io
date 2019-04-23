@@ -10221,6 +10221,150 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.NonUnicodeString.Value
   nameWithType: NonUnicodeString.Value
+- uid: FluentMigrator.Oracle
+  name: FluentMigrator.Oracle
+  href: api/v3.x/FluentMigrator.Oracle.html
+  commentId: N:FluentMigrator.Oracle
+  fullName: FluentMigrator.Oracle
+  nameWithType: FluentMigrator.Oracle
+- uid: FluentMigrator.Oracle.OracleExtensions
+  name: OracleExtensions
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html
+  commentId: T:FluentMigrator.Oracle.OracleExtensions
+  fullName: FluentMigrator.Oracle.OracleExtensions
+  nameWithType: OracleExtensions
+- uid: FluentMigrator.Oracle.OracleExtensions.Identity*
+  name: Identity
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_Identity_
+  commentId: Overload:FluentMigrator.Oracle.OracleExtensions.Identity
+  isSpec: "True"
+  fullName: FluentMigrator.Oracle.OracleExtensions.Identity
+  nameWithType: OracleExtensions.Identity
+- uid: FluentMigrator.Oracle.OracleExtensions.Identity``2(FluentMigrator.Builders.IColumnOptionSyntax{``0,``1},FluentMigrator.OracleGenerationType)
+  name: Identity<TNext, TNextFk>(IColumnOptionSyntax<TNext, TNextFk>, OracleGenerationType)
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_Identity__2_FluentMigrator_Builders_IColumnOptionSyntax___0___1__FluentMigrator_OracleGenerationType_
+  commentId: M:FluentMigrator.Oracle.OracleExtensions.Identity``2(FluentMigrator.Builders.IColumnOptionSyntax{``0,``1},FluentMigrator.OracleGenerationType)
+  name.vb: Identity(Of TNext, TNextFk)(IColumnOptionSyntax(Of TNext, TNextFk), OracleGenerationType)
+  fullName: FluentMigrator.Oracle.OracleExtensions.Identity<TNext, TNextFk>(FluentMigrator.Builders.IColumnOptionSyntax<TNext, TNextFk>, FluentMigrator.OracleGenerationType)
+  fullName.vb: FluentMigrator.Oracle.OracleExtensions.Identity(Of TNext, TNextFk)(FluentMigrator.Builders.IColumnOptionSyntax(Of TNext, TNextFk), FluentMigrator.OracleGenerationType)
+  nameWithType: OracleExtensions.Identity<TNext, TNextFk>(IColumnOptionSyntax<TNext, TNextFk>, OracleGenerationType)
+  nameWithType.vb: OracleExtensions.Identity(Of TNext, TNextFk)(IColumnOptionSyntax(Of TNext, TNextFk), OracleGenerationType)
+- uid: FluentMigrator.Oracle.OracleExtensions.Identity``2(FluentMigrator.Builders.IColumnOptionSyntax{``0,``1},FluentMigrator.OracleGenerationType,System.Int32,System.Int32)
+  name: Identity<TNext, TNextFk>(IColumnOptionSyntax<TNext, TNextFk>, OracleGenerationType, Int32, Int32)
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_Identity__2_FluentMigrator_Builders_IColumnOptionSyntax___0___1__FluentMigrator_OracleGenerationType_System_Int32_System_Int32_
+  commentId: M:FluentMigrator.Oracle.OracleExtensions.Identity``2(FluentMigrator.Builders.IColumnOptionSyntax{``0,``1},FluentMigrator.OracleGenerationType,System.Int32,System.Int32)
+  name.vb: Identity(Of TNext, TNextFk)(IColumnOptionSyntax(Of TNext, TNextFk), OracleGenerationType, Int32, Int32)
+  fullName: FluentMigrator.Oracle.OracleExtensions.Identity<TNext, TNextFk>(FluentMigrator.Builders.IColumnOptionSyntax<TNext, TNextFk>, FluentMigrator.OracleGenerationType, System.Int32, System.Int32)
+  fullName.vb: FluentMigrator.Oracle.OracleExtensions.Identity(Of TNext, TNextFk)(FluentMigrator.Builders.IColumnOptionSyntax(Of TNext, TNextFk), FluentMigrator.OracleGenerationType, System.Int32, System.Int32)
+  nameWithType: OracleExtensions.Identity<TNext, TNextFk>(IColumnOptionSyntax<TNext, TNextFk>, OracleGenerationType, Int32, Int32)
+  nameWithType.vb: OracleExtensions.Identity(Of TNext, TNextFk)(IColumnOptionSyntax(Of TNext, TNextFk), OracleGenerationType, Int32, Int32)
+- uid: FluentMigrator.Oracle.OracleExtensions.Identity``2(FluentMigrator.Builders.IColumnOptionSyntax{``0,``1},FluentMigrator.OracleGenerationType,System.Int64,System.Int32)
+  name: Identity<TNext, TNextFk>(IColumnOptionSyntax<TNext, TNextFk>, OracleGenerationType, Int64, Int32)
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_Identity__2_FluentMigrator_Builders_IColumnOptionSyntax___0___1__FluentMigrator_OracleGenerationType_System_Int64_System_Int32_
+  commentId: M:FluentMigrator.Oracle.OracleExtensions.Identity``2(FluentMigrator.Builders.IColumnOptionSyntax{``0,``1},FluentMigrator.OracleGenerationType,System.Int64,System.Int32)
+  name.vb: Identity(Of TNext, TNextFk)(IColumnOptionSyntax(Of TNext, TNextFk), OracleGenerationType, Int64, Int32)
+  fullName: FluentMigrator.Oracle.OracleExtensions.Identity<TNext, TNextFk>(FluentMigrator.Builders.IColumnOptionSyntax<TNext, TNextFk>, FluentMigrator.OracleGenerationType, System.Int64, System.Int32)
+  fullName.vb: FluentMigrator.Oracle.OracleExtensions.Identity(Of TNext, TNextFk)(FluentMigrator.Builders.IColumnOptionSyntax(Of TNext, TNextFk), FluentMigrator.OracleGenerationType, System.Int64, System.Int32)
+  nameWithType: OracleExtensions.Identity<TNext, TNextFk>(IColumnOptionSyntax<TNext, TNextFk>, OracleGenerationType, Int64, Int32)
+  nameWithType.vb: OracleExtensions.Identity(Of TNext, TNextFk)(IColumnOptionSyntax(Of TNext, TNextFk), OracleGenerationType, Int64, Int32)
+- uid: FluentMigrator.Oracle.OracleExtensions.Identity``2(FluentMigrator.Builders.IColumnOptionSyntax{``0,``1},FluentMigrator.OracleGenerationType,System.Int64,System.Int32,System.Int64,System.Int64)
+  name: Identity<TNext, TNextFk>(IColumnOptionSyntax<TNext, TNextFk>, OracleGenerationType, Int64, Int32, Int64, Int64)
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_Identity__2_FluentMigrator_Builders_IColumnOptionSyntax___0___1__FluentMigrator_OracleGenerationType_System_Int64_System_Int32_System_Int64_System_Int64_
+  commentId: M:FluentMigrator.Oracle.OracleExtensions.Identity``2(FluentMigrator.Builders.IColumnOptionSyntax{``0,``1},FluentMigrator.OracleGenerationType,System.Int64,System.Int32,System.Int64,System.Int64)
+  name.vb: Identity(Of TNext, TNextFk)(IColumnOptionSyntax(Of TNext, TNextFk), OracleGenerationType, Int64, Int32, Int64, Int64)
+  fullName: FluentMigrator.Oracle.OracleExtensions.Identity<TNext, TNextFk>(FluentMigrator.Builders.IColumnOptionSyntax<TNext, TNextFk>, FluentMigrator.OracleGenerationType, System.Int64, System.Int32, System.Int64, System.Int64)
+  fullName.vb: FluentMigrator.Oracle.OracleExtensions.Identity(Of TNext, TNextFk)(FluentMigrator.Builders.IColumnOptionSyntax(Of TNext, TNextFk), FluentMigrator.OracleGenerationType, System.Int64, System.Int32, System.Int64, System.Int64)
+  nameWithType: OracleExtensions.Identity<TNext, TNextFk>(IColumnOptionSyntax<TNext, TNextFk>, OracleGenerationType, Int64, Int32, Int64, Int64)
+  nameWithType.vb: OracleExtensions.Identity(Of TNext, TNextFk)(IColumnOptionSyntax(Of TNext, TNextFk), OracleGenerationType, Int64, Int32, Int64, Int64)
+- uid: FluentMigrator.Oracle.OracleExtensions.IdentityGeneration
+  name: IdentityGeneration
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_IdentityGeneration
+  commentId: P:FluentMigrator.Oracle.OracleExtensions.IdentityGeneration
+  fullName: FluentMigrator.Oracle.OracleExtensions.IdentityGeneration
+  nameWithType: OracleExtensions.IdentityGeneration
+- uid: FluentMigrator.Oracle.OracleExtensions.IdentityGeneration*
+  name: IdentityGeneration
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_IdentityGeneration_
+  commentId: Overload:FluentMigrator.Oracle.OracleExtensions.IdentityGeneration
+  isSpec: "True"
+  fullName: FluentMigrator.Oracle.OracleExtensions.IdentityGeneration
+  nameWithType: OracleExtensions.IdentityGeneration
+- uid: FluentMigrator.Oracle.OracleExtensions.IdentityIncrementBy
+  name: IdentityIncrementBy
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_IdentityIncrementBy
+  commentId: P:FluentMigrator.Oracle.OracleExtensions.IdentityIncrementBy
+  fullName: FluentMigrator.Oracle.OracleExtensions.IdentityIncrementBy
+  nameWithType: OracleExtensions.IdentityIncrementBy
+- uid: FluentMigrator.Oracle.OracleExtensions.IdentityIncrementBy*
+  name: IdentityIncrementBy
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_IdentityIncrementBy_
+  commentId: Overload:FluentMigrator.Oracle.OracleExtensions.IdentityIncrementBy
+  isSpec: "True"
+  fullName: FluentMigrator.Oracle.OracleExtensions.IdentityIncrementBy
+  nameWithType: OracleExtensions.IdentityIncrementBy
+- uid: FluentMigrator.Oracle.OracleExtensions.IdentityMaxValue
+  name: IdentityMaxValue
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_IdentityMaxValue
+  commentId: P:FluentMigrator.Oracle.OracleExtensions.IdentityMaxValue
+  fullName: FluentMigrator.Oracle.OracleExtensions.IdentityMaxValue
+  nameWithType: OracleExtensions.IdentityMaxValue
+- uid: FluentMigrator.Oracle.OracleExtensions.IdentityMaxValue*
+  name: IdentityMaxValue
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_IdentityMaxValue_
+  commentId: Overload:FluentMigrator.Oracle.OracleExtensions.IdentityMaxValue
+  isSpec: "True"
+  fullName: FluentMigrator.Oracle.OracleExtensions.IdentityMaxValue
+  nameWithType: OracleExtensions.IdentityMaxValue
+- uid: FluentMigrator.Oracle.OracleExtensions.IdentityMinValue
+  name: IdentityMinValue
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_IdentityMinValue
+  commentId: P:FluentMigrator.Oracle.OracleExtensions.IdentityMinValue
+  fullName: FluentMigrator.Oracle.OracleExtensions.IdentityMinValue
+  nameWithType: OracleExtensions.IdentityMinValue
+- uid: FluentMigrator.Oracle.OracleExtensions.IdentityMinValue*
+  name: IdentityMinValue
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_IdentityMinValue_
+  commentId: Overload:FluentMigrator.Oracle.OracleExtensions.IdentityMinValue
+  isSpec: "True"
+  fullName: FluentMigrator.Oracle.OracleExtensions.IdentityMinValue
+  nameWithType: OracleExtensions.IdentityMinValue
+- uid: FluentMigrator.Oracle.OracleExtensions.IdentityStartWith
+  name: IdentityStartWith
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_IdentityStartWith
+  commentId: P:FluentMigrator.Oracle.OracleExtensions.IdentityStartWith
+  fullName: FluentMigrator.Oracle.OracleExtensions.IdentityStartWith
+  nameWithType: OracleExtensions.IdentityStartWith
+- uid: FluentMigrator.Oracle.OracleExtensions.IdentityStartWith*
+  name: IdentityStartWith
+  href: api/v3.x/FluentMigrator.Oracle.OracleExtensions.html#FluentMigrator_Oracle_OracleExtensions_IdentityStartWith_
+  commentId: Overload:FluentMigrator.Oracle.OracleExtensions.IdentityStartWith
+  isSpec: "True"
+  fullName: FluentMigrator.Oracle.OracleExtensions.IdentityStartWith
+  nameWithType: OracleExtensions.IdentityStartWith
+- uid: FluentMigrator.OracleGenerationType
+  name: OracleGenerationType
+  href: api/v3.x/FluentMigrator.OracleGenerationType.html
+  commentId: T:FluentMigrator.OracleGenerationType
+  fullName: FluentMigrator.OracleGenerationType
+  nameWithType: OracleGenerationType
+- uid: FluentMigrator.OracleGenerationType.Always
+  name: Always
+  href: api/v3.x/FluentMigrator.OracleGenerationType.html#FluentMigrator_OracleGenerationType_Always
+  commentId: F:FluentMigrator.OracleGenerationType.Always
+  fullName: FluentMigrator.OracleGenerationType.Always
+  nameWithType: OracleGenerationType.Always
+- uid: FluentMigrator.OracleGenerationType.ByDefault
+  name: ByDefault
+  href: api/v3.x/FluentMigrator.OracleGenerationType.html#FluentMigrator_OracleGenerationType_ByDefault
+  commentId: F:FluentMigrator.OracleGenerationType.ByDefault
+  fullName: FluentMigrator.OracleGenerationType.ByDefault
+  nameWithType: OracleGenerationType.ByDefault
+- uid: FluentMigrator.OracleGenerationType.ByDefaultOnNull
+  name: ByDefaultOnNull
+  href: api/v3.x/FluentMigrator.OracleGenerationType.html#FluentMigrator_OracleGenerationType_ByDefaultOnNull
+  commentId: F:FluentMigrator.OracleGenerationType.ByDefaultOnNull
+  fullName: FluentMigrator.OracleGenerationType.ByDefaultOnNull
+  nameWithType: OracleGenerationType.ByDefaultOnNull
 - uid: FluentMigrator.ProfileAttribute
   name: ProfileAttribute
   href: api/v3.x/FluentMigrator.ProfileAttribute.html
@@ -11496,6 +11640,25 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleDashSingleLineComment.DoubleDashSingleLineComment
   nameWithType: DoubleDashSingleLineComment.DoubleDashSingleLineComment
+- uid: FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment
+  name: DoubleSlashSingleLineComment
+  href: api/v3.x/FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment.html
+  commentId: T:FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment
+  fullName: FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment
+  nameWithType: DoubleSlashSingleLineComment
+- uid: FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment.#ctor
+  name: DoubleSlashSingleLineComment()
+  href: api/v3.x/FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment.html#FluentMigrator_Runner_BatchParser_RangeSearchers_DoubleSlashSingleLineComment__ctor
+  commentId: M:FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment.#ctor
+  fullName: FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment.DoubleSlashSingleLineComment()
+  nameWithType: DoubleSlashSingleLineComment.DoubleSlashSingleLineComment()
+- uid: FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment.#ctor*
+  name: DoubleSlashSingleLineComment
+  href: api/v3.x/FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment.html#FluentMigrator_Runner_BatchParser_RangeSearchers_DoubleSlashSingleLineComment__ctor_
+  commentId: Overload:FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.BatchParser.RangeSearchers.DoubleSlashSingleLineComment.DoubleSlashSingleLineComment
+  nameWithType: DoubleSlashSingleLineComment.DoubleSlashSingleLineComment
 - uid: FluentMigrator.Runner.BatchParser.RangeSearchers.MultiLineComment
   name: MultiLineComment
   href: api/v3.x/FluentMigrator.Runner.BatchParser.RangeSearchers.MultiLineComment.html
@@ -12671,6 +12834,98 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.ConsoleUtilities.AsError
   nameWithType: ConsoleUtilities.AsError
+- uid: FluentMigrator.Runner.Constraints
+  name: FluentMigrator.Runner.Constraints
+  href: api/v3.x/FluentMigrator.Runner.Constraints.html
+  commentId: N:FluentMigrator.Runner.Constraints
+  fullName: FluentMigrator.Runner.Constraints
+  nameWithType: FluentMigrator.Runner.Constraints
+- uid: FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute
+  name: CurrentVersionMigrationConstraintAttribute
+  href: api/v3.x/FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute.html
+  commentId: T:FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute
+  fullName: FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute
+  nameWithType: CurrentVersionMigrationConstraintAttribute
+- uid: FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute.#ctor(System.Int64)
+  name: CurrentVersionMigrationConstraintAttribute(Int64)
+  href: api/v3.x/FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute.html#FluentMigrator_Runner_Constraints_CurrentVersionMigrationConstraintAttribute__ctor_System_Int64_
+  commentId: M:FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute.#ctor(System.Int64)
+  fullName: FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute.CurrentVersionMigrationConstraintAttribute(System.Int64)
+  nameWithType: CurrentVersionMigrationConstraintAttribute.CurrentVersionMigrationConstraintAttribute(Int64)
+- uid: FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute.#ctor*
+  name: CurrentVersionMigrationConstraintAttribute
+  href: api/v3.x/FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute.html#FluentMigrator_Runner_Constraints_CurrentVersionMigrationConstraintAttribute__ctor_
+  commentId: Overload:FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Constraints.CurrentVersionMigrationConstraintAttribute.CurrentVersionMigrationConstraintAttribute
+  nameWithType: CurrentVersionMigrationConstraintAttribute.CurrentVersionMigrationConstraintAttribute
+- uid: FluentMigrator.Runner.Constraints.MigrationConstraintAttribute
+  name: MigrationConstraintAttribute
+  href: api/v3.x/FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.html
+  commentId: T:FluentMigrator.Runner.Constraints.MigrationConstraintAttribute
+  fullName: FluentMigrator.Runner.Constraints.MigrationConstraintAttribute
+  nameWithType: MigrationConstraintAttribute
+- uid: FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.#ctor(System.Func{FluentMigrator.Runner.Constraints.MigrationConstraintContext,System.Boolean})
+  name: MigrationConstraintAttribute(Func<MigrationConstraintContext, Boolean>)
+  href: api/v3.x/FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.html#FluentMigrator_Runner_Constraints_MigrationConstraintAttribute__ctor_System_Func_FluentMigrator_Runner_Constraints_MigrationConstraintContext_System_Boolean__
+  commentId: M:FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.#ctor(System.Func{FluentMigrator.Runner.Constraints.MigrationConstraintContext,System.Boolean})
+  name.vb: MigrationConstraintAttribute(Func(Of MigrationConstraintContext, Boolean))
+  fullName: FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.MigrationConstraintAttribute(System.Func<FluentMigrator.Runner.Constraints.MigrationConstraintContext, System.Boolean>)
+  fullName.vb: FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.MigrationConstraintAttribute(System.Func(Of FluentMigrator.Runner.Constraints.MigrationConstraintContext, System.Boolean))
+  nameWithType: MigrationConstraintAttribute.MigrationConstraintAttribute(Func<MigrationConstraintContext, Boolean>)
+  nameWithType.vb: MigrationConstraintAttribute.MigrationConstraintAttribute(Func(Of MigrationConstraintContext, Boolean))
+- uid: FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.#ctor*
+  name: MigrationConstraintAttribute
+  href: api/v3.x/FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.html#FluentMigrator_Runner_Constraints_MigrationConstraintAttribute__ctor_
+  commentId: Overload:FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.MigrationConstraintAttribute
+  nameWithType: MigrationConstraintAttribute.MigrationConstraintAttribute
+- uid: FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.ShouldRun(FluentMigrator.Runner.Constraints.MigrationConstraintContext)
+  name: ShouldRun(MigrationConstraintContext)
+  href: api/v3.x/FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.html#FluentMigrator_Runner_Constraints_MigrationConstraintAttribute_ShouldRun_FluentMigrator_Runner_Constraints_MigrationConstraintContext_
+  commentId: M:FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.ShouldRun(FluentMigrator.Runner.Constraints.MigrationConstraintContext)
+  fullName: FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.ShouldRun(FluentMigrator.Runner.Constraints.MigrationConstraintContext)
+  nameWithType: MigrationConstraintAttribute.ShouldRun(MigrationConstraintContext)
+- uid: FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.ShouldRun*
+  name: ShouldRun
+  href: api/v3.x/FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.html#FluentMigrator_Runner_Constraints_MigrationConstraintAttribute_ShouldRun_
+  commentId: Overload:FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.ShouldRun
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Constraints.MigrationConstraintAttribute.ShouldRun
+  nameWithType: MigrationConstraintAttribute.ShouldRun
+- uid: FluentMigrator.Runner.Constraints.MigrationConstraintContext
+  name: MigrationConstraintContext
+  href: api/v3.x/FluentMigrator.Runner.Constraints.MigrationConstraintContext.html
+  commentId: T:FluentMigrator.Runner.Constraints.MigrationConstraintContext
+  fullName: FluentMigrator.Runner.Constraints.MigrationConstraintContext
+  nameWithType: MigrationConstraintContext
+- uid: FluentMigrator.Runner.Constraints.MigrationConstraintContext.RunnerOptions
+  name: RunnerOptions
+  href: api/v3.x/FluentMigrator.Runner.Constraints.MigrationConstraintContext.html#FluentMigrator_Runner_Constraints_MigrationConstraintContext_RunnerOptions
+  commentId: P:FluentMigrator.Runner.Constraints.MigrationConstraintContext.RunnerOptions
+  fullName: FluentMigrator.Runner.Constraints.MigrationConstraintContext.RunnerOptions
+  nameWithType: MigrationConstraintContext.RunnerOptions
+- uid: FluentMigrator.Runner.Constraints.MigrationConstraintContext.RunnerOptions*
+  name: RunnerOptions
+  href: api/v3.x/FluentMigrator.Runner.Constraints.MigrationConstraintContext.html#FluentMigrator_Runner_Constraints_MigrationConstraintContext_RunnerOptions_
+  commentId: Overload:FluentMigrator.Runner.Constraints.MigrationConstraintContext.RunnerOptions
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Constraints.MigrationConstraintContext.RunnerOptions
+  nameWithType: MigrationConstraintContext.RunnerOptions
+- uid: FluentMigrator.Runner.Constraints.MigrationConstraintContext.VersionInfo
+  name: VersionInfo
+  href: api/v3.x/FluentMigrator.Runner.Constraints.MigrationConstraintContext.html#FluentMigrator_Runner_Constraints_MigrationConstraintContext_VersionInfo
+  commentId: P:FluentMigrator.Runner.Constraints.MigrationConstraintContext.VersionInfo
+  fullName: FluentMigrator.Runner.Constraints.MigrationConstraintContext.VersionInfo
+  nameWithType: MigrationConstraintContext.VersionInfo
+- uid: FluentMigrator.Runner.Constraints.MigrationConstraintContext.VersionInfo*
+  name: VersionInfo
+  href: api/v3.x/FluentMigrator.Runner.Constraints.MigrationConstraintContext.html#FluentMigrator_Runner_Constraints_MigrationConstraintContext_VersionInfo_
+  commentId: Overload:FluentMigrator.Runner.Constraints.MigrationConstraintContext.VersionInfo
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Constraints.MigrationConstraintContext.VersionInfo
+  nameWithType: MigrationConstraintContext.VersionInfo
 - uid: FluentMigrator.Runner.Conventions
   name: FluentMigrator.Runner.Conventions
   href: api/v3.x/FluentMigrator.Runner.Conventions.html
@@ -17751,6 +18006,58 @@ references:
   commentId: N:FluentMigrator.Runner.Generators.Oracle
   fullName: FluentMigrator.Runner.Generators.Oracle
   nameWithType: FluentMigrator.Runner.Generators.Oracle
+- uid: FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator
+  name: IOracle12CGenerator
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator.html
+  commentId: T:FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator
+  fullName: FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator
+  nameWithType: IOracle12CGenerator
+- uid: FluentMigrator.Runner.Generators.Oracle.IOracleGenerator
+  name: IOracleGenerator
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.IOracleGenerator.html
+  commentId: T:FluentMigrator.Runner.Generators.Oracle.IOracleGenerator
+  fullName: FluentMigrator.Runner.Generators.Oracle.IOracleGenerator
+  nameWithType: IOracleGenerator
+- uid: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator
+  name: Oracle12CGenerator
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.html
+  commentId: T:FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator
+  fullName: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator
+  nameWithType: Oracle12CGenerator
+- uid: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.#ctor
+  name: Oracle12CGenerator()
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.html#FluentMigrator_Runner_Generators_Oracle_Oracle12CGenerator__ctor
+  commentId: M:FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.#ctor
+  fullName: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.Oracle12CGenerator()
+  nameWithType: Oracle12CGenerator.Oracle12CGenerator()
+- uid: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.#ctor(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase)
+  name: Oracle12CGenerator(OracleQuoterBase)
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.html#FluentMigrator_Runner_Generators_Oracle_Oracle12CGenerator__ctor_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_
+  commentId: M:FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.#ctor(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase)
+  fullName: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.Oracle12CGenerator(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase)
+  nameWithType: Oracle12CGenerator.Oracle12CGenerator(OracleQuoterBase)
+- uid: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.#ctor(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})
+  name: Oracle12CGenerator(OracleQuoterBase, IOptions<GeneratorOptions>)
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.html#FluentMigrator_Runner_Generators_Oracle_Oracle12CGenerator__ctor_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__
+  commentId: M:FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.#ctor(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})
+  name.vb: Oracle12CGenerator(OracleQuoterBase, IOptions(Of GeneratorOptions))
+  fullName: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.Oracle12CGenerator(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase, IOptions<FluentMigrator.Runner.Generators.GeneratorOptions>)
+  fullName.vb: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.Oracle12CGenerator(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase, IOptions(Of FluentMigrator.Runner.Generators.GeneratorOptions))
+  nameWithType: Oracle12CGenerator.Oracle12CGenerator(OracleQuoterBase, IOptions<GeneratorOptions>)
+  nameWithType.vb: Oracle12CGenerator.Oracle12CGenerator(OracleQuoterBase, IOptions(Of GeneratorOptions))
+- uid: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.#ctor(System.Boolean)
+  name: Oracle12CGenerator(Boolean)
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.html#FluentMigrator_Runner_Generators_Oracle_Oracle12CGenerator__ctor_System_Boolean_
+  commentId: M:FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.#ctor(System.Boolean)
+  fullName: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.Oracle12CGenerator(System.Boolean)
+  nameWithType: Oracle12CGenerator.Oracle12CGenerator(Boolean)
+- uid: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.#ctor*
+  name: Oracle12CGenerator
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.html#FluentMigrator_Runner_Generators_Oracle_Oracle12CGenerator__ctor_
+  commentId: Overload:FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.Oracle12CGenerator
+  nameWithType: Oracle12CGenerator.Oracle12CGenerator
 - uid: FluentMigrator.Runner.Generators.Oracle.OracleDescriptionGenerator
   name: OracleDescriptionGenerator
   href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.OracleDescriptionGenerator.html
@@ -17795,6 +18102,24 @@ references:
   commentId: M:FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor
   fullName: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.OracleGenerator()
   nameWithType: OracleGenerator.OracleGenerator()
+- uid: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor(FluentMigrator.Runner.Generators.IColumn,FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase,FluentMigrator.Runner.Generators.IDescriptionGenerator,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})
+  name: OracleGenerator(IColumn, OracleQuoterBase, IDescriptionGenerator, IOptions<GeneratorOptions>)
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.OracleGenerator.html#FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_FluentMigrator_Runner_Generators_IDescriptionGenerator_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__
+  commentId: M:FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor(FluentMigrator.Runner.Generators.IColumn,FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase,FluentMigrator.Runner.Generators.IDescriptionGenerator,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})
+  name.vb: OracleGenerator(IColumn, OracleQuoterBase, IDescriptionGenerator, IOptions(Of GeneratorOptions))
+  fullName: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.OracleGenerator(FluentMigrator.Runner.Generators.IColumn, FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase, FluentMigrator.Runner.Generators.IDescriptionGenerator, IOptions<FluentMigrator.Runner.Generators.GeneratorOptions>)
+  fullName.vb: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.OracleGenerator(FluentMigrator.Runner.Generators.IColumn, FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase, FluentMigrator.Runner.Generators.IDescriptionGenerator, IOptions(Of FluentMigrator.Runner.Generators.GeneratorOptions))
+  nameWithType: OracleGenerator.OracleGenerator(IColumn, OracleQuoterBase, IDescriptionGenerator, IOptions<GeneratorOptions>)
+  nameWithType.vb: OracleGenerator.OracleGenerator(IColumn, OracleQuoterBase, IDescriptionGenerator, IOptions(Of GeneratorOptions))
+- uid: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor(FluentMigrator.Runner.Generators.IColumn,FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})
+  name: OracleGenerator(IColumn, OracleQuoterBase, IOptions<GeneratorOptions>)
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.OracleGenerator.html#FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__
+  commentId: M:FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor(FluentMigrator.Runner.Generators.IColumn,FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})
+  name.vb: OracleGenerator(IColumn, OracleQuoterBase, IOptions(Of GeneratorOptions))
+  fullName: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.OracleGenerator(FluentMigrator.Runner.Generators.IColumn, FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase, IOptions<FluentMigrator.Runner.Generators.GeneratorOptions>)
+  fullName.vb: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.OracleGenerator(FluentMigrator.Runner.Generators.IColumn, FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase, IOptions(Of FluentMigrator.Runner.Generators.GeneratorOptions))
+  nameWithType: OracleGenerator.OracleGenerator(IColumn, OracleQuoterBase, IOptions<GeneratorOptions>)
+  nameWithType.vb: OracleGenerator.OracleGenerator(IColumn, OracleQuoterBase, IOptions(Of GeneratorOptions))
 - uid: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase)
   name: OracleGenerator(OracleQuoterBase)
   href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.OracleGenerator.html#FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_
@@ -17942,6 +18267,19 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate
   nameWithType: OracleGenerator.Generate
+- uid: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.GetQuoter(System.Boolean)
+  name: GetQuoter(Boolean)
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.OracleGenerator.html#FluentMigrator_Runner_Generators_Oracle_OracleGenerator_GetQuoter_System_Boolean_
+  commentId: M:FluentMigrator.Runner.Generators.Oracle.OracleGenerator.GetQuoter(System.Boolean)
+  fullName: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.GetQuoter(System.Boolean)
+  nameWithType: OracleGenerator.GetQuoter(Boolean)
+- uid: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.GetQuoter*
+  name: GetQuoter
+  href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.OracleGenerator.html#FluentMigrator_Runner_Generators_Oracle_OracleGenerator_GetQuoter_
+  commentId: Overload:FluentMigrator.Runner.Generators.Oracle.OracleGenerator.GetQuoter
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.GetQuoter
+  nameWithType: OracleGenerator.GetQuoter
 - uid: FluentMigrator.Runner.Generators.Oracle.OracleGenerator.InsertData
   name: InsertData
   href: api/v3.x/FluentMigrator.Runner.Generators.Oracle.OracleGenerator.html#FluentMigrator_Runner_Generators_Oracle_OracleGenerator_InsertData
@@ -18182,12 +18520,12 @@ references:
   commentId: T:FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator
   fullName: FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator
   nameWithType: PostgresDescriptionGenerator
-- uid: FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator.#ctor
-  name: PostgresDescriptionGenerator()
-  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator.html#FluentMigrator_Runner_Generators_Postgres_PostgresDescriptionGenerator__ctor
-  commentId: M:FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator.#ctor
-  fullName: FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator.PostgresDescriptionGenerator()
-  nameWithType: PostgresDescriptionGenerator.PostgresDescriptionGenerator()
+- uid: FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter)
+  name: PostgresDescriptionGenerator(PostgresQuoter)
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator.html#FluentMigrator_Runner_Generators_Postgres_PostgresDescriptionGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_
+  commentId: M:FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter)
+  fullName: FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator.PostgresDescriptionGenerator(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter)
+  nameWithType: PostgresDescriptionGenerator.PostgresDescriptionGenerator(PostgresQuoter)
 - uid: FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator.#ctor*
   name: PostgresDescriptionGenerator
   href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresDescriptionGenerator.html#FluentMigrator_Runner_Generators_Postgres_PostgresDescriptionGenerator__ctor_
@@ -18240,12 +18578,6 @@ references:
   commentId: T:FluentMigrator.Runner.Generators.Postgres.PostgresGenerator
   fullName: FluentMigrator.Runner.Generators.Postgres.PostgresGenerator
   nameWithType: PostgresGenerator
-- uid: FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor
-  name: PostgresGenerator()
-  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.html#FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor
-  commentId: M:FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor
-  fullName: FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.PostgresGenerator()
-  nameWithType: PostgresGenerator.PostgresGenerator()
 - uid: FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter)
   name: PostgresGenerator(PostgresQuoter)
   href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.html#FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_
@@ -18261,6 +18593,15 @@ references:
   fullName.vb: FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.PostgresGenerator(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter, IOptions(Of FluentMigrator.Runner.Generators.GeneratorOptions))
   nameWithType: PostgresGenerator.PostgresGenerator(PostgresQuoter, IOptions<GeneratorOptions>)
   nameWithType.vb: PostgresGenerator.PostgresGenerator(PostgresQuoter, IOptions(Of GeneratorOptions))
+- uid: FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions},FluentMigrator.Runner.Generators.ITypeMap)
+  name: PostgresGenerator(PostgresQuoter, IOptions<GeneratorOptions>, ITypeMap)
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.html#FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__FluentMigrator_Runner_Generators_ITypeMap_
+  commentId: M:FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions},FluentMigrator.Runner.Generators.ITypeMap)
+  name.vb: PostgresGenerator(PostgresQuoter, IOptions(Of GeneratorOptions), ITypeMap)
+  fullName: FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.PostgresGenerator(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter, IOptions<FluentMigrator.Runner.Generators.GeneratorOptions>, FluentMigrator.Runner.Generators.ITypeMap)
+  fullName.vb: FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.PostgresGenerator(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter, IOptions(Of FluentMigrator.Runner.Generators.GeneratorOptions), FluentMigrator.Runner.Generators.ITypeMap)
+  nameWithType: PostgresGenerator.PostgresGenerator(PostgresQuoter, IOptions<GeneratorOptions>, ITypeMap)
+  nameWithType.vb: PostgresGenerator.PostgresGenerator(PostgresQuoter, IOptions(Of GeneratorOptions), ITypeMap)
 - uid: FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor*
   name: PostgresGenerator
   href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.html#FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_
@@ -18457,6 +18798,19 @@ references:
   commentId: T:FluentMigrator.Runner.Generators.Postgres.PostgresQuoter
   fullName: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter
   nameWithType: PostgresQuoter
+- uid: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.#ctor(FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  name: PostgresQuoter(PostgresOptions)
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html#FluentMigrator_Runner_Generators_Postgres_PostgresQuoter__ctor_FluentMigrator_Runner_Processors_Postgres_PostgresOptions_
+  commentId: M:FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.#ctor(FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  fullName: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.PostgresQuoter(FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  nameWithType: PostgresQuoter.PostgresQuoter(PostgresOptions)
+- uid: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.#ctor*
+  name: PostgresQuoter
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html#FluentMigrator_Runner_Generators_Postgres_PostgresQuoter__ctor_
+  commentId: Overload:FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.PostgresQuoter
+  nameWithType: PostgresQuoter.PostgresQuoter
 - uid: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.FormatBool(System.Boolean)
   name: FormatBool(Boolean)
   href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html#FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_FormatBool_System_Boolean_
@@ -18499,6 +18853,19 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.FormatSystemMethods
   nameWithType: PostgresQuoter.FormatSystemMethods
+- uid: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.Options
+  name: Options
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html#FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_Options
+  commentId: P:FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.Options
+  fullName: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.Options
+  nameWithType: PostgresQuoter.Options
+- uid: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.Options*
+  name: Options
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html#FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_Options_
+  commentId: Overload:FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.Options
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.Options
+  nameWithType: PostgresQuoter.Options
 - uid: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.QuoteSchemaName(System.String)
   name: QuoteSchemaName(String)
   href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html#FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_QuoteSchemaName_System_String_
@@ -18525,6 +18892,19 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.QuoteSequenceName
   nameWithType: PostgresQuoter.QuoteSequenceName
+- uid: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.ShouldQuote(System.String)
+  name: ShouldQuote(String)
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html#FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_ShouldQuote_System_String_
+  commentId: M:FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.ShouldQuote(System.String)
+  fullName: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.ShouldQuote(System.String)
+  nameWithType: PostgresQuoter.ShouldQuote(String)
+- uid: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.ShouldQuote*
+  name: ShouldQuote
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html#FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_ShouldQuote_
+  commentId: Overload:FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.ShouldQuote
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.ShouldQuote
+  nameWithType: PostgresQuoter.ShouldQuote
 - uid: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.UnQuoteSchemaName(System.String)
   name: UnQuoteSchemaName(String)
   href: api/v3.x/FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html#FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_UnQuoteSchemaName_System_String_
@@ -18538,6 +18918,34 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.UnQuoteSchemaName
   nameWithType: PostgresQuoter.UnQuoteSchemaName
+- uid: FluentMigrator.Runner.Generators.Postgres92
+  name: FluentMigrator.Runner.Generators.Postgres92
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres92.html
+  commentId: N:FluentMigrator.Runner.Generators.Postgres92
+  fullName: FluentMigrator.Runner.Generators.Postgres92
+  nameWithType: FluentMigrator.Runner.Generators.Postgres92
+- uid: FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator
+  name: Postgres92Generator
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.html
+  commentId: T:FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator
+  fullName: FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator
+  nameWithType: Postgres92Generator
+- uid: FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})
+  name: Postgres92Generator(PostgresQuoter, IOptions<GeneratorOptions>)
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.html#FluentMigrator_Runner_Generators_Postgres92_Postgres92Generator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__
+  commentId: M:FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})
+  name.vb: Postgres92Generator(PostgresQuoter, IOptions(Of GeneratorOptions))
+  fullName: FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.Postgres92Generator(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter, IOptions<FluentMigrator.Runner.Generators.GeneratorOptions>)
+  fullName.vb: FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.Postgres92Generator(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter, IOptions(Of FluentMigrator.Runner.Generators.GeneratorOptions))
+  nameWithType: Postgres92Generator.Postgres92Generator(PostgresQuoter, IOptions<GeneratorOptions>)
+  nameWithType.vb: Postgres92Generator.Postgres92Generator(PostgresQuoter, IOptions(Of GeneratorOptions))
+- uid: FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.#ctor*
+  name: Postgres92Generator
+  href: api/v3.x/FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.html#FluentMigrator_Runner_Generators_Postgres92_Postgres92Generator__ctor_
+  commentId: Overload:FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.Postgres92Generator
+  nameWithType: Postgres92Generator.Postgres92Generator
 - uid: FluentMigrator.Runner.Generators.Redshift
   name: FluentMigrator.Runner.Generators.Redshift
   href: api/v3.x/FluentMigrator.Runner.Generators.Redshift.html
@@ -19566,6 +19974,22 @@ references:
   commentId: T:FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter
   fullName: FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter
   nameWithType: SQLiteQuoter
+- uid: FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.FormatByteArray(System.Byte[])
+  name: FormatByteArray(Byte[])
+  href: api/v3.x/FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.html#FluentMigrator_Runner_Generators_SQLite_SQLiteQuoter_FormatByteArray_System_Byte___
+  commentId: M:FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.FormatByteArray(System.Byte[])
+  name.vb: FormatByteArray(Byte())
+  fullName: FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.FormatByteArray(System.Byte[])
+  fullName.vb: FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.FormatByteArray(System.Byte())
+  nameWithType: SQLiteQuoter.FormatByteArray(Byte[])
+  nameWithType.vb: SQLiteQuoter.FormatByteArray(Byte())
+- uid: FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.FormatByteArray*
+  name: FormatByteArray
+  href: api/v3.x/FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.html#FluentMigrator_Runner_Generators_SQLite_SQLiteQuoter_FormatByteArray_
+  commentId: Overload:FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.FormatByteArray
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.FormatByteArray
+  nameWithType: SQLiteQuoter.FormatByteArray
 - uid: FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.FormatSystemMethods(SystemMethods)
   name: FormatSystemMethods(SystemMethods)
   href: api/v3.x/FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.html#FluentMigrator_Runner_Generators_SQLite_SQLiteQuoter_FormatSystemMethods_SystemMethods_
@@ -21858,6 +22282,41 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Initialization.AssemblySource.Assemblies
   nameWithType: AssemblySource.Assemblies
+- uid: FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor
+  name: AssemblySourceConventionSetAccessor
+  href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.html
+  commentId: T:FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor
+  fullName: FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor
+  nameWithType: AssemblySourceConventionSetAccessor
+- uid: FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.#ctor(IOptionsSnapshot{FluentMigrator.Runner.Initialization.TypeFilterOptions},System.Collections.Generic.IEnumerable{FluentMigrator.Runner.Initialization.ITypeSourceItem{FluentMigrator.Runner.Conventions.IConventionSet}},System.IServiceProvider,FluentMigrator.Runner.Initialization.IAssemblySource)
+  name: AssemblySourceConventionSetAccessor(IOptionsSnapshot<TypeFilterOptions>, IEnumerable<ITypeSourceItem<IConventionSet>>, IServiceProvider, IAssemblySource)
+  href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.html#FluentMigrator_Runner_Initialization_AssemblySourceConventionSetAccessor__ctor_IOptionsSnapshot_FluentMigrator_Runner_Initialization_TypeFilterOptions__System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Initialization_ITypeSourceItem_FluentMigrator_Runner_Conventions_IConventionSet___System_IServiceProvider_FluentMigrator_Runner_Initialization_IAssemblySource_
+  commentId: M:FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.#ctor(IOptionsSnapshot{FluentMigrator.Runner.Initialization.TypeFilterOptions},System.Collections.Generic.IEnumerable{FluentMigrator.Runner.Initialization.ITypeSourceItem{FluentMigrator.Runner.Conventions.IConventionSet}},System.IServiceProvider,FluentMigrator.Runner.Initialization.IAssemblySource)
+  name.vb: AssemblySourceConventionSetAccessor(IOptionsSnapshot(Of TypeFilterOptions), IEnumerable(Of ITypeSourceItem(Of IConventionSet)), IServiceProvider, IAssemblySource)
+  fullName: FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.AssemblySourceConventionSetAccessor(IOptionsSnapshot<FluentMigrator.Runner.Initialization.TypeFilterOptions>, System.Collections.Generic.IEnumerable<FluentMigrator.Runner.Initialization.ITypeSourceItem<FluentMigrator.Runner.Conventions.IConventionSet>>, System.IServiceProvider, FluentMigrator.Runner.Initialization.IAssemblySource)
+  fullName.vb: FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.AssemblySourceConventionSetAccessor(IOptionsSnapshot(Of FluentMigrator.Runner.Initialization.TypeFilterOptions), System.Collections.Generic.IEnumerable(Of FluentMigrator.Runner.Initialization.ITypeSourceItem(Of FluentMigrator.Runner.Conventions.IConventionSet)), System.IServiceProvider, FluentMigrator.Runner.Initialization.IAssemblySource)
+  nameWithType: AssemblySourceConventionSetAccessor.AssemblySourceConventionSetAccessor(IOptionsSnapshot<TypeFilterOptions>, IEnumerable<ITypeSourceItem<IConventionSet>>, IServiceProvider, IAssemblySource)
+  nameWithType.vb: AssemblySourceConventionSetAccessor.AssemblySourceConventionSetAccessor(IOptionsSnapshot(Of TypeFilterOptions), IEnumerable(Of ITypeSourceItem(Of IConventionSet)), IServiceProvider, IAssemblySource)
+- uid: FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.#ctor*
+  name: AssemblySourceConventionSetAccessor
+  href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.html#FluentMigrator_Runner_Initialization_AssemblySourceConventionSetAccessor__ctor_
+  commentId: Overload:FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.AssemblySourceConventionSetAccessor
+  nameWithType: AssemblySourceConventionSetAccessor.AssemblySourceConventionSetAccessor
+- uid: FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.GetConventionSet
+  name: GetConventionSet()
+  href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.html#FluentMigrator_Runner_Initialization_AssemblySourceConventionSetAccessor_GetConventionSet
+  commentId: M:FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.GetConventionSet
+  fullName: FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.GetConventionSet()
+  nameWithType: AssemblySourceConventionSetAccessor.GetConventionSet()
+- uid: FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.GetConventionSet*
+  name: GetConventionSet
+  href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.html#FluentMigrator_Runner_Initialization_AssemblySourceConventionSetAccessor_GetConventionSet_
+  commentId: Overload:FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.GetConventionSet
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Initialization.AssemblySourceConventionSetAccessor.GetConventionSet
+  nameWithType: AssemblySourceConventionSetAccessor.GetConventionSet
 - uid: FluentMigrator.Runner.Initialization.AssemblySourceItem
   name: AssemblySourceItem
   href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceItem.html
@@ -21893,6 +22352,51 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Initialization.AssemblySourceItem.Assemblies
   nameWithType: AssemblySourceItem.Assemblies
+- uid: FluentMigrator.Runner.Initialization.AssemblySourceItem`1
+  name: AssemblySourceItem<T>
+  href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceItem-1.html
+  commentId: T:FluentMigrator.Runner.Initialization.AssemblySourceItem`1
+  name.vb: AssemblySourceItem(Of T)
+  fullName: FluentMigrator.Runner.Initialization.AssemblySourceItem<T>
+  fullName.vb: FluentMigrator.Runner.Initialization.AssemblySourceItem(Of T)
+  nameWithType: AssemblySourceItem<T>
+  nameWithType.vb: AssemblySourceItem(Of T)
+- uid: FluentMigrator.Runner.Initialization.AssemblySourceItem`1.#ctor(System.Reflection.Assembly[])
+  name: AssemblySourceItem(Assembly[])
+  href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceItem-1.html#FluentMigrator_Runner_Initialization_AssemblySourceItem_1__ctor_System_Reflection_Assembly___
+  commentId: M:FluentMigrator.Runner.Initialization.AssemblySourceItem`1.#ctor(System.Reflection.Assembly[])
+  name.vb: AssemblySourceItem(Assembly())
+  fullName: FluentMigrator.Runner.Initialization.AssemblySourceItem<T>.AssemblySourceItem(System.Reflection.Assembly[])
+  fullName.vb: FluentMigrator.Runner.Initialization.AssemblySourceItem(Of T).AssemblySourceItem(System.Reflection.Assembly())
+  nameWithType: AssemblySourceItem<T>.AssemblySourceItem(Assembly[])
+  nameWithType.vb: AssemblySourceItem(Of T).AssemblySourceItem(Assembly())
+- uid: FluentMigrator.Runner.Initialization.AssemblySourceItem`1.#ctor*
+  name: AssemblySourceItem
+  href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceItem-1.html#FluentMigrator_Runner_Initialization_AssemblySourceItem_1__ctor_
+  commentId: Overload:FluentMigrator.Runner.Initialization.AssemblySourceItem`1.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Initialization.AssemblySourceItem<T>.AssemblySourceItem
+  fullName.vb: FluentMigrator.Runner.Initialization.AssemblySourceItem(Of T).AssemblySourceItem
+  nameWithType: AssemblySourceItem<T>.AssemblySourceItem
+  nameWithType.vb: AssemblySourceItem(Of T).AssemblySourceItem
+- uid: FluentMigrator.Runner.Initialization.AssemblySourceItem`1.GetCandidates(System.Predicate{System.Type})
+  name: GetCandidates(Predicate<Type>)
+  href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceItem-1.html#FluentMigrator_Runner_Initialization_AssemblySourceItem_1_GetCandidates_System_Predicate_System_Type__
+  commentId: M:FluentMigrator.Runner.Initialization.AssemblySourceItem`1.GetCandidates(System.Predicate{System.Type})
+  name.vb: GetCandidates(Predicate(Of Type))
+  fullName: FluentMigrator.Runner.Initialization.AssemblySourceItem<T>.GetCandidates(System.Predicate<System.Type>)
+  fullName.vb: FluentMigrator.Runner.Initialization.AssemblySourceItem(Of T).GetCandidates(System.Predicate(Of System.Type))
+  nameWithType: AssemblySourceItem<T>.GetCandidates(Predicate<Type>)
+  nameWithType.vb: AssemblySourceItem(Of T).GetCandidates(Predicate(Of Type))
+- uid: FluentMigrator.Runner.Initialization.AssemblySourceItem`1.GetCandidates*
+  name: GetCandidates
+  href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceItem-1.html#FluentMigrator_Runner_Initialization_AssemblySourceItem_1_GetCandidates_
+  commentId: Overload:FluentMigrator.Runner.Initialization.AssemblySourceItem`1.GetCandidates
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Initialization.AssemblySourceItem<T>.GetCandidates
+  fullName.vb: FluentMigrator.Runner.Initialization.AssemblySourceItem(Of T).GetCandidates
+  nameWithType: AssemblySourceItem<T>.GetCandidates
+  nameWithType.vb: AssemblySourceItem(Of T).GetCandidates
 - uid: FluentMigrator.Runner.Initialization.AssemblySourceMigrationRunnerConventionsAccessor
   name: AssemblySourceMigrationRunnerConventionsAccessor
   href: api/v3.x/FluentMigrator.Runner.Initialization.AssemblySourceMigrationRunnerConventionsAccessor.html
@@ -22268,6 +22772,25 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Initialization.IConnectionStringReader.Priority
   nameWithType: IConnectionStringReader.Priority
+- uid: FluentMigrator.Runner.Initialization.IConventionSetAccessor
+  name: IConventionSetAccessor
+  href: api/v3.x/FluentMigrator.Runner.Initialization.IConventionSetAccessor.html
+  commentId: T:FluentMigrator.Runner.Initialization.IConventionSetAccessor
+  fullName: FluentMigrator.Runner.Initialization.IConventionSetAccessor
+  nameWithType: IConventionSetAccessor
+- uid: FluentMigrator.Runner.Initialization.IConventionSetAccessor.GetConventionSet
+  name: GetConventionSet()
+  href: api/v3.x/FluentMigrator.Runner.Initialization.IConventionSetAccessor.html#FluentMigrator_Runner_Initialization_IConventionSetAccessor_GetConventionSet
+  commentId: M:FluentMigrator.Runner.Initialization.IConventionSetAccessor.GetConventionSet
+  fullName: FluentMigrator.Runner.Initialization.IConventionSetAccessor.GetConventionSet()
+  nameWithType: IConventionSetAccessor.GetConventionSet()
+- uid: FluentMigrator.Runner.Initialization.IConventionSetAccessor.GetConventionSet*
+  name: GetConventionSet
+  href: api/v3.x/FluentMigrator.Runner.Initialization.IConventionSetAccessor.html#FluentMigrator_Runner_Initialization_IConventionSetAccessor_GetConventionSet_
+  commentId: Overload:FluentMigrator.Runner.Initialization.IConventionSetAccessor.GetConventionSet
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Initialization.IConventionSetAccessor.GetConventionSet
+  nameWithType: IConventionSetAccessor.GetConventionSet
 - uid: FluentMigrator.Runner.Initialization.IFilteringMigrationSource
   name: IFilteringMigrationSource
   href: api/v3.x/FluentMigrator.Runner.Initialization.IFilteringMigrationSource.html
@@ -22580,6 +23103,19 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Initialization.IRunnerContext.StopWatch
   nameWithType: IRunnerContext.StopWatch
+- uid: FluentMigrator.Runner.Initialization.IRunnerContext.StripComments
+  name: StripComments
+  href: api/v3.x/FluentMigrator.Runner.Initialization.IRunnerContext.html#FluentMigrator_Runner_Initialization_IRunnerContext_StripComments
+  commentId: P:FluentMigrator.Runner.Initialization.IRunnerContext.StripComments
+  fullName: FluentMigrator.Runner.Initialization.IRunnerContext.StripComments
+  nameWithType: IRunnerContext.StripComments
+- uid: FluentMigrator.Runner.Initialization.IRunnerContext.StripComments*
+  name: StripComments
+  href: api/v3.x/FluentMigrator.Runner.Initialization.IRunnerContext.html#FluentMigrator_Runner_Initialization_IRunnerContext_StripComments_
+  commentId: Overload:FluentMigrator.Runner.Initialization.IRunnerContext.StripComments
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Initialization.IRunnerContext.StripComments
+  nameWithType: IRunnerContext.StripComments
 - uid: FluentMigrator.Runner.Initialization.IRunnerContext.Tags
   name: Tags
   href: api/v3.x/FluentMigrator.Runner.Initialization.IRunnerContext.html#FluentMigrator_Runner_Initialization_IRunnerContext_Tags
@@ -22715,6 +23251,19 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Initialization.IScanInForBuilder.All
   nameWithType: IScanInForBuilder.All
+- uid: FluentMigrator.Runner.Initialization.IScanInForBuilder.ConventionSet
+  name: ConventionSet()
+  href: api/v3.x/FluentMigrator.Runner.Initialization.IScanInForBuilder.html#FluentMigrator_Runner_Initialization_IScanInForBuilder_ConventionSet
+  commentId: M:FluentMigrator.Runner.Initialization.IScanInForBuilder.ConventionSet
+  fullName: FluentMigrator.Runner.Initialization.IScanInForBuilder.ConventionSet()
+  nameWithType: IScanInForBuilder.ConventionSet()
+- uid: FluentMigrator.Runner.Initialization.IScanInForBuilder.ConventionSet*
+  name: ConventionSet
+  href: api/v3.x/FluentMigrator.Runner.Initialization.IScanInForBuilder.html#FluentMigrator_Runner_Initialization_IScanInForBuilder_ConventionSet_
+  commentId: Overload:FluentMigrator.Runner.Initialization.IScanInForBuilder.ConventionSet
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Initialization.IScanInForBuilder.ConventionSet
+  nameWithType: IScanInForBuilder.ConventionSet
 - uid: FluentMigrator.Runner.Initialization.IScanInForBuilder.EmbeddedResources
   name: EmbeddedResources()
   href: api/v3.x/FluentMigrator.Runner.Initialization.IScanInForBuilder.html#FluentMigrator_Runner_Initialization_IScanInForBuilder_EmbeddedResources
@@ -22754,6 +23303,33 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Initialization.IScanInForBuilder.VersionTableMetaData
   nameWithType: IScanInForBuilder.VersionTableMetaData
+- uid: FluentMigrator.Runner.Initialization.ITypeSourceItem`1
+  name: ITypeSourceItem<T>
+  href: api/v3.x/FluentMigrator.Runner.Initialization.ITypeSourceItem-1.html
+  commentId: T:FluentMigrator.Runner.Initialization.ITypeSourceItem`1
+  name.vb: ITypeSourceItem(Of T)
+  fullName: FluentMigrator.Runner.Initialization.ITypeSourceItem<T>
+  fullName.vb: FluentMigrator.Runner.Initialization.ITypeSourceItem(Of T)
+  nameWithType: ITypeSourceItem<T>
+  nameWithType.vb: ITypeSourceItem(Of T)
+- uid: FluentMigrator.Runner.Initialization.ITypeSourceItem`1.GetCandidates(System.Predicate{System.Type})
+  name: GetCandidates(Predicate<Type>)
+  href: api/v3.x/FluentMigrator.Runner.Initialization.ITypeSourceItem-1.html#FluentMigrator_Runner_Initialization_ITypeSourceItem_1_GetCandidates_System_Predicate_System_Type__
+  commentId: M:FluentMigrator.Runner.Initialization.ITypeSourceItem`1.GetCandidates(System.Predicate{System.Type})
+  name.vb: GetCandidates(Predicate(Of Type))
+  fullName: FluentMigrator.Runner.Initialization.ITypeSourceItem<T>.GetCandidates(System.Predicate<System.Type>)
+  fullName.vb: FluentMigrator.Runner.Initialization.ITypeSourceItem(Of T).GetCandidates(System.Predicate(Of System.Type))
+  nameWithType: ITypeSourceItem<T>.GetCandidates(Predicate<Type>)
+  nameWithType.vb: ITypeSourceItem(Of T).GetCandidates(Predicate(Of Type))
+- uid: FluentMigrator.Runner.Initialization.ITypeSourceItem`1.GetCandidates*
+  name: GetCandidates
+  href: api/v3.x/FluentMigrator.Runner.Initialization.ITypeSourceItem-1.html#FluentMigrator_Runner_Initialization_ITypeSourceItem_1_GetCandidates_
+  commentId: Overload:FluentMigrator.Runner.Initialization.ITypeSourceItem`1.GetCandidates
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Initialization.ITypeSourceItem<T>.GetCandidates
+  fullName.vb: FluentMigrator.Runner.Initialization.ITypeSourceItem(Of T).GetCandidates
+  nameWithType: ITypeSourceItem<T>.GetCandidates
+  nameWithType.vb: ITypeSourceItem(Of T).GetCandidates
 - uid: FluentMigrator.Runner.Initialization.IVersionTableMetaDataAccessor
   name: IVersionTableMetaDataAccessor
   href: api/v3.x/FluentMigrator.Runner.Initialization.IVersionTableMetaDataAccessor.html
@@ -23340,6 +23916,19 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Initialization.RunnerContext.StopWatch
   nameWithType: RunnerContext.StopWatch
+- uid: FluentMigrator.Runner.Initialization.RunnerContext.StripComments
+  name: StripComments
+  href: api/v3.x/FluentMigrator.Runner.Initialization.RunnerContext.html#FluentMigrator_Runner_Initialization_RunnerContext_StripComments
+  commentId: P:FluentMigrator.Runner.Initialization.RunnerContext.StripComments
+  fullName: FluentMigrator.Runner.Initialization.RunnerContext.StripComments
+  nameWithType: RunnerContext.StripComments
+- uid: FluentMigrator.Runner.Initialization.RunnerContext.StripComments*
+  name: StripComments
+  href: api/v3.x/FluentMigrator.Runner.Initialization.RunnerContext.html#FluentMigrator_Runner_Initialization_RunnerContext_StripComments_
+  commentId: Overload:FluentMigrator.Runner.Initialization.RunnerContext.StripComments
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Initialization.RunnerContext.StripComments
+  nameWithType: RunnerContext.StripComments
 - uid: FluentMigrator.Runner.Initialization.RunnerContext.Tags
   name: Tags
   href: api/v3.x/FluentMigrator.Runner.Initialization.RunnerContext.html#FluentMigrator_Runner_Initialization_RunnerContext_Tags
@@ -23482,6 +24071,32 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Initialization.RunnerOptions.ApplicationContext
   nameWithType: RunnerOptions.ApplicationContext
+- uid: FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMaintenances
+  name: IncludeUntaggedMaintenances
+  href: api/v3.x/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_IncludeUntaggedMaintenances
+  commentId: P:FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMaintenances
+  fullName: FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMaintenances
+  nameWithType: RunnerOptions.IncludeUntaggedMaintenances
+- uid: FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMaintenances*
+  name: IncludeUntaggedMaintenances
+  href: api/v3.x/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_IncludeUntaggedMaintenances_
+  commentId: Overload:FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMaintenances
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMaintenances
+  nameWithType: RunnerOptions.IncludeUntaggedMaintenances
+- uid: FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMigrations
+  name: IncludeUntaggedMigrations
+  href: api/v3.x/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_IncludeUntaggedMigrations
+  commentId: P:FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMigrations
+  fullName: FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMigrations
+  nameWithType: RunnerOptions.IncludeUntaggedMigrations
+- uid: FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMigrations*
+  name: IncludeUntaggedMigrations
+  href: api/v3.x/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_IncludeUntaggedMigrations_
+  commentId: Overload:FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMigrations
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Initialization.RunnerOptions.IncludeUntaggedMigrations
+  nameWithType: RunnerOptions.IncludeUntaggedMigrations
 - uid: FluentMigrator.Runner.Initialization.RunnerOptions.NoConnection
   name: NoConnection
   href: api/v3.x/FluentMigrator.Runner.Initialization.RunnerOptions.html#FluentMigrator_Runner_Initialization_RunnerOptions_NoConnection
@@ -24880,6 +25495,28 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.MaintenanceLoader.LoadMaintenance
   nameWithType: MaintenanceLoader.LoadMaintenance
+- uid: FluentMigrator.Runner.MigrationConventionsExtensions
+  name: MigrationConventionsExtensions
+  href: api/v3.x/FluentMigrator.Runner.MigrationConventionsExtensions.html
+  commentId: T:FluentMigrator.Runner.MigrationConventionsExtensions
+  fullName: FluentMigrator.Runner.MigrationConventionsExtensions
+  nameWithType: MigrationConventionsExtensions
+- uid: FluentMigrator.Runner.MigrationConventionsExtensions.HasRequestedTags(FluentMigrator.Runner.IMigrationRunnerConventions,System.Type,System.String[],System.Boolean)
+  name: HasRequestedTags(IMigrationRunnerConventions, Type, String[], Boolean)
+  href: api/v3.x/FluentMigrator.Runner.MigrationConventionsExtensions.html#FluentMigrator_Runner_MigrationConventionsExtensions_HasRequestedTags_FluentMigrator_Runner_IMigrationRunnerConventions_System_Type_System_String___System_Boolean_
+  commentId: M:FluentMigrator.Runner.MigrationConventionsExtensions.HasRequestedTags(FluentMigrator.Runner.IMigrationRunnerConventions,System.Type,System.String[],System.Boolean)
+  name.vb: HasRequestedTags(IMigrationRunnerConventions, Type, String(), Boolean)
+  fullName: FluentMigrator.Runner.MigrationConventionsExtensions.HasRequestedTags(FluentMigrator.Runner.IMigrationRunnerConventions, System.Type, System.String[], System.Boolean)
+  fullName.vb: FluentMigrator.Runner.MigrationConventionsExtensions.HasRequestedTags(FluentMigrator.Runner.IMigrationRunnerConventions, System.Type, System.String(), System.Boolean)
+  nameWithType: MigrationConventionsExtensions.HasRequestedTags(IMigrationRunnerConventions, Type, String[], Boolean)
+  nameWithType.vb: MigrationConventionsExtensions.HasRequestedTags(IMigrationRunnerConventions, Type, String(), Boolean)
+- uid: FluentMigrator.Runner.MigrationConventionsExtensions.HasRequestedTags*
+  name: HasRequestedTags
+  href: api/v3.x/FluentMigrator.Runner.MigrationConventionsExtensions.html#FluentMigrator_Runner_MigrationConventionsExtensions_HasRequestedTags_
+  commentId: Overload:FluentMigrator.Runner.MigrationConventionsExtensions.HasRequestedTags
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.MigrationConventionsExtensions.HasRequestedTags
+  nameWithType: MigrationConventionsExtensions.HasRequestedTags
 - uid: FluentMigrator.Runner.MigrationRunner
   name: MigrationRunner
   href: api/v3.x/FluentMigrator.Runner.MigrationRunner.html
@@ -25409,6 +26046,15 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalCommandTimeout
   nameWithType: MigrationRunnerBuilderExtensions.WithGlobalCommandTimeout
+- uid: FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalConnectionString(FluentMigrator.Runner.IMigrationRunnerBuilder,System.Func{System.IServiceProvider,System.String})
+  name: WithGlobalConnectionString(IMigrationRunnerBuilder, Func<IServiceProvider, String>)
+  href: api/v3.x/FluentMigrator.Runner.MigrationRunnerBuilderExtensions.html#FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalConnectionString_FluentMigrator_Runner_IMigrationRunnerBuilder_System_Func_System_IServiceProvider_System_String__
+  commentId: M:FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalConnectionString(FluentMigrator.Runner.IMigrationRunnerBuilder,System.Func{System.IServiceProvider,System.String})
+  name.vb: WithGlobalConnectionString(IMigrationRunnerBuilder, Func(Of IServiceProvider, String))
+  fullName: FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalConnectionString(FluentMigrator.Runner.IMigrationRunnerBuilder, System.Func<System.IServiceProvider, System.String>)
+  fullName.vb: FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalConnectionString(FluentMigrator.Runner.IMigrationRunnerBuilder, System.Func(Of System.IServiceProvider, System.String))
+  nameWithType: MigrationRunnerBuilderExtensions.WithGlobalConnectionString(IMigrationRunnerBuilder, Func<IServiceProvider, String>)
+  nameWithType.vb: MigrationRunnerBuilderExtensions.WithGlobalConnectionString(IMigrationRunnerBuilder, Func(Of IServiceProvider, String))
 - uid: FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalConnectionString(FluentMigrator.Runner.IMigrationRunnerBuilder,System.String)
   name: WithGlobalConnectionString(IMigrationRunnerBuilder, String)
   href: api/v3.x/FluentMigrator.Runner.MigrationRunnerBuilderExtensions.html#FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalConnectionString_FluentMigrator_Runner_IMigrationRunnerBuilder_System_String_
@@ -25422,6 +26068,19 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalConnectionString
   nameWithType: MigrationRunnerBuilderExtensions.WithGlobalConnectionString
+- uid: FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalStripComments(FluentMigrator.Runner.IMigrationRunnerBuilder,System.Boolean)
+  name: WithGlobalStripComments(IMigrationRunnerBuilder, Boolean)
+  href: api/v3.x/FluentMigrator.Runner.MigrationRunnerBuilderExtensions.html#FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalStripComments_FluentMigrator_Runner_IMigrationRunnerBuilder_System_Boolean_
+  commentId: M:FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalStripComments(FluentMigrator.Runner.IMigrationRunnerBuilder,System.Boolean)
+  fullName: FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalStripComments(FluentMigrator.Runner.IMigrationRunnerBuilder, System.Boolean)
+  nameWithType: MigrationRunnerBuilderExtensions.WithGlobalStripComments(IMigrationRunnerBuilder, Boolean)
+- uid: FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalStripComments*
+  name: WithGlobalStripComments
+  href: api/v3.x/FluentMigrator.Runner.MigrationRunnerBuilderExtensions.html#FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalStripComments_
+  commentId: Overload:FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalStripComments
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalStripComments
+  nameWithType: MigrationRunnerBuilderExtensions.WithGlobalStripComments
 - uid: FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithMigrationsIn(FluentMigrator.Runner.IMigrationRunnerBuilder,System.Reflection.Assembly[])
   name: WithMigrationsIn(IMigrationRunnerBuilder, Assembly[])
   href: api/v3.x/FluentMigrator.Runner.MigrationRunnerBuilderExtensions.html#FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithMigrationsIn_FluentMigrator_Runner_IMigrationRunnerBuilder_System_Reflection_Assembly___
@@ -25599,6 +26258,12 @@ references:
   commentId: M:FluentMigrator.Runner.MigrationScopeHandler.#ctor(IMigrationProcessor)
   fullName: FluentMigrator.Runner.MigrationScopeHandler.MigrationScopeHandler(IMigrationProcessor)
   nameWithType: MigrationScopeHandler.MigrationScopeHandler(IMigrationProcessor)
+- uid: FluentMigrator.Runner.MigrationScopeHandler.#ctor(IMigrationProcessor,FluentMigrator.Runner.Processors.ProcessorOptions)
+  name: MigrationScopeHandler(IMigrationProcessor, ProcessorOptions)
+  href: api/v3.x/FluentMigrator.Runner.MigrationScopeHandler.html#FluentMigrator_Runner_MigrationScopeHandler__ctor_IMigrationProcessor_FluentMigrator_Runner_Processors_ProcessorOptions_
+  commentId: M:FluentMigrator.Runner.MigrationScopeHandler.#ctor(IMigrationProcessor,FluentMigrator.Runner.Processors.ProcessorOptions)
+  fullName: FluentMigrator.Runner.MigrationScopeHandler.MigrationScopeHandler(IMigrationProcessor, FluentMigrator.Runner.Processors.ProcessorOptions)
+  nameWithType: MigrationScopeHandler.MigrationScopeHandler(IMigrationProcessor, ProcessorOptions)
 - uid: FluentMigrator.Runner.MigrationScopeHandler.#ctor*
   name: MigrationScopeHandler
   href: api/v3.x/FluentMigrator.Runner.MigrationScopeHandler.html#FluentMigrator_Runner_MigrationScopeHandler__ctor_
@@ -25804,6 +26469,19 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddDotConnectOracle
   nameWithType: OracleRunnerBuilderExtensions.AddDotConnectOracle
+- uid: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddDotConnectOracle12C(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  name: AddDotConnectOracle12C(IMigrationRunnerBuilder)
+  href: api/v3.x/FluentMigrator.Runner.OracleRunnerBuilderExtensions.html#FluentMigrator_Runner_OracleRunnerBuilderExtensions_AddDotConnectOracle12C_FluentMigrator_Runner_IMigrationRunnerBuilder_
+  commentId: M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddDotConnectOracle12C(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  fullName: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddDotConnectOracle12C(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  nameWithType: OracleRunnerBuilderExtensions.AddDotConnectOracle12C(IMigrationRunnerBuilder)
+- uid: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddDotConnectOracle12C*
+  name: AddDotConnectOracle12C
+  href: api/v3.x/FluentMigrator.Runner.OracleRunnerBuilderExtensions.html#FluentMigrator_Runner_OracleRunnerBuilderExtensions_AddDotConnectOracle12C_
+  commentId: Overload:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddDotConnectOracle12C
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddDotConnectOracle12C
+  nameWithType: OracleRunnerBuilderExtensions.AddDotConnectOracle12C
 - uid: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle(FluentMigrator.Runner.IMigrationRunnerBuilder)
   name: AddOracle(IMigrationRunnerBuilder)
   href: api/v3.x/FluentMigrator.Runner.OracleRunnerBuilderExtensions.html#FluentMigrator_Runner_OracleRunnerBuilderExtensions_AddOracle_FluentMigrator_Runner_IMigrationRunnerBuilder_
@@ -25817,6 +26495,32 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle
   nameWithType: OracleRunnerBuilderExtensions.AddOracle
+- uid: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12C(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  name: AddOracle12C(IMigrationRunnerBuilder)
+  href: api/v3.x/FluentMigrator.Runner.OracleRunnerBuilderExtensions.html#FluentMigrator_Runner_OracleRunnerBuilderExtensions_AddOracle12C_FluentMigrator_Runner_IMigrationRunnerBuilder_
+  commentId: M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12C(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  fullName: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12C(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  nameWithType: OracleRunnerBuilderExtensions.AddOracle12C(IMigrationRunnerBuilder)
+- uid: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12C*
+  name: AddOracle12C
+  href: api/v3.x/FluentMigrator.Runner.OracleRunnerBuilderExtensions.html#FluentMigrator_Runner_OracleRunnerBuilderExtensions_AddOracle12C_
+  commentId: Overload:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12C
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12C
+  nameWithType: OracleRunnerBuilderExtensions.AddOracle12C
+- uid: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12CManaged(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  name: AddOracle12CManaged(IMigrationRunnerBuilder)
+  href: api/v3.x/FluentMigrator.Runner.OracleRunnerBuilderExtensions.html#FluentMigrator_Runner_OracleRunnerBuilderExtensions_AddOracle12CManaged_FluentMigrator_Runner_IMigrationRunnerBuilder_
+  commentId: M:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12CManaged(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  fullName: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12CManaged(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  nameWithType: OracleRunnerBuilderExtensions.AddOracle12CManaged(IMigrationRunnerBuilder)
+- uid: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12CManaged*
+  name: AddOracle12CManaged
+  href: api/v3.x/FluentMigrator.Runner.OracleRunnerBuilderExtensions.html#FluentMigrator_Runner_OracleRunnerBuilderExtensions_AddOracle12CManaged_
+  commentId: Overload:FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12CManaged
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracle12CManaged
+  nameWithType: OracleRunnerBuilderExtensions.AddOracle12CManaged
 - uid: FluentMigrator.Runner.OracleRunnerBuilderExtensions.AddOracleManaged(FluentMigrator.Runner.IMigrationRunnerBuilder)
   name: AddOracleManaged(IMigrationRunnerBuilder)
   href: api/v3.x/FluentMigrator.Runner.OracleRunnerBuilderExtensions.html#FluentMigrator_Runner_OracleRunnerBuilderExtensions_AddOracleManaged_FluentMigrator_Runner_IMigrationRunnerBuilder_
@@ -25849,6 +26553,19 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.PostgresRunnerBuilderExtensions.AddPostgres
   nameWithType: PostgresRunnerBuilderExtensions.AddPostgres
+- uid: FluentMigrator.Runner.PostgresRunnerBuilderExtensions.AddPostgres92(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  name: AddPostgres92(IMigrationRunnerBuilder)
+  href: api/v3.x/FluentMigrator.Runner.PostgresRunnerBuilderExtensions.html#FluentMigrator_Runner_PostgresRunnerBuilderExtensions_AddPostgres92_FluentMigrator_Runner_IMigrationRunnerBuilder_
+  commentId: M:FluentMigrator.Runner.PostgresRunnerBuilderExtensions.AddPostgres92(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  fullName: FluentMigrator.Runner.PostgresRunnerBuilderExtensions.AddPostgres92(FluentMigrator.Runner.IMigrationRunnerBuilder)
+  nameWithType: PostgresRunnerBuilderExtensions.AddPostgres92(IMigrationRunnerBuilder)
+- uid: FluentMigrator.Runner.PostgresRunnerBuilderExtensions.AddPostgres92*
+  name: AddPostgres92
+  href: api/v3.x/FluentMigrator.Runner.PostgresRunnerBuilderExtensions.html#FluentMigrator_Runner_PostgresRunnerBuilderExtensions_AddPostgres92_
+  commentId: Overload:FluentMigrator.Runner.PostgresRunnerBuilderExtensions.AddPostgres92
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.PostgresRunnerBuilderExtensions.AddPostgres92
+  nameWithType: PostgresRunnerBuilderExtensions.AddPostgres92
 - uid: FluentMigrator.Runner.Processors
   name: FluentMigrator.Runner.Processors
   href: api/v3.x/FluentMigrator.Runner.Processors.html
@@ -27147,6 +27864,54 @@ references:
   commentId: N:FluentMigrator.Runner.Processors.DotConnectOracle
   fullName: FluentMigrator.Runner.Processors.DotConnectOracle
   nameWithType: FluentMigrator.Runner.Processors.DotConnectOracle
+- uid: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor
+  name: DotConnectOracle12CProcessor
+  href: api/v3.x/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.html
+  commentId: T:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor
+  fullName: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor
+  nameWithType: DotConnectOracle12CProcessor
+- uid: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.#ctor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator,ILogger{FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name: DotConnectOracle12CProcessor(DotConnectOracleDbFactory, IOracle12CGenerator, ILogger<DotConnectOracle12CProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  href: api/v3.x/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.html#FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracle12CProcessor__ctor_FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracleDbFactory_FluentMigrator_Runner_Generators_Oracle_IOracle12CGenerator_ILogger_FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracle12CProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_
+  commentId: M:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.#ctor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator,ILogger{FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name.vb: DotConnectOracle12CProcessor(DotConnectOracleDbFactory, IOracle12CGenerator, ILogger(Of DotConnectOracle12CProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+  fullName: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DotConnectOracle12CProcessor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator, ILogger<FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  fullName.vb: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DotConnectOracle12CProcessor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator, ILogger(Of FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  nameWithType: DotConnectOracle12CProcessor.DotConnectOracle12CProcessor(DotConnectOracleDbFactory, IOracle12CGenerator, ILogger<DotConnectOracle12CProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  nameWithType.vb: DotConnectOracle12CProcessor.DotConnectOracle12CProcessor(DotConnectOracleDbFactory, IOracle12CGenerator, ILogger(Of DotConnectOracle12CProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+- uid: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.#ctor*
+  name: DotConnectOracle12CProcessor
+  href: api/v3.x/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.html#FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracle12CProcessor__ctor_
+  commentId: Overload:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DotConnectOracle12CProcessor
+  nameWithType: DotConnectOracle12CProcessor.DotConnectOracle12CProcessor
+- uid: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseType
+  name: DatabaseType
+  href: api/v3.x/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.html#FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracle12CProcessor_DatabaseType
+  commentId: P:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseType
+  fullName: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseType
+  nameWithType: DotConnectOracle12CProcessor.DatabaseType
+- uid: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseType*
+  name: DatabaseType
+  href: api/v3.x/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.html#FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracle12CProcessor_DatabaseType_
+  commentId: Overload:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseType
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseType
+  nameWithType: DotConnectOracle12CProcessor.DatabaseType
+- uid: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseTypeAliases
+  name: DatabaseTypeAliases
+  href: api/v3.x/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.html#FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracle12CProcessor_DatabaseTypeAliases
+  commentId: P:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseTypeAliases
+  fullName: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseTypeAliases
+  nameWithType: DotConnectOracle12CProcessor.DatabaseTypeAliases
+- uid: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseTypeAliases*
+  name: DatabaseTypeAliases
+  href: api/v3.x/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.html#FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracle12CProcessor_DatabaseTypeAliases_
+  commentId: Overload:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseTypeAliases
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracle12CProcessor.DatabaseTypeAliases
+  nameWithType: DotConnectOracle12CProcessor.DatabaseTypeAliases
 - uid: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory
   name: DotConnectOracleDbFactory
   href: api/v3.x/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory.html
@@ -27178,15 +27943,15 @@ references:
   commentId: T:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor
   fullName: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor
   nameWithType: DotConnectOracleProcessor
-- uid: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.#ctor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory,FluentMigrator.Runner.Generators.Oracle.OracleGenerator,ILogger{FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  name: DotConnectOracleProcessor(DotConnectOracleDbFactory, OracleGenerator, ILogger<DotConnectOracleProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
-  href: api/v3.x/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.html#FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracleProcessor__ctor_FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracleDbFactory_FluentMigrator_Runner_Generators_Oracle_OracleGenerator_ILogger_FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracleProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_
-  commentId: M:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.#ctor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory,FluentMigrator.Runner.Generators.Oracle.OracleGenerator,ILogger{FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  name.vb: DotConnectOracleProcessor(DotConnectOracleDbFactory, OracleGenerator, ILogger(Of DotConnectOracleProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
-  fullName: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.DotConnectOracleProcessor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory, FluentMigrator.Runner.Generators.Oracle.OracleGenerator, ILogger<FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  fullName.vb: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.DotConnectOracleProcessor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory, FluentMigrator.Runner.Generators.Oracle.OracleGenerator, ILogger(Of FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  nameWithType: DotConnectOracleProcessor.DotConnectOracleProcessor(DotConnectOracleDbFactory, OracleGenerator, ILogger<DotConnectOracleProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
-  nameWithType.vb: DotConnectOracleProcessor.DotConnectOracleProcessor(DotConnectOracleDbFactory, OracleGenerator, ILogger(Of DotConnectOracleProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+- uid: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.#ctor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracleGenerator,ILogger{FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name: DotConnectOracleProcessor(DotConnectOracleDbFactory, IOracleGenerator, ILogger<DotConnectOracleProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  href: api/v3.x/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.html#FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracleProcessor__ctor_FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracleDbFactory_FluentMigrator_Runner_Generators_Oracle_IOracleGenerator_ILogger_FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracleProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_
+  commentId: M:FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.#ctor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracleGenerator,ILogger{FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name.vb: DotConnectOracleProcessor(DotConnectOracleDbFactory, IOracleGenerator, ILogger(Of DotConnectOracleProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+  fullName: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.DotConnectOracleProcessor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracleGenerator, ILogger<FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  fullName.vb: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.DotConnectOracleProcessor(FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracleGenerator, ILogger(Of FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  nameWithType: DotConnectOracleProcessor.DotConnectOracleProcessor(DotConnectOracleDbFactory, IOracleGenerator, ILogger<DotConnectOracleProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  nameWithType.vb: DotConnectOracleProcessor.DotConnectOracleProcessor(DotConnectOracleDbFactory, IOracleGenerator, ILogger(Of DotConnectOracleProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
 - uid: FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.#ctor(System.Data.IDbConnection,IMigrationGenerator,FluentMigrator.Runner.IAnnouncer,IMigrationProcessorOptions,FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleDbFactory)
   name: DotConnectOracleProcessor(IDbConnection, IMigrationGenerator, IAnnouncer, IMigrationProcessorOptions, DotConnectOracleDbFactory)
   href: api/v3.x/FluentMigrator.Runner.Processors.DotConnectOracle.DotConnectOracleProcessor.html#FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracleProcessor__ctor_System_Data_IDbConnection_IMigrationGenerator_FluentMigrator_Runner_IAnnouncer_IMigrationProcessorOptions_FluentMigrator_Runner_Processors_DotConnectOracle_DotConnectOracleDbFactory_
@@ -30845,6 +31610,102 @@ references:
   commentId: N:FluentMigrator.Runner.Processors.Oracle
   fullName: FluentMigrator.Runner.Processors.Oracle
   nameWithType: FluentMigrator.Runner.Processors.Oracle
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor
+  name: Oracle12CManagedProcessor
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.html
+  commentId: T:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor
+  nameWithType: Oracle12CManagedProcessor
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name: Oracle12CManagedProcessor(OracleManagedDbFactory, IOracle12CGenerator, ILogger<Oracle12CManagedProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CManagedProcessor__ctor_FluentMigrator_Runner_Processors_Oracle_OracleManagedDbFactory_FluentMigrator_Runner_Generators_Oracle_IOracle12CGenerator_ILogger_FluentMigrator_Runner_Processors_Oracle_Oracle12CManagedProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_
+  commentId: M:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name.vb: Oracle12CManagedProcessor(OracleManagedDbFactory, IOracle12CGenerator, ILogger(Of Oracle12CManagedProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.Oracle12CManagedProcessor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator, ILogger<FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  fullName.vb: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.Oracle12CManagedProcessor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator, ILogger(Of FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  nameWithType: Oracle12CManagedProcessor.Oracle12CManagedProcessor(OracleManagedDbFactory, IOracle12CGenerator, ILogger<Oracle12CManagedProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  nameWithType.vb: Oracle12CManagedProcessor.Oracle12CManagedProcessor(OracleManagedDbFactory, IOracle12CGenerator, ILogger(Of Oracle12CManagedProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.#ctor*
+  name: Oracle12CManagedProcessor
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CManagedProcessor__ctor_
+  commentId: Overload:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.Oracle12CManagedProcessor
+  nameWithType: Oracle12CManagedProcessor.Oracle12CManagedProcessor
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseType
+  name: DatabaseType
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CManagedProcessor_DatabaseType
+  commentId: P:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseType
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseType
+  nameWithType: Oracle12CManagedProcessor.DatabaseType
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseType*
+  name: DatabaseType
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CManagedProcessor_DatabaseType_
+  commentId: Overload:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseType
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseType
+  nameWithType: Oracle12CManagedProcessor.DatabaseType
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseTypeAliases
+  name: DatabaseTypeAliases
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CManagedProcessor_DatabaseTypeAliases
+  commentId: P:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseTypeAliases
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseTypeAliases
+  nameWithType: Oracle12CManagedProcessor.DatabaseTypeAliases
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseTypeAliases*
+  name: DatabaseTypeAliases
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CManagedProcessor_DatabaseTypeAliases_
+  commentId: Overload:FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseTypeAliases
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CManagedProcessor.DatabaseTypeAliases
+  nameWithType: Oracle12CManagedProcessor.DatabaseTypeAliases
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor
+  name: Oracle12CProcessor
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.html
+  commentId: T:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor
+  nameWithType: Oracle12CProcessor
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name: Oracle12CProcessor(OracleDbFactory, IOracle12CGenerator, ILogger<Oracle12CProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CProcessor__ctor_FluentMigrator_Runner_Processors_Oracle_OracleDbFactory_FluentMigrator_Runner_Generators_Oracle_IOracle12CGenerator_ILogger_FluentMigrator_Runner_Processors_Oracle_Oracle12CProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_
+  commentId: M:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name.vb: Oracle12CProcessor(OracleDbFactory, IOracle12CGenerator, ILogger(Of Oracle12CProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.Oracle12CProcessor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator, ILogger<FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  fullName.vb: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.Oracle12CProcessor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracle12CGenerator, ILogger(Of FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  nameWithType: Oracle12CProcessor.Oracle12CProcessor(OracleDbFactory, IOracle12CGenerator, ILogger<Oracle12CProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  nameWithType.vb: Oracle12CProcessor.Oracle12CProcessor(OracleDbFactory, IOracle12CGenerator, ILogger(Of Oracle12CProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.#ctor*
+  name: Oracle12CProcessor
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CProcessor__ctor_
+  commentId: Overload:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.Oracle12CProcessor
+  nameWithType: Oracle12CProcessor.Oracle12CProcessor
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseType
+  name: DatabaseType
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CProcessor_DatabaseType
+  commentId: P:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseType
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseType
+  nameWithType: Oracle12CProcessor.DatabaseType
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseType*
+  name: DatabaseType
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CProcessor_DatabaseType_
+  commentId: Overload:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseType
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseType
+  nameWithType: Oracle12CProcessor.DatabaseType
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseTypeAliases
+  name: DatabaseTypeAliases
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CProcessor_DatabaseTypeAliases
+  commentId: P:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseTypeAliases
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseTypeAliases
+  nameWithType: Oracle12CProcessor.DatabaseTypeAliases
+- uid: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseTypeAliases*
+  name: DatabaseTypeAliases
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.html#FluentMigrator_Runner_Processors_Oracle_Oracle12CProcessor_DatabaseTypeAliases_
+  commentId: Overload:FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseTypeAliases
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Oracle.Oracle12CProcessor.DatabaseTypeAliases
+  nameWithType: Oracle12CProcessor.DatabaseTypeAliases
 - uid: FluentMigrator.Runner.Processors.Oracle.OracleBaseDbFactory
   name: OracleBaseDbFactory
   href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.OracleBaseDbFactory.html
@@ -30923,15 +31784,15 @@ references:
   commentId: T:FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor
   fullName: FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor
   nameWithType: OracleManagedProcessor
-- uid: FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory,FluentMigrator.Runner.Generators.Oracle.OracleGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  name: OracleManagedProcessor(OracleManagedDbFactory, OracleGenerator, ILogger<OracleManagedProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
-  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.html#FluentMigrator_Runner_Processors_Oracle_OracleManagedProcessor__ctor_FluentMigrator_Runner_Processors_Oracle_OracleManagedDbFactory_FluentMigrator_Runner_Generators_Oracle_OracleGenerator_ILogger_FluentMigrator_Runner_Processors_Oracle_OracleManagedProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_
-  commentId: M:FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory,FluentMigrator.Runner.Generators.Oracle.OracleGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  name.vb: OracleManagedProcessor(OracleManagedDbFactory, OracleGenerator, ILogger(Of OracleManagedProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
-  fullName: FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.OracleManagedProcessor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory, FluentMigrator.Runner.Generators.Oracle.OracleGenerator, ILogger<FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  fullName.vb: FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.OracleManagedProcessor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory, FluentMigrator.Runner.Generators.Oracle.OracleGenerator, ILogger(Of FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  nameWithType: OracleManagedProcessor.OracleManagedProcessor(OracleManagedDbFactory, OracleGenerator, ILogger<OracleManagedProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
-  nameWithType.vb: OracleManagedProcessor.OracleManagedProcessor(OracleManagedDbFactory, OracleGenerator, ILogger(Of OracleManagedProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+- uid: FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracleGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name: OracleManagedProcessor(OracleManagedDbFactory, IOracleGenerator, ILogger<OracleManagedProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.html#FluentMigrator_Runner_Processors_Oracle_OracleManagedProcessor__ctor_FluentMigrator_Runner_Processors_Oracle_OracleManagedDbFactory_FluentMigrator_Runner_Generators_Oracle_IOracleGenerator_ILogger_FluentMigrator_Runner_Processors_Oracle_OracleManagedProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_
+  commentId: M:FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracleGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name.vb: OracleManagedProcessor(OracleManagedDbFactory, IOracleGenerator, ILogger(Of OracleManagedProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+  fullName: FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.OracleManagedProcessor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracleGenerator, ILogger<FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  fullName.vb: FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.OracleManagedProcessor(FluentMigrator.Runner.Processors.Oracle.OracleManagedDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracleGenerator, ILogger(Of FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  nameWithType: OracleManagedProcessor.OracleManagedProcessor(OracleManagedDbFactory, IOracleGenerator, ILogger<OracleManagedProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  nameWithType.vb: OracleManagedProcessor.OracleManagedProcessor(OracleManagedDbFactory, IOracleGenerator, ILogger(Of OracleManagedProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
 - uid: FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.#ctor*
   name: OracleManagedProcessor
   href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.OracleManagedProcessor.html#FluentMigrator_Runner_Processors_Oracle_OracleManagedProcessor__ctor_
@@ -30983,15 +31844,15 @@ references:
   commentId: T:FluentMigrator.Runner.Processors.Oracle.OracleProcessor
   fullName: FluentMigrator.Runner.Processors.Oracle.OracleProcessor
   nameWithType: OracleProcessor
-- uid: FluentMigrator.Runner.Processors.Oracle.OracleProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory,FluentMigrator.Runner.Generators.Oracle.OracleGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.OracleProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  name: OracleProcessor(OracleDbFactory, OracleGenerator, ILogger<OracleProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
-  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.OracleProcessor.html#FluentMigrator_Runner_Processors_Oracle_OracleProcessor__ctor_FluentMigrator_Runner_Processors_Oracle_OracleDbFactory_FluentMigrator_Runner_Generators_Oracle_OracleGenerator_ILogger_FluentMigrator_Runner_Processors_Oracle_OracleProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_
-  commentId: M:FluentMigrator.Runner.Processors.Oracle.OracleProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory,FluentMigrator.Runner.Generators.Oracle.OracleGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.OracleProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  name.vb: OracleProcessor(OracleDbFactory, OracleGenerator, ILogger(Of OracleProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
-  fullName: FluentMigrator.Runner.Processors.Oracle.OracleProcessor.OracleProcessor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory, FluentMigrator.Runner.Generators.Oracle.OracleGenerator, ILogger<FluentMigrator.Runner.Processors.Oracle.OracleProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  fullName.vb: FluentMigrator.Runner.Processors.Oracle.OracleProcessor.OracleProcessor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory, FluentMigrator.Runner.Generators.Oracle.OracleGenerator, ILogger(Of FluentMigrator.Runner.Processors.Oracle.OracleProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  nameWithType: OracleProcessor.OracleProcessor(OracleDbFactory, OracleGenerator, ILogger<OracleProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
-  nameWithType.vb: OracleProcessor.OracleProcessor(OracleDbFactory, OracleGenerator, ILogger(Of OracleProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+- uid: FluentMigrator.Runner.Processors.Oracle.OracleProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracleGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.OracleProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name: OracleProcessor(OracleDbFactory, IOracleGenerator, ILogger<OracleProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.OracleProcessor.html#FluentMigrator_Runner_Processors_Oracle_OracleProcessor__ctor_FluentMigrator_Runner_Processors_Oracle_OracleDbFactory_FluentMigrator_Runner_Generators_Oracle_IOracleGenerator_ILogger_FluentMigrator_Runner_Processors_Oracle_OracleProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_
+  commentId: M:FluentMigrator.Runner.Processors.Oracle.OracleProcessor.#ctor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory,FluentMigrator.Runner.Generators.Oracle.IOracleGenerator,ILogger{FluentMigrator.Runner.Processors.Oracle.OracleProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  name.vb: OracleProcessor(OracleDbFactory, IOracleGenerator, ILogger(Of OracleProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
+  fullName: FluentMigrator.Runner.Processors.Oracle.OracleProcessor.OracleProcessor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracleGenerator, ILogger<FluentMigrator.Runner.Processors.Oracle.OracleProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  fullName.vb: FluentMigrator.Runner.Processors.Oracle.OracleProcessor.OracleProcessor(FluentMigrator.Runner.Processors.Oracle.OracleDbFactory, FluentMigrator.Runner.Generators.Oracle.IOracleGenerator, ILogger(Of FluentMigrator.Runner.Processors.Oracle.OracleProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
+  nameWithType: OracleProcessor.OracleProcessor(OracleDbFactory, IOracleGenerator, ILogger<OracleProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
+  nameWithType.vb: OracleProcessor.OracleProcessor(OracleDbFactory, IOracleGenerator, ILogger(Of OracleProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
 - uid: FluentMigrator.Runner.Processors.Oracle.OracleProcessor.#ctor(System.Data.IDbConnection,IMigrationGenerator,FluentMigrator.Runner.IAnnouncer,IMigrationProcessorOptions,FluentMigrator.Runner.Processors.IDbFactory)
   name: OracleProcessor(IDbConnection, IMigrationGenerator, IAnnouncer, IMigrationProcessorOptions, IDbFactory)
   href: api/v3.x/FluentMigrator.Runner.Processors.Oracle.OracleProcessor.html#FluentMigrator_Runner_Processors_Oracle_OracleProcessor__ctor_System_Data_IDbConnection_IMigrationGenerator_FluentMigrator_Runner_IAnnouncer_IMigrationProcessorOptions_FluentMigrator_Runner_Processors_IDbFactory_
@@ -31312,27 +32173,72 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory.PostgresDbFactory
   nameWithType: PostgresDbFactory.PostgresDbFactory
+- uid: FluentMigrator.Runner.Processors.Postgres.PostgresOptions
+  name: PostgresOptions
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresOptions.html
+  commentId: T:FluentMigrator.Runner.Processors.Postgres.PostgresOptions
+  fullName: FluentMigrator.Runner.Processors.Postgres.PostgresOptions
+  nameWithType: PostgresOptions
+- uid: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.Clone
+  name: Clone()
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresOptions.html#FluentMigrator_Runner_Processors_Postgres_PostgresOptions_Clone
+  commentId: M:FluentMigrator.Runner.Processors.Postgres.PostgresOptions.Clone
+  fullName: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.Clone()
+  nameWithType: PostgresOptions.Clone()
+- uid: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.Clone*
+  name: Clone
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresOptions.html#FluentMigrator_Runner_Processors_Postgres_PostgresOptions_Clone_
+  commentId: Overload:FluentMigrator.Runner.Processors.Postgres.PostgresOptions.Clone
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.Clone
+  nameWithType: PostgresOptions.Clone
+- uid: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ForceQuote
+  name: ForceQuote
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresOptions.html#FluentMigrator_Runner_Processors_Postgres_PostgresOptions_ForceQuote
+  commentId: P:FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ForceQuote
+  fullName: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ForceQuote
+  nameWithType: PostgresOptions.ForceQuote
+- uid: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ForceQuote*
+  name: ForceQuote
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresOptions.html#FluentMigrator_Runner_Processors_Postgres_PostgresOptions_ForceQuote_
+  commentId: Overload:FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ForceQuote
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ForceQuote
+  nameWithType: PostgresOptions.ForceQuote
+- uid: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ParseProviderSwitches(System.String)
+  name: ParseProviderSwitches(String)
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresOptions.html#FluentMigrator_Runner_Processors_Postgres_PostgresOptions_ParseProviderSwitches_System_String_
+  commentId: M:FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ParseProviderSwitches(System.String)
+  fullName: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ParseProviderSwitches(System.String)
+  nameWithType: PostgresOptions.ParseProviderSwitches(String)
+- uid: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ParseProviderSwitches*
+  name: ParseProviderSwitches
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresOptions.html#FluentMigrator_Runner_Processors_Postgres_PostgresOptions_ParseProviderSwitches_
+  commentId: Overload:FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ParseProviderSwitches
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Postgres.PostgresOptions.ParseProviderSwitches
+  nameWithType: PostgresOptions.ParseProviderSwitches
 - uid: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor
   name: PostgresProcessor
   href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.html
   commentId: T:FluentMigrator.Runner.Processors.Postgres.PostgresProcessor
   fullName: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor
   nameWithType: PostgresProcessor
-- uid: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.#ctor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory,FluentMigrator.Runner.Generators.Postgres.PostgresGenerator,ILogger{FluentMigrator.Runner.Processors.Postgres.PostgresProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  name: PostgresProcessor(PostgresDbFactory, PostgresGenerator, ILogger<PostgresProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
-  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.html#FluentMigrator_Runner_Processors_Postgres_PostgresProcessor__ctor_FluentMigrator_Runner_Processors_Postgres_PostgresDbFactory_FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_ILogger_FluentMigrator_Runner_Processors_Postgres_PostgresProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_
-  commentId: M:FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.#ctor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory,FluentMigrator.Runner.Generators.Postgres.PostgresGenerator,ILogger{FluentMigrator.Runner.Processors.Postgres.PostgresProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  name.vb: PostgresProcessor(PostgresDbFactory, PostgresGenerator, ILogger(Of PostgresProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
-  fullName: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.PostgresProcessor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory, FluentMigrator.Runner.Generators.Postgres.PostgresGenerator, ILogger<FluentMigrator.Runner.Processors.Postgres.PostgresProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  fullName.vb: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.PostgresProcessor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory, FluentMigrator.Runner.Generators.Postgres.PostgresGenerator, ILogger(Of FluentMigrator.Runner.Processors.Postgres.PostgresProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor)
-  nameWithType: PostgresProcessor.PostgresProcessor(PostgresDbFactory, PostgresGenerator, ILogger<PostgresProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor)
-  nameWithType.vb: PostgresProcessor.PostgresProcessor(PostgresDbFactory, PostgresGenerator, ILogger(Of PostgresProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor)
-- uid: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.#ctor(System.Data.IDbConnection,IMigrationGenerator,FluentMigrator.Runner.IAnnouncer,IMigrationProcessorOptions,FluentMigrator.Runner.Processors.IDbFactory)
-  name: PostgresProcessor(IDbConnection, IMigrationGenerator, IAnnouncer, IMigrationProcessorOptions, IDbFactory)
-  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.html#FluentMigrator_Runner_Processors_Postgres_PostgresProcessor__ctor_System_Data_IDbConnection_IMigrationGenerator_FluentMigrator_Runner_IAnnouncer_IMigrationProcessorOptions_FluentMigrator_Runner_Processors_IDbFactory_
-  commentId: M:FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.#ctor(System.Data.IDbConnection,IMigrationGenerator,FluentMigrator.Runner.IAnnouncer,IMigrationProcessorOptions,FluentMigrator.Runner.Processors.IDbFactory)
-  fullName: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.PostgresProcessor(System.Data.IDbConnection, IMigrationGenerator, FluentMigrator.Runner.IAnnouncer, IMigrationProcessorOptions, FluentMigrator.Runner.Processors.IDbFactory)
-  nameWithType: PostgresProcessor.PostgresProcessor(IDbConnection, IMigrationGenerator, IAnnouncer, IMigrationProcessorOptions, IDbFactory)
+- uid: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.#ctor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory,FluentMigrator.Runner.Generators.Postgres.PostgresGenerator,ILogger{FluentMigrator.Runner.Processors.Postgres.PostgresProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor,FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  name: PostgresProcessor(PostgresDbFactory, PostgresGenerator, ILogger<PostgresProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor, PostgresOptions)
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.html#FluentMigrator_Runner_Processors_Postgres_PostgresProcessor__ctor_FluentMigrator_Runner_Processors_Postgres_PostgresDbFactory_FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_ILogger_FluentMigrator_Runner_Processors_Postgres_PostgresProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_FluentMigrator_Runner_Processors_Postgres_PostgresOptions_
+  commentId: M:FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.#ctor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory,FluentMigrator.Runner.Generators.Postgres.PostgresGenerator,ILogger{FluentMigrator.Runner.Processors.Postgres.PostgresProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor,FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  name.vb: PostgresProcessor(PostgresDbFactory, PostgresGenerator, ILogger(Of PostgresProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor, PostgresOptions)
+  fullName: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.PostgresProcessor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory, FluentMigrator.Runner.Generators.Postgres.PostgresGenerator, ILogger<FluentMigrator.Runner.Processors.Postgres.PostgresProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor, FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  fullName.vb: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.PostgresProcessor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory, FluentMigrator.Runner.Generators.Postgres.PostgresGenerator, ILogger(Of FluentMigrator.Runner.Processors.Postgres.PostgresProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor, FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  nameWithType: PostgresProcessor.PostgresProcessor(PostgresDbFactory, PostgresGenerator, ILogger<PostgresProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor, PostgresOptions)
+  nameWithType.vb: PostgresProcessor.PostgresProcessor(PostgresDbFactory, PostgresGenerator, ILogger(Of PostgresProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor, PostgresOptions)
+- uid: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.#ctor(System.Data.IDbConnection,IMigrationGenerator,FluentMigrator.Runner.IAnnouncer,IMigrationProcessorOptions,FluentMigrator.Runner.Processors.IDbFactory,FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  name: PostgresProcessor(IDbConnection, IMigrationGenerator, IAnnouncer, IMigrationProcessorOptions, IDbFactory, PostgresOptions)
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.html#FluentMigrator_Runner_Processors_Postgres_PostgresProcessor__ctor_System_Data_IDbConnection_IMigrationGenerator_FluentMigrator_Runner_IAnnouncer_IMigrationProcessorOptions_FluentMigrator_Runner_Processors_IDbFactory_FluentMigrator_Runner_Processors_Postgres_PostgresOptions_
+  commentId: M:FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.#ctor(System.Data.IDbConnection,IMigrationGenerator,FluentMigrator.Runner.IAnnouncer,IMigrationProcessorOptions,FluentMigrator.Runner.Processors.IDbFactory,FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  fullName: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.PostgresProcessor(System.Data.IDbConnection, IMigrationGenerator, FluentMigrator.Runner.IAnnouncer, IMigrationProcessorOptions, FluentMigrator.Runner.Processors.IDbFactory, FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  nameWithType: PostgresProcessor.PostgresProcessor(IDbConnection, IMigrationGenerator, IAnnouncer, IMigrationProcessorOptions, IDbFactory, PostgresOptions)
 - uid: FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.#ctor*
   name: PostgresProcessor
   href: api/v3.x/FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.html#FluentMigrator_Runner_Processors_Postgres_PostgresProcessor__ctor_
@@ -31575,6 +32481,60 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Processors.Postgres.PostgresProcessorFactory.Create
   nameWithType: PostgresProcessorFactory.Create
+- uid: FluentMigrator.Runner.Processors.Postgres92
+  name: FluentMigrator.Runner.Processors.Postgres92
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres92.html
+  commentId: N:FluentMigrator.Runner.Processors.Postgres92
+  fullName: FluentMigrator.Runner.Processors.Postgres92
+  nameWithType: FluentMigrator.Runner.Processors.Postgres92
+- uid: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor
+  name: Postgres92Processor
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.html
+  commentId: T:FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor
+  fullName: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor
+  nameWithType: Postgres92Processor
+- uid: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.#ctor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory,FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator,ILogger{FluentMigrator.Runner.Processors.Postgres.PostgresProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor,FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  name: Postgres92Processor(PostgresDbFactory, Postgres92Generator, ILogger<PostgresProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor, PostgresOptions)
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.html#FluentMigrator_Runner_Processors_Postgres92_Postgres92Processor__ctor_FluentMigrator_Runner_Processors_Postgres_PostgresDbFactory_FluentMigrator_Runner_Generators_Postgres92_Postgres92Generator_ILogger_FluentMigrator_Runner_Processors_Postgres_PostgresProcessor__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_FluentMigrator_Runner_Processors_Postgres_PostgresOptions_
+  commentId: M:FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.#ctor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory,FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator,ILogger{FluentMigrator.Runner.Processors.Postgres.PostgresProcessor},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor,FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  name.vb: Postgres92Processor(PostgresDbFactory, Postgres92Generator, ILogger(Of PostgresProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor, PostgresOptions)
+  fullName: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.Postgres92Processor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory, FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator, ILogger<FluentMigrator.Runner.Processors.Postgres.PostgresProcessor>, IOptionsSnapshot<FluentMigrator.Runner.Processors.ProcessorOptions>, FluentMigrator.Runner.Initialization.IConnectionStringAccessor, FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  fullName.vb: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.Postgres92Processor(FluentMigrator.Runner.Processors.Postgres.PostgresDbFactory, FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator, ILogger(Of FluentMigrator.Runner.Processors.Postgres.PostgresProcessor), IOptionsSnapshot(Of FluentMigrator.Runner.Processors.ProcessorOptions), FluentMigrator.Runner.Initialization.IConnectionStringAccessor, FluentMigrator.Runner.Processors.Postgres.PostgresOptions)
+  nameWithType: Postgres92Processor.Postgres92Processor(PostgresDbFactory, Postgres92Generator, ILogger<PostgresProcessor>, IOptionsSnapshot<ProcessorOptions>, IConnectionStringAccessor, PostgresOptions)
+  nameWithType.vb: Postgres92Processor.Postgres92Processor(PostgresDbFactory, Postgres92Generator, ILogger(Of PostgresProcessor), IOptionsSnapshot(Of ProcessorOptions), IConnectionStringAccessor, PostgresOptions)
+- uid: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.#ctor*
+  name: Postgres92Processor
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.html#FluentMigrator_Runner_Processors_Postgres92_Postgres92Processor__ctor_
+  commentId: Overload:FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.#ctor
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.Postgres92Processor
+  nameWithType: Postgres92Processor.Postgres92Processor
+- uid: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseType
+  name: DatabaseType
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.html#FluentMigrator_Runner_Processors_Postgres92_Postgres92Processor_DatabaseType
+  commentId: P:FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseType
+  fullName: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseType
+  nameWithType: Postgres92Processor.DatabaseType
+- uid: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseType*
+  name: DatabaseType
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.html#FluentMigrator_Runner_Processors_Postgres92_Postgres92Processor_DatabaseType_
+  commentId: Overload:FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseType
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseType
+  nameWithType: Postgres92Processor.DatabaseType
+- uid: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseTypeAliases
+  name: DatabaseTypeAliases
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.html#FluentMigrator_Runner_Processors_Postgres92_Postgres92Processor_DatabaseTypeAliases
+  commentId: P:FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseTypeAliases
+  fullName: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseTypeAliases
+  nameWithType: Postgres92Processor.DatabaseTypeAliases
+- uid: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseTypeAliases*
+  name: DatabaseTypeAliases
+  href: api/v3.x/FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.html#FluentMigrator_Runner_Processors_Postgres92_Postgres92Processor_DatabaseTypeAliases_
+  commentId: Overload:FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseTypeAliases
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.Postgres92.Postgres92Processor.DatabaseTypeAliases
+  nameWithType: Postgres92Processor.DatabaseTypeAliases
 - uid: FluentMigrator.Runner.Processors.ProcessorBase
   name: ProcessorBase
   href: api/v3.x/FluentMigrator.Runner.Processors.ProcessorBase.html
@@ -32186,6 +33146,19 @@ references:
   isSpec: "True"
   fullName: FluentMigrator.Runner.Processors.ProcessorOptions.SetValuesFrom
   nameWithType: ProcessorOptions.SetValuesFrom
+- uid: FluentMigrator.Runner.Processors.ProcessorOptions.StripComments
+  name: StripComments
+  href: api/v3.x/FluentMigrator.Runner.Processors.ProcessorOptions.html#FluentMigrator_Runner_Processors_ProcessorOptions_StripComments
+  commentId: P:FluentMigrator.Runner.Processors.ProcessorOptions.StripComments
+  fullName: FluentMigrator.Runner.Processors.ProcessorOptions.StripComments
+  nameWithType: ProcessorOptions.StripComments
+- uid: FluentMigrator.Runner.Processors.ProcessorOptions.StripComments*
+  name: StripComments
+  href: api/v3.x/FluentMigrator.Runner.Processors.ProcessorOptions.html#FluentMigrator_Runner_Processors_ProcessorOptions_StripComments_
+  commentId: Overload:FluentMigrator.Runner.Processors.ProcessorOptions.StripComments
+  isSpec: "True"
+  fullName: FluentMigrator.Runner.Processors.ProcessorOptions.StripComments
+  nameWithType: ProcessorOptions.StripComments
 - uid: FluentMigrator.Runner.Processors.ProcessorOptions.Timeout
   name: Timeout
   href: api/v3.x/FluentMigrator.Runner.Processors.ProcessorOptions.html#FluentMigrator_Runner_Processors_ProcessorOptions_Timeout
@@ -36243,6 +37216,25 @@ references:
   commentId: F:FluentMigrator.SqlServer.SqlServerExtensions.SchemaAuthorization
   fullName: FluentMigrator.SqlServer.SqlServerExtensions.SchemaAuthorization
   nameWithType: SqlServerExtensions.SchemaAuthorization
+- uid: FluentMigrator.SqlServer.SqlServerExtensions.Sparse(FluentMigrator.Builders.Create.Table.ICreateTableColumnOptionOrWithColumnSyntax)
+  name: Sparse(ICreateTableColumnOptionOrWithColumnSyntax)
+  href: api/v3.x/FluentMigrator.SqlServer.SqlServerExtensions.html#FluentMigrator_SqlServer_SqlServerExtensions_Sparse_FluentMigrator_Builders_Create_Table_ICreateTableColumnOptionOrWithColumnSyntax_
+  commentId: M:FluentMigrator.SqlServer.SqlServerExtensions.Sparse(FluentMigrator.Builders.Create.Table.ICreateTableColumnOptionOrWithColumnSyntax)
+  fullName: FluentMigrator.SqlServer.SqlServerExtensions.Sparse(FluentMigrator.Builders.Create.Table.ICreateTableColumnOptionOrWithColumnSyntax)
+  nameWithType: SqlServerExtensions.Sparse(ICreateTableColumnOptionOrWithColumnSyntax)
+- uid: FluentMigrator.SqlServer.SqlServerExtensions.Sparse*
+  name: Sparse
+  href: api/v3.x/FluentMigrator.SqlServer.SqlServerExtensions.html#FluentMigrator_SqlServer_SqlServerExtensions_Sparse_
+  commentId: Overload:FluentMigrator.SqlServer.SqlServerExtensions.Sparse
+  isSpec: "True"
+  fullName: FluentMigrator.SqlServer.SqlServerExtensions.Sparse
+  nameWithType: SqlServerExtensions.Sparse
+- uid: FluentMigrator.SqlServer.SqlServerExtensions.SparseColumn
+  name: SparseColumn
+  href: api/v3.x/FluentMigrator.SqlServer.SqlServerExtensions.html#FluentMigrator_SqlServer_SqlServerExtensions_SparseColumn
+  commentId: F:FluentMigrator.SqlServer.SqlServerExtensions.SparseColumn
+  fullName: FluentMigrator.SqlServer.SqlServerExtensions.SparseColumn
+  nameWithType: SqlServerExtensions.SparseColumn
 - uid: FluentMigrator.SqlServer.SqlServerExtensions.UniqueNullsDistinct(FluentMigrator.Builders.Create.Index.ICreateIndexOptionsSyntax,System.Boolean)
   name: UniqueNullsDistinct(ICreateIndexOptionsSyntax, Boolean)
   href: api/v3.x/FluentMigrator.SqlServer.SqlServerExtensions.html#FluentMigrator_SqlServer_SqlServerExtensions_UniqueNullsDistinct_FluentMigrator_Builders_Create_Index_ICreateIndexOptionsSyntax_System_Boolean_
@@ -36703,6 +37695,9 @@ references:
 - uid: upgrade-guide-3.0-to-3.1
   name: Upgrade Guide from 3.0 to 3.1
   href: articles/guides/upgrades/guide-3.0-to-3.1.html
+- uid: upgrade-guide-3.1-to-3.2
+  name: Upgrade Guide from 3.1 to 3.2
+  href: articles/guides/upgrades/guide-3.1-to-3.2.html
 - uid: version-table-metadata
   name: Custom metadata for the VersionInfo table
   href: articles/version-table-metadata.html

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class OracleGenerator
    | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.40.12.0">
+    <meta name="generator" content="docfx 2.42.0.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -91,10 +91,13 @@
     <div class="level1"><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html">GeneratorBase</a></div>
     <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html">GenericGenerator</a></div>
     <div class="level3"><span class="xref">OracleGenerator</span></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.Oracle.Oracle12CGenerator.html">Oracle12CGenerator</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a></div>
+    <div><a class="xref" href="FluentMigrator.Runner.Generators.Oracle.IOracleGenerator.html">IOracleGenerator</a></div>
+    <div><span class="xref">IMigrationGenerator</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -268,7 +271,7 @@
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Oracle.dll</h6>
   <h5 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OracleGenerator : GenericGenerator, IMigrationGenerator</code></pre>
+    <pre><code class="lang-csharp hljs">public class OracleGenerator : GenericGenerator, IMigrationGenerator, IOracleGenerator, IMigrationGenerator</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -277,7 +280,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L36">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L36">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor">OracleGenerator()</h4>
@@ -289,10 +292,99 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_FluentMigrator_Runner_Generators_IDescriptionGenerator_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.%23ctor(FluentMigrator.Runner.Generators.IColumn%2CFluentMigrator.Runner.Generators.Oracle.OracleQuoterBase%2CFluentMigrator.Runner.Generators.IDescriptionGenerator%2CIOptions%7BFluentMigrator.Runner.Generators.GeneratorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L67">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_FluentMigrator_Runner_Generators_IDescriptionGenerator_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor(FluentMigrator.Runner.Generators.IColumn,FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase,FluentMigrator.Runner.Generators.IDescriptionGenerator,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})">OracleGenerator(IColumn, OracleQuoterBase, IDescriptionGenerator, IOptions&lt;GeneratorOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected OracleGenerator(IColumn column, OracleQuoterBase quoter, IDescriptionGenerator descriptionGenerator, IOptions&lt;GeneratorOptions&gt; generatorOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IColumn.html">IColumn</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase.html">OracleQuoterBase</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IDescriptionGenerator.html">IDescriptionGenerator</a></td>
+        <td><span class="parametername">descriptionGenerator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FluentMigrator.Runner.Generators.GeneratorOptions.html">GeneratorOptions</a>&gt;</td>
+        <td><span class="parametername">generatorOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.%23ctor(FluentMigrator.Runner.Generators.IColumn%2CFluentMigrator.Runner.Generators.Oracle.OracleQuoterBase%2CIOptions%7BFluentMigrator.Runner.Generators.GeneratorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L59">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor(FluentMigrator.Runner.Generators.IColumn,FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})">OracleGenerator(IColumn, OracleQuoterBase, IOptions&lt;GeneratorOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OracleGenerator(IColumn column, OracleQuoterBase quoter, IOptions&lt;GeneratorOptions&gt; generatorOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IColumn.html">IColumn</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase.html">OracleQuoterBase</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FluentMigrator.Runner.Generators.GeneratorOptions.html">GeneratorOptions</a>&gt;</td>
+        <td><span class="parametername">generatorOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.%23ctor(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L46">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L46">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase)">OracleGenerator(OracleQuoterBase)</h4>
@@ -324,7 +416,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.%23ctor(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase%2CIOptions%7BFluentMigrator.Runner.Generators.GeneratorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L52">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L52">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_FluentMigrator_Runner_Generators_Oracle_OracleQuoterBase_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor(FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})">OracleGenerator(OracleQuoterBase, IOptions&lt;GeneratorOptions&gt;)</h4>
@@ -361,7 +453,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_System_Boolean_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.%23ctor(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L41">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L41">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator__ctor_System_Boolean_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.#ctor(System.Boolean)">OracleGenerator(Boolean)</h4>
@@ -395,7 +487,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_AddColumn.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.AddColumn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L123">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L140">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_AddColumn_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.AddColumn*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_AddColumn" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.AddColumn">AddColumn</h4>
@@ -427,7 +519,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_AlterColumn.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.AlterColumn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L128">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L145">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_AlterColumn_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.AlterColumn*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_AlterColumn" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.AlterColumn">AlterColumn</h4>
@@ -459,7 +551,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_DropTable.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.DropTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L65">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L82">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_DropTable_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.DropTable*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_DropTable" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.DropTable">DropTable</h4>
@@ -491,7 +583,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_InsertData.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.InsertData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L138">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L155">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_InsertData_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.InsertData*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_InsertData" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.InsertData">InsertData</h4>
@@ -523,7 +615,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_RenameTable.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.RenameTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L133">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L150">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_RenameTable_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.RenameTable*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_RenameTable" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.RenameTable">RenameTable</h4>
@@ -557,7 +649,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_AppendSqlStatementEndToken_System_Text_StringBuilder_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.AppendSqlStatementEndToken(System.Text.StringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L270">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L193">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_AppendSqlStatementEndToken_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.AppendSqlStatementEndToken*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_AppendSqlStatementEndToken_System_Text_StringBuilder_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.AppendSqlStatementEndToken(System.Text.StringBuilder)">AppendSqlStatementEndToken(StringBuilder)</h4>
@@ -606,7 +698,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_AlterColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(AlterColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L204">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L250">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_AlterColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(AlterColumnExpression)">Generate(AlterColumnExpression)</h4>
@@ -653,7 +745,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_AlterDefaultConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(AlterDefaultConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L242">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L288">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_AlterDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(AlterDefaultConstraintExpression)">Generate(AlterDefaultConstraintExpression)</h4>
@@ -700,7 +792,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_AlterTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(AlterTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L179">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L223">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_AlterTableExpression_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(AlterTableExpression)">Generate(AlterTableExpression)</h4>
@@ -747,7 +839,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_CreateColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(CreateColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L189">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L235">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_CreateColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(CreateColumnExpression)">Generate(CreateColumnExpression)</h4>
@@ -794,7 +886,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_CreateSequenceExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(CreateSequenceExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L77">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L94">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_CreateSequenceExpression_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(CreateSequenceExpression)">Generate(CreateSequenceExpression)</h4>
@@ -841,7 +933,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_CreateTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(CreateTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L156">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L198">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_CreateTableExpression_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(CreateTableExpression)">Generate(CreateTableExpression)</h4>
@@ -888,7 +980,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_DeleteDefaultConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(DeleteDefaultConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L252">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L298">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_DeleteDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(DeleteDefaultConstraintExpression)">Generate(DeleteDefaultConstraintExpression)</h4>
@@ -935,7 +1027,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_DeleteIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(DeleteIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L262">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L308">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_DeleteIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(DeleteIndexExpression)">Generate(DeleteIndexExpression)</h4>
@@ -982,7 +1074,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_DeleteTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(DeleteTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L72">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L89">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_DeleteTableExpression_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(DeleteTableExpression)">Generate(DeleteTableExpression)</h4>
@@ -1029,7 +1121,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_InsertDataExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(InsertDataExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L219">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L265">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_Generate_InsertDataExpression_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.Generate(InsertDataExpression)">Generate(InsertDataExpression)</h4>
@@ -1071,9 +1163,62 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator_GetQuoter_System_Boolean_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator.GetQuoter(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L76">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_GetQuoter_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.GetQuoter*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Oracle_OracleGenerator_GetQuoter_System_Boolean_" data-uid="FluentMigrator.Runner.Generators.Oracle.OracleGenerator.GetQuoter(System.Boolean)">GetQuoter(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static OracleQuoterBase GetQuoter(bool useQuotedIdentifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">useQuotedIdentifiers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase.html">OracleQuoterBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a>
+  </div>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Oracle.IOracleGenerator.html">IOracleGenerator</a>
+  </div>
+  <div>
+      <span class="xref">IMigrationGenerator</span>
   </div>
 </article>
           </div>
@@ -1086,7 +1231,7 @@
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Oracle_OracleGenerator.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Oracle.OracleGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/5354e58be561155a073b7fca9562897c676bddea/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L34" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Oracle/Generators/Oracle/OracleGenerator.cs/#L34" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

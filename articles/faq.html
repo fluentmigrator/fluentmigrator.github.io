@@ -218,6 +218,77 @@
 <ul>
 <li><sup>1)</sup> All integration tests ran without error against an SQL Server 2017 using the SqlServer2016 dialect.</li>
 </ul>
+<h2 id="how-can-i-run-migrations-safely-from-multiple-application-servers">How can I run migrations safely from multiple application servers?</h2>
+<p>Many server-side applications are load balanced and run multiple instances of the same application simultaneously from multiple web servers. In such a scenarios, if you choose to run migrations in-process (as opposed to an external migration runner), then there is an added risk of multiple processes trying to run migrations at the same time.</p>
+<p>FluentMigrator does not automatically handle this scenario because the default transactional behavior is not enough to guarantee that only a single process can be running migrations at any given time. There are, however, some workarounds.</p>
+<h3 id="database-dependent-application-locking">Database-Dependent Application Locking</h3>
+<p>This style of solution depends upon MaintenanceMigrations. Two Maintenance Migrations are created: One with <code>BeforeAll</code> to atomically acquire a lock, and one <code>AfterAll</code> stage to release the lock.</p>
+<p>This example is for <strong>SQL Server 2008 and above</strong> and uses <a href="https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-getapplock-transact-sql"><code>sp_getapplock</code></a> to aquire a named lock before all migrations are run, and <a href="https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-releaseapplock-transact-sql"><code>sp_releaseapplock</code></a> to release the lock after all migrations are finished.</p>
+<pre><code class="lang-c#">[Maintenance(MigrationStage.BeforeAll, TransactionBehavior.None)]
+public class DbMigrationLockBefore : Migration
+{
+    public override void Down()
+    {
+        throw new NotImplementedException(&quot;Down migrations are not supported for sp_getapplock&quot;);
+    }
+
+    public override void Up()
+    {
+        Execute.Sql(@&quot;
+            DECLARE @result INT
+            EXEC @result = sp_getapplock 'MyApp', 'Exclusive', 'Session'
+
+            IF @result &lt; 0
+            BEGIN
+                DECLARE @msg NVARCHAR(1000) = 'Received error code ' + CAST(@result AS VARCHAR(10)) + ' from sp_getapplock during migrations';
+                THROW 99999, @msg, 1;
+            END
+        &quot;);
+    }
+}
+
+[Maintenance(MigrationStage.AfterAll, TransactionBehavior.None)]
+public class DbMigrationUnlockAfter : Migration
+{
+    public override void Down()
+    {
+        throw new NotImplementedException(&quot;Down migrations are not supported for sp_releaseapplock&quot;);
+    }
+
+    public override void Up()
+    {
+        Execute.Sql(&quot;EXEC sp_releaseapplock 'MyApp', 'Session'&quot;);
+    }
+}
+</code></pre>
+<p>In the above SQL Server example, we need to use <code>TransactionBehavior.None</code> on the Maintenance Migration while specifying the <code>@LockOwner</code> parameter to <code>Session</code>, which means that the locking behavior applies to the entire Session rather than a single transaction.</p>
+<p>While the above is specific to SQL Server, similar concepts may available in other database providers.</p>
+<ul>
+<li>PostgreSQL has <a href="https://www.postgresql.org/docs/10/explicit-locking.html#ADVISORY-LOCKS">Advisory Locks</a></li>
+<li>SQL Anywhere has <a href="http://infocenter.sybase.com/help/topic/com.sybase.help.sqlanywhere.12.0.1/dbusage/transact-s-3443172.html">Schema Locks</a></li>
+<li>Oracle has <a href="https://docs.oracle.com/cd/A91202_01/901_doc/appdev.901/a89852/dbms_l2a.htm">DBMS_LOCK.ALLOCATE_UNIQUE</a></li>
+<li>DB2 has <a href="https://www.ibm.com/support/knowledgecenter/en/SSEPEK_11.0.0/perf/src/tpc/db2z_lockmode.html">LOCK TABLESPACE</a> (with the caveat that every table in your migration is in the same tablespace)</li>
+</ul>
+<h3 id="external-distributed-lock">External Distributed Lock</h3>
+<p>If your database doesn't provide a means of acquiring an exclusive lock for migrations, it is still possible to achieve this functionality by using an external service for acquiring a distributed lock.</p>
+<p>For example, Redis provides a way to perform <a href="https://redis.io/topics/distlock">Distributed locks</a> so that different processes can operate on a shared resource in a mutually exclusive way. This scenario can be baked into a <code>BeforeAll</code>/<code>AfterAll</code> pair of Maintenance Migrations, as demonstrated above, to acquire an exclusive lock for the duration of the migration running.</p>
+<p>As an alternative to Maintenance Migrations, which are by necessity specified in different classes, you could simply wrap the <code>MigrateUp()</code> call in code that acquires and releases the lock. Consider this pseudo-code which relies on <a href="https://github.com/samcook/RedLock.net">RedLock.net</a>:</p>
+<pre><code class="lang-c#">async RunMigrationsWithDistributedLock(IMigrationRunner runner)
+{
+    var resource = &quot;my-app-migrations&quot;;
+    var expiry = TimeSpan.FromMinutes(5);
+
+    using (var redLock = await redlockFactory.CreateLockAsync(resource, expiry)) // there are also non async Create() methods
+    {
+        // make sure we got the lock
+        if (redLock.IsAcquired)
+        {
+            runner.MigrateUp();
+        }
+    }
+    // the lock is automatically released at the end of the using block
+}
+</code></pre>
 </article>
           </div>
           

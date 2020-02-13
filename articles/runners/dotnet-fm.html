@@ -8,7 +8,7 @@
     <title>dotnet-fm tool | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="dotnet-fm tool | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -178,6 +178,9 @@ values are:</p>
 <p>Applies the found migrations.</p>
 <h3 id="-t--target-target_version-1"><code>-t|--target &lt;TARGET_VERSION&gt;</code></h3>
 <p>The specific version to revert to (exclusive).</p>
+<h3 id="--striptruefalse"><code>--strip:&lt;true|false&gt;</code></h3>
+<p>Whether comments should be stripped from SQL text prior to executing migration on server.
+Default is true; false will become the default in 4.x.</p>
 <h1 id="examples">Examples</h1>
 <h2 id="apply-all-migrations">Apply all migrations</h2>
 <pre><code>dotnet fm migrate -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll

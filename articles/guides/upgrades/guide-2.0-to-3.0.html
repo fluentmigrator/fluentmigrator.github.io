@@ -8,7 +8,7 @@
     <title>Upgrade Guide from 2.0 to 3.0 | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Upgrade Guide from 2.0 to 3.0 | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../../../images/favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -136,7 +136,7 @@ a <a class="xref" href="../../../api/v3.x/FluentMigrator.Runner.Processors.Conne
 <p>This feature allows - for example - forbidding data deletions in a production environment.</p>
 <h2 id="using-systemcomponentmodeldataannotations-for-validation">Using <code>System.ComponentModel.DataAnnotations</code> for validation</h2>
 <h1 id="breaking-changes">Breaking Changes</h1>
-<p>Version 3.0 dropped support for all .NET Framework versions below 4.6.1 and the timeout values are now stored as <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>.</p>
+<p>Version 3.0 dropped support for all .NET Framework versions below 4.6.1 and the timeout values are now stored as <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a> rather than an <code>int</code> (of seconds).</p>
 <h2 id="minimum-net-framework-461">Minimum: .NET Framework 4.6.1</h2>
 <p>Dropping the support for all .NET Framework versions below 4.6.1 was required, because the package now relies on the following libraries:</p>
 <ul>
@@ -146,7 +146,7 @@ a <a class="xref" href="../../../api/v3.x/FluentMigrator.Runner.Processors.Conne
 <li><a href="https://github.com/aspnet/Configuration/">Microsoft.Extensions.Configuration</a></li>
 </ul>
 <h2 id="processoroptionstimeout-is-now-a-timespan"><code>ProcessorOptions.Timeout</code> is now a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></h2>
-<p>This change is part of the ongoing effort to make the API easier to understand, because it might not be clear if an <code>int timeout</code> is the timeout in milliseconds, seconds, et cetera.</p>
+<p>This change is part of the ongoing effort to make the API easier to understand, because it might not be clear if an <code>int timeout</code> is the timeout in milliseconds, seconds, et cetera. Previously the <code>int</code> value corresponded to seconds.</p>
 <h2 id="icanbevalidated-not-used-anymore"><code>ICanBeValidated</code> not used anymore</h2>
 <p>The library now uses <code>System.ComponentModel.DataAnnotations</code> for validation - for example the <code>[Required]</code> attribute for expression fields that are - one might've guessed it - required.</p>
 <h2 id="migrationgeneratorfactory-not-used-anymore"><code>MigrationGeneratorFactory</code> not used anymore</h2>

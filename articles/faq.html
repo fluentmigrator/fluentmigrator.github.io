@@ -8,7 +8,7 @@
     <title>FAQ | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="FAQ | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -288,6 +288,16 @@ public class DbMigrationUnlockAfter : Migration
     }
     // the lock is automatically released at the end of the using block
 }
+</code></pre>
+<h3 id="how-can-i-execute-a-stored-procedure-using-oracle">How can I execute a stored procedure using Oracle?</h3>
+<p>If you get <code>ORA-00900: Invalid SQL Statement</code> when executing a stored procedure, then chances are you need to wrap your stored procedure in a PLSQL block:</p>
+<pre><code class="lang-c#">  Execute.Sql(&quot;DBMS_UTILITY.EXEC_DDL_STATEMENT('Create Index Member_AddrId On Member(AddrId)');&quot;);
+</code></pre>
+<p>becomes:</p>
+<pre><code class="lang-c#">  Execute.Sql(@&quot;
+BEGIN
+  DBMS_UTILITY.EXEC_DDL_STATEMENT('Create Index Member_AddrId On Member(AddrId)');
+END;&quot;);
 </code></pre>
 </article>
           </div>

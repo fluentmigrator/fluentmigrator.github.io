@@ -94,38 +94,56 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.IVersionLoader.html">IVersionLoader</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.html">FluentMigrator.Runner</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
   <h5 id="FluentMigrator_Runner_VersionLoader_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VersionLoader : IVersionLoader</code></pre>
+    <pre><code class="lang-csharp hljs">public class VersionLoader : object, IVersionLoader</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
+  
+  
+  <a id="FluentMigrator_Runner_VersionLoader__ctor_" data-uid="FluentMigrator.Runner.VersionLoader.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_VersionLoader__ctor_FluentMigrator_Runner_IMigrationRunner_Assembly_FluentMigrator_Runner_Conventions_IConventionSet_FluentMigrator_Runner_IMigrationRunnerConventions_" data-uid="FluentMigrator.Runner.VersionLoader.#ctor(FluentMigrator.Runner.IMigrationRunner,Assembly,FluentMigrator.Runner.Conventions.IConventionSet,FluentMigrator.Runner.IMigrationRunnerConventions)">VersionLoader(IMigrationRunner, Assembly, IConventionSet, IMigrationRunnerConventions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VersionLoader(IMigrationRunner runner, Assembly assembly, IConventionSet conventionSet, IMigrationRunnerConventions conventions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunner.html">IMigrationRunner</a></td>
+        <td><span class="parametername">runner</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Conventions.IConventionSet.html">IConventionSet</a></td>
+        <td><span class="parametername">conventionSet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunnerConventions.html">IMigrationRunnerConventions</a></td>
+        <td><span class="parametername">conventions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FluentMigrator_Runner_VersionLoader__ctor_" data-uid="FluentMigrator.Runner.VersionLoader.#ctor*"></a>
@@ -169,48 +187,6 @@
       <tr>
         <td><a class="xref" href="FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a></td>
         <td><span class="parametername">versionTableMetaData</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FluentMigrator_Runner_VersionLoader__ctor_" data-uid="FluentMigrator.Runner.VersionLoader.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_VersionLoader__ctor_FluentMigrator_Runner_IMigrationRunner_System_Reflection_Assembly_FluentMigrator_Runner_Conventions_IConventionSet_FluentMigrator_Runner_IMigrationRunnerConventions_" data-uid="FluentMigrator.Runner.VersionLoader.#ctor(FluentMigrator.Runner.IMigrationRunner,System.Reflection.Assembly,FluentMigrator.Runner.Conventions.IConventionSet,FluentMigrator.Runner.IMigrationRunnerConventions)">VersionLoader(IMigrationRunner, Assembly, IConventionSet, IMigrationRunnerConventions)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VersionLoader(IMigrationRunner runner, Assembly assembly, IConventionSet conventionSet, IMigrationRunnerConventions conventions)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunner.html">IMigrationRunner</a></td>
-        <td><span class="parametername">runner</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
-        <td><span class="parametername">assembly</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.Conventions.IConventionSet.html">IConventionSet</a></td>
-        <td><span class="parametername">conventionSet</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.IMigrationRunnerConventions.html">IMigrationRunnerConventions</a></td>
-        <td><span class="parametername">conventions</span></td>
         <td></td>
       </tr>
     </tbody>

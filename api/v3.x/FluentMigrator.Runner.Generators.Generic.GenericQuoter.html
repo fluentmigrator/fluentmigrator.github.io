@@ -116,35 +116,11 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.Generators.IQuoter.html">IQuoter</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Generators.Generic.html">FluentMigrator.Runner.Generators.Generic</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
   <h5 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GenericQuoter : IQuoter</code></pre>
+    <pre><code class="lang-csharp hljs">public class GenericQuoter : object, IQuoter</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -153,7 +129,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_CloseQuote.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.CloseQuote%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L169">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L169">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CloseQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CloseQuote*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CloseQuote" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CloseQuote">CloseQuote</h4>
@@ -184,7 +160,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_CloseQuoteEscapeString.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.CloseQuoteEscapeString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L172">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L172">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CloseQuoteEscapeString_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CloseQuoteEscapeString*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CloseQuoteEscapeString" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CloseQuoteEscapeString">CloseQuoteEscapeString</h4>
@@ -214,7 +190,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_EscapeValueQuote.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.EscapeValueQuote%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L154">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L154">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_EscapeValueQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.EscapeValueQuote*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_EscapeValueQuote" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.EscapeValueQuote">EscapeValueQuote</h4>
@@ -244,7 +220,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_IdentifierSeparator.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.IdentifierSeparator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L159">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L159">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_IdentifierSeparator_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.IdentifierSeparator*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_IdentifierSeparator" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.IdentifierSeparator">IdentifierSeparator</h4>
@@ -275,7 +251,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_OpenQuote.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.OpenQuote%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L164">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L164">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_OpenQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.OpenQuote*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_OpenQuote" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.OpenQuote">OpenQuote</h4>
@@ -306,7 +282,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_OpenQuoteEscapeString.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.OpenQuoteEscapeString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L171">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L171">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_OpenQuoteEscapeString_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.OpenQuoteEscapeString*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_OpenQuoteEscapeString" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.OpenQuoteEscapeString">OpenQuoteEscapeString</h4>
@@ -336,7 +312,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_ValueQuote.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.ValueQuote%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L152">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L152">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_ValueQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.ValueQuote*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_ValueQuote" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.ValueQuote">ValueQuote</h4>
@@ -368,7 +344,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_CreateSchemaPrefixedQuotedIdentifier_System_String_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.CreateSchemaPrefixedQuotedIdentifier(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L278">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L278">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CreateSchemaPrefixedQuotedIdentifier_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CreateSchemaPrefixedQuotedIdentifier*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CreateSchemaPrefixedQuotedIdentifier_System_String_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CreateSchemaPrefixedQuotedIdentifier(System.String,System.String)">CreateSchemaPrefixedQuotedIdentifier(String, String)</h4>
@@ -420,7 +396,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatAnsiString_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatAnsiString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L107">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L107">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatAnsiString_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatAnsiString*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatAnsiString_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatAnsiString(System.String)">FormatAnsiString(String)</h4>
@@ -467,7 +443,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatBool_System_Boolean_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatBool(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L127">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L127">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatBool_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatBool*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatBool_System_Boolean_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatBool(System.Boolean)">FormatBool(Boolean)</h4>
@@ -514,7 +490,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatByteArray_System_Byte___.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatByteArray(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L78">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L78">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatByteArray_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatByteArray*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatByteArray_System_Byte___" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatByteArray(System.Byte[])">FormatByteArray(Byte[])</h4>
@@ -561,7 +537,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatChar_System_Char_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatChar(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L122">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L122">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatChar_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatChar*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatChar_System_Char_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatChar(System.Char)">FormatChar(Char)</h4>
@@ -605,13 +581,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTime_System_DateTime_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTime(System.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTime_DateTime_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTime(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L137">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L137">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTime_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTime*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTime_System_DateTime_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTime(System.DateTime)">FormatDateTime(DateTime)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTime_DateTime_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTime(DateTime)">FormatDateTime(DateTime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -629,7 +605,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
@@ -652,13 +628,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTimeOffset_System_DateTimeOffset_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTimeOffset(System.DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTimeOffset_DateTimeOffset_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTimeOffset(DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L142">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L142">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTimeOffset_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTimeOffset*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTimeOffset_System_DateTimeOffset_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTimeOffset(System.DateTimeOffset)">FormatDateTimeOffset(DateTimeOffset)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTimeOffset_DateTimeOffset_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTimeOffset(DateTimeOffset)">FormatDateTimeOffset(DateTimeOffset)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -676,7 +652,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
@@ -702,7 +678,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatEnum_System_Object_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatEnum(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L147">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L147">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatEnum_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatEnum*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatEnum_System_Object_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatEnum(System.Object)">FormatEnum(Object)</h4>
@@ -746,13 +722,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatGuid_System_Guid_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatGuid(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatGuid_Guid_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatGuid(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L132">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L132">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatGuid_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatGuid*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatGuid_System_Guid_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatGuid(System.Guid)">FormatGuid(Guid)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatGuid_Guid_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatGuid(Guid)">FormatGuid(Guid)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -770,7 +746,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="xref">Guid</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
@@ -796,7 +772,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatNationalString_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatNationalString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L112">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L112">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatNationalString_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatNationalString*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatNationalString_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatNationalString(System.String)">FormatNationalString(String)</h4>
@@ -843,7 +819,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatNull.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatNull%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L102">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L102">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatNull_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatNull*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatNull" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatNull">FormatNull()</h4>
@@ -873,7 +849,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatSystemMethods_FluentMigrator_SystemMethods_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatSystemMethods(FluentMigrator.SystemMethods)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L117">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L117">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatSystemMethods_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatSystemMethods*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatSystemMethods_FluentMigrator_SystemMethods_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatSystemMethods(FluentMigrator.SystemMethods)">FormatSystemMethods(SystemMethods)</h4>
@@ -917,13 +893,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FromTimeSpan_System_TimeSpan_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FromTimeSpan(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_FromTimeSpan_TimeSpan_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.FromTimeSpan(TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L73">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L73">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FromTimeSpan_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FromTimeSpan*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FromTimeSpan_System_TimeSpan_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FromTimeSpan(System.TimeSpan)">FromTimeSpan(TimeSpan)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FromTimeSpan_TimeSpan_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FromTimeSpan(TimeSpan)">FromTimeSpan(TimeSpan)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -941,7 +917,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
@@ -967,7 +943,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_IsQuoted_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.IsQuoted(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L175">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L175">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_IsQuoted_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.IsQuoted*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_IsQuoted_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.IsQuoted(System.String)">IsQuoted(String)</h4>
@@ -1015,7 +991,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_Quote_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.Quote(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L191">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L191">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_Quote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.Quote*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_Quote_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.Quote(System.String)">Quote(String)</h4>
@@ -1063,7 +1039,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteColumnName_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteColumnName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L219">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L219">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteColumnName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteColumnName*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteColumnName_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteColumnName(System.String)">QuoteColumnName(String)</h4>
@@ -1111,7 +1087,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteConstraintName_System_String_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteConstraintName(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L225">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L225">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteConstraintName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteConstraintName*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteConstraintName_System_String_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteConstraintName(System.String,System.String)">QuoteConstraintName(String, String)</h4>
@@ -1164,7 +1140,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteIndexName_System_String_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteIndexName(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L231">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L231">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteIndexName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteIndexName*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteIndexName_System_String_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteIndexName(System.String,System.String)">QuoteIndexName(String, String)</h4>
@@ -1217,7 +1193,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteSchemaName_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteSchemaName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L253">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L253">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteSchemaName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteSchemaName*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteSchemaName_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteSchemaName(System.String)">QuoteSchemaName(String)</h4>
@@ -1267,7 +1243,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteSequenceName_System_String_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteSequenceName(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L245">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L245">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteSequenceName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteSequenceName*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteSequenceName_System_String_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteSequenceName(System.String,System.String)">QuoteSequenceName(String, String)</h4>
@@ -1320,7 +1296,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteTableName_System_String_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteTableName(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L237">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L237">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteTableName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteTableName*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteTableName_System_String_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteTableName(System.String,System.String)">QuoteTableName(String, String)</h4>
@@ -1373,7 +1349,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteValue_System_Object_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteValue(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L28">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L28">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteValue_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteValue*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteValue_System_Object_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteValue(System.Object)">QuoteValue(Object)</h4>
@@ -1423,7 +1399,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_ShouldQuote_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.ShouldQuote(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L184">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L184">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_ShouldQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.ShouldQuote*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_ShouldQuote_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.ShouldQuote(System.String)">ShouldQuote(String)</h4>
@@ -1470,7 +1446,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter_UnQuote_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter.UnQuote(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L261">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L261">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_UnQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.UnQuote*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_UnQuote_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.UnQuote(System.String)">UnQuote(String)</h4>
@@ -1528,7 +1504,7 @@
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Generic_GenericQuoter.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Generic.GenericQuoter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L25" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/Generic/GenericQuoter.cs/#L25" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

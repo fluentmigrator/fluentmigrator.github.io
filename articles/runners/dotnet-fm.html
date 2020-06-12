@@ -85,16 +85,16 @@
 <h1 id="running">Running</h1>
 <p>You can run the tool with <code>dotnet fm</code> or <code>dotnet-fm</code>. Use the latter version if the former doesn't work due to a .NET Core CLI tool bug.</p>
 <h1 id="command-structure">Command structure</h1>
-<pre><code>dotnet-fm  -+- list -+- migrations  = List all available migrations
-            |        +- processors  = List all available processors
-            +- migrate              = Execute migrations
-            |  +- up                = Execute migrations
-            |  +- down              = Revert migrations
-            +- rollback             = Revert one migration
-            |  +- all               = Revert all migrations
-            |  +- by                = Revert &lt;steps&gt; migrations
-            |  +- to                = Revert migrations down to &lt;version&gt;
-            +- validate --- versions= Validate order of applied migrations
+<pre><code>dotnet-fm  -+- list -+- migrations   = List applied and pending migrations
+            |        +- processors   = List all available processors
+            +- migrate               = Apply all migrations
+            |  +- up                 = Apply migrations up to given version (inclusive)
+            |  +- down               = Apply migrations down to given version (exclusive)
+            +- rollback              = Rollback the last migration applied
+            |  +- all                = Rollback all migrations
+            |  +- by                 = Rollback by &lt;n&gt; steps
+            |  +- to                 = Rollback to given version
+            +- validate --- versions = Validate order of applied migrations
 </code></pre>
 <h1 id="list-processors"><code>list processors</code></h1>
 <p>Shows all available processor identifiers to be used by the <code>-p</code>
@@ -173,7 +173,7 @@ values are:</p>
 <h1 id="migrate-up"><code>migrate up</code></h1>
 <p>Applies the found migrations.</p>
 <h3 id="-t--target-target_version"><code>-t|--target &lt;TARGET_VERSION&gt;</code></h3>
-<p>The specific version to migrate to.</p>
+<p>The specific version to migrate to (inclusive).</p>
 <h1 id="migrate-down"><code>migrate down</code></h1>
 <p>Applies the found migrations.</p>
 <h3 id="-t--target-target_version-1"><code>-t|--target &lt;TARGET_VERSION&gt;</code></h3>
@@ -182,11 +182,35 @@ values are:</p>
 <p>Whether comments should be stripped from SQL text prior to executing migration on server.
 Default is true; false will become the default in 4.x.</p>
 <h1 id="examples">Examples</h1>
-<h2 id="apply-all-migrations">Apply all migrations</h2>
-<pre><code>dotnet fm migrate -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll
+<h2 id="list-all-available-processors">List all available processors</h2>
+<pre><code class="lang-bash">dotnet fm list processors
 </code></pre>
-<h2 id="apply-migrations-up-to-given-version">Apply migrations up to given version</h2>
-<pre><code>dotnet fm migrate -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll up -t 20090906205342
+<h2 id="list-applied-and-pending-migrations">List applied and pending migrations</h2>
+<pre><code class="lang-bash">dotnet fm list migrations -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll
+</code></pre>
+<h2 id="apply-all-migrations">Apply all migrations</h2>
+<pre><code class="lang-bash">dotnet fm migrate -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll
+</code></pre>
+<h2 id="apply-migrations-up-to-given-version-inclusive">Apply migrations up to given version (inclusive)</h2>
+<pre><code class="lang-bash">dotnet fm migrate -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll up -t 20090906205342
+</code></pre>
+<h2 id="apply-migrations-down-to-given-version-exclusive">Apply migrations down to given version (exclusive)</h2>
+<pre><code class="lang-bash">dotnet fm migrate -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll down -t 20090906205342
+</code></pre>
+<h2 id="rollback-the-last-migration-applied">Rollback the last migration applied</h2>
+<pre><code class="lang-bash">dotnet fm rollback -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll
+</code></pre>
+<h2 id="rollback-to-given-version">Rollback to given version</h2>
+<pre><code class="lang-bash">dotnet fm rollback -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll to 20090906205342
+</code></pre>
+<h2 id="rollback-by-n-steps">Rollback by <code>&lt;n&gt;</code> steps</h2>
+<pre><code class="lang-bash">dotnet fm rollback -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll by 1
+</code></pre>
+<h2 id="rollback-all-migrations">Rollback all migrations</h2>
+<pre><code class="lang-bash">dotnet fm rollback -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll all
+</code></pre>
+<h2 id="validate-order-of-applied-migrations">Validate order of applied migrations</h2>
+<pre><code class="lang-bash">dotnet fm validate versions -p sqlite -c &quot;Data Source=test.db&quot; -a FluentMigrator.Example.Migrations.dll
 </code></pre>
 </article>
           </div>

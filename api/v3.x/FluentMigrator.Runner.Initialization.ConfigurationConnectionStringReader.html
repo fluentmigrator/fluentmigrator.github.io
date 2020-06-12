@@ -96,47 +96,23 @@ get the connection string from an <see cref="!:IConfiguration"></see> or <see cr
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.Initialization.IConnectionStringReader.html">IConnectionStringReader</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Initialization.html">FluentMigrator.Runner.Initialization</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
   <h5 id="FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ConfigurationConnectionStringReader : IConnectionStringReader</code></pre>
+    <pre><code class="lang-csharp hljs">public class ConfigurationConnectionStringReader : object, IConnectionStringReader</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader__ctor_System_IServiceProvider_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.%23ctor(System.IServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader__ctor_IServiceProvider_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.%23ctor(IServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/ConfigurationConnectionStringReader.cs/#L36">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/ConfigurationConnectionStringReader.cs/#L36">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader__ctor_" data-uid="FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader__ctor_System_IServiceProvider_" data-uid="FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.#ctor(System.IServiceProvider)">ConfigurationConnectionStringReader(IServiceProvider)</h4>
+  <h4 id="FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader__ctor_IServiceProvider_" data-uid="FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.#ctor(IServiceProvider)">ConfigurationConnectionStringReader(IServiceProvider)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.html">ConfigurationConnectionStringReader</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -155,7 +131,7 @@ get the connection string from an <see cref="!:IConfiguration"></see> or <see cr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="xref">IServiceProvider</span></td>
         <td><span class="parametername">serviceProvider</span></td>
         <td><p>The service provider to get the configuration interface from</p>
 </td>
@@ -169,7 +145,7 @@ get the connection string from an <see cref="!:IConfiguration"></see> or <see cr
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader_Priority.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.Priority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/ConfigurationConnectionStringReader.cs/#L42">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/ConfigurationConnectionStringReader.cs/#L42">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader_Priority_" data-uid="FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.Priority*"></a>
   <h4 id="FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader_Priority" data-uid="FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.Priority">Priority</h4>
@@ -205,7 +181,7 @@ get the connection string from an <see cref="!:IConfiguration"></see> or <see cr
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader_GetConnectionString_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.GetConnectionString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/ConfigurationConnectionStringReader.cs/#L45">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/ConfigurationConnectionStringReader.cs/#L45">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader_GetConnectionString_" data-uid="FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.GetConnectionString*"></a>
   <h4 id="FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader_GetConnectionString_System_String_" data-uid="FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader.GetConnectionString(System.String)">GetConnectionString(String)</h4>
@@ -264,7 +240,7 @@ get the connection string from an <see cref="!:IConfiguration"></see> or <see cr
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_ConfigurationConnectionStringReader.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.ConfigurationConnectionStringReader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/ConfigurationConnectionStringReader.cs/#L28" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/ConfigurationConnectionStringReader.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

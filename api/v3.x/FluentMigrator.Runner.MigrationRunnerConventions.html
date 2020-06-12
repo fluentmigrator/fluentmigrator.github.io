@@ -94,35 +94,11 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.IMigrationRunnerConventions.html">IMigrationRunnerConventions</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.html">FluentMigrator.Runner</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
   <h5 id="FluentMigrator_Runner_MigrationRunnerConventions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MigrationRunnerConventions : IMigrationRunnerConventions</code></pre>
+    <pre><code class="lang-csharp hljs">public class MigrationRunnerConventions : object, IMigrationRunnerConventions</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -131,7 +107,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerConventions__ctor.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerConventions.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner/MigrationConventions.cs/#L44">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationConventions.cs/#L44">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerConventions__ctor_" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_MigrationRunnerConventions__ctor" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.#ctor">MigrationRunnerConventions()</h4>
@@ -148,7 +124,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerConventions_GetMaintenanceStage.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerConventions.GetMaintenanceStage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner/MigrationConventions.cs/#L33">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationConventions.cs/#L33">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerConventions_GetMaintenanceStage_" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.GetMaintenanceStage*"></a>
   <h4 id="FluentMigrator_Runner_MigrationRunnerConventions_GetMaintenanceStage" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.GetMaintenanceStage">GetMaintenanceStage</h4>
@@ -168,7 +144,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">MigrationStage</span>&gt;&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">MigrationStage</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -178,7 +154,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerConventions_GetMigrationInfo.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerConventions.GetMigrationInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner/MigrationConventions.cs/#L36">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationConventions.cs/#L36">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerConventions_GetMigrationInfo_" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.GetMigrationInfo*"></a>
   <h4 id="FluentMigrator_Runner_MigrationRunnerConventions_GetMigrationInfo" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.GetMigrationInfo">GetMigrationInfo</h4>
@@ -186,8 +162,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -199,7 +174,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>, <span class="xref">IMigrationInfo</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <span class="xref">IMigrationInfo</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -209,7 +184,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerConventions_GetMigrationInfoForMigration.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerConventions.GetMigrationInfoForMigration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner/MigrationConventions.cs/#L40">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationConventions.cs/#L40">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerConventions_GetMigrationInfoForMigration_" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.GetMigrationInfoForMigration*"></a>
   <h4 id="FluentMigrator_Runner_MigrationRunnerConventions_GetMigrationInfoForMigration" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.GetMigrationInfoForMigration">GetMigrationInfoForMigration</h4>
@@ -229,7 +204,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span class="xref">IMigration</span>, <span class="xref">IMigrationInfo</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">IMigration</span>, <span class="xref">IMigrationInfo</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -239,7 +214,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerConventions_TypeHasMatchingTags.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerConventions.TypeHasMatchingTags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner/MigrationConventions.cs/#L42">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationConventions.cs/#L42">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerConventions_TypeHasMatchingTags_" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.TypeHasMatchingTags*"></a>
   <h4 id="FluentMigrator_Runner_MigrationRunnerConventions_TypeHasMatchingTags" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.TypeHasMatchingTags">TypeHasMatchingTags</h4>
@@ -259,7 +234,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -269,7 +244,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerConventions_TypeHasTags.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerConventions.TypeHasTags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner/MigrationConventions.cs/#L41">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationConventions.cs/#L41">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerConventions_TypeHasTags_" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.TypeHasTags*"></a>
   <h4 id="FluentMigrator_Runner_MigrationRunnerConventions_TypeHasTags" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.TypeHasTags">TypeHasTags</h4>
@@ -289,7 +264,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -299,7 +274,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerConventions_TypeIsMigration.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerConventions.TypeIsMigration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner/MigrationConventions.cs/#L31">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationConventions.cs/#L31">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerConventions_TypeIsMigration_" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.TypeIsMigration*"></a>
   <h4 id="FluentMigrator_Runner_MigrationRunnerConventions_TypeIsMigration" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.TypeIsMigration">TypeIsMigration</h4>
@@ -319,7 +294,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -329,7 +304,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerConventions_TypeIsProfile.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerConventions.TypeIsProfile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner/MigrationConventions.cs/#L32">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationConventions.cs/#L32">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerConventions_TypeIsProfile_" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.TypeIsProfile*"></a>
   <h4 id="FluentMigrator_Runner_MigrationRunnerConventions_TypeIsProfile" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.TypeIsProfile">TypeIsProfile</h4>
@@ -349,7 +324,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -359,7 +334,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerConventions_TypeIsVersionTableMetaData.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerConventions.TypeIsVersionTableMetaData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner/MigrationConventions.cs/#L34">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationConventions.cs/#L34">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerConventions_TypeIsVersionTableMetaData_" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.TypeIsVersionTableMetaData*"></a>
   <h4 id="FluentMigrator_Runner_MigrationRunnerConventions_TypeIsVersionTableMetaData" data-uid="FluentMigrator.Runner.MigrationRunnerConventions.TypeIsVersionTableMetaData">TypeIsVersionTableMetaData</h4>
@@ -379,7 +354,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -399,7 +374,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerConventions.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerConventions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner/MigrationConventions.cs/#L27" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationConventions.cs/#L27" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

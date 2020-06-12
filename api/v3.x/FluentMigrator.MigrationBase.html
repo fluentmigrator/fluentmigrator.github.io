@@ -101,35 +101,11 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.IMigration.html">IMigration</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.html">FluentMigrator</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.dll</h6>
   <h5 id="FluentMigrator_MigrationBase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class MigrationBase : IMigration</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class MigrationBase : object, IMigration</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -138,7 +114,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_Alter.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.Alter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L110">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L110">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_Alter_" data-uid="FluentMigrator.MigrationBase.Alter*"></a>
   <h4 id="FluentMigrator_MigrationBase_Alter" data-uid="FluentMigrator.MigrationBase.Alter">Alter</h4>
@@ -169,12 +145,11 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_ApplicationContext.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.ApplicationContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L47">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L47">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_ApplicationContext_" data-uid="FluentMigrator.MigrationBase.ApplicationContext*"></a>
   <h4 id="FluentMigrator_MigrationBase_ApplicationContext" data-uid="FluentMigrator.MigrationBase.ApplicationContext">ApplicationContext</h4>
-  <div class="markdown level1 summary"><p>Gets the arbitrary application context passed to the task runner</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -200,7 +175,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_ConnectionString.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.ConnectionString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L50">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L50">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_ConnectionString_" data-uid="FluentMigrator.MigrationBase.ConnectionString*"></a>
   <h4 id="FluentMigrator_MigrationBase_ConnectionString" data-uid="FluentMigrator.MigrationBase.ConnectionString">ConnectionString</h4>
@@ -231,7 +206,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_Create.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.Create%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L118">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L118">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_Create_" data-uid="FluentMigrator.MigrationBase.Create*"></a>
   <h4 id="FluentMigrator_MigrationBase_Create" data-uid="FluentMigrator.MigrationBase.Create">Create</h4>
@@ -262,7 +237,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_Insert.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.Insert%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L134">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L134">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_Insert_" data-uid="FluentMigrator.MigrationBase.Insert*"></a>
   <h4 id="FluentMigrator_MigrationBase_Insert" data-uid="FluentMigrator.MigrationBase.Insert">Insert</h4>
@@ -293,7 +268,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_Rename.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.Rename%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L126">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L126">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_Rename_" data-uid="FluentMigrator.MigrationBase.Rename*"></a>
   <h4 id="FluentMigrator_MigrationBase_Rename" data-uid="FluentMigrator.MigrationBase.Rename">Rename</h4>
@@ -324,7 +299,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_Schema.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.Schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L142">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L142">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_Schema_" data-uid="FluentMigrator.MigrationBase.Schema*"></a>
   <h4 id="FluentMigrator_MigrationBase_Schema" data-uid="FluentMigrator.MigrationBase.Schema">Schema</h4>
@@ -357,7 +332,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_Down.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.Down%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L67">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L67">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_Down_" data-uid="FluentMigrator.MigrationBase.Down*"></a>
   <h4 id="FluentMigrator_MigrationBase_Down" data-uid="FluentMigrator.MigrationBase.Down">Down()</h4>
@@ -373,7 +348,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_GetDownExpressions_FluentMigrator_Infrastructure_IMigrationContext_.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.GetDownExpressions(FluentMigrator.Infrastructure.IMigrationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L89">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L89">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_GetDownExpressions_" data-uid="FluentMigrator.MigrationBase.GetDownExpressions*"></a>
   <h4 id="FluentMigrator_MigrationBase_GetDownExpressions_FluentMigrator_Infrastructure_IMigrationContext_" data-uid="FluentMigrator.MigrationBase.GetDownExpressions(FluentMigrator.Infrastructure.IMigrationContext)">GetDownExpressions(IMigrationContext)</h4>
@@ -407,7 +382,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_GetUpExpressions_FluentMigrator_Infrastructure_IMigrationContext_.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.GetUpExpressions(FluentMigrator.Infrastructure.IMigrationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L70">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L70">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_GetUpExpressions_" data-uid="FluentMigrator.MigrationBase.GetUpExpressions*"></a>
   <h4 id="FluentMigrator_MigrationBase_GetUpExpressions_FluentMigrator_Infrastructure_IMigrationContext_" data-uid="FluentMigrator.MigrationBase.GetUpExpressions(FluentMigrator.Infrastructure.IMigrationContext)">GetUpExpressions(IMigrationContext)</h4>
@@ -438,13 +413,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_IfDatabase_System_Predicate_System_String__.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.IfDatabase(System.Predicate%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_IfDatabase_Predicate_System_String__.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.IfDatabase(Predicate%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L162">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L162">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_IfDatabase_" data-uid="FluentMigrator.MigrationBase.IfDatabase*"></a>
-  <h4 id="FluentMigrator_MigrationBase_IfDatabase_System_Predicate_System_String__" data-uid="FluentMigrator.MigrationBase.IfDatabase(System.Predicate{System.String})">IfDatabase(Predicate&lt;String&gt;)</h4>
+  <h4 id="FluentMigrator_MigrationBase_IfDatabase_Predicate_System_String__" data-uid="FluentMigrator.MigrationBase.IfDatabase(Predicate{System.String})">IfDatabase(Predicate&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>Gets the starting point for database specific expressions</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -463,7 +438,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="xref">Predicate</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">databaseTypeFunc</span></td>
         <td><p>The lambda that tests if the expression can be applied to the current database</p>
 </td>
@@ -491,7 +466,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_IfDatabase_System_String___.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.IfDatabase(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L152">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L152">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_IfDatabase_" data-uid="FluentMigrator.MigrationBase.IfDatabase*"></a>
   <h4 id="FluentMigrator_MigrationBase_IfDatabase_System_String___" data-uid="FluentMigrator.MigrationBase.IfDatabase(System.String[])">IfDatabase(String[])</h4>
@@ -541,7 +516,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase_Up.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase.Up%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L62">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L62">View Source</a>
   </span>
   <a id="FluentMigrator_MigrationBase_Up_" data-uid="FluentMigrator.MigrationBase.Up*"></a>
   <h4 id="FluentMigrator_MigrationBase_Up" data-uid="FluentMigrator.MigrationBase.Up">Up()</h4>
@@ -567,7 +542,7 @@
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_MigrationBase.md&amp;value=---%0Auid%3A%20FluentMigrator.MigrationBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator/MigrationBase.cs/#L34" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator/MigrationBase.cs/#L34" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

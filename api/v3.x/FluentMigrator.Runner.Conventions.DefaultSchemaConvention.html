@@ -98,35 +98,11 @@
     <div><a class="xref" href="FluentMigrator.Runner.Conventions.IIndexConvention.html">IIndexConvention</a></div>
     <div><a class="xref" href="FluentMigrator.Runner.Conventions.ISequenceConvention.html">ISequenceConvention</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Conventions.html">FluentMigrator.Runner.Conventions</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
   <h5 id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DefaultSchemaConvention : IForeignKeyConvention, IConstraintConvention, IIndexConvention, ISequenceConvention</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DefaultSchemaConvention : object, IForeignKeyConvention, IConstraintConvention, IIndexConvention, ISequenceConvention</code></pre>
   </div>
   <h5 id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>This class handles all <a class="xref" href="FluentMigrator.Expressions.ISchemaExpression.html">ISchemaExpression</a> and additionally
@@ -140,7 +116,7 @@ implements other conventions that give access to schema names (e.g.
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Conventions_DefaultSchemaConvention__ctor.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Conventions.DefaultSchemaConvention.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L36">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L36">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention__ctor_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention__ctor" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.#ctor">DefaultSchemaConvention()</h4>
@@ -156,7 +132,7 @@ implements other conventions that give access to schema names (e.g.
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Conventions_DefaultSchemaConvention__ctor_FluentMigrator_Runner_Conventions_IDefaultSchemaNameConvention_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Conventions.DefaultSchemaConvention.%23ctor(FluentMigrator.Runner.Conventions.IDefaultSchemaNameConvention)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L55">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L55">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention__ctor_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention__ctor_FluentMigrator_Runner_Conventions_IDefaultSchemaNameConvention_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.#ctor(FluentMigrator.Runner.Conventions.IDefaultSchemaNameConvention)">DefaultSchemaConvention(IDefaultSchemaNameConvention)</h4>
@@ -191,7 +167,7 @@ return the default schema name for a given original schema name.</p>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Conventions_DefaultSchemaConvention__ctor_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Conventions.DefaultSchemaConvention.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L45">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L45">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention__ctor_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention__ctor_System_String_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.#ctor(System.String)">DefaultSchemaConvention(String)</h4>
@@ -227,7 +203,7 @@ return the default schema name for a given original schema name.</p>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_FluentMigrator_Expressions_IConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply(FluentMigrator.Expressions.IConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L93">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L93">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply*"></a>
   <h4 id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_FluentMigrator_Expressions_IConstraintExpression_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply(FluentMigrator.Expressions.IConstraintExpression)">Apply(IConstraintExpression)</h4>
@@ -277,7 +253,7 @@ return the default schema name for a given original schema name.</p>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_FluentMigrator_Expressions_IForeignKeyExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply(FluentMigrator.Expressions.IForeignKeyExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L85">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L85">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply*"></a>
   <h4 id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_FluentMigrator_Expressions_IForeignKeyExpression_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply(FluentMigrator.Expressions.IForeignKeyExpression)">Apply(IForeignKeyExpression)</h4>
@@ -327,7 +303,7 @@ return the default schema name for a given original schema name.</p>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_FluentMigrator_Expressions_IIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply(FluentMigrator.Expressions.IIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L100">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L100">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply*"></a>
   <h4 id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_FluentMigrator_Expressions_IIndexExpression_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply(FluentMigrator.Expressions.IIndexExpression)">Apply(IIndexExpression)</h4>
@@ -377,7 +353,7 @@ return the default schema name for a given original schema name.</p>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_FluentMigrator_Expressions_ISchemaExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply(FluentMigrator.Expressions.ISchemaExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L78">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L78">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply*"></a>
   <h4 id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_FluentMigrator_Expressions_ISchemaExpression_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply(FluentMigrator.Expressions.ISchemaExpression)">Apply(ISchemaExpression)</h4>
@@ -427,7 +403,7 @@ return the default schema name for a given original schema name.</p>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_FluentMigrator_Expressions_ISequenceExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply(FluentMigrator.Expressions.ISequenceExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L107">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L107">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply*"></a>
   <h4 id="FluentMigrator_Runner_Conventions_DefaultSchemaConvention_Apply_FluentMigrator_Expressions_ISequenceExpression_" data-uid="FluentMigrator.Runner.Conventions.DefaultSchemaConvention.Apply(FluentMigrator.Expressions.ISequenceExpression)">Apply(ISequenceExpression)</h4>
@@ -496,7 +472,7 @@ return the default schema name for a given original schema name.</p>
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Conventions_DefaultSchemaConvention.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Conventions.DefaultSchemaConvention%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Conventions/DefaultSchemaConvention.cs/#L29" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

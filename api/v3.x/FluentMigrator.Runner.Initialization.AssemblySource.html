@@ -95,47 +95,57 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.Initialization.IAssemblySource.html">IAssemblySource</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Initialization.html">FluentMigrator.Runner.Initialization</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
   <h5 id="FluentMigrator_Runner_Initialization_AssemblySource_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AssemblySource : IAssemblySource</code></pre>
+    <pre><code class="lang-csharp hljs">public class AssemblySource : object, IAssemblySource</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_AssemblySource__ctor_IOptions_FluentMigrator_Runner_Initialization_AssemblySourceOptions__System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Initialization_IAssemblyLoadEngine__System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Initialization_IAssemblySourceItem__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.AssemblySource.%23ctor(IOptions%7BFluentMigrator.Runner.Initialization.AssemblySourceOptions%7D%2CSystem.Collections.Generic.IEnumerable%7BFluentMigrator.Runner.Initialization.IAssemblyLoadEngine%7D%2CSystem.Collections.Generic.IEnumerable%7BFluentMigrator.Runner.Initialization.IAssemblySourceItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_AssemblySource__ctor_Func_FluentMigrator_Infrastructure_IAssemblyCollection__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.AssemblySource.%23ctor(Func%7BFluentMigrator.Infrastructure.IAssemblyCollection%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/AssemblySource.cs/#L42">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/AssemblySource.cs/#L53">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_AssemblySource__ctor_" data-uid="FluentMigrator.Runner.Initialization.AssemblySource.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Initialization_AssemblySource__ctor_IOptions_FluentMigrator_Runner_Initialization_AssemblySourceOptions__System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Initialization_IAssemblyLoadEngine__System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Initialization_IAssemblySourceItem__" data-uid="FluentMigrator.Runner.Initialization.AssemblySource.#ctor(IOptions{FluentMigrator.Runner.Initialization.AssemblySourceOptions},System.Collections.Generic.IEnumerable{FluentMigrator.Runner.Initialization.IAssemblyLoadEngine},System.Collections.Generic.IEnumerable{FluentMigrator.Runner.Initialization.IAssemblySourceItem})">AssemblySource(IOptions&lt;AssemblySourceOptions&gt;, IEnumerable&lt;IAssemblyLoadEngine&gt;, IEnumerable&lt;IAssemblySourceItem&gt;)</h4>
+  <h4 id="FluentMigrator_Runner_Initialization_AssemblySource__ctor_Func_FluentMigrator_Infrastructure_IAssemblyCollection__" data-uid="FluentMigrator.Runner.Initialization.AssemblySource.#ctor(Func{FluentMigrator.Infrastructure.IAssemblyCollection})">AssemblySource(Func&lt;IAssemblyCollection&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.Initialization.AssemblySource.html">AssemblySource</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssemblySource(Func&lt;IAssemblyCollection&gt; assemblyCollectionFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="FluentMigrator.Infrastructure.IAssemblyCollection.html">IAssemblyCollection</a>&gt;</td>
+        <td><span class="parametername">assemblyCollectionFunc</span></td>
+        <td><p>Function to get the assembly collection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_AssemblySource__ctor_IOptions_FluentMigrator_Runner_Initialization_AssemblySourceOptions__IEnumerable_FluentMigrator_Runner_Initialization_IAssemblyLoadEngine__IEnumerable_FluentMigrator_Runner_Initialization_IAssemblySourceItem__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.AssemblySource.%23ctor(IOptions%7BFluentMigrator.Runner.Initialization.AssemblySourceOptions%7D%2CIEnumerable%7BFluentMigrator.Runner.Initialization.IAssemblyLoadEngine%7D%2CIEnumerable%7BFluentMigrator.Runner.Initialization.IAssemblySourceItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/AssemblySource.cs/#L42">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Initialization_AssemblySource__ctor_" data-uid="FluentMigrator.Runner.Initialization.AssemblySource.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Initialization_AssemblySource__ctor_IOptions_FluentMigrator_Runner_Initialization_AssemblySourceOptions__IEnumerable_FluentMigrator_Runner_Initialization_IAssemblyLoadEngine__IEnumerable_FluentMigrator_Runner_Initialization_IAssemblySourceItem__" data-uid="FluentMigrator.Runner.Initialization.AssemblySource.#ctor(IOptions{FluentMigrator.Runner.Initialization.AssemblySourceOptions},IEnumerable{FluentMigrator.Runner.Initialization.IAssemblyLoadEngine},IEnumerable{FluentMigrator.Runner.Initialization.IAssemblySourceItem})">AssemblySource(IOptions&lt;AssemblySourceOptions&gt;, IEnumerable&lt;IAssemblyLoadEngine&gt;, IEnumerable&lt;IAssemblySourceItem&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.Initialization.AssemblySource.html">AssemblySource</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -160,50 +170,15 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Runner.Initialization.IAssemblyLoadEngine.html">IAssemblyLoadEngine</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FluentMigrator.Runner.Initialization.IAssemblyLoadEngine.html">IAssemblyLoadEngine</a>&gt;</td>
         <td><span class="parametername">loadEngines</span></td>
         <td><p>The assembly load engines</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Runner.Initialization.IAssemblySourceItem.html">IAssemblySourceItem</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FluentMigrator.Runner.Initialization.IAssemblySourceItem.html">IAssemblySourceItem</a>&gt;</td>
         <td><span class="parametername">sourceItems</span></td>
         <td><p>The additional source items</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_AssemblySource__ctor_System_Func_FluentMigrator_Infrastructure_IAssemblyCollection__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.AssemblySource.%23ctor(System.Func%7BFluentMigrator.Infrastructure.IAssemblyCollection%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/AssemblySource.cs/#L53">View Source</a>
-  </span>
-  <a id="FluentMigrator_Runner_Initialization_AssemblySource__ctor_" data-uid="FluentMigrator.Runner.Initialization.AssemblySource.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Initialization_AssemblySource__ctor_System_Func_FluentMigrator_Infrastructure_IAssemblyCollection__" data-uid="FluentMigrator.Runner.Initialization.AssemblySource.#ctor(System.Func{FluentMigrator.Infrastructure.IAssemblyCollection})">AssemblySource(Func&lt;IAssemblyCollection&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.Initialization.AssemblySource.html">AssemblySource</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public AssemblySource(Func&lt;IAssemblyCollection&gt; assemblyCollectionFunc)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="FluentMigrator.Infrastructure.IAssemblyCollection.html">IAssemblyCollection</a>&gt;</td>
-        <td><span class="parametername">assemblyCollectionFunc</span></td>
-        <td><p>Function to get the assembly collection</p>
 </td>
       </tr>
     </tbody>
@@ -215,7 +190,7 @@ public AssemblySource(Func&lt;IAssemblyCollection&gt; assemblyCollectionFunc)</c
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_AssemblySource_Assemblies.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.AssemblySource.Assemblies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/AssemblySource.cs/#L60">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/AssemblySource.cs/#L60">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_AssemblySource_Assemblies_" data-uid="FluentMigrator.Runner.Initialization.AssemblySource.Assemblies*"></a>
   <h4 id="FluentMigrator_Runner_Initialization_AssemblySource_Assemblies" data-uid="FluentMigrator.Runner.Initialization.AssemblySource.Assemblies">Assemblies</h4>
@@ -236,7 +211,7 @@ public AssemblySource(Func&lt;IAssemblyCollection&gt; assemblyCollectionFunc)</c
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>&gt;</td>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<span class="xref">Assembly</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -256,7 +231,7 @@ public AssemblySource(Func&lt;IAssemblyCollection&gt; assemblyCollectionFunc)</c
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_AssemblySource.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.AssemblySource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/AssemblySource.cs/#L32" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/AssemblySource.cs/#L32" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

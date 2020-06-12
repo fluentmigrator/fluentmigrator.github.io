@@ -266,6 +266,27 @@
     <div>
       <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Dispose">ProcessorBase.Dispose()</a>
     </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Processors.html">FluentMigrator.Runner.Processors</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
@@ -277,18 +298,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase__ctor_Func_DbProviderFactory__FluentMigrator_IMigrationGenerator_ILogger_FluentMigrator_Runner_Processors_ProcessorOptions_FluentMigrator_Runner_Initialization_IConnectionStringAccessor_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.%23ctor(Func%7BDbProviderFactory%7D%2CFluentMigrator.IMigrationGenerator%2CILogger%2CFluentMigrator.Runner.Processors.ProcessorOptions%2CFluentMigrator.Runner.Initialization.IConnectionStringAccessor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase__ctor_System_Data_IDbConnection_FluentMigrator_Runner_Processors_IDbFactory_FluentMigrator_IMigrationGenerator_FluentMigrator_Runner_IAnnouncer_FluentMigrator_IMigrationProcessorOptions_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.%23ctor(System.Data.IDbConnection%2CFluentMigrator.Runner.Processors.IDbFactory%2CFluentMigrator.IMigrationGenerator%2CFluentMigrator.Runner.IAnnouncer%2CFluentMigrator.IMigrationProcessorOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L72">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L48">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase__ctor_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase__ctor_Func_DbProviderFactory__FluentMigrator_IMigrationGenerator_ILogger_FluentMigrator_Runner_Processors_ProcessorOptions_FluentMigrator_Runner_Initialization_IConnectionStringAccessor_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.#ctor(Func{DbProviderFactory},FluentMigrator.IMigrationGenerator,ILogger,FluentMigrator.Runner.Processors.ProcessorOptions,FluentMigrator.Runner.Initialization.IConnectionStringAccessor)">GenericProcessorBase(Func&lt;DbProviderFactory&gt;, IMigrationGenerator, ILogger, ProcessorOptions, IConnectionStringAccessor)</h4>
+  <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase__ctor_System_Data_IDbConnection_FluentMigrator_Runner_Processors_IDbFactory_FluentMigrator_IMigrationGenerator_FluentMigrator_Runner_IAnnouncer_FluentMigrator_IMigrationProcessorOptions_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.#ctor(System.Data.IDbConnection,FluentMigrator.Runner.Processors.IDbFactory,FluentMigrator.IMigrationGenerator,FluentMigrator.Runner.IAnnouncer,FluentMigrator.IMigrationProcessorOptions)">GenericProcessorBase(IDbConnection, IDbFactory, IMigrationGenerator, IAnnouncer, IMigrationProcessorOptions)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected GenericProcessorBase(Func&lt;DbProviderFactory&gt; factoryAccessor, IMigrationGenerator generator, ILogger logger, ProcessorOptions options, IConnectionStringAccessor connectionStringAccessor)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+protected GenericProcessorBase(IDbConnection connection, IDbFactory factory, IMigrationGenerator generator, IAnnouncer announcer, IMigrationProcessorOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -301,59 +323,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">DbProviderFactory</span>&gt;</td>
-        <td><span class="parametername">factoryAccessor</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a></td>
-        <td><span class="parametername">generator</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">ILogger</span></td>
-        <td><span class="parametername">logger</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorOptions.html">ProcessorOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IConnectionStringAccessor.html">IConnectionStringAccessor</a></td>
-        <td><span class="parametername">connectionStringAccessor</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase__ctor_IDbConnection_FluentMigrator_Runner_Processors_IDbFactory_FluentMigrator_IMigrationGenerator_FluentMigrator_Runner_IAnnouncer_FluentMigrator_IMigrationProcessorOptions_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.%23ctor(IDbConnection%2CFluentMigrator.Runner.Processors.IDbFactory%2CFluentMigrator.IMigrationGenerator%2CFluentMigrator.Runner.IAnnouncer%2CFluentMigrator.IMigrationProcessorOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L48">View Source</a>
-  </span>
-  <a id="FluentMigrator_Runner_Processors_GenericProcessorBase__ctor_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase__ctor_IDbConnection_FluentMigrator_Runner_Processors_IDbFactory_FluentMigrator_IMigrationGenerator_FluentMigrator_Runner_IAnnouncer_FluentMigrator_IMigrationProcessorOptions_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.#ctor(IDbConnection,FluentMigrator.Runner.Processors.IDbFactory,FluentMigrator.IMigrationGenerator,FluentMigrator.Runner.IAnnouncer,FluentMigrator.IMigrationProcessorOptions)">GenericProcessorBase(IDbConnection, IDbFactory, IMigrationGenerator, IAnnouncer, IMigrationProcessorOptions)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected GenericProcessorBase(IDbConnection connection, IDbFactory factory, IMigrationGenerator generator, IAnnouncer announcer, IMigrationProcessorOptions options)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IDbConnection</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.idbconnection">IDbConnection</a></td>
         <td><span class="parametername">connection</span></td>
         <td></td>
       </tr>
@@ -379,6 +349,58 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase__ctor_System_Func_System_Data_Common_DbProviderFactory__FluentMigrator_IMigrationGenerator_ILogger_FluentMigrator_Runner_Processors_ProcessorOptions_FluentMigrator_Runner_Initialization_IConnectionStringAccessor_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.%23ctor(System.Func%7BSystem.Data.Common.DbProviderFactory%7D%2CFluentMigrator.IMigrationGenerator%2CILogger%2CFluentMigrator.Runner.Processors.ProcessorOptions%2CFluentMigrator.Runner.Initialization.IConnectionStringAccessor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L72">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Processors_GenericProcessorBase__ctor_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase__ctor_System_Func_System_Data_Common_DbProviderFactory__FluentMigrator_IMigrationGenerator_ILogger_FluentMigrator_Runner_Processors_ProcessorOptions_FluentMigrator_Runner_Initialization_IConnectionStringAccessor_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.#ctor(System.Func{System.Data.Common.DbProviderFactory},FluentMigrator.IMigrationGenerator,ILogger,FluentMigrator.Runner.Processors.ProcessorOptions,FluentMigrator.Runner.Initialization.IConnectionStringAccessor)">GenericProcessorBase(Func&lt;DbProviderFactory&gt;, IMigrationGenerator, ILogger, ProcessorOptions, IConnectionStringAccessor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GenericProcessorBase(Func&lt;DbProviderFactory&gt; factoryAccessor, IMigrationGenerator generator, ILogger logger, ProcessorOptions options, IConnectionStringAccessor connectionStringAccessor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.common.dbproviderfactory">DbProviderFactory</a>&gt;</td>
+        <td><span class="parametername">factoryAccessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorOptions.html">ProcessorOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IConnectionStringAccessor.html">IConnectionStringAccessor</a></td>
+        <td><span class="parametername">connectionStringAccessor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -386,7 +408,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_Connection.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.Connection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L110">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L110">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_Connection_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.Connection*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_Connection" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.Connection">Connection</h4>
@@ -406,7 +428,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDbConnection</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.idbconnection">IDbConnection</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -416,7 +438,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_ConnectionString.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.ConnectionString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L107">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L107">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_ConnectionString_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.ConnectionString*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_ConnectionString" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.ConnectionString">ConnectionString</h4>
@@ -424,7 +446,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ConnectionString { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Will change from public to protected&quot;)]
+public override string ConnectionString { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -448,7 +471,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_DbProviderFactory.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.DbProviderFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L123">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L123">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_DbProviderFactory_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.DbProviderFactory*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_DbProviderFactory" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.DbProviderFactory">DbProviderFactory</h4>
@@ -468,7 +491,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DbProviderFactory</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.common.dbproviderfactory">DbProviderFactory</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -478,7 +501,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_Factory.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.Factory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L116">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L116">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_Factory_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.Factory*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_Factory" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.Factory">Factory</h4>
@@ -486,7 +509,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IDbFactory Factory { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public IDbFactory Factory { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -508,7 +532,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_Transaction.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.Transaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L120">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L120">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_Transaction_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.Transaction*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_Transaction" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.Transaction">Transaction</h4>
@@ -528,7 +552,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDbTransaction</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.idbtransaction">IDbTransaction</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -540,7 +564,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_BeginTransaction.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.BeginTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L142">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L142">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_BeginTransaction_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.BeginTransaction*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_BeginTransaction" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.BeginTransaction">BeginTransaction()</h4>
@@ -557,7 +581,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_CommitTransaction.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.CommitTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L164">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L164">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_CommitTransaction_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.CommitTransaction*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_CommitTransaction" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.CommitTransaction">CommitTransaction()</h4>
@@ -574,7 +598,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_CreateCommand_System_String_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.CreateCommand(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L190">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L190">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_CreateCommand_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.CreateCommand*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_CreateCommand_System_String_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.CreateCommand(System.String)">CreateCommand(String)</h4>
@@ -611,20 +635,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDbCommand</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.idbcommand">IDbCommand</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_CreateCommand_System_String_IDbConnection_IDbTransaction_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.CreateCommand(System.String%2CIDbConnection%2CIDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_CreateCommand_System_String_System_Data_IDbConnection_System_Data_IDbTransaction_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.CreateCommand(System.String%2CSystem.Data.IDbConnection%2CSystem.Data.IDbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L195">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L195">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_CreateCommand_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.CreateCommand*"></a>
-  <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_CreateCommand_System_String_IDbConnection_IDbTransaction_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.CreateCommand(System.String,IDbConnection,IDbTransaction)">CreateCommand(String, IDbConnection, IDbTransaction)</h4>
+  <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_CreateCommand_System_String_System_Data_IDbConnection_System_Data_IDbTransaction_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.CreateCommand(System.String,System.Data.IDbConnection,System.Data.IDbTransaction)">CreateCommand(String, IDbConnection, IDbTransaction)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -647,12 +671,12 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IDbConnection</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.idbconnection">IDbConnection</a></td>
         <td><span class="parametername">connection</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IDbTransaction</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.idbtransaction">IDbTransaction</a></td>
         <td><span class="parametername">transaction</span></td>
         <td></td>
       </tr>
@@ -668,7 +692,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDbCommand</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.idbcommand">IDbCommand</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -678,7 +702,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L175">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L175">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_Dispose_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.Dispose*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_Dispose_System_Boolean_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.Dispose(System.Boolean)">Dispose(Boolean)</h4>
@@ -712,7 +736,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_EnsureConnectionIsClosed.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.EnsureConnectionIsClosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L134">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L134">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_EnsureConnectionIsClosed_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.EnsureConnectionIsClosed*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_EnsureConnectionIsClosed" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.EnsureConnectionIsClosed">EnsureConnectionIsClosed()</h4>
@@ -727,7 +751,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_EnsureConnectionIsOpen.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.EnsureConnectionIsOpen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L126">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L126">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_EnsureConnectionIsOpen_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.EnsureConnectionIsOpen*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_EnsureConnectionIsOpen" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.EnsureConnectionIsOpen">EnsureConnectionIsOpen()</h4>
@@ -742,7 +766,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase_RollbackTransaction.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase.RollbackTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L153">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L153">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_GenericProcessorBase_RollbackTransaction_" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.RollbackTransaction*"></a>
   <h4 id="FluentMigrator_Runner_Processors_GenericProcessorBase_RollbackTransaction" data-uid="FluentMigrator.Runner.Processors.GenericProcessorBase.RollbackTransaction">RollbackTransaction()</h4>
@@ -775,7 +799,7 @@
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_GenericProcessorBase.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.GenericProcessorBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L32" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Processors/GenericProcessorBase.cs/#L32" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

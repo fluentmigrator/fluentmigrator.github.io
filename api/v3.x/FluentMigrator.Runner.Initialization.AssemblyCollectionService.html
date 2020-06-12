@@ -95,11 +95,36 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Infrastructure.IAssemblyCollection.html">IAssemblyCollection</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Initialization.html">FluentMigrator.Runner.Initialization</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
   <h5 id="FluentMigrator_Runner_Initialization_AssemblyCollectionService_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AssemblyCollectionService : object, IAssemblyCollection</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Exists only to simplify the migration to the new FluentMigration version&quot;)]
+public class AssemblyCollectionService : IAssemblyCollection</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -108,7 +133,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_AssemblyCollectionService__ctor_FluentMigrator_Runner_Initialization_IAssemblySource_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.AssemblyCollectionService.%23ctor(FluentMigrator.Runner.Initialization.IAssemblySource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/AssemblyCollectionService.cs/#L43">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/AssemblyCollectionService.cs/#L43">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_AssemblyCollectionService__ctor_" data-uid="FluentMigrator.Runner.Initialization.AssemblyCollectionService.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Initialization_AssemblyCollectionService__ctor_FluentMigrator_Runner_Initialization_IAssemblySource_" data-uid="FluentMigrator.Runner.Initialization.AssemblyCollectionService.#ctor(FluentMigrator.Runner.Initialization.IAssemblySource)">AssemblyCollectionService(IAssemblySource)</h4>
@@ -144,11 +169,12 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_AssemblyCollectionService_Assemblies.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.AssemblyCollectionService.Assemblies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/AssemblyCollectionService.cs/#L52">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/AssemblyCollectionService.cs/#L52">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_AssemblyCollectionService_Assemblies_" data-uid="FluentMigrator.Runner.Initialization.AssemblyCollectionService.Assemblies*"></a>
   <h4 id="FluentMigrator_Runner_Initialization_AssemblyCollectionService_Assemblies" data-uid="FluentMigrator.Runner.Initialization.AssemblyCollectionService.Assemblies">Assemblies</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the Assemblies contained in this collection</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -164,7 +190,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Assembly</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -176,11 +202,13 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_AssemblyCollectionService_GetExportedTypes.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.AssemblyCollectionService.GetExportedTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/AssemblyCollectionService.cs/#L55">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/AssemblyCollectionService.cs/#L55">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_AssemblyCollectionService_GetExportedTypes_" data-uid="FluentMigrator.Runner.Initialization.AssemblyCollectionService.GetExportedTypes*"></a>
   <h4 id="FluentMigrator_Runner_Initialization_AssemblyCollectionService_GetExportedTypes" data-uid="FluentMigrator.Runner.Initialization.AssemblyCollectionService.GetExportedTypes">GetExportedTypes()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The result of this method is equivalent to calling GetExportedTypes
+on each Assembly in Assemblies.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -196,8 +224,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span>[]</td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>[]</td>
+        <td><p>The array of exported types</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -206,7 +235,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_AssemblyCollectionService_GetManifestResourceNames.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.AssemblyCollectionService.GetManifestResourceNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/AssemblyCollectionService.cs/#L58">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/AssemblyCollectionService.cs/#L58">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Initialization_AssemblyCollectionService_GetManifestResourceNames_" data-uid="FluentMigrator.Runner.Initialization.AssemblyCollectionService.GetManifestResourceNames*"></a>
   <h4 id="FluentMigrator_Runner_Initialization_AssemblyCollectionService_GetManifestResourceNames" data-uid="FluentMigrator.Runner.Initialization.AssemblyCollectionService.GetManifestResourceNames">GetManifestResourceNames()</h4>
@@ -249,7 +278,7 @@ contained in this collection, plus which assembly it is defined in.</p>
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Initialization_AssemblyCollectionService.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Initialization.AssemblyCollectionService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Initialization/AssemblyCollectionService.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Initialization/AssemblyCollectionService.cs/#L30" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

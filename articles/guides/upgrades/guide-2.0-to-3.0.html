@@ -393,7 +393,7 @@ services.AddSingleton&lt;IConventionSet&gt;(conventionSet)
 <h2 id="manifestresourcenamewithassembly-replaced-by-valuetuple"><code>ManifestResourceNameWithAssembly</code> replaced by <code>ValueTuple</code></h2>
 <p>This class was overkill.</p>
 <h2 id="migrationgeneratorfactory"><code>MigrationGeneratorFactory</code></h2>
-<p>This isn't needed anymore, because all factories must be added dynamically using the <a href="xref:Microsoft.Extensions.DependencyInjection.FluentMigratorServiceCollectionExtensions.ConfigureRunner(IServiceCollection,System.Action%7BFluentMigrator.Runner.IMigrationRunnerBuilder%7D)">ConfigureRunner</a> extension method.</p>
+<p>This isn't needed anymore, because all factories must be added dynamically using the <a class="xref" href="../../../api/v3.x/Microsoft.Extensions.DependencyInjection.FluentMigratorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_FluentMigratorServiceCollectionExtensions_ConfigureRunner_IServiceCollection_System_Action_FluentMigrator_Runner_IMigrationRunnerBuilder__">ConfigureRunner</a> extension method.</p>
 <p><a id="factory-example"></a>Example:</p>
 <pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
     // Registration of all FluentMigrator-specific services
@@ -446,7 +446,7 @@ one was specified, then an exception gets thrown.</p>
     .BuildServiceProvider();
 </code></pre>
 <h2 id="migrationprocessorfactoryprovider"><code>MigrationProcessorFactoryProvider</code></h2>
-<p>This isn't needed anymore, because all processor factory providers must be added dynamically using the <a href="xref:Microsoft.Extensions.DependencyInjection.FluentMigratorServiceCollectionExtensions.ConfigureRunner(IServiceCollection,System.Action%7BFluentMigrator.Runner.IMigrationRunnerBuilder%7D)">ConfigureRunner</a> extension method.</p>
+<p>This isn't needed anymore, because all processor factory providers must be added dynamically using the <a class="xref" href="../../../api/v3.x/Microsoft.Extensions.DependencyInjection.FluentMigratorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_FluentMigratorServiceCollectionExtensions_ConfigureRunner_IServiceCollection_System_Action_FluentMigrator_Runner_IMigrationRunnerBuilder__">ConfigureRunner</a> extension method.</p>
 <p>You can find an example <a href="#factory-example">above</a>.</p>
 <h3 id="selecting-the-database-1">Selecting the database</h3>
 <p>The key is the <a class="xref" href="../../../api/v3.x/FluentMigrator.Runner.Generators.IGeneratorAccessor.html">IGeneratorAccessor</a> service and its
@@ -484,7 +484,7 @@ one was specified, then an exception gets thrown.</p>
     .BuildServiceProvider();
 </code></pre>
 <h2 id="itypemapgettypemapdbtype-int-int"><code>ITypeMap.GetTypeMap(DbType, int, int)</code></h2>
-<p>Sometimes, it is possible that a given database type needs a precision of 0, so we cannot use 0 an indicator for an unspecified value anymore. Therefore, we provide an <a href="xref:FluentMigrator.Runner.Generators.ITypeMap.GetTypeMap(System.Data.DbType,System.Nullable%7BSystem.Int32%7D,System.Nullable%7BSystem.Int32%7D)">overload using nullable integer values</a>.</p>
+<p>Sometimes, it is possible that a given database type needs a precision of 0, so we cannot use 0 an indicator for an unspecified value anymore. Therefore, we provide an <a class="xref" href="../../../api/v3.x/FluentMigrator.Runner.Generators.ITypeMap.html#FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_System_Data_DbType_System_Nullable_System_Int32__System_Nullable_System_Int32__">overload using nullable integer values</a>.</p>
 <h2 id="idbfactory"><code>IDbFactory</code></h2>
 <p>The implementations will remain, but the interface will be gone.</p>
 <h2 id="icanbevalidated"><code>ICanBeValidated</code></h2>

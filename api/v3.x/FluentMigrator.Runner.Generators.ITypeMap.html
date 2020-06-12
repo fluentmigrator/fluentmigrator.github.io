@@ -83,7 +83,7 @@
   
   <h1 id="FluentMigrator_Runner_Generators_ITypeMap" data-uid="FluentMigrator.Runner.Generators.ITypeMap" class="text-break">Interface ITypeMap
   </h1>
-  <div class="markdown level0 summary"><p>A map of <see cref="!:DbType"></see> to an SQL type</p>
+  <div class="markdown level0 summary"><p>A map of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.dbtype">DbType</a> to an SQL type</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Generators.html">FluentMigrator.Runner.Generators</a></h6>
@@ -96,19 +96,20 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_DbType_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.ITypeMap.GetTypeMap(DbType%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_System_Data_DbType_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.ITypeMap.GetTypeMap(System.Data.DbType%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/ITypeMap.cs/#L20">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/ITypeMap.cs/#L20">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_" data-uid="FluentMigrator.Runner.Generators.ITypeMap.GetTypeMap*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_DbType_System_Int32_System_Int32_" data-uid="FluentMigrator.Runner.Generators.ITypeMap.GetTypeMap(DbType,System.Int32,System.Int32)">GetTypeMap(DbType, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Get the SQL type for a <see cref="!:DbType"></see></p>
+  <h4 id="FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_System_Data_DbType_System_Int32_System_Int32_" data-uid="FluentMigrator.Runner.Generators.ITypeMap.GetTypeMap(System.Data.DbType,System.Int32,System.Int32)">GetTypeMap(DbType, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get the SQL type for a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.dbtype">DbType</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string GetTypeMap(DbType type, int size, int precision)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+string GetTypeMap(DbType type, int size, int precision)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -121,9 +122,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DbType</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.dbtype">DbType</a></td>
         <td><span class="parametername">type</span></td>
-        <td><p>The <see cref="!:DbType"></see> to get the SQL type for</p>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.dbtype">DbType</a> to get the SQL type for</p>
 </td>
       </tr>
       <tr>
@@ -158,14 +159,14 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_DbType_System_Nullable_System_Int32__System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.ITypeMap.GetTypeMap(DbType%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_System_Data_DbType_System_Nullable_System_Int32__System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.ITypeMap.GetTypeMap(System.Data.DbType%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/ITypeMap.cs/#L31">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/ITypeMap.cs/#L31">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_" data-uid="FluentMigrator.Runner.Generators.ITypeMap.GetTypeMap*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_DbType_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="FluentMigrator.Runner.Generators.ITypeMap.GetTypeMap(DbType,System.Nullable{System.Int32},System.Nullable{System.Int32})">GetTypeMap(DbType, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"><p>Get the SQL type for a <see cref="!:DbType"></see></p>
+  <h4 id="FluentMigrator_Runner_Generators_ITypeMap_GetTypeMap_System_Data_DbType_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="FluentMigrator.Runner.Generators.ITypeMap.GetTypeMap(System.Data.DbType,System.Nullable{System.Int32},System.Nullable{System.Int32})">GetTypeMap(DbType, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Get the SQL type for a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.dbtype">DbType</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -183,9 +184,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DbType</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.dbtype">DbType</a></td>
         <td><span class="parametername">type</span></td>
-        <td><p>The <see cref="!:DbType"></see> to get the SQL type for</p>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.dbtype">DbType</a> to get the SQL type for</p>
 </td>
       </tr>
       <tr>
@@ -229,7 +230,7 @@
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_ITypeMap.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.ITypeMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Generators/ITypeMap.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/cdaf98552a71a3ce6b2d94431c98ac283efddc52/src/FluentMigrator.Runner.Core/Generators/ITypeMap.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

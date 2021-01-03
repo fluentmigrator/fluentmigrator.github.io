@@ -91,6 +91,8 @@
     <div class="level1"><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html">GeneratorBase</a></div>
     <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html">GenericGenerator</a></div>
     <div class="level3"><span class="xref">PostgresGenerator</span></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.Postgres10_0Generator.html">Postgres10_0Generator</a></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.Postgres11_0Generator.html">Postgres11_0Generator</a></div>
       <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.html">Postgres92Generator</a></div>
   </div>
   <div classs="implements">
@@ -104,24 +106,6 @@
     </div>
     <div>
       <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CompatibilityMode">GenericGenerator.CompatibilityMode</a>
-    </div>
-    <div>
-      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateTable">GenericGenerator.CreateTable</a>
-    </div>
-    <div>
-      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropTable">GenericGenerator.DropTable</a>
-    </div>
-    <div>
-      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AddColumn">GenericGenerator.AddColumn</a>
-    </div>
-    <div>
-      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropColumn">GenericGenerator.DropColumn</a>
-    </div>
-    <div>
-      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AlterColumn">GenericGenerator.AlterColumn</a>
-    </div>
-    <div>
-      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_RenameColumn">GenericGenerator.RenameColumn</a>
     </div>
     <div>
       <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_RenameTable">GenericGenerator.RenameTable</a>
@@ -272,10 +256,52 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.%23ctor(FluentMigrator.Runner.Generators.IColumn%2CFluentMigrator.Runner.Generators.Postgres.PostgresQuoter%2CIOptions%7BFluentMigrator.Runner.Generators.GeneratorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L59">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor(FluentMigrator.Runner.Generators.IColumn,FluentMigrator.Runner.Generators.Postgres.PostgresQuoter,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})">PostgresGenerator(IColumn, PostgresQuoter, IOptions&lt;GeneratorOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PostgresGenerator(IColumn column, PostgresQuoter quoter, IOptions&lt;GeneratorOptions&gt; generatorOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IColumn.html">IColumn</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html">PostgresQuoter</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FluentMigrator.Runner.Generators.GeneratorOptions.html">GeneratorOptions</a>&gt;</td>
+        <td><span class="parametername">generatorOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.%23ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L36">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L38">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter)">PostgresGenerator(PostgresQuoter)</h4>
@@ -307,7 +333,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.%23ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter%2CIOptions%7BFluentMigrator.Runner.Generators.GeneratorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L42">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L44">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})">PostgresGenerator(PostgresQuoter, IOptions&lt;GeneratorOptions&gt;)</h4>
@@ -344,7 +370,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__FluentMigrator_Runner_Generators_ITypeMap_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.%23ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter%2CIOptions%7BFluentMigrator.Runner.Generators.GeneratorOptions%7D%2CFluentMigrator.Runner.Generators.ITypeMap)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L49">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L51">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__FluentMigrator_Runner_Generators_ITypeMap_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions},FluentMigrator.Runner.Generators.ITypeMap)">PostgresGenerator(PostgresQuoter, IOptions&lt;GeneratorOptions&gt;, ITypeMap)</h4>
@@ -381,6 +407,200 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_AddColumn.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.AddColumn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L70">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_AddColumn_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.AddColumn*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_AddColumn" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.AddColumn">AddColumn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string AddColumn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AddColumn">GenericGenerator.AddColumn</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_AlterColumn.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.AlterColumn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L72">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_AlterColumn_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.AlterColumn*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_AlterColumn" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.AlterColumn">AlterColumn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string AlterColumn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AlterColumn">GenericGenerator.AlterColumn</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_CreateTable.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.CreateTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L67">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_CreateTable_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.CreateTable*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_CreateTable" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.CreateTable">CreateTable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string CreateTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateTable">GenericGenerator.CreateTable</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_DropColumn.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.DropColumn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L71">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_DropColumn_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.DropColumn*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_DropColumn" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.DropColumn">DropColumn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DropColumn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropColumn">GenericGenerator.DropColumn</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_DropTable.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.DropTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L68">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_DropTable_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.DropTable*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_DropTable" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.DropTable">DropTable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DropTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropTable">GenericGenerator.DropTable</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_RenameColumn.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.RenameColumn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L73">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_RenameColumn_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.RenameColumn*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_RenameColumn" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.RenameColumn">RenameColumn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string RenameColumn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_RenameColumn">GenericGenerator.RenameColumn</a></div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -388,7 +608,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_AlterColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(AlterColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L98">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L116">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_AlterColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(AlterColumnExpression)">Generate(AlterColumnExpression)</h4>
@@ -435,7 +655,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_AlterDefaultConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(AlterDefaultConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L247">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L326">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_AlterDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(AlterDefaultConstraintExpression)">Generate(AlterDefaultConstraintExpression)</h4>
@@ -482,7 +702,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_AlterSchemaExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(AlterSchemaExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L321">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L400">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_AlterSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(AlterSchemaExpression)">Generate(AlterSchemaExpression)</h4>
@@ -529,7 +749,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_AlterTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(AlterTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L57">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L75">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_AlterTableExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(AlterTableExpression)">Generate(AlterTableExpression)</h4>
@@ -576,7 +796,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L114">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L132">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateColumnExpression)">Generate(CreateColumnExpression)</h4>
@@ -623,7 +843,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L336">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L415">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateConstraintExpression)">Generate(CreateConstraintExpression)</h4>
@@ -670,7 +890,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateForeignKeyExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateForeignKeyExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L145">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L160">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateForeignKeyExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateForeignKeyExpression)">Generate(CreateForeignKeyExpression)</h4>
@@ -717,7 +937,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L170">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L244">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateIndexExpression)">Generate(CreateIndexExpression)</h4>
@@ -764,7 +984,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateSchemaExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateSchemaExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L69">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L87">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateSchemaExpression)">Generate(CreateSchemaExpression)</h4>
@@ -811,7 +1031,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateSequenceExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateSequenceExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L375">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L454">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateSequenceExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateSequenceExpression)">Generate(CreateSequenceExpression)</h4>
@@ -858,7 +1078,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L79">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L97">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_CreateTableExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(CreateTableExpression)">Generate(CreateTableExpression)</h4>
@@ -905,7 +1125,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L132">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L147">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteColumnExpression)">Generate(DeleteColumnExpression)</h4>
@@ -952,7 +1172,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L331">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L410">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteConstraintExpression)">Generate(DeleteConstraintExpression)</h4>
@@ -999,7 +1219,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteDataExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteDataExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L256">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L335">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteDataExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteDataExpression)">Generate(DeleteDataExpression)</h4>
@@ -1046,7 +1266,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteDefaultConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteDefaultConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L326">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L405">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteDefaultConstraintExpression)">Generate(DeleteDefaultConstraintExpression)</h4>
@@ -1093,7 +1313,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteForeignKeyExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteForeignKeyExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L163">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L178">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteForeignKeyExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteForeignKeyExpression)">Generate(DeleteForeignKeyExpression)</h4>
@@ -1140,7 +1360,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L205">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L284">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteIndexExpression)">Generate(DeleteIndexExpression)</h4>
@@ -1187,7 +1407,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteSchemaExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteSchemaExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L74">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L92">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteSchemaExpression)">Generate(DeleteSchemaExpression)</h4>
@@ -1234,7 +1454,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteSequenceExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteSequenceExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L380">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L502">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteSequenceExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteSequenceExpression)">Generate(DeleteSequenceExpression)</h4>
@@ -1278,57 +1498,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L127">View Source</a>
-  </span>
-  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_DeleteTableExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(DeleteTableExpression)">Generate(DeleteTableExpression)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string Generate(DeleteTableExpression expression)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DeleteTableExpression</span></td>
-        <td><span class="parametername">expression</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_InsertDataExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(InsertDataExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L227">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L306">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_InsertDataExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(InsertDataExpression)">Generate(InsertDataExpression)</h4>
@@ -1375,7 +1548,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_RenameColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(RenameColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L218">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L297">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_RenameColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(RenameColumnExpression)">Generate(RenameColumnExpression)</h4>
@@ -1422,7 +1595,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_RenameTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(RenameTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L213">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L292">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_RenameTableExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(RenameTableExpression)">Generate(RenameTableExpression)</h4>
@@ -1469,7 +1642,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_UpdateDataExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(UpdateDataExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L290">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L369">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_UpdateDataExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(UpdateDataExpression)">Generate(UpdateDataExpression)</h4>
@@ -1513,10 +1686,104 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAsConcurrently_CreateIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAsConcurrently(CreateIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L220">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAsConcurrently_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAsConcurrently*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAsConcurrently_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAsConcurrently(CreateIndexExpression)">GetAsConcurrently(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetAsConcurrently(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateIndexExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAsOnly_CreateIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAsOnly(CreateIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L232">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAsOnly_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAsOnly*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAsOnly_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAsOnly(CreateIndexExpression)">GetAsOnly(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetAsOnly(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateIndexExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetColumnList_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetColumnList(IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L355">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L434">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetColumnList_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetColumnList*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetColumnList_IEnumerable_System_String__" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetColumnList(IEnumerable{System.String})">GetColumnList(IEnumerable&lt;String&gt;)</h4>
@@ -1563,7 +1830,7 @@
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetDataList_List_System_Object__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetDataList(List%7BSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L365">View Source</a>
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L444">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetDataList_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetDataList*"></a>
   <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetDataList_List_System_Object__" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetDataList(List{System.Object})">GetDataList(List&lt;Object&gt;)</h4>
@@ -1605,6 +1872,147 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetFilter_CreateIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetFilter(CreateIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L209">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetFilter_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetFilter*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetFilter_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetFilter(CreateIndexExpression)">GetFilter(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetFilter(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateIndexExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetIncludeString_CreateIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetIncludeString(CreateIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L186">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetIncludeString_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetIncludeString*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetIncludeString_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetIncludeString(CreateIndexExpression)">GetIncludeString(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetIncludeString(CreateIndexExpression column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateIndexExpression</span></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetUsingAlgorithm_CreateIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetUsingAlgorithm(CreateIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L198">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetUsingAlgorithm_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetUsingAlgorithm*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetUsingAlgorithm_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetUsingAlgorithm(CreateIndexExpression)">GetUsingAlgorithm(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetUsingAlgorithm(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateIndexExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a>
@@ -1620,7 +2028,7 @@
                     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_Postgres_PostgresGenerator.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.Postgres.PostgresGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L34" class="contribution-link">View Source</a>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Postgres/Generators/Postgres/PostgresGenerator.cs/#L36" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -99,8 +99,13 @@
 </thead>
 <tbody>
 <tr>
+<td>Microsoft SQL Server 2019</td>
+<td>SqlServer2017<sup>(1)</sup></td>
+<td>SqlServer</td>
+</tr>
+<tr>
 <td>Microsoft SQL Server 2017</td>
-<td>SqlServer2016<sup>1)</sup></td>
+<td>SqlServer2016<sup>(2)</sup></td>
 <td>SqlServer</td>
 </tr>
 <tr>
@@ -134,9 +139,9 @@
 <td>SqlServer</td>
 </tr>
 <tr>
-<td>Microsoft SQL Server Compact Edition</td>
-<td>SqlServerCe</td>
-<td>SqlServer</td>
+<td><del>Microsoft SQL Server Compact Edition</del><sup>(3)</sup></td>
+<td><del>SqlServerCe</del></td>
+<td><del>SqlServer</del></td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -151,6 +156,11 @@
 <tr>
 <td>PostgreSQL 10.0</td>
 <td>PostgreSQL10_0</td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
+<td>PostgreSQL 11.0</td>
+<td>PostgreSQL11_0</td>
 <td>PostgreSQL</td>
 </tr>
 <tr>
@@ -204,9 +214,9 @@
 <td></td>
 </tr>
 <tr>
-<td>SAP SQL Anywhere</td>
-<td>SqlAnywhere16</td>
-<td>SqlAnywhere</td>
+<td><del>SAP SQL Anywhere</del><sup>(4)</sup></td>
+<td><del>SqlAnywhere16</del></td>
+<td><del>SqlAnywhere</del></td>
 </tr>
 <tr>
 <td>DB2</td>
@@ -221,7 +231,10 @@
 </tbody>
 </table>
 <ul>
-<li><sup>1)</sup> All integration tests ran without error against an SQL Server 2017 using the SqlServer2016 dialect.</li>
+<li><sup>(1)</sup> All integration tests ran without error against an SQL Server 2019 using the SqlServer2016 dialect.</li>
+<li><sup>(2)</sup> All integration tests ran without error against an SQL Server 2017 using the SqlServer2016 dialect.</li>
+<li><sup>(3)</sup> Support for Microsoft SQL Server Compact Edition is being dropped due to Microsoft end-of-life support date passing.</li>
+<li><sup>(4)</sup> Support for SAP SQL Anywhere is being dropped due to SAP not supporting a .NET Core / .NET 5 database driver.</li>
 </ul>
 <h2 id="how-can-i-run-migrations-safely-from-multiple-application-servers">How can I run migrations safely from multiple application servers?</h2>
 <p>Many server-side applications are load balanced and run multiple instances of the same application simultaneously from multiple web servers. In such a scenarios, if you choose to run migrations in-process (as opposed to an external migration runner), then there is an added risk of multiple processes trying to run migrations at the same time.</p>
@@ -303,6 +316,53 @@ public class DbMigrationUnlockAfter : Migration
 BEGIN
   DBMS_UTILITY.EXEC_DDL_STATEMENT('Create Index Member_AddrId On Member(AddrId)');
 END;&quot;);
+</code></pre>
+<h2 id="how-do-i-get-the-name-of-a-sql-server-database">How do I get the name of a SQL Server database?</h2>
+<p>Not all databases have a &quot;name&quot;. Writing migrations that use a name therefore cannot be truly database-agnostic. That said, the following will show an example of getting the name so that you can perform an <code>ALTER DATABASE</code> command.  Note that to <code>ALTER DATABASE [YourDatabaseName]</code>, you need to switch to the <code>[master]</code> database first via <code>USE [master]</code>.  Then, since FluentMigrator does not call <code>sp_reset_connection</code>, you need to switch back to the database being migrated.  If you do not, the ensuing migrations will be run in the wrong database!</p>
+<p>In the below example, we show how to enter a SQL Server database into single-user mode, in order to perform some maintenace tasks.</p>
+<p>Use dynamic SQL:</p>
+<pre><code class="lang-csharp">    public class EnterDatabaseSingleUserModeState : Migration
+    {
+        public override void Up()
+        {
+            /* Before you set the database to SINGLE_USER, verify that
+            the AUTO_UPDATE_STATISTICS_ASYNC option is set to OFF. When
+            this option is set to ON, the background thread that is
+            used to update statistics takes a connection against the
+            database, and you will be unable to access the database in
+            single-user mode. For more information, see
+            ALTER DATABASE SET Options (Transact-SQL). */
+            this.Execute.Sql(@&quot;
+              DECLARE @DbName sysname = DB_NAME();
+              DECLARE @SqlCommand NVARCHAR(MAX) = '
+USE [master];
+SET DEADLOCK_PRIORITY 10;
+DECLARE @AutoUpdateStatisticsAsync BIT = CAST(0 AS BIT);
+IF EXISTS (
+    SELECT NULL
+    FROM sys.databases WHERE name = @DbName AND is_auto_update_stats_async_on = CAST(1 AS BIT)
+)
+BEGIN
+    ALTER DATABASE [' + @DbName + '] 
+    SET AUTO_UPDATE_STATISTICS_ASYNC OFF;
+    SET @AutoUpdateStatisticsAsync = CAST(1 AS BIT);
+END;
+ALTER DATABASE [' + @DbName + ']' + ' SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+
+-- Here is where you put your administrative commands.
+
+IF (@AutoUpdateStatisticsAsync = 1)
+BEGIN
+    ALTER DATABASE [' + @DbName + '] 
+    SET AUTO_UPDATE_STATISTICS_ASYNC ON;
+END;
+';
+              
+              EXEC(@SqlCommand);
+              SET @SqlCommand NVARCHAR(MAX) = 'USE [' + @DbName + ']';
+              EXEC(@SqlCommand);
+            &quot;);
+    }
 </code></pre>
 </article>
           </div>

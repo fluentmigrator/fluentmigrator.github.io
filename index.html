@@ -74,9 +74,12 @@
 
 <p>Fluent Migrator is a migration framework for .NET much like Ruby on Rails Migrations. Migrations are a structured way to alter your database schema and are an alternative to creating lots of sql scripts that have to be run manually by every developer involved. Migrations solve the problem of evolving a database schema for multiple databases (for example, the developer's local database, the test database and the production database). Database schema changes are described in classes written in C# that can be checked into a version control system.</p>
 <h1 id="how-to-use-it">How to use it</h1>
-<ul>
-<li><a class="xref" href="articles/quickstart.html">Quickstart</a></li>
-</ul>
+<ol>
+<li>Database-agnostic migrations: <a class="xref" href="articles/quickstart.html">Quickstart</a></li>
+<li>Database-specific migrations:</li>
+<li><a href="xref:sql-server-quickstart.md">SQL Server Quickstart</a></li>
+<li><a href="xref:faq.md">Frequently Asked Questions</a></li>
+</ol>
 <h1 id="what-does-it-look-like">What does it look like?</h1>
 <p>This is an example of a database-agnostic migration:</p>
 <pre><code class="lang-cs" name="20180430121800_AddLogTable.cs" title="Your first migration">using FluentMigrator;
@@ -121,8 +124,13 @@ namespace test
 </thead>
 <tbody>
 <tr>
+<td>Microsoft SQL Server 2019</td>
+<td>SqlServer2017<sup>(1)</sup></td>
+<td>SqlServer</td>
+</tr>
+<tr>
 <td>Microsoft SQL Server 2017</td>
-<td>SqlServer2016<sup>1)</sup></td>
+<td>SqlServer2016<sup>(2)</sup></td>
 <td>SqlServer</td>
 </tr>
 <tr>
@@ -156,9 +164,9 @@ namespace test
 <td>SqlServer</td>
 </tr>
 <tr>
-<td>Microsoft SQL Server Compact Edition</td>
-<td>SqlServerCe</td>
-<td>SqlServer</td>
+<td><del>Microsoft SQL Server Compact Edition</del><sup>(3)</sup></td>
+<td><del>SqlServerCe</del></td>
+<td><del>SqlServer</del></td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -173,6 +181,11 @@ namespace test
 <tr>
 <td>PostgreSQL 10.0</td>
 <td>PostgreSQL10_0</td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
+<td>PostgreSQL 11.0</td>
+<td>PostgreSQL11_0</td>
 <td>PostgreSQL</td>
 </tr>
 <tr>
@@ -226,9 +239,9 @@ namespace test
 <td></td>
 </tr>
 <tr>
-<td>SAP SQL Anywhere</td>
-<td>SqlAnywhere16</td>
-<td>SqlAnywhere</td>
+<td><del>SAP SQL Anywhere</del><sup>(4)</sup></td>
+<td><del>SqlAnywhere16</del></td>
+<td><del>SqlAnywhere</del></td>
 </tr>
 <tr>
 <td>DB2</td>
@@ -243,7 +256,10 @@ namespace test
 </tbody>
 </table>
 <ul>
-<li><sup>1)</sup> All integration tests ran without error against an SQL Server 2017 using the SqlServer2016 dialect.</li>
+<li><sup>(1)</sup> All integration tests ran without error against an SQL Server 2019 using the SqlServer2016 dialect.</li>
+<li><sup>(2)</sup> All integration tests ran without error against an SQL Server 2017 using the SqlServer2016 dialect.</li>
+<li><sup>(3)</sup> Support for Microsoft SQL Server Compact Edition is being dropped due to Microsoft end-of-life support date passing.</li>
+<li><sup>(4)</sup> Support for SAP SQL Anywhere is being dropped due to SAP not supporting a .NET Core / .NET 5 database driver.</li>
 </ul>
 <h1 id="more-information-on-fluentmigrator">More Information on FluentMigrator</h1>
 <ul>

@@ -90,11 +90,15 @@
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">MigrationScopeHandler</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.Runner.IMigrationScopeManager.html">IMigrationScopeManager</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.html">FluentMigrator.Runner</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
   <h5 id="FluentMigrator_Runner_MigrationScopeHandler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MigrationScopeHandler : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class MigrationScopeHandler : object, IMigrationScopeManager</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -278,6 +282,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.IMigrationScopeManager.html">IMigrationScopeManager</a>
+  </div>
 </article>
           </div>
           

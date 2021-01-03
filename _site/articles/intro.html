@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Install from Nuget | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Install from Nuget | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="install-from-nuget">Install from Nuget</h1>
+
+<p>The project is split into multiple packages:</p>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FluentMigrator</td>
+<td>The base assembly needed to create migrations</td>
+</tr>
+<tr>
+<td>FluentMigrator.Runner</td>
+<td>The runner classes required for in-process execution of migrations</td>
+</tr>
+<tr>
+<td>FluentMigrator.Console</td>
+<td>The .NET 4.0/4.5/.NET Core 2.0 executable for out-of-process execution of migrations</td>
+</tr>
+<tr>
+<td>FluentMigrator.MSBuild</td>
+<td>The .NET 4.0/4.5/.NET Standard 2.0 task for MSBuild</td>
+</tr>
+<tr>
+<td>FluentMigrator.DotNet.Cli</td>
+<td>The .NET Core 2.1 executable that integrates into the .NET Core CLI tooling (<code>dotnet</code> command)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="getting-started">Getting Started</h2>
+<ul>
+<li>Check out the tour of FluentMigrator in our <a class="xref" href="quickstart.html">Quickstart</a></li>
+<li>We also started a <a class="xref" href="faq.html">FAQ</a></li>
+</ul>
+<h1 id="usage-details">Usage details</h1>
+<ul>
+<li>How to create a <a class="xref" href="migration-example.html">migration</a></li>
+<li>Learn about the <a href="fluent-interface.html">fluent interface</a></li>
+<li><a href="profiles.html">Profiles</a> can be used to seed test data</li>
+<li>And then choose one of the <a href="migration-runners.html">migration runners</a> to run your migrations</li>
+</ul>
+<h1 id="more-features">More Features</h1>
+<ul>
+<li><a class="xref" href="db-functions.html">Database functions as default value</a></li>
+<li><a class="xref" href="extensions/sql-server-extensions.html">Microsoft SQL Server specific extensions</a></li>
+<li><a class="xref" href="raw-sql.html">Using raw SQL</a></li>
+<li><a class="xref" href="migration/migration-auto-reversing.html">Auto-reversing migrations</a></li>
+<li><a class="xref" href="migration/migration-transaction-behavior.html">Transaction modes for the migration runner</a></li>
+</ul>
+<h1 id="advanced-features-and-techniques-of-fluentmigrator">Advanced Features and Techniques of FluentMigrator</h1>
+<ul>
+<li><a href="multi-db-support.html">Dealing with multiple database types</a></li>
+<li><a class="xref" href="migration/migration-filter-tags.html">Filter migrations run based on Tags</a></li>
+<li><a class="xref" href="migration/migration-attribute-custom.html">Enforcing migration version numbering rules</a></li>
+<li><a class="xref" href="version-table-metadata.html">Create custom metadata for the VersionInfo table</a></li>
+</ul>
+<h1 id="current-release">Current Release</h1>
+<ul>
+<li><a href="https://github.com/fluentmigrator/fluentmigrator/releases">Release Notes</a></li>
+</ul>
+<h1 id="upgrade-guides">Upgrade guides</h1>
+<ul>
+<li><a class="xref" href="guides/upgrades/guide-3.1-to-3.2.html">3.1 to 3.2</a></li>
+<li><a class="xref" href="guides/upgrades/guide-3.0-to-3.1.html">3.0 to 3.1</a></li>
+<li><a class="xref" href="guides/upgrades/guide-2.0-to-3.0.html">2.x to 3.0</a></li>
+</ul>
+<h1 id="runners">Runners</h1>
+<ul>
+<li><a class="xref" href="runners/runner-console.html">Console</a></li>
+<li><a class="xref" href="runners/dotnet-fm.html">dotnet-fm</a></li>
+</ul>
+<h1 id="supported-databases">Supported databases</h1>
+<p>For the <a href="https://github.com/fluentmigrator/fluentmigrator/releases/latest">current release</a> these are the supported databases:</p>
+<table>
+<thead>
+<tr>
+<th>Database</th>
+<th>Identifier</th>
+<th>Alternative identifier(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft SQL Server 2019</td>
+<td>SqlServer2017<sup>(1)</sup></td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2017</td>
+<td>SqlServer2016<sup>(2)</sup></td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2016</td>
+<td>SqlServer2016</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2014</td>
+<td>SqlServer2014</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2012</td>
+<td>SqlServer2012</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2008</td>
+<td>SqlServer2008</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2005</td>
+<td>SqlServer2005</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2000</td>
+<td>SqlServer2000</td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td><del>Microsoft SQL Server Compact Edition</del><sup>(3)</sup></td>
+<td><del>SqlServerCe</del></td>
+<td><del>SqlServer</del></td>
+</tr>
+<tr>
+<td>PostgreSQL</td>
+<td>Postgres</td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
+<td>PostgreSQL 9.2</td>
+<td>Postgres92</td>
+<td>PostgreSQL92</td>
+</tr>
+<tr>
+<td>PostgreSQL 10.0</td>
+<td>PostgreSQL10_0</td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
+<td>PostgreSQL 11.0</td>
+<td>PostgreSQL11_0</td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
+<td>MySQL 4</td>
+<td>MySql4</td>
+<td>MySql</td>
+</tr>
+<tr>
+<td>MySQL 5</td>
+<td>MySql5</td>
+<td>MySql, MariaDB</td>
+</tr>
+<tr>
+<td>Oracle</td>
+<td>Oracle</td>
+<td></td>
+</tr>
+<tr>
+<td>Oracle (managed ADO.NET)</td>
+<td>OracleManaged</td>
+<td>Oracle</td>
+</tr>
+<tr>
+<td>Oracle (DotConnect ADO.NET)</td>
+<td>OracleDotConnect</td>
+<td>Oracle</td>
+</tr>
+<tr>
+<td>Microsoft JET Engine (Access)</td>
+<td>Jet</td>
+<td></td>
+</tr>
+<tr>
+<td>SQLite</td>
+<td>Sqlite</td>
+<td></td>
+</tr>
+<tr>
+<td>Firebird</td>
+<td>Firebird</td>
+<td></td>
+</tr>
+<tr>
+<td>Amazon Redshift</td>
+<td>Redshift</td>
+<td></td>
+</tr>
+<tr>
+<td>SAP Hana</td>
+<td>Hana</td>
+<td></td>
+</tr>
+<tr>
+<td><del>SAP SQL Anywhere</del><sup>(4)</sup></td>
+<td><del>SqlAnywhere16</del></td>
+<td><del>SqlAnywhere</del></td>
+</tr>
+<tr>
+<td>DB2</td>
+<td>DB2</td>
+<td></td>
+</tr>
+<tr>
+<td>DB2 iSeries</td>
+<td>DB2 iSeries</td>
+<td>DB2</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><sup>(1)</sup> All integration tests ran without error against an SQL Server 2019 using the SqlServer2016 dialect.</li>
+<li><sup>(2)</sup> All integration tests ran without error against an SQL Server 2017 using the SqlServer2016 dialect.</li>
+<li><sup>(3)</sup> Support for Microsoft SQL Server Compact Edition is being dropped due to Microsoft end-of-life support date passing.</li>
+<li><sup>(4)</sup> Support for SAP SQL Anywhere is being dropped due to SAP not supporting a .NET Core / .NET 5 database driver.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

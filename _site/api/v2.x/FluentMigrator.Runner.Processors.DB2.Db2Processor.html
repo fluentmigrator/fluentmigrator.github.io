@@ -1,0 +1,999 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Db2Processor
+   | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Db2Processor
+   | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor">
+  
+  
+  <h1 id="FluentMigrator_Runner_Processors_DB2_Db2Processor" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor" class="text-break">Class Db2Processor
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html">ProcessorBase</a></div>
+    <div class="level2"><a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html">GenericProcessorBase</a></div>
+    <div class="level3"><span class="xref">Db2Processor</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.IMigrationProcessor.html">IMigrationProcessor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_ConnectionString">GenericProcessorBase.ConnectionString</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_Connection">GenericProcessorBase.Connection</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_Factory">GenericProcessorBase.Factory</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_Transaction">GenericProcessorBase.Transaction</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_EnsureConnectionIsOpen">GenericProcessorBase.EnsureConnectionIsOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_EnsureConnectionIsClosed">GenericProcessorBase.EnsureConnectionIsClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_BeginTransaction">GenericProcessorBase.BeginTransaction()</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_RollbackTransaction">GenericProcessorBase.RollbackTransaction()</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_CommitTransaction">GenericProcessorBase.CommitTransaction()</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_Dispose_System_Boolean_">GenericProcessorBase.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Generator">ProcessorBase.Generator</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Announcer">ProcessorBase.Announcer</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Options">ProcessorBase.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_WasCommitted">ProcessorBase.WasCommitted</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateSchemaExpression_">ProcessorBase.Process(CreateSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteSchemaExpression_">ProcessorBase.Process(DeleteSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateTableExpression_">ProcessorBase.Process(CreateTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_AlterTableExpression_">ProcessorBase.Process(AlterTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_AlterColumnExpression_">ProcessorBase.Process(AlterColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateColumnExpression_">ProcessorBase.Process(CreateColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteTableExpression_">ProcessorBase.Process(DeleteTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteColumnExpression_">ProcessorBase.Process(DeleteColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateForeignKeyExpression_">ProcessorBase.Process(CreateForeignKeyExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteForeignKeyExpression_">ProcessorBase.Process(DeleteForeignKeyExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateIndexExpression_">ProcessorBase.Process(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteIndexExpression_">ProcessorBase.Process(DeleteIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_RenameTableExpression_">ProcessorBase.Process(RenameTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_RenameColumnExpression_">ProcessorBase.Process(RenameColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_InsertDataExpression_">ProcessorBase.Process(InsertDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteDataExpression_">ProcessorBase.Process(DeleteDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_AlterDefaultConstraintExpression_">ProcessorBase.Process(AlterDefaultConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_UpdateDataExpression_">ProcessorBase.Process(UpdateDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_PerformDBOperationExpression_">ProcessorBase.Process(PerformDBOperationExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_AlterSchemaExpression_">ProcessorBase.Process(AlterSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateSequenceExpression_">ProcessorBase.Process(CreateSequenceExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteSequenceExpression_">ProcessorBase.Process(DeleteSequenceExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateConstraintExpression_">ProcessorBase.Process(CreateConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteConstraintExpression_">ProcessorBase.Process(DeleteConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteDefaultConstraintExpression_">ProcessorBase.Process(DeleteDefaultConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Dispose">ProcessorBase.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Processors.DB2.html">FluentMigrator.Runner.Processors.DB2</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.Db2.dll</h6>
+  <h5 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Db2Processor : GenericProcessorBase, IMigrationProcessor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor__ctor_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor__ctor_IDbConnection_IMigrationGenerator_FluentMigrator_Runner_IAnnouncer_IMigrationProcessorOptions_FluentMigrator_Runner_Processors_IDbFactory_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.#ctor(IDbConnection,IMigrationGenerator,FluentMigrator.Runner.IAnnouncer,IMigrationProcessorOptions,FluentMigrator.Runner.Processors.IDbFactory)">Db2Processor(IDbConnection, IMigrationGenerator, IAnnouncer, IMigrationProcessorOptions, IDbFactory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Db2Processor(IDbConnection connection, IMigrationGenerator generator, IAnnouncer announcer, IMigrationProcessorOptions options, IDbFactory factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDbConnection</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMigrationGenerator</span></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.IAnnouncer.html">IAnnouncer</a></td>
+        <td><span class="parametername">announcer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMigrationProcessorOptions</span></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Processors.IDbFactory.html">IDbFactory</a></td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_DatabaseType_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.DatabaseType*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_DatabaseType" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.DatabaseType">DatabaseType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DatabaseType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_DatabaseType">ProcessorBase.DatabaseType</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_DatabaseTypeAliases_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.DatabaseTypeAliases*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_DatabaseTypeAliases" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.DatabaseTypeAliases">DatabaseTypeAliases</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IList&lt;string&gt; DatabaseTypeAliases { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_DatabaseTypeAliases">ProcessorBase.DatabaseTypeAliases</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Quoter_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Quoter*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Quoter" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Quoter">Quoter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQuoter Quoter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IQuoter.html">IQuoter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_ColumnExists_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.ColumnExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_ColumnExists_System_String_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.ColumnExists(System.String,System.String,System.String)">ColumnExists(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ColumnExists(string schemaName, string tableName, string columnName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">columnName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_ColumnExists_System_String_System_String_System_String_">ProcessorBase.ColumnExists(String, String, String)</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_ConstraintExists_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.ConstraintExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_ConstraintExists_System_String_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.ConstraintExists(System.String,System.String,System.String)">ConstraintExists(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ConstraintExists(string schemaName, string tableName, string constraintName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">constraintName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_ConstraintExists_System_String_System_String_System_String_">ProcessorBase.ConstraintExists(String, String, String)</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_DefaultValueExists_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.DefaultValueExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_DefaultValueExists_System_String_System_String_System_String_System_Object_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.DefaultValueExists(System.String,System.String,System.String,System.Object)">DefaultValueExists(String, String, String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool DefaultValueExists(string schemaName, string tableName, string columnName, object defaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">columnName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_DefaultValueExists_System_String_System_String_System_String_System_Object_">ProcessorBase.DefaultValueExists(String, String, String, Object)</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Execute_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Execute*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Execute_System_String_System_Object___" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Execute(System.String,System.Object[])">Execute(String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Execute(string template, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">template</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Execute_System_String_System_Object___">ProcessorBase.Execute(String, Object[])</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Exists_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Exists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Exists_System_String_System_Object___" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Exists(System.String,System.Object[])">Exists(String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Exists(string template, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">template</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Exists_System_String_System_Object___">ProcessorBase.Exists(String, Object[])</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_IndexExists_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.IndexExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_IndexExists_System_String_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.IndexExists(System.String,System.String,System.String)">IndexExists(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IndexExists(string schemaName, string tableName, string indexName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">indexName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_IndexExists_System_String_System_String_System_String_">ProcessorBase.IndexExists(String, String, String)</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Process_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Process*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Process_PerformDBOperationExpression_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Process(PerformDBOperationExpression)">Process(PerformDBOperationExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Process(PerformDBOperationExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PerformDBOperationExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Process_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Process*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Process_System_String_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Process(System.String)">Process(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Process(string sql)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_System_String_">ProcessorBase.Process(String)</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Read_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Read*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_Read_System_String_System_Object___" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.Read(System.String,System.Object[])">Read(String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataSet Read(string template, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">template</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DataSet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Read_System_String_System_Object___">ProcessorBase.Read(String, Object[])</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_ReadTableData_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.ReadTableData*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_ReadTableData_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.ReadTableData(System.String,System.String)">ReadTableData(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataSet ReadTableData(string schemaName, string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DataSet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_ReadTableData_System_String_System_String_">ProcessorBase.ReadTableData(String, String)</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_SchemaExists_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.SchemaExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_SchemaExists_System_String_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.SchemaExists(System.String)">SchemaExists(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SchemaExists(string schemaName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_SchemaExists_System_String_">ProcessorBase.SchemaExists(String)</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_SequenceExists_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.SequenceExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_SequenceExists_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.SequenceExists(System.String,System.String)">SequenceExists(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SequenceExists(string schemaName, string sequenceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sequenceName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_SequenceExists_System_String_System_String_">ProcessorBase.SequenceExists(String, String)</a></div>
+  
+  
+  <a id="FluentMigrator_Runner_Processors_DB2_Db2Processor_TableExists_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.TableExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_DB2_Db2Processor_TableExists_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.DB2.Db2Processor.TableExists(System.String,System.String)">TableExists(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TableExists(string schemaName, string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_TableExists_System_String_System_String_">ProcessorBase.TableExists(String, String)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.IMigrationProcessor.html">IMigrationProcessor</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

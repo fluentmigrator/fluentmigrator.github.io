@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Fluent API | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Fluent API | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="tech-fluent-api">
+<h1 id="how-does-the-fluent-api-work">How does the fluent API work?</h1>
+
+<p>The starting points for the fluent API are the following classes:</p>
+<ul>
+<li><a class="xref" href="../../api/v3.x/FluentMigrator.MigrationBase.html">MigrationBase</a>: database modelling</li>
+<li><a class="xref" href="../../api/v3.x/FluentMigrator.Migration.html">Migration</a>: data modification and script execution</li>
+</ul>
+<h1 id="supported-expressions">Supported expressions</h1>
+<h2 id="create"><a class="xref" href="fluent-api-create.html">Create</a></h2>
+<p>Create a database object.</p>
+<h2 id="alter"><a class="xref" href="fluent-api-alter.html">Alter</a></h2>
+<p>Alter a database object.</p>
+<h2 id="delete"><a class="xref" href="fluent-api-delete.html">Delete</a></h2>
+<p>Delete a database object or data.</p>
+<h2 id="rename-irenameexpressionroot">Rename (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Rename.IRenameExpressionRoot.html">IRenameExpressionRoot</a>)</h2>
+<p>Rename a database object.</p>
+<h2 id="schema-ischemaexpressionroot">Schema (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Schema.ISchemaExpressionRoot.html">ISchemaExpressionRoot</a>)</h2>
+<p>Schema-oriented starting point for expressions.</p>
+<h2 id="ifdatabase-iifdatabaseexpressionroot">IfDatabase (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.IfDatabase.IIfDatabaseExpressionRoot.html">IIfDatabaseExpressionRoot</a>)</h2>
+<p>Create database-specific expressions.</p>
+<h2 id="insert-iinsertexpressionroot">Insert (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Insert.IInsertExpressionRoot.html">IInsertExpressionRoot</a>)</h2>
+<p>Insert data.</p>
+<h2 id="update-iupdateexpressionroot">Update (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Update.IUpdateExpressionRoot.html">IUpdateExpressionRoot</a>)</h2>
+<p>Update data.</p>
+<h2 id="execute-iexecuteexpressionroot">Execute (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Execute.IExecuteExpressionRoot.html">IExecuteExpressionRoot</a>)</h2>
+<p>Execute SQL statements/scripts.</p>
+<h1 id="planned-changes">Planned changes</h1>
+<ul>
+<li>Differentiate between <code>Delete</code> and <code>Drop</code></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/technical/fluent-api.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

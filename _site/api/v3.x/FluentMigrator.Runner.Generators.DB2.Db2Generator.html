@@ -1,0 +1,1392 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Db2Generator
+   | FluentMigrator documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Db2Generator
+   | FluentMigrator documentation ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator">
+  
+  
+  <h1 id="FluentMigrator_Runner_Generators_DB2_Db2Generator" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator" class="text-break">Class Db2Generator
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html">GeneratorBase</a></div>
+    <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html">GenericGenerator</a></div>
+    <div class="level3"><span class="xref">Db2Generator</span></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.DB2.iSeries.Db2ISeriesGenerator.html">Db2ISeriesGenerator</a></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.DB2.iSeries.Db2ISeriesGenerator.html">Db2ISeriesGenerator</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_compatabilityMode">GenericGenerator.compatabilityMode</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CompatibilityMode">GenericGenerator.CompatibilityMode</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateTable">GenericGenerator.CreateTable</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropTable">GenericGenerator.DropTable</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AddColumn">GenericGenerator.AddColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropColumn">GenericGenerator.DropColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AlterColumn">GenericGenerator.AlterColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_RenameColumn">GenericGenerator.RenameColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_RenameTable">GenericGenerator.RenameTable</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateSchema">GenericGenerator.CreateSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AlterSchema">GenericGenerator.AlterSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropSchema">GenericGenerator.DropSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateIndex">GenericGenerator.CreateIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropIndex">GenericGenerator.DropIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_InsertData">GenericGenerator.InsertData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_UpdateData">GenericGenerator.UpdateData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DeleteData">GenericGenerator.DeleteData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateConstraint">GenericGenerator.CreateConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DeleteConstraint">GenericGenerator.DeleteConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateForeignKeyConstraint">GenericGenerator.CreateForeignKeyConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GetUniqueString_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.GetUniqueString(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GetClusterTypeString_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.GetClusterTypeString(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateTableExpression_">GenericGenerator.Generate(CreateTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteTableExpression_">GenericGenerator.Generate(DeleteTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_RenameTableExpression_">GenericGenerator.Generate(RenameTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateColumnExpression_">GenericGenerator.Generate(CreateColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_AlterColumnExpression_">GenericGenerator.Generate(AlterColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteColumnExpression_">GenericGenerator.Generate(DeleteColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_RenameColumnExpression_">GenericGenerator.Generate(RenameColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.Generate(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteIndexExpression_">GenericGenerator.Generate(DeleteIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateForeignKeyExpression_">GenericGenerator.Generate(CreateForeignKeyExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateConstraintExpression_">GenericGenerator.Generate(CreateConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteConstraintExpression_">GenericGenerator.Generate(DeleteConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GenerateForeignKeyName_FluentMigrator_Model_ForeignKeyDefinition_">GenericGenerator.GenerateForeignKeyName(ForeignKeyDefinition)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteForeignKeyExpression_">GenericGenerator.Generate(DeleteForeignKeyExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_InsertDataExpression_">GenericGenerator.Generate(InsertDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AppendSqlStatementEndToken_StringBuilder_">GenericGenerator.AppendSqlStatementEndToken(StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GenerateColumnNamesAndValues_FluentMigrator_Expressions_InsertDataExpression_">GenericGenerator.GenerateColumnNamesAndValues(InsertDataExpression)</a>
+    </div>
+    <div>
+      <span class="xref">FluentMigrator.Runner.Generators.Generic.GenericGenerator.ValidateAdditionalFeatureCompatibility(IEnumerable&lt;&gt;)</span>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_UpdateDataExpression_">GenericGenerator.Generate(UpdateDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteDataExpression_">GenericGenerator.Generate(DeleteDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateSchemaExpression_">GenericGenerator.Generate(CreateSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteSchemaExpression_">GenericGenerator.Generate(DeleteSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_AlterSchemaExpression_">GenericGenerator.Generate(AlterSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateSequenceExpression_">GenericGenerator.Generate(CreateSequenceExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteSequenceExpression_">GenericGenerator.Generate(DeleteSequenceExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_AlterDefaultConstraintExpression_">GeneratorBase.Generate(AlterDefaultConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_DeleteDefaultConstraintExpression_">GeneratorBase.Generate(DeleteDefaultConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_IsAdditionalFeatureSupported_System_String_">GeneratorBase.IsAdditionalFeatureSupported(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_AlterTableExpression_">GeneratorBase.Generate(AlterTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Column">GeneratorBase.Column</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Quoter">GeneratorBase.Quoter</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_DescriptionGenerator">GeneratorBase.DescriptionGenerator</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Generators.DB2.html">FluentMigrator.Runner.Generators.DB2</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.Db2.dll</h6>
+  <h5 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Db2Generator : GenericGenerator, IMigrationGenerator</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator__ctor.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L33">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator__ctor_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator__ctor" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.#ctor">Db2Generator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Db2Generator()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator__ctor_FluentMigrator_Runner_Generators_DB2_Db2Quoter_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.%23ctor(FluentMigrator.Runner.Generators.DB2.Db2Quoter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L38">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator__ctor_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator__ctor_FluentMigrator_Runner_Generators_DB2_Db2Quoter_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.#ctor(FluentMigrator.Runner.Generators.DB2.Db2Quoter)">Db2Generator(Db2Quoter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Db2Generator(Db2Quoter quoter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.DB2.Db2Quoter.html">Db2Quoter</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator__ctor_FluentMigrator_Runner_Generators_DB2_Db2Quoter_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.%23ctor(FluentMigrator.Runner.Generators.DB2.Db2Quoter%2CIOptions%7BFluentMigrator.Runner.Generators.GeneratorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L46">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator__ctor_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator__ctor_FluentMigrator_Runner_Generators_DB2_Db2Quoter_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.#ctor(FluentMigrator.Runner.Generators.DB2.Db2Quoter,IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})">Db2Generator(Db2Quoter, IOptions&lt;GeneratorOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Db2Generator(Db2Quoter quoter, IOptions&lt;GeneratorOptions&gt; generatorOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.DB2.Db2Quoter.html">Db2Quoter</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="FluentMigrator.Runner.Generators.GeneratorOptions.html">GeneratorOptions</a>&gt;</td>
+        <td><span class="parametername">generatorOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_AlterColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.AlterColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L309">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_AlterColumnExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.AlterColumnExpression)">Generate(Expressions.AlterColumnExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.AlterColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.AlterColumnExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_AlterDefaultConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.AlterDefaultConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L53">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_AlterDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.AlterDefaultConstraintExpression)">Generate(Expressions.AlterDefaultConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.AlterDefaultConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.AlterDefaultConstraintExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_AlterSchemaExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.AlterSchemaExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L321">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_AlterSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.AlterSchemaExpression)">Generate(Expressions.AlterSchemaExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.AlterSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.AlterSchemaExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L95">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateColumnExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateColumnExpression)">Generate(Expressions.CreateColumnExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.CreateColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.CreateColumnExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L139">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateConstraintExpression)">Generate(Expressions.CreateConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.CreateConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.CreateConstraintExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateForeignKeyExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateForeignKeyExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L105">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateForeignKeyExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateForeignKeyExpression)">Generate(Expressions.CreateForeignKeyExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.CreateForeignKeyExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.CreateForeignKeyExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L155">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateIndexExpression)">Generate(Expressions.CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.CreateIndexExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateSchemaExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateSchemaExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L175">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateSchemaExpression)">Generate(Expressions.CreateSchemaExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.CreateSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.CreateSchemaExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L304">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_CreateTableExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.CreateTableExpression)">Generate(Expressions.CreateTableExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.CreateTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.CreateTableExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L78">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteColumnExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteColumnExpression)">Generate(Expressions.DeleteColumnExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.DeleteColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.DeleteColumnExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L196">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteConstraintExpression)">Generate(Expressions.DeleteConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.DeleteConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.DeleteConstraintExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteDataExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteDataExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L216">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteDataExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteDataExpression)">Generate(Expressions.DeleteDataExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.DeleteDataExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.DeleteDataExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteDefaultConstraintExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteDefaultConstraintExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L62">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteDefaultConstraintExpression)">Generate(Expressions.DeleteDefaultConstraintExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.DeleteDefaultConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.DeleteDefaultConstraintExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteForeignKeyExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteForeignKeyExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L206">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteForeignKeyExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteForeignKeyExpression)">Generate(Expressions.DeleteForeignKeyExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.DeleteForeignKeyExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.DeleteForeignKeyExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteIndexExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteIndexExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L185">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteIndexExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteIndexExpression)">Generate(Expressions.DeleteIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.DeleteIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.DeleteIndexExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteSchemaExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteSchemaExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L191">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteSchemaExpression)">Generate(Expressions.DeleteSchemaExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.DeleteSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.DeleteSchemaExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L180">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_DeleteTableExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.DeleteTableExpression)">Generate(Expressions.DeleteTableExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.DeleteTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.DeleteTableExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_InsertDataExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.InsertDataExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L250">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_InsertDataExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.InsertDataExpression)">Generate(Expressions.InsertDataExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.InsertDataExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.InsertDataExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_RenameColumnExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.RenameColumnExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L245">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_RenameColumnExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.RenameColumnExpression)">Generate(Expressions.RenameColumnExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.RenameColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.RenameColumnExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_RenameTableExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.RenameTableExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L70">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_RenameTableExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.RenameTableExpression)">Generate(Expressions.RenameTableExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.RenameTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.RenameTableExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_UpdateDataExpression_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.UpdateDataExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L280">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_DB2_Db2Generator_Generate_Expressions_UpdateDataExpression_" data-uid="FluentMigrator.Runner.Generators.DB2.Db2Generator.Generate(Expressions.UpdateDataExpression)">Generate(Expressions.UpdateDataExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(Expressions.UpdateDataExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expressions.UpdateDataExpression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Generators_DB2_Db2Generator.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Generators.DB2.Db2Generator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Db2/Generators/Db2/Db2Generator.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

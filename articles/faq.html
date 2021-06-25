@@ -88,6 +88,8 @@
 <li>Migration class isn't attributed with <code>MigrationAttribute</code></li>
 <li>The versions of the <code>Migrate.exe</code> tool (<code>FluentMigrator.Console</code> package) and the <code>FluentMigrator</code> package(s) referenced in your project are different.</li>
 </ul>
+<h2 id="how-can-i-run-fluentmigratordotnetcli-with-a-net-50-assembly">How can I run FluentMigrator.DotNet.Cli with a .NET 5.0 assembly?</h2>
+<p>The FluentMigrator.DotNet.Cli contains an <code>--allowDirtyAssemblies</code> switch that will allow you to load your 5.0 assemblies in a .NET Core 3.1 context.  We're working on .NET 5.0 support.</p>
 <h2 id="what-are-the-supported-databases">What are the supported databases?</h2>
 <table>
 <thead>

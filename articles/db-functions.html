@@ -82,7 +82,10 @@
 <p>It is possible to set the default value when creating or altering a column. To just set a value you can use the following fluent syntax:</p>
 <pre><code class="lang-cs">Create.Table(&quot;TestTable&quot;).WithColumn(&quot;Name&quot;).AsString().Nullable().WithDefaultValue(&quot;test&quot;);
 </code></pre>
-<p>However, you can take advantage of some database functions to set the default value. The SystemMethods enum contains five database functions:</p>
+<p>In addition, in the event you want to pass in arbitrary SQL to the <code>WithDefaultValue</code> method, you can do so using [raw sql](xref:raw-sql.md]:</p>
+<pre><code class="lang-cs">Create.Table(&quot;TestTable&quot;).WithColumn(&quot;Name&quot;).AsString().Nullable().WithDefaultValue(RawSql.Insert(&quot;SYSUTCDATETIME()&quot;));
+</code></pre>
+<p>However, you can take advantage of some database functions to set the default value. The <code>SystemMethods</code> enum contains five database functions:</p>
 <table>
 <thead>
 <tr>

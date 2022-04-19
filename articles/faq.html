@@ -368,6 +368,10 @@ END;
 </code></pre>
 <h2 id="certificate-error-for-sql-connection">Certificate error for SQL Connection</h2>
 <p>Since the use of <code>Microsoft.Data.SqlClient</code> version <code>4.0.0</code> connections are encrypted by default in .NET. You might start getting the exception: <code>A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)</code>. If fixing a valid certificate isn't a feasable path, you can always disable the encryption by adding <code>Encrypt=False</code> to the connection string. Then the connection won't be encryptet, and thus no certificate needed. As a note; you can also add <code>TrustServerCertificate=True</code> to the connection string, if you have a self-signed certificate or similar. But it's probably a better idea to fix a real certificate, or skip encryption all together.</p>
+<h2 id="sqlite-specific-topcis">SQLite specific topcis</h2>
+<h3 id="connection-pooling">Connection Pooling</h3>
+<p>When working with FluentMigrator with the SQLite processor it's worth knowing that by default SQLite will run with connection pooling enabled and with connectio pooling enabled SQLite will keep a lock on the database file even after <code>connection.Close()</code> is called on the relevant DB connection. This is important to know in case you need to perform any cleanup after FluentMigrator has run where deleting the database file is required. In this scenario you would receive an IO exception when you attempt to delete the file as SQLite still has a lock on the file.</p>
+<p>You can disable connection pooling however by adding <code>Pooling=False;</code> as a parameter in your connection string. With pooling disabled, you can then safely delete the database after the FluentMigrator processor is disposed.</p>
 </article>
           </div>
           

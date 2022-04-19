@@ -38952,6 +38952,9 @@ references:
 - uid: upgrade-guide-3.1-to-3.2
   name: Upgrade Guide from 3.1 to 3.2
   href: articles/guides/upgrades/guide-3.1-to-3.2.html
+- uid: upgrade-guide-3.2-to-4.0
+  name: Upgrade Guide from 3.2 to 4.0
+  href: articles/guides/upgrades/guide-3.2-to-4.0.html
 - uid: version-table-metadata
   name: Custom metadata for the VersionInfo table
   href: articles/version-table-metadata.html

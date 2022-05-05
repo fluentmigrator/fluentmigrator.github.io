@@ -4,6 +4,9 @@ references:
 - uid: app-context
   name: 'ApplicationContext: Passing parameters to Migrations'
   href: articles/obsolete/app-context.html
+- uid: comparison-to-entity-framework-migrations
+  name: FluentMigrator Comparison to Entity Framework Code-First Migrations
+  href: articles/comparison-to-entity-framework-migrations.html
 - uid: contribution
   name: How to contribute
   href: articles/guides/contribution.html

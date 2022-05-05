@@ -11861,7 +11861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v3.x/FluentMigrator.Runner.IMigrationRunnerBuilder.html",
-          "hash": "pPvzQHV1wwy4pvCgTzBhXQ=="
+          "hash": "wHJPAy9ID7hrezy31psoCw=="
         }
       },
       "is_incremental": false,
@@ -12413,7 +12413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v3.x/FluentMigrator.Runner.Initialization.IScanInBuilder.html",
-          "hash": "PtqkOkXMb80e2hAcgZKpkg=="
+          "hash": "3EatuXzLxcCbYZ8w0hbChg=="
         }
       },
       "is_incremental": false,
@@ -14797,6 +14797,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/comparison-to-entity-framework-migrations.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/comparison-to-entity-framework-migrations.html",
+          "hash": "e6lSJS/Ac7sMD2g5IjRfrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/db-functions.md",
       "output": {
         ".html": {
@@ -15298,7 +15310,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 38,
+          "total_file_count": 39,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

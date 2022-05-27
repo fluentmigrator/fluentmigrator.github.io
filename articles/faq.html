@@ -89,7 +89,13 @@
 <li>The versions of the <code>Migrate.exe</code> tool (<code>FluentMigrator.Console</code> package) and the <code>FluentMigrator</code> package(s) referenced in your project are different.</li>
 </ul>
 <h2 id="how-can-i-run-fluentmigratordotnetcli-with-a-net-50-assembly">How can I run FluentMigrator.DotNet.Cli with a .NET 5.0 assembly?</h2>
-<p>The FluentMigrator.DotNet.Cli contains an <code>--allowDirtyAssemblies</code> switch that will allow you to load your 5.0 assemblies in a .NET Core 3.1 context.  We're working on .NET 5.0 support.</p>
+<p>The FluentMigrator.DotNet.Cli contains an <code>--allowDirtyAssemblies</code> switch that will allow you to load your 5.0 assemblies in a .NET Core 3.1 context.  We're working on .NET 5.0 support.'</p>
+<h2 id="why-do-i-get-systemiofileloadexception-could-not-load-file-or-assembly-fluentmigrator-">Why do I get <code>System.IO.FileLoadException: Could not load file or assembly 'FluentMigrator ...</code>?</h2>
+<p>If you get a stack trace like the following:</p>
+<pre><code>System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.IO.FileLoadException: Could not load file or assembly 'FluentMigrator, Version=3.2.1.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05&quot;. Could not find or load specific file.
+</code></pre>
+<p>Then the most likely explanation is that you installed the FluentMigrator.DotNet.Cli command line tool globally, with a specific FluentMigrator.dll version in your global tool directory, and are loading a migrations assembly that references a different version of FluentMigrator.dll.</p>
+<p>The common workaround is to install the tool locally, rather than globally (applies to .NET Core SDK 3.0 and later).</p>
 <h2 id="what-are-the-supported-databases">What are the supported databases?</h2>
 <table>
 <thead>

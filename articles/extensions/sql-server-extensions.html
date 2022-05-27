@@ -106,6 +106,15 @@ SQL Server tries do the following, unless you specify 'clustered' or 'noncluster
 <p>Use <code>.AsAnsiString(int.MaxValue)</code> for <code>varchar(MAX)</code>:</p>
 <pre><code class="lang-cs">Create.Column(&quot;Name&quot;).OnTable(&quot;TestTable&quot;).AsAnsiString(int.MaxValue);
 </code></pre>
+<p>Alternatively, you can define an extension method for use with <code>Create.Table</code> syntax, which would then be visible in the Visual Studio IntelliSense code completion dropdown:</p>
+<pre><code class="lang-cs">public static class ICreateTableColumnAsTypeSyntaxExtensions
+{
+    public static ICreateTableColumnOptionOrWithColumnSyntax AsMaxString(this ICreateTableColumnAsTypeSyntax createTableColumnAsTypeSyntax)
+    {
+        return createTableColumnAsTypeSyntax.AsString(int.MaxValue);
+    }
+}
+</code></pre>
 <h2 id="withidentityinsert">WithIdentityInsert</h2>
 <p>If you want to turn on Identity Insert to be able to insert values into an identity column (see <a href="http://msdn.microsoft.com/en-us/library/ms188059.aspx">here</a> for more details) then FluentMigrator has an extension method that supports this.</p>
 <pre><code class="lang-cs">Insert.IntoTable(&quot;Foo&quot;)

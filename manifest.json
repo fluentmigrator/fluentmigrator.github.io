@@ -14837,7 +14837,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/extensions/sql-server-extensions.html",
-          "hash": "6FF1ZGKSQV6DIXUSZWez8Q=="
+          "hash": "OeXEF4Ia48U0GNgrt2js/Q=="
         }
       },
       "is_incremental": false,
@@ -15307,17 +15307,17 @@
           "total_file_count": 39,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 663,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 663,
           "skipped_file_count": 0
         }
       }

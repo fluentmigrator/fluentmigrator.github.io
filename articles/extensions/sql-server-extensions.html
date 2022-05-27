@@ -99,6 +99,13 @@ SQL Server tries do the following, unless you specify 'clustered' or 'noncluster
 <pre><code class="lang-cs">Create.UniqueConstraint(&quot;UQ&quot;).OnTable(&quot;TestTable&quot;).Column(&quot;Name&quot;).Clustered();
 </code></pre>
 <p>Note: You have to create the primary key index or unique constraint separately from the Create.Table expression to be able to specify them as clustered or non-clustered.</p>
+<h2 id="create-a-column-of-sql-data-type-nvarcharmax--varcharmax">Create a column of SQL data type <code>nvarchar(MAX)</code> / <code>varchar(MAX)</code></h2>
+<p>Use <code>int.MaxValue</code> to represent infinite length strings.</p>
+<pre><code class="lang-cs">Create.Column(&quot;Name&quot;).OnTable(&quot;TestTable&quot;).AsString(int.MaxValue);
+</code></pre>
+<p>Use <code>.AsAnsiString(int.MaxValue)</code> for <code>varchar(MAX)</code>:</p>
+<pre><code class="lang-cs">Create.Column(&quot;Name&quot;).OnTable(&quot;TestTable&quot;).AsAnsiString(int.MaxValue);
+</code></pre>
 <h2 id="withidentityinsert">WithIdentityInsert</h2>
 <p>If you want to turn on Identity Insert to be able to insert values into an identity column (see <a href="http://msdn.microsoft.com/en-us/library/ms188059.aspx">here</a> for more details) then FluentMigrator has an extension method that supports this.</p>
 <pre><code class="lang-cs">Insert.IntoTable(&quot;Foo&quot;)

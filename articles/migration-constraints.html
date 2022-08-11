@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>API for version 2.x | FluentMigrator documentation </title>
+    <title>Migration Constraints | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="API for version 2.x | FluentMigrator documentation ">
+    <meta name="title" content="Migration Constraints | FluentMigrator documentation ">
     <meta name="generator" content="docfx 2.44.0.0">
     
-    <link rel="shortcut icon" href="../../images/favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="">
-    <meta property="docfx:tocrel" content="">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
-    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:rel" content="../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -67,42 +67,56 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="api-for-version-2x">API for version 2.x</h1>
+            <article class="content wrap" id="_content" data-uid="migration-constraints.md">
+<h1 id="migration-constraints">Migration Constraints</h1>
 
-<h1 id="using-the-in-process-runner">Using the in-process runner</h1>
-<pre><code class="lang-cs">// Create the announcer to output the migration messages
-var announcer = new ConsoleAnnouncer();
+<h2 id="overview">Overview</h2>
+<p>Migration constraints allow users to run migrations based on dynamically evaluated conditions.</p>
+<h2 id="use-case">Use Case</h2>
+<p>The <code>FluentMigrator.Runner.Core</code> namespace has an example, <code>CurrentVersionMigrationConstraintAttribute</code>.</p>
+<h2 id="examples">Examples</h2>
+<p>The FluentMigrator samples folder has a demonstration of this example:</p>
+<pre><code class="lang-c#">using FluentMigrator.Runner.Constraints;
 
-// Processor specific options (usually none are needed)
-var options = new ProcessorOptions();
-
-// Use SQLite
-var processorFactory = new SQLiteProcessorFactory();
-
-// Initialize the processor
-using (var processor = processorFactory.Create(
-    // The SQLite connection string
-    &quot;Data Source=test.db&quot;,
-    announcer,
-    options))
+namespace FluentMigrator.Example.Migrations
 {
-    // Configure the runner
-    var context = new RunnerContext(announcer);
+    /// &lt;summary&gt;
+    /// Update notes.
+    /// &lt;/summary&gt;
+    /// &lt;remarks&gt;
+    /// This is only run when the migration 20090906205440 was already applied to the database.
+    /// &lt;/remarks&gt;
+    [Migration(20190416112000)]
+    [CurrentVersionMigrationConstraint(20090906205440)]
+    public class UpdateNotesByScript : Migration
+    {
+        /// &lt;inheritdoc /&gt;
+        public override void Up()
+        {
+            Execute.Sql(@&quot;/* this is a test script */
+update Notes set body=body || ' (modified)';
+&quot;);
+        }
 
-    // Create the migration runner
-    var runner = new MigrationRunner(
-        // Specify the assembly with the migrations
-        typeof(MyMigration).Assembly,
-        context,
-        processor);
-
-    // Run the migrations
-    runner.MigrateUp();
+        /// &lt;inheritdoc /&gt;
+        public override void Down()
+        {
+            // Nothing to do here
+        }
+    }
 }
 </code></pre>
+<h2 id="caveats">Caveats</h2>
+<p>The downside to migration constraints, and `CurrentVersionMigrationConstraintAttribute  in particular, is that some data is only loaded by FluentMigrator once.  For example, version metadata is snapshot once.  This is because FluentMigrator builds a list of all migrations to run, once, and then runs them.  Thus, you can imagine a scenario where the above example is run, and during the migration run, version 20090906205440 executes.  However, UpdateNotesByScript won't execute, because when the runner initializes, 20090906205440 wasn't yet applied to the database.</p>
 </article>
           </div>
           
@@ -111,7 +125,7 @@ using (var processor = processorFactory.Create(
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fluentmigrator/documentation/blob/master/api/v2.x/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/migration-constraints.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -137,8 +151,8 @@ using (var processor = processorFactory.Create(
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

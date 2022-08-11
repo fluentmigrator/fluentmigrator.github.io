@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>FluentMigrator API | FluentMigrator documentation </title>
+    <title>Maintenance Migrations | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="FluentMigrator API | FluentMigrator documentation ">
+    <meta name="title" content="Maintenance Migrations | FluentMigrator documentation ">
     <meta name="generator" content="docfx 2.44.0.0">
     
-    <link rel="shortcut icon" href="../../images/favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
-    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:rel" content="../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -76,12 +76,53 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="fluentmigrator-api">FluentMigrator API</h1>
+            <article class="content wrap" id="_content" data-uid="maintenance-migrations.md">
+<h1 id="maintenance-migrations">Maintenance Migrations</h1>
 
-<p>The most important part of the API is the <a href="xref:FluentMigrator.Runner.IMigrationRunner">migration runner</a>.</p>
-<h1 id="getting-started">Getting started</h1>
-<p>The starting point for every beginner of FluentMigrator is the <a class="xref" href="../../articles/quickstart.html">Quickstart tutorial</a>.</p>
+<h2 id="overview">Overview</h2>
+<p>Maintenace Migration are a flexible way to apply logic on every migration run. They're flexible in that there are several &quot;stages&quot; the logic can be applied.</p>
+<h2 id="migration-stages">Migration Stages</h2>
+<ol>
+<li><code>BeforeAll</code>: Migration will be run before all standard migrations.</li>
+<li><code>BeforeEach</code>: Migration will be run before each standard migration.</li>
+<li><code>AfterEach</code>: Migration will be run after each standard migration.</li>
+<li><code>BeforeProfiles</code>: Migration will be run after all standard migrations, but before profiles.</li>
+<li><code>AfterAll</code>: Migration will be run after all standard migrations and profiles.</li>
+</ol>
+<h2 id="use-cases">Use Cases</h2>
+<ol>
+<li>In the <a class="xref" href="faq.html">FAQ</a>, we demonstrate using Maintenance Migrations to create an &quot;application lock&quot; so that only one Migration Runner can run on a database at a time.</li>
+<li>Seeding test/development data.</li>
+<li>SQL Server-specific use cases that may potentially create ideas for users of other databases:
+<ol>
+<li>Automatically refreshing SQL Server database views metadata are refreshed via <a href="https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-refreshview-transact-sql?view=sql-server-ver16"><code>sp_refreshview</code></a></li>
+<li><a href="https://github.com/ktaranov/sqlserver-kit/blob/master/Scripts/Fix_the_broken_dependencies_on_all__objects.sql">Fixing the broken dependencies on all objects</a> so that database replication works.</li>
+</ol>
+</li>
+</ol>
+<h2 id="syntax">Syntax</h2>
+<p>The following example will print <code>&quot;Tag=[Development] Stage=[BeforeAll]&quot;</code> when running the migration with <code>--tag=Development</code>.</p>
+<pre><code class="lang-c#">using FluentMigrator;
+using System;
+
+namespace YourCompany.YourProduct.Database.Maintenance
+{
+    public class TagNames
+    {
+        public const string Development = nameof(Development);
+    }
+
+    [Tags(TagNames.Development)]
+    [Maintenance(MigrationStage.BeforeAll, TransactionBehavior.None)]
+    public class DevBeforeAll : ForwardOnlyMigration
+    {
+        public override void Up()
+        {
+            System.Console.WriteLine($&quot;Tag=[{TagNames.Development}] Stage=[{MigrationStage.BeforeAll}]&quot;);
+        }
+    }
+}
+</code></pre>
 </article>
           </div>
           
@@ -90,7 +131,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fluentmigrator/documentation/blob/master/api/v3.x/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/maintenance-migrations.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -116,8 +157,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

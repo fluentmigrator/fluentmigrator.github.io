@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="migration-auto-reversing">
 <h1 id="auto-reversing-migrations">Auto-reversing migrations</h1>
 
-<p>Auto reversing migrations are migrations that only contain an up command and FluentMigrator figures out the down command. Create a migration class that inherits from <a class="xref" href="../../api/v3.x/FluentMigrator.AutoReversingMigration.html">AutoReversingMigration</a> (instead of <a class="xref" href="../../api/v3.x/FluentMigrator.Migration.html">Migration</a>) to use this feature.</p>
+<p>Auto reversing migrations are migrations that only contain an up command and FluentMigrator figures out the down command. Create a migration class that inherits from <a href="xref:FluentMigrator.AutoReversingMigration">AutoReversingMigration</a> (instead of <a href="xref:FluentMigrator.Migration">Migration</a>) to use this feature.</p>
 <pre><code class="lang-cs">[Migration(201207080104)]
 public class RenameTableWithSchema : AutoReversingMigration
 {

@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="migration-attribute-custom">
 <h1 id="enforcing-migration-version-numbering-rules">Enforcing migration version numbering rules</h1>
 
-<p>Frequently, it is useful for a project to employ a specific system for migration version numbering. A useful technique for simplifying and encoding this system is with a custom attribute that inherits from <a class="xref" href="../../api/v3.x/FluentMigrator.MigrationAttribute.html">MigrationAttribute</a>.</p>
+<p>Frequently, it is useful for a project to employ a specific system for migration version numbering. A useful technique for simplifying and encoding this system is with a custom attribute that inherits from <a href="xref:FluentMigrator.MigrationAttribute">MigrationAttribute</a>.</p>
 <p>An example is below.  This uses a system where the migration version is of the format BBYYYYMMDDHHMM, where BB is a branch, YYYY is year, MM is month, and so on.</p>
 <pre><code class="lang-csharp">/// &lt;summary&gt;
 /// Mark all migrations with this INSTEAD of [Migration].

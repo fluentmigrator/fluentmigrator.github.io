@@ -79,8 +79,12 @@
             <article class="content wrap" id="_content" data-uid="profiles.md">
 <h1 id="profiles">Profiles</h1>
 
+<div class="NOTE">
+<h5>Note</h5>
+<p>While Profiles are not deprecated or obsolete, they have been largely deprecated in favor of Maintenance Migrations.  Profiles are only runnable at a particular point in time, whereas Maintenance Migrations have several different stages at which they can be applied, and are thus more flexible.  Additionally, Maintenance Migrations can work with Tags to mimic the effect of a Profile Name.</p>
+</div>
 <p>Profiles are used to selectively apply migrations depending on a command line option, or build script attribute. For instance, you may want to run the &quot;Development&quot; profile only in your Dev environment, and run the &quot;Testing&quot; profile in your Testing environment. Profiles will <em>always</em> be run if you specify them.</p>
-<p>Normally, these are useful to always put test/sample seed data in when dropping/refreshing development and testing environments. In production you would rarely want to continually insert the same data more than once.</p>
+<p>Normally, these are useful to always put test/sample <strong>seed data</strong> in when dropping/refreshing development and testing environments. In production you would rarely want to continually insert the same data more than once.</p>
 <pre><code class="lang-cs">[Profile(&quot;Development&quot;)]
 public class CreateDevSeedData : Migration
 {

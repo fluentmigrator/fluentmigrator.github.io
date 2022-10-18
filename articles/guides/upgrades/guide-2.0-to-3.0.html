@@ -136,7 +136,7 @@ a <a href="xref:FluentMigrator.Runner.Processors.ConnectionlessProcessor">Connec
 <p>This feature allows - for example - forbidding data deletions in a production environment.</p>
 <h2 id="using-systemcomponentmodeldataannotations-for-validation">Using <code>System.ComponentModel.DataAnnotations</code> for validation</h2>
 <h1 id="breaking-changes">Breaking Changes</h1>
-<p>Version 3.0 dropped support for all .NET Framework versions below 4.6.1 and the timeout values are now stored as <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a> rather than an <code>int</code> (of seconds).</p>
+<p>Version 3.0 dropped support for all .NET Framework versions below 4.6.1 and the timeout values are now stored as <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a> rather than an <code>int</code> (of seconds).</p>
 <h2 id="minimum-net-framework-461">Minimum: .NET Framework 4.6.1</h2>
 <p>Dropping the support for all .NET Framework versions below 4.6.1 was required, because the package now relies on the following libraries:</p>
 <ul>
@@ -145,7 +145,7 @@ a <a href="xref:FluentMigrator.Runner.Processors.ConnectionlessProcessor">Connec
 <li><a href="https://github.com/aspnet/Logging/">Microsoft.Extensions.Logging</a></li>
 <li><a href="https://github.com/aspnet/Configuration/">Microsoft.Extensions.Configuration</a></li>
 </ul>
-<h2 id="processoroptionstimeout-is-now-a-timespan"><code>ProcessorOptions.Timeout</code> is now a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></h2>
+<h2 id="processoroptionstimeout-is-now-a-timespan"><code>ProcessorOptions.Timeout</code> is now a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></h2>
 <p>This change is part of the ongoing effort to make the API easier to understand, because it might not be clear if an <code>int timeout</code> is the timeout in milliseconds, seconds, et cetera. Previously the <code>int</code> value corresponded to seconds.</p>
 <h2 id="icanbevalidated-not-used-anymore"><code>ICanBeValidated</code> not used anymore</h2>
 <p>The library now uses <code>System.ComponentModel.DataAnnotations</code> for validation - for example the <code>[Required]</code> attribute for expression fields that are - one might've guessed it - required.</p>
@@ -255,7 +255,7 @@ using (var processor = processorFactory.Create(
 <li>Re-inventing the wheel</li>
 </ul>
 <h2 id="iannouncer"><code>IAnnouncer</code></h2>
-<p>The <a href="xref:FluentMigrator.Runner.IAnnouncer">IAnnouncer</a> interface (and its implementations) were replaced by <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> and its implementations.</p>
+<p>The <a href="xref:FluentMigrator.Runner.IAnnouncer">IAnnouncer</a> interface (and its implementations) were replaced by <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> and its implementations.</p>
 <h3 id="logger-registration">Logger registration</h3>
 <p>You can comfortably register the default <a href="xref:FluentMigrator.Runner.Logging.FluentMigratorConsoleLogger">FluentMigratorConsoleLogger</a>:</p>
 <pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
@@ -289,7 +289,7 @@ use other logger option classes!</p>
     .BuildServiceProvider();
 </code></pre>
 <h3 id="logger-usage">Logger usage</h3>
-<p>You don't use the loggers directly any more. Instead, you just create a constructor parameter with a type of <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> or <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>.</p>
+<p>You don't use the loggers directly any more. Instead, you just create a constructor parameter with a type of <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>.</p>
 <pre><code class="lang-cs">public class MyMigration : ForwardOnlyMigration {
     private readonly ILogger&lt;MyMigration&gt; _logger;
 
@@ -306,7 +306,7 @@ use other logger option classes!</p>
 <p>There are several other loggers, like:</p>
 <ul>
 <li><a href="xref:FluentMigrator.Runner.Logging.LogFileFluentMigratorLoggerProvider">LogFileFluentMigratorLoggerProvider</a> for logging SQL statements into a file</li>
-<li><a href="xref:FluentMigrator.Runner.Logging.SqlScriptFluentMigratorLoggerProvider">SqlScriptFluentMigratorLoggerProvider</a> for logging SQL statements into a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></li>
+<li><a href="xref:FluentMigrator.Runner.Logging.SqlScriptFluentMigratorLoggerProvider">SqlScriptFluentMigratorLoggerProvider</a> for logging SQL statements into a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></li>
 </ul>
 <h4 id="registration-of-logfilefluentmigratorloggerprovider">Registration of <a href="xref:FluentMigrator.Runner.Logging.LogFileFluentMigratorLoggerProvider">LogFileFluentMigratorLoggerProvider</a></h4>
 <pre><code class="lang-cs">var serviceProvider = new ServiceCollection()
@@ -357,8 +357,8 @@ use other logger option classes!</p>
 <div class="WARNING">
 <h5>Warning</h5>
 <p>This class only works under the full .NET Framework and is marked as obsolete!
-Provide access to an <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a> service.
-The FluentMigrator library will use it to call the <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationextensions.getconnectionstring#microsoft-extensions-configuration-configurationextensions-getconnectionstring(microsoft-extensions-configuration-iconfiguration-system-string)">GetConnectionString</a> extension method.</p>
+Provide access to an <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a> service.
+The FluentMigrator library will use it to call the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationextensions.getconnectionstring#microsoft-extensions-configuration-configurationextensions-getconnectionstring(microsoft-extensions-configuration-iconfiguration-system-string)">GetConnectionString</a> extension method.</p>
 </div>
 <ul>
 <li><a href="xref:FluentMigrator.Runner.Initialization.NetFramework.AppConfigConnectionStringAccessorOptions.ConnectionStringConfigPath">ConnectionStringPath ➔ ConnectionStringConfigPath</a></li>
@@ -373,7 +373,7 @@ The FluentMigrator library will use it to call the <a class="xref" href="https:/
 </ul>
 <h3 id="properties-with-no-direct-replacement">Properties with no direct replacement</h3>
 <ul>
-<li><code>Announcer</code>: Get your <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> with dependency injection instead</li>
+<li><code>Announcer</code>: Get your <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> with dependency injection instead</li>
 <li><code>StopWatch</code>: Get your <a href="xref:FluentMigrator.Runner.IStopWatch">IStopWatch</a> with dependency injection instead</li>
 </ul>
 <h3 id="workingdirectory">WorkingDirectory</h3>

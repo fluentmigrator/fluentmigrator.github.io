@@ -99,6 +99,21 @@ SQL Server tries do the following, unless you specify 'clustered' or 'noncluster
 <pre><code class="lang-cs">Create.UniqueConstraint(&quot;UQ&quot;).OnTable(&quot;TestTable&quot;).Column(&quot;Name&quot;).Clustered();
 </code></pre>
 <p>Note: You have to create the primary key index or unique constraint separately from the Create.Table expression to be able to specify them as clustered or non-clustered.</p>
+<h3 id="create-a-unique-constraint-on-nullable-columns-using-null-value-filter">Create a unique constraint on nullable columns using null value filter</h3>
+<p>Note: SQL Server has a different approach to creating unique constraints on nullable columns than ANSI standard.</p>
+<pre><code class="lang-cs">Create.Index(&quot;UQ_NullFilter&quot;)
+    .OnTable(&quot;TestTable&quot;).InSchema(&quot;dbo&quot;)
+    .OnColumn(&quot;Name&quot;).Ascending()
+    .WithOptions().Unique()
+    .WithOptions().Filter(&quot;[Name] IS NOT NULL&quot;);
+</code></pre>
+<p>This will generate the following T-SQL DDL statement:</p>
+<pre><code class="lang-sql">CREATE UNIQUE NONCLUSTERED INDEX [UQ_NullFilter] ON [dbo].[TestTable]
+(
+	[Name] ASC
+)
+WHERE ([Name] IS NOT NULL)
+</code></pre>
 <h2 id="create-a-column-of-sql-data-type-nvarcharmax--varcharmax">Create a column of SQL data type <code>nvarchar(MAX)</code> / <code>varchar(MAX)</code></h2>
 <p>Use <code>int.MaxValue</code> to represent infinite length strings.</p>
 <pre><code class="lang-cs">Create.Column(&quot;Name&quot;).OnTable(&quot;TestTable&quot;).AsString(int.MaxValue);

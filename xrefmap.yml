@@ -19,6 +19,9 @@ references:
 - uid: faq
   name: FAQ
   href: articles/faq.html
+- uid: faq-change-naming-conventions.md
+  name: 'How To: Change Naming Conventions'
+  href: articles/faq-change-naming-conventions.html
 - uid: fluent-interface.md
   name: Fluent Interface
   href: articles/fluent-interface.html

@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "STp2bRDrGSgRLbTnj3LxVlr2jpdMc96cN2Ui1815NxI="
+          "hash": "986+EDRjB5Pr3VNFJan9fBTsV9GoekU+gwWg3PEEgUI="
         }
       },
       "is_incremental": false,
@@ -6804,7 +6804,7 @@
       "output": {
         ".html": {
           "relative_path": "api/v2.x/index.html",
-          "hash": "DjKyw3KRwyQs2BEnA2jjOqL1fZhf/+uQQDhIlGNIoMw="
+          "hash": "Fp7a46tPP+KG4HXl0ZfiVcFzuJbSS20LzedhuCohWl0="
         }
       },
       "is_incremental": false,
@@ -14853,15 +14853,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "invalid-yaml-header"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/faq-change-naming-conventions.md",
       "output": {
         ".html": {
           "relative_path": "articles/faq-change-naming-conventions.html",
-          "hash": "/15rT6U3xs08wklmmdshaWD0Mnw30bz3RMgeT7SOcpg="
+          "hash": "FfzJykFNc/JvuJJt8AgsOAaD6zoMkRs1/txBRsmoUx4="
         }
       },
       "is_incremental": false,
@@ -15240,15 +15237,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "Bpo8tXZi/xITFQnMmmzcJ1oTo4nb72hM3ILDAR96WR0="
+          "hash": "WsZAsaP5gUxDHBSPxJfQDomr963E39ewq7x3fJ3NZ6k="
         }
       },
       "is_incremental": false,

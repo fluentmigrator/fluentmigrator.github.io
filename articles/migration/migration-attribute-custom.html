@@ -8,7 +8,7 @@
     <title>Enforcing migration version numbering rules | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enforcing migration version numbering rules | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -59,11 +59,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="migration-attribute-custom">
 <h1 id="enforcing-migration-version-numbering-rules">Enforcing migration version numbering rules</h1>
 
-<p>Frequently, it is useful for a project to employ a specific system for migration version numbering. A useful technique for simplifying and encoding this system is with a custom attribute that inherits from <a href="xref:FluentMigrator.MigrationAttribute">MigrationAttribute</a>.</p>
+<p>Frequently, it is useful for a project to employ a specific system for migration version numbering. A useful technique for simplifying and encoding this system is with a custom attribute that inherits from <a class="xref" href="../../api/v3.x/FluentMigrator.MigrationAttribute.html">MigrationAttribute</a>.</p>
 <p>An example is below.  This uses a system where the migration version is of the format BBYYYYMMDDHHMM, where BB is a branch, YYYY is year, MM is month, and so on.</p>
 <pre><code class="lang-csharp">/// &lt;summary&gt;
 /// Mark all migrations with this INSTEAD of [Migration].
@@ -119,7 +119,8 @@ public class TestLcmpMigration : Migration
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

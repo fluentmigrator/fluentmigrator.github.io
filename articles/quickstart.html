@@ -8,7 +8,7 @@
     <title>Starting with FluentMigrator | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Starting with FluentMigrator | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -59,11 +59,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -130,16 +130,16 @@ namespace test
 <li>Using an in-process runner (preferred)</li>
 <li>Using an out-of-process runner (for some corporate requirements)</li>
 </ul>
-<div class="tabGroup" id="tabgroup_CeZOj-G++Q">
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_CeZOj-G++Q_runner-in-process" role="tab" aria-controls="tabpanel_CeZOj-G++Q_runner-in-process" data-tab="runner-in-process" tabindex="0" aria-selected="true">In-Process (preferred)</a>
+<a href="#tabpanel_bHGHmlrG6S_runner-in-process" role="tab" aria-controls="tabpanel_bHGHmlrG6S_runner-in-process" data-tab="runner-in-process" tabindex="0" aria-selected="true">In-Process (preferred)</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_CeZOj-G++Q_runner-dotnet-fm" role="tab" aria-controls="tabpanel_CeZOj-G++Q_runner-dotnet-fm" data-tab="runner-dotnet-fm" tabindex="-1">Out-of-process (for some corporate requirements)</a>
+<a href="#tabpanel_bHGHmlrG6S_runner-dotnet-fm" role="tab" aria-controls="tabpanel_bHGHmlrG6S_runner-dotnet-fm" data-tab="runner-dotnet-fm" tabindex="-1">Out-of-process (for some corporate requirements)</a>
 </li>
 </ul>
-<section id="tabpanel_CeZOj-G++Q_runner-in-process" role="tabpanel" data-tab="runner-in-process">
+<section id="tabpanel_bHGHmlrG6S_runner-in-process" role="tabpanel" data-tab="runner-in-process">
 
 <div class="NOTE">
 <h5>Note</h5>
@@ -207,10 +207,10 @@ namespace test
     }
 }
 </code></pre>
-<p>As you can see, instantiating the <a href="xref:FluentMigrator.Runner.IMigrationRunner">migration runner</a> (in <code>UpdateDatabase</code>) becomes
+<p>As you can see, instantiating the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.IMigrationRunner.html">migration runner</a> (in <code>UpdateDatabase</code>) becomes
 very simple and updating the database is straight-forward.</p>
 </section>
-<section id="tabpanel_CeZOj-G++Q_runner-dotnet-fm" role="tabpanel" data-tab="runner-dotnet-fm" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_bHGHmlrG6S_runner-dotnet-fm" role="tabpanel" data-tab="runner-dotnet-fm" aria-hidden="true" hidden="hidden">
 
 <div class="IMPORTANT">
 <h5>Important</h5>
@@ -241,7 +241,8 @@ very simple and updating the database is straight-forward.</p>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

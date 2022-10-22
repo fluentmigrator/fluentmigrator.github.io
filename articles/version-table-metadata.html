@@ -8,7 +8,7 @@
     <title>Custom metadata for the VersionInfo table | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Custom metadata for the VersionInfo table | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -59,11 +59,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="version-table-metadata">
 <h1 id="custom-metadata-for-the-versioninfo-table">Custom metadata for the VersionInfo table</h1>
 
-<p>By implementing the <a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData">IVersionTableMetaData</a> interface you can change the defaults for the VersionInfo table. The interface exposes six properties:</p>
+<p>By implementing the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> interface you can change the defaults for the VersionInfo table. The interface exposes six properties:</p>
 <table>
 <thead>
 <tr>
@@ -90,41 +90,41 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.SchemaName">SchemaName</a></td>
+<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_SchemaName">SchemaName</a></td>
 <td>(empty)</td>
 <td>The schema where the version table is stored</td>
 </tr>
 <tr>
-<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.TableName">TableName</a></td>
+<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_TableName">TableName</a></td>
 <td><code>&quot;VersionInfo&quot;</code></td>
 <td>The table where the version information is stored</td>
 </tr>
 <tr>
-<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.ColumnName">ColumnName</a></td>
+<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_ColumnName">ColumnName</a></td>
 <td><code>&quot;Version&quot;</code></td>
 <td>The name of the column where the version numbers are stored</td>
 </tr>
 <tr>
-<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.DescriptionColumnName">DescriptionColumnName</a></td>
+<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_DescriptionColumnName">DescriptionColumnName</a></td>
 <td><code>&quot;Description&quot;</code></td>
 <td>The name of the last migration applied</td>
 </tr>
 <tr>
-<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.AppliedOnColumnName">AppliedOnColumnName</a></td>
+<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_AppliedOnColumnName">AppliedOnColumnName</a></td>
 <td><code>&quot;AppliedOn&quot;</code></td>
 <td>The datetime of when the last migration was applied</td>
 </tr>
 <tr>
-<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.UniqueIndexName">UniqueIndexName</a></td>
+<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_UniqueIndexName">UniqueIndexName</a></td>
 <td><code>&quot;UC_Version&quot;</code></td>
 <td>The name of the unique constraint for the version column</td>
 </tr>
 </tbody>
 </table>
-<p>In the same assembly that your migrations are located, create a new class (it must be public) that implements the <a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData">IVersionTableMetaData</a> interface and decorate the class with the <a href="xref:FluentMigrator.Runner.VersionTableInfo.VersionTableMetaDataAttribute">VersionTableMetaDataAttribute</a>. FluentMigrator will automatically find this and use it instead of the default settings.</p>
+<p>In the same assembly that your migrations are located, create a new class (it must be public) that implements the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> interface and decorate the class with the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.VersionTableMetaDataAttribute.html">VersionTableMetaDataAttribute</a>. FluentMigrator will automatically find this and use it instead of the default settings.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The custom <a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData">IVersionTableMetaData</a> is filtered by the values in the <a href="xref:FluentMigrator.Runner.Initialization.TypeFilterOptions">TypeFilterOptions</a>. This allows different <a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData">IVersionTableMetaData</a> for every database.</p>
+<p>The custom <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> is filtered by the values in the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.Initialization.TypeFilterOptions.html">TypeFilterOptions</a>. This allows different <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> for every database.</p>
 </div>
 <p>A common use case is changing the default schema so that you can have a migration assembly per schema.</p>
 <pre><code class="lang-c#">using FluentMigrator.Runner.VersionTableInfo;
@@ -180,7 +180,8 @@ public class VersionTable : DefaultVersionTableMetaData
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

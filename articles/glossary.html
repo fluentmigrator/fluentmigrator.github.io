@@ -8,7 +8,7 @@
     <title>Glossary | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Glossary | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -59,11 +59,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -91,8 +91,8 @@
 <p>A migration must have:</p>
 <ul>
 <li><code>public</code> visibility</li>
-<li><a href="xref:FluentMigrator.IMigration">IMigration</a> as implemented interface (The <a href="xref:FluentMigrator.Migration">Migration class</a> already implements it)</li>
-<li><a href="xref:FluentMigrator.MaintenanceAttribute">MaintenanceAttribute</a></li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.IMigration.html">IMigration</a> as implemented interface (The <a class="xref" href="../api/v3.x/FluentMigrator.Migration.html">Migration class</a> already implements it)</li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.MaintenanceAttribute.html">MaintenanceAttribute</a></li>
 </ul>
 </div>
 <h2 id="migration-stages">Migration Stages</h2>
@@ -110,23 +110,23 @@
 <p>A migration must have:</p>
 <ul>
 <li><code>public</code> visibility</li>
-<li><a href="xref:FluentMigrator.IMigration">IMigration</a> as implemented interface (The <a href="xref:FluentMigrator.Migration">Migration class</a> already implements it)</li>
-<li><a href="xref:FluentMigrator.MigrationAttribute">MigrationAttribute</a></li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.IMigration.html">IMigration</a> as implemented interface (The <a class="xref" href="../api/v3.x/FluentMigrator.Migration.html">Migration class</a> already implements it)</li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.MigrationAttribute.html">MigrationAttribute</a></li>
 </ul>
 </div>
 <h1 id="migration-expression">Migration Expression</h1>
 <p>An expression created from within a <a href="#migration">migration</a> that gets used to
 produce an SQL statement (using a <a href="#migration-generator">migration generator</a>)
 that gets executed by a <a href="#migration-processor">migration processor</a>.</p>
-<p>A migration expression always implements <a href="xref:FluentMigrator.Expressions.IMigrationExpression">IMigrationExpression</a>.</p>
+<p>A migration expression always implements <a class="xref" href="../api/v3.x/FluentMigrator.Expressions.IMigrationExpression.html">IMigrationExpression</a>.</p>
 <h1 id="migration-generator">Migration Generator</h1>
 <p>Translates an <a href="#migration-expression">expression</a> created from within a <a href="#migration">migration</a>
 to one or more SQL statements.</p>
-<p>A migration generator always implements <a href="xref:FluentMigrator.IMigrationGenerator">IMigrationGenerator</a>.</p>
+<p>A migration generator always implements <a class="xref" href="../api/v3.x/FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a>.</p>
 <h1 id="migration-processor">Migration Processor</h1>
 <p>Passes the <a href="#migration-expression">expressions</a> to a <a href="#migration-generator">migration generator</a>
 and then executes the resulting SQL statements.</p>
-<p>A migration processor always implements <a href="xref:FluentMigrator.IMigrationProcessor">IMigrationProcessor</a>.</p>
+<p>A migration processor always implements <a class="xref" href="../api/v3.x/FluentMigrator.IMigrationProcessor.html">IMigrationProcessor</a>.</p>
 <h1 id="profile">Profile</h1>
 <p>A profile is used to selectively apply migrations.</p>
 <div class="WARNING">
@@ -138,8 +138,8 @@ and then executes the resulting SQL statements.</p>
 <p>A profile must have:</p>
 <ul>
 <li><code>public</code> visibility</li>
-<li><a href="xref:FluentMigrator.IMigration">IMigration</a> as implemented interface (The <a href="xref:FluentMigrator.Migration">Migration class</a> already implements it)</li>
-<li><a href="xref:FluentMigrator.ProfileAttribute">ProfileAttribute</a></li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.IMigration.html">IMigration</a> as implemented interface (The <a class="xref" href="../api/v3.x/FluentMigrator.Migration.html">Migration class</a> already implements it)</li>
+<li><a class="xref" href="../api/v3.x/FluentMigrator.ProfileAttribute.html">ProfileAttribute</a></li>
 </ul>
 </div>
 </article>
@@ -155,7 +155,8 @@ and then executes the resulting SQL statements.</p>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

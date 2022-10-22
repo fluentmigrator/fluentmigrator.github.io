@@ -8,7 +8,7 @@
     <title>Migration transaction behavior | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Migration transaction behavior | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -59,11 +59,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -82,10 +82,10 @@
 <p>There are two modes, Transaction-Per-Session and Transaction-Per-Migration. The default mode for FluentMigrator is Transaction-Per-Migration.</p>
 <h2 id="transaction-per-migration">Transaction-Per-Migration</h2>
 <p>This mode means that each migration is run in its own transaction and allows selected migrations to be run with no transaction. This allows migrations to be able to do tasks like creating full-text indexes which cannot be run in a transaction.</p>
-<p>This mode can be used in combination with the new <a href="xref:FluentMigrator.TransactionBehavior">TransactionBehavior</a> attribute.</p>
+<p>This mode can be used in combination with the new <a class="xref" href="../../api/v3.x/FluentMigrator.TransactionBehavior.html">TransactionBehavior</a> attribute.</p>
 <pre><code class="lang-cs">[Migration(201304210958, TransactionBehavior.None)]
 </code></pre>
-<p>For this migration it will be run outside of a transaction. The default value for <a href="xref:FluentMigrator.TransactionBehavior">TransactionBehavior</a> is <a href="xref:FluentMigrator.TransactionBehavior.Default">Default</a> which means the migration will be run in a transaction.</p>
+<p>For this migration it will be run outside of a transaction. The default value for <a class="xref" href="../../api/v3.x/FluentMigrator.TransactionBehavior.html">TransactionBehavior</a> is <a class="xref" href="../../api/v3.x/FluentMigrator.TransactionBehavior.html#FluentMigrator_TransactionBehavior_Default">Default</a> which means the migration will be run in a transaction.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Not all databases support &quot;Transactional Data Definition Language&quot; (Transactional DDL).</p>
@@ -110,7 +110,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

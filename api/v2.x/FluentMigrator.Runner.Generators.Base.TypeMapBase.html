@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TypeMapBase
    | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -87,21 +87,45 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">TypeMapBase</span></div>
       <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Oracle.OracleTypeMap.html">OracleTypeMap</a></div>
       <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.SqlAnywhere.SqlAnywhere16TypeMap.html">SqlAnywhere16TypeMap</a></div>
       <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000TypeMap.html">SqlServer2000TypeMap</a></div>
   </div>
-  <div classs="implements">
+  <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.Generators.ITypeMap.html">ITypeMap</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Generators.Base.html">FluentMigrator.Runner.Generators.Base</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
   <h5 id="FluentMigrator_Runner_Generators_Base_TypeMapBase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class TypeMapBase : object, ITypeMap</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class TypeMapBase : ITypeMap</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -124,7 +148,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected const string PrecisionPlaceholder = null</code></pre>
+    <pre><code class="lang-csharp hljs">protected const string PrecisionPlaceholder = &quot;$precision&quot;</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,7 +160,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -146,7 +170,7 @@
   
   
   <a id="FluentMigrator_Runner_Generators_Base_TypeMapBase_GetTypeMap_" data-uid="FluentMigrator.Runner.Generators.Base.TypeMapBase.GetTypeMap*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Base_TypeMapBase_GetTypeMap_DbType_System_Int32_System_Int32_" data-uid="FluentMigrator.Runner.Generators.Base.TypeMapBase.GetTypeMap(DbType,System.Int32,System.Int32)">GetTypeMap(DbType, Int32, Int32)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Base_TypeMapBase_GetTypeMap_System_Data_DbType_System_Int32_System_Int32_" data-uid="FluentMigrator.Runner.Generators.Base.TypeMapBase.GetTypeMap(System.Data.DbType,System.Int32,System.Int32)">GetTypeMap(DbType, Int32, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -164,17 +188,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DbType</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.dbtype">DbType</a></td>
         <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">size</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">precision</span></td>
         <td></td>
       </tr>
@@ -190,7 +214,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -198,7 +222,7 @@
   
   
   <a id="FluentMigrator_Runner_Generators_Base_TypeMapBase_SetTypeMap_" data-uid="FluentMigrator.Runner.Generators.Base.TypeMapBase.SetTypeMap*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Base_TypeMapBase_SetTypeMap_DbType_System_String_" data-uid="FluentMigrator.Runner.Generators.Base.TypeMapBase.SetTypeMap(DbType,System.String)">SetTypeMap(DbType, String)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Base_TypeMapBase_SetTypeMap_System_Data_DbType_System_String_" data-uid="FluentMigrator.Runner.Generators.Base.TypeMapBase.SetTypeMap(System.Data.DbType,System.String)">SetTypeMap(DbType, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -216,12 +240,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DbType</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.dbtype">DbType</a></td>
         <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">template</span></td>
         <td></td>
       </tr>
@@ -230,7 +254,7 @@
   
   
   <a id="FluentMigrator_Runner_Generators_Base_TypeMapBase_SetTypeMap_" data-uid="FluentMigrator.Runner.Generators.Base.TypeMapBase.SetTypeMap*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Base_TypeMapBase_SetTypeMap_DbType_System_String_System_Int32_" data-uid="FluentMigrator.Runner.Generators.Base.TypeMapBase.SetTypeMap(DbType,System.String,System.Int32)">SetTypeMap(DbType, String, Int32)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Base_TypeMapBase_SetTypeMap_System_Data_DbType_System_String_System_Int32_" data-uid="FluentMigrator.Runner.Generators.Base.TypeMapBase.SetTypeMap(System.Data.DbType,System.String,System.Int32)">SetTypeMap(DbType, String, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -248,17 +272,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DbType</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.dbtype">DbType</a></td>
         <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">template</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">maxSize</span></td>
         <td></td>
       </tr>
@@ -288,7 +312,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SQLiteDbFactory
    | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -87,12 +87,12 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="FluentMigrator.Runner.Processors.DbFactoryBase.html">DbFactoryBase</a></div>
     <div class="level2"><a class="xref" href="FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.html">ReflectionBasedDbFactory</a></div>
     <div class="level3"><span class="xref">SQLiteDbFactory</span></div>
   </div>
-  <div classs="implements">
+  <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.Processors.IDbFactory.html">IDbFactory</a></div>
   </div>
@@ -102,19 +102,19 @@
       <a class="xref" href="FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.html#FluentMigrator_Runner_Processors_ReflectionBasedDbFactory_CreateFactory">ReflectionBasedDbFactory.CreateFactory()</a>
     </div>
     <div>
-      <span class="xref">FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.TryCreateFactory(IEnumerable&lt;&gt;, ICollection&lt;&gt;, DbProviderFactory)</span>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.html#FluentMigrator_Runner_Processors_ReflectionBasedDbFactory_TryCreateFactory_System_Collections_Generic_IEnumerable_FluentMigrator_Runner_Processors_ReflectionBasedDbFactory_TestEntry__System_Collections_Generic_ICollection_System_Exception__System_Data_Common_DbProviderFactory__">ReflectionBasedDbFactory.TryCreateFactory(IEnumerable&lt;ReflectionBasedDbFactory.TestEntry&gt;, ICollection&lt;Exception&gt;, DbProviderFactory)</a>
     </div>
     <div>
-      <span class="xref">FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.TryCreateFromAppDomainPaths(FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.TestEntry, ICollection&lt;&gt;, DbProviderFactory)</span>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.html#FluentMigrator_Runner_Processors_ReflectionBasedDbFactory_TryCreateFromAppDomainPaths_FluentMigrator_Runner_Processors_ReflectionBasedDbFactory_TestEntry_System_Collections_Generic_ICollection_System_Exception__System_Data_Common_DbProviderFactory__">ReflectionBasedDbFactory.TryCreateFromAppDomainPaths(ReflectionBasedDbFactory.TestEntry, ICollection&lt;Exception&gt;, DbProviderFactory)</a>
     </div>
     <div>
-      <span class="xref">FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.TryCreateFactoryFromRuntimeHost(FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.TestEntry, ICollection&lt;&gt;, DbProviderFactory)</span>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.html#FluentMigrator_Runner_Processors_ReflectionBasedDbFactory_TryCreateFactoryFromRuntimeHost_FluentMigrator_Runner_Processors_ReflectionBasedDbFactory_TestEntry_System_Collections_Generic_ICollection_System_Exception__System_Data_Common_DbProviderFactory__">ReflectionBasedDbFactory.TryCreateFactoryFromRuntimeHost(ReflectionBasedDbFactory.TestEntry, ICollection&lt;Exception&gt;, DbProviderFactory)</a>
     </div>
     <div>
-      <span class="xref">FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.TryLoadAssemblyFromAppDomainDirectories(System.String, ICollection&lt;&gt;, Assembly)</span>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.html#FluentMigrator_Runner_Processors_ReflectionBasedDbFactory_TryLoadAssemblyFromAppDomainDirectories_System_String_System_Collections_Generic_ICollection_System_Exception__System_Reflection_Assembly__">ReflectionBasedDbFactory.TryLoadAssemblyFromAppDomainDirectories(String, ICollection&lt;Exception&gt;, Assembly)</a>
     </div>
     <div>
-      <span class="xref">FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.TryLoadAssemblyFromDirectories(IEnumerable&lt;&gt;, System.String, ICollection&lt;&gt;, Assembly)</span>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ReflectionBasedDbFactory.html#FluentMigrator_Runner_Processors_ReflectionBasedDbFactory_TryLoadAssemblyFromDirectories_System_Collections_Generic_IEnumerable_System_String__System_String_System_Collections_Generic_ICollection_System_Exception__System_Reflection_Assembly__">ReflectionBasedDbFactory.TryLoadAssemblyFromDirectories(IEnumerable&lt;String&gt;, String, ICollection&lt;Exception&gt;, Assembly)</a>
     </div>
     <div>
       <a class="xref" href="FluentMigrator.Runner.Processors.DbFactoryBase.html#FluentMigrator_Runner_Processors_DbFactoryBase_Factory">DbFactoryBase.Factory</a>
@@ -123,7 +123,28 @@
       <a class="xref" href="FluentMigrator.Runner.Processors.DbFactoryBase.html#FluentMigrator_Runner_Processors_DbFactoryBase_CreateConnection_System_String_">DbFactoryBase.CreateConnection(String)</a>
     </div>
     <div>
-      <a class="xref" href="FluentMigrator.Runner.Processors.DbFactoryBase.html#FluentMigrator_Runner_Processors_DbFactoryBase_CreateCommand_System_String_IDbConnection_IDbTransaction_FluentMigrator_IMigrationProcessorOptions_">DbFactoryBase.CreateCommand(String, IDbConnection, IDbTransaction, IMigrationProcessorOptions)</a>
+      <a class="xref" href="FluentMigrator.Runner.Processors.DbFactoryBase.html#FluentMigrator_Runner_Processors_DbFactoryBase_CreateCommand_System_String_System_Data_IDbConnection_System_Data_IDbTransaction_FluentMigrator_IMigrationProcessorOptions_">DbFactoryBase.CreateCommand(String, IDbConnection, IDbTransaction, IMigrationProcessorOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Processors.SQLite.html">FluentMigrator.Runner.Processors.SQLite</a></h6>
@@ -158,7 +179,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

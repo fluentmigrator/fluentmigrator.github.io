@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ColumnBase
    | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -87,18 +87,42 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">ColumnBase</span></div>
   </div>
-  <div classs="implements">
+  <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.Generators.IColumn.html">IColumn</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Generators.Base.html">FluentMigrator.Runner.Generators.Base</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
   <h5 id="FluentMigrator_Runner_Generators_Base_ColumnBase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ColumnBase : object, IColumn</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ColumnBase : IColumn</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -156,7 +180,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;<span class="xref">Func</span>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -181,7 +205,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -216,7 +240,7 @@
   
   
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_AddPrimaryKeyConstraint_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.AddPrimaryKeyConstraint*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_AddPrimaryKeyConstraint_System_String_IEnumerable_FluentMigrator_Model_ColumnDefinition__" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.AddPrimaryKeyConstraint(System.String,IEnumerable{FluentMigrator.Model.ColumnDefinition})">AddPrimaryKeyConstraint(String, IEnumerable&lt;ColumnDefinition&gt;)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_AddPrimaryKeyConstraint_System_String_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.AddPrimaryKeyConstraint(System.String,System.Collections.Generic.IEnumerable{FluentMigrator.Model.ColumnDefinition})">AddPrimaryKeyConstraint(String, IEnumerable&lt;ColumnDefinition&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -234,12 +258,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableName</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
         <td><span class="parametername">primaryKeyColumns</span></td>
         <td></td>
       </tr>
@@ -255,7 +279,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -263,7 +287,7 @@
   
   
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatCascade_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatCascade*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatCascade_System_String_Rule_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatCascade(System.String,Rule)">FormatCascade(String, Rule)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatCascade_System_String_System_Data_Rule_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatCascade(System.String,System.Data.Rule)">FormatCascade(String, Rule)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -281,12 +305,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">onWhat</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Rule</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.rule">Rule</a></td>
         <td><span class="parametername">rule</span></td>
         <td></td>
       </tr>
@@ -302,7 +326,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -344,7 +368,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -386,7 +410,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -394,7 +418,7 @@
   
   
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatForeignKey_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatForeignKey*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatForeignKey_FluentMigrator_Model_ForeignKeyDefinition_Func_FluentMigrator_Model_ForeignKeyDefinition_System_String__" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatForeignKey(FluentMigrator.Model.ForeignKeyDefinition,Func{FluentMigrator.Model.ForeignKeyDefinition,System.String})">FormatForeignKey(ForeignKeyDefinition, Func&lt;ForeignKeyDefinition, String&gt;)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_FormatForeignKey_FluentMigrator_Model_ForeignKeyDefinition_System_Func_FluentMigrator_Model_ForeignKeyDefinition_System_String__" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.FormatForeignKey(FluentMigrator.Model.ForeignKeyDefinition,System.Func{FluentMigrator.Model.ForeignKeyDefinition,System.String})">FormatForeignKey(ForeignKeyDefinition, Func&lt;ForeignKeyDefinition, String&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -417,7 +441,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="FluentMigrator.Model.ForeignKeyDefinition.html">ForeignKeyDefinition</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="FluentMigrator.Model.ForeignKeyDefinition.html">ForeignKeyDefinition</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">fkNameGeneration</span></td>
         <td></td>
       </tr>
@@ -433,7 +457,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -475,7 +499,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -517,7 +541,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -559,7 +583,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -601,7 +625,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -643,7 +667,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -685,7 +709,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -693,7 +717,7 @@
   
   
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_Generate_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.Generate*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_Generate_IEnumerable_FluentMigrator_Model_ColumnDefinition__System_String_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.Generate(IEnumerable{FluentMigrator.Model.ColumnDefinition},System.String)">Generate(IEnumerable&lt;ColumnDefinition&gt;, String)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_Generate_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__System_String_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.Generate(System.Collections.Generic.IEnumerable{FluentMigrator.Model.ColumnDefinition},System.String)">Generate(IEnumerable&lt;ColumnDefinition&gt;, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -711,12 +735,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
         <td><span class="parametername">columns</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableName</span></td>
         <td></td>
       </tr>
@@ -732,7 +756,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -774,7 +798,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -782,7 +806,7 @@
   
   
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetPrimaryKeyConstraintName_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetPrimaryKeyConstraintName*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetPrimaryKeyConstraintName_IEnumerable_FluentMigrator_Model_ColumnDefinition__System_String_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetPrimaryKeyConstraintName(IEnumerable{FluentMigrator.Model.ColumnDefinition},System.String)">GetPrimaryKeyConstraintName(IEnumerable&lt;ColumnDefinition&gt;, String)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetPrimaryKeyConstraintName_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__System_String_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetPrimaryKeyConstraintName(System.Collections.Generic.IEnumerable{FluentMigrator.Model.ColumnDefinition},System.String)">GetPrimaryKeyConstraintName(IEnumerable&lt;ColumnDefinition&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Gets the name of the primary key constraint. Some Generators may need to override if the constraint name is limited</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -801,12 +825,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
         <td><span class="parametername">primaryKeyColumns</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">tableName</span></td>
         <td></td>
       </tr>
@@ -822,7 +846,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -830,7 +854,7 @@
   
   
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetTypeMap_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetTypeMap*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetTypeMap_DbType_System_Int32_System_Int32_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetTypeMap(DbType,System.Int32,System.Int32)">GetTypeMap(DbType, Int32, Int32)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_GetTypeMap_System_Data_DbType_System_Int32_System_Int32_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.GetTypeMap(System.Data.DbType,System.Int32,System.Int32)">GetTypeMap(DbType, Int32, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -848,17 +872,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DbType</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.dbtype">DbType</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">size</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">precision</span></td>
         <td></td>
       </tr>
@@ -874,7 +898,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -882,7 +906,7 @@
   
   
   <a id="FluentMigrator_Runner_Generators_Base_ColumnBase_ShouldPrimaryKeysBeAddedSeparately_" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.ShouldPrimaryKeysBeAddedSeparately*"></a>
-  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_ShouldPrimaryKeysBeAddedSeparately_IEnumerable_FluentMigrator_Model_ColumnDefinition__" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.ShouldPrimaryKeysBeAddedSeparately(IEnumerable{FluentMigrator.Model.ColumnDefinition})">ShouldPrimaryKeysBeAddedSeparately(IEnumerable&lt;ColumnDefinition&gt;)</h4>
+  <h4 id="FluentMigrator_Runner_Generators_Base_ColumnBase_ShouldPrimaryKeysBeAddedSeparately_System_Collections_Generic_IEnumerable_FluentMigrator_Model_ColumnDefinition__" data-uid="FluentMigrator.Runner.Generators.Base.ColumnBase.ShouldPrimaryKeysBeAddedSeparately(System.Collections.Generic.IEnumerable{FluentMigrator.Model.ColumnDefinition})">ShouldPrimaryKeysBeAddedSeparately(IEnumerable&lt;ColumnDefinition&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -900,7 +924,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
         <td><span class="parametername">primaryKeyColumns</span></td>
         <td></td>
       </tr>
@@ -916,7 +940,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -935,7 +959,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

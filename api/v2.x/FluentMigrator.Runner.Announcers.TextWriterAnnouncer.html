@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TextWriterAnnouncer
    | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.44.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -87,12 +87,12 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="FluentMigrator.Runner.Announcers.Announcer.html">Announcer</a></div>
     <div class="level2"><span class="xref">TextWriterAnnouncer</span></div>
       <div class="level3"><a class="xref" href="FluentMigrator.Runner.Announcers.TextWriterWithGoAnnouncer.html">TextWriterWithGoAnnouncer</a></div>
   </div>
-  <div classs="implements">
+  <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.IAnnouncer.html">IAnnouncer</a></div>
   </div>
@@ -114,10 +114,31 @@
       <a class="xref" href="FluentMigrator.Runner.Announcers.Announcer.html#FluentMigrator_Runner_Announcers_Announcer_Sql_System_String_">Announcer.Sql(String)</a>
     </div>
     <div>
-      <a class="xref" href="FluentMigrator.Runner.Announcers.Announcer.html#FluentMigrator_Runner_Announcers_Announcer_Error_Exception_">Announcer.Error(Exception)</a>
+      <a class="xref" href="FluentMigrator.Runner.Announcers.Announcer.html#FluentMigrator_Runner_Announcers_Announcer_Error_System_Exception_">Announcer.Error(Exception)</a>
     </div>
     <div>
       <a class="xref" href="FluentMigrator.Runner.Announcers.Announcer.html#FluentMigrator_Runner_Announcers_Announcer_Error_System_String_">Announcer.Error(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Announcers.html">FluentMigrator.Runner.Announcers</a></h6>
@@ -131,7 +152,7 @@
   
   
   <a id="FluentMigrator_Runner_Announcers_TextWriterAnnouncer__ctor_" data-uid="FluentMigrator.Runner.Announcers.TextWriterAnnouncer.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Announcers_TextWriterAnnouncer__ctor_Action_System_String__" data-uid="FluentMigrator.Runner.Announcers.TextWriterAnnouncer.#ctor(Action{System.String})">TextWriterAnnouncer(Action&lt;String&gt;)</h4>
+  <h4 id="FluentMigrator_Runner_Announcers_TextWriterAnnouncer__ctor_System_Action_System_String__" data-uid="FluentMigrator.Runner.Announcers.TextWriterAnnouncer.#ctor(System.Action{System.String})">TextWriterAnnouncer(Action&lt;String&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -149,7 +170,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">write</span></td>
         <td></td>
       </tr>
@@ -158,7 +179,7 @@
   
   
   <a id="FluentMigrator_Runner_Announcers_TextWriterAnnouncer__ctor_" data-uid="FluentMigrator.Runner.Announcers.TextWriterAnnouncer.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Announcers_TextWriterAnnouncer__ctor_TextWriter_" data-uid="FluentMigrator.Runner.Announcers.TextWriterAnnouncer.#ctor(TextWriter)">TextWriterAnnouncer(TextWriter)</h4>
+  <h4 id="FluentMigrator_Runner_Announcers_TextWriterAnnouncer__ctor_System_IO_TextWriter_" data-uid="FluentMigrator.Runner.Announcers.TextWriterAnnouncer.#ctor(System.IO.TextWriter)">TextWriterAnnouncer(TextWriter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -176,7 +197,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TextWriter</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></td>
         <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
@@ -187,7 +208,7 @@
   
   
   <a id="FluentMigrator_Runner_Announcers_TextWriterAnnouncer_ElapsedTime_" data-uid="FluentMigrator.Runner.Announcers.TextWriterAnnouncer.ElapsedTime*"></a>
-  <h4 id="FluentMigrator_Runner_Announcers_TextWriterAnnouncer_ElapsedTime_TimeSpan_" data-uid="FluentMigrator.Runner.Announcers.TextWriterAnnouncer.ElapsedTime(TimeSpan)">ElapsedTime(TimeSpan)</h4>
+  <h4 id="FluentMigrator_Runner_Announcers_TextWriterAnnouncer_ElapsedTime_System_TimeSpan_" data-uid="FluentMigrator.Runner.Announcers.TextWriterAnnouncer.ElapsedTime(System.TimeSpan)">ElapsedTime(TimeSpan)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -205,14 +226,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">timeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="FluentMigrator.Runner.Announcers.Announcer.html#FluentMigrator_Runner_Announcers_Announcer_ElapsedTime_TimeSpan_">Announcer.ElapsedTime(TimeSpan)</a></div>
+  <div><a class="xref" href="FluentMigrator.Runner.Announcers.Announcer.html#FluentMigrator_Runner_Announcers_Announcer_ElapsedTime_System_TimeSpan_">Announcer.ElapsedTime(TimeSpan)</a></div>
   
   
   <a id="FluentMigrator_Runner_Announcers_TextWriterAnnouncer_Heading_" data-uid="FluentMigrator.Runner.Announcers.TextWriterAnnouncer.Heading*"></a>
@@ -234,7 +255,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -263,12 +284,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">isNotSql</span></td>
         <td></td>
       </tr>
@@ -290,7 +311,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

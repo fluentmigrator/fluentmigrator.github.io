@@ -94,35 +94,11 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.IAnnouncer.html">IAnnouncer</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Announcers.html">FluentMigrator.Runner.Announcers</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
   <h5 id="FluentMigrator_Runner_Announcers_CompositeAnnouncer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CompositeAnnouncer : IAnnouncer</code></pre>
+    <pre><code class="lang-csharp hljs">public class CompositeAnnouncer : object, IAnnouncer</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -175,7 +151,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FluentMigrator.Runner.IAnnouncer.html">IAnnouncer</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="FluentMigrator.Runner.IAnnouncer.html">IAnnouncer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -185,7 +161,7 @@
   
   
   <a id="FluentMigrator_Runner_Announcers_CompositeAnnouncer_ElapsedTime_" data-uid="FluentMigrator.Runner.Announcers.CompositeAnnouncer.ElapsedTime*"></a>
-  <h4 id="FluentMigrator_Runner_Announcers_CompositeAnnouncer_ElapsedTime_System_TimeSpan_" data-uid="FluentMigrator.Runner.Announcers.CompositeAnnouncer.ElapsedTime(System.TimeSpan)">ElapsedTime(TimeSpan)</h4>
+  <h4 id="FluentMigrator_Runner_Announcers_CompositeAnnouncer_ElapsedTime_TimeSpan_" data-uid="FluentMigrator.Runner.Announcers.CompositeAnnouncer.ElapsedTime(TimeSpan)">ElapsedTime(TimeSpan)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -203,7 +179,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">timeSpan</span></td>
         <td></td>
       </tr>
@@ -239,7 +215,7 @@
   
   
   <a id="FluentMigrator_Runner_Announcers_CompositeAnnouncer_Error_" data-uid="FluentMigrator.Runner.Announcers.CompositeAnnouncer.Error*"></a>
-  <h4 id="FluentMigrator_Runner_Announcers_CompositeAnnouncer_Error_System_Exception_" data-uid="FluentMigrator.Runner.Announcers.CompositeAnnouncer.Error(System.Exception)">Error(Exception)</h4>
+  <h4 id="FluentMigrator_Runner_Announcers_CompositeAnnouncer_Error_Exception_" data-uid="FluentMigrator.Runner.Announcers.CompositeAnnouncer.Error(Exception)">Error(Exception)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -257,7 +233,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">exception</span></td>
         <td></td>
       </tr>
@@ -379,8 +355,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public void Write(string message, bool isNotSql)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Write(string message, bool isNotSql)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

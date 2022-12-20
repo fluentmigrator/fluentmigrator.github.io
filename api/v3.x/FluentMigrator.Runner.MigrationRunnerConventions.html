@@ -94,35 +94,11 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.IMigrationRunnerConventions.html">IMigrationRunnerConventions</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.html">FluentMigrator.Runner</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
   <h5 id="FluentMigrator_Runner_MigrationRunnerConventions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MigrationRunnerConventions : IMigrationRunnerConventions</code></pre>
+    <pre><code class="lang-csharp hljs">public class MigrationRunnerConventions : object, IMigrationRunnerConventions</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -168,7 +144,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">MigrationStage</span>&gt;&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">MigrationStage</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -186,8 +162,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -199,7 +174,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <span class="xref">IMigrationInfo</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <span class="xref">IMigrationInfo</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -229,7 +204,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span class="xref">IMigration</span>, <span class="xref">IMigrationInfo</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">IMigration</span>, <span class="xref">IMigrationInfo</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -259,7 +234,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -289,7 +264,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -319,7 +294,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -349,7 +324,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -379,7 +354,7 @@ public Func&lt;Type, IMigrationInfo&gt; GetMigrationInfo { get; set; }</code></p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

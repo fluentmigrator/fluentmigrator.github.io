@@ -95,38 +95,93 @@
     <div><a class="xref" href="FluentMigrator.Runner.IMigrationRunner.html">IMigrationRunner</a></div>
     <div><a class="xref" href="FluentMigrator.Runner.IMigrationScopeStarter.html">IMigrationScopeStarter</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.html">FluentMigrator.Runner</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
   <h5 id="FluentMigrator_Runner_MigrationRunner_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MigrationRunner : IMigrationRunner, IMigrationScopeStarter</code></pre>
+    <pre><code class="lang-csharp hljs">public class MigrationRunner : object, IMigrationRunner, IMigrationScopeStarter</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
+  
+  
+  <a id="FluentMigrator_Runner_MigrationRunner__ctor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(Assembly,FluentMigrator.Runner.Initialization.IRunnerContext,IMigrationProcessor)">MigrationRunner(Assembly, IRunnerContext, IMigrationProcessor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MigrationRunner(Assembly assembly, IRunnerContext runnerContext, IMigrationProcessor processor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a></td>
+        <td><span class="parametername">runnerContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMigrationProcessor</span></td>
+        <td><span class="parametername">processor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FluentMigrator_Runner_MigrationRunner__ctor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_FluentMigrator_Runner_Conventions_IConventionSet_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(Assembly,FluentMigrator.Runner.Initialization.IRunnerContext,IMigrationProcessor,FluentMigrator.Runner.Conventions.IConventionSet)">MigrationRunner(Assembly, IRunnerContext, IMigrationProcessor, IConventionSet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MigrationRunner(Assembly assembly, IRunnerContext runnerContext, IMigrationProcessor processor, IConventionSet conventionSet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a></td>
+        <td><span class="parametername">runnerContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMigrationProcessor</span></td>
+        <td><span class="parametername">processor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Conventions.IConventionSet.html">IConventionSet</a></td>
+        <td><span class="parametername">conventionSet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="FluentMigrator_Runner_MigrationRunner__ctor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor*"></a>
@@ -226,85 +281,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="FluentMigrator_Runner_MigrationRunner__ctor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_System_Reflection_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(System.Reflection.Assembly,FluentMigrator.Runner.Initialization.IRunnerContext,IMigrationProcessor)">MigrationRunner(Assembly, IRunnerContext, IMigrationProcessor)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MigrationRunner(Assembly assembly, IRunnerContext runnerContext, IMigrationProcessor processor)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
-        <td><span class="parametername">assembly</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a></td>
-        <td><span class="parametername">runnerContext</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">IMigrationProcessor</span></td>
-        <td><span class="parametername">processor</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FluentMigrator_Runner_MigrationRunner__ctor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_System_Reflection_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_FluentMigrator_Runner_Conventions_IConventionSet_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(System.Reflection.Assembly,FluentMigrator.Runner.Initialization.IRunnerContext,IMigrationProcessor,FluentMigrator.Runner.Conventions.IConventionSet)">MigrationRunner(Assembly, IRunnerContext, IMigrationProcessor, IConventionSet)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MigrationRunner(Assembly assembly, IRunnerContext runnerContext, IMigrationProcessor processor, IConventionSet conventionSet)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
-        <td><span class="parametername">assembly</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a></td>
-        <td><span class="parametername">runnerContext</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">IMigrationProcessor</span></td>
-        <td><span class="parametername">processor</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.Conventions.IConventionSet.html">IConventionSet</a></td>
-        <td><span class="parametername">conventionSet</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -327,7 +303,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="xref">IList</span>&lt;<span class="xref">Exception</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -770,7 +746,7 @@
   
   
   <a id="FluentMigrator_Runner_MigrationRunner_ExecuteExpressions_" data-uid="FluentMigrator.Runner.MigrationRunner.ExecuteExpressions*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunner_ExecuteExpressions_System_Collections_Generic_ICollection_IMigrationExpression__" data-uid="FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(System.Collections.Generic.ICollection{IMigrationExpression})">ExecuteExpressions(ICollection&lt;IMigrationExpression&gt;)</h4>
+  <h4 id="FluentMigrator_Runner_MigrationRunner_ExecuteExpressions_ICollection_IMigrationExpression__" data-uid="FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(ICollection{IMigrationExpression})">ExecuteExpressions(ICollection&lt;IMigrationExpression&gt;)</h4>
   <div class="markdown level1 summary"><p>execute each migration expression in the expression collection</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -789,7 +765,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">IMigrationExpression</span>&gt;</td>
+        <td><span class="xref">ICollection</span>&lt;<span class="xref">IMigrationExpression</span>&gt;</td>
         <td><span class="parametername">expressions</span></td>
         <td></td>
       </tr>

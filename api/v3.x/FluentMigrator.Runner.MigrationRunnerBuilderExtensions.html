@@ -91,35 +91,11 @@
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">MigrationRunnerBuilderExtensions</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.html">FluentMigrator.Runner</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
   <h5 id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class MigrationRunnerBuilderExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class MigrationRunnerBuilderExtensions : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -181,13 +157,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerBuilderExtensions_ConfigureGlobalProcessorOptions_FluentMigrator_Runner_IMigrationRunnerBuilder_System_Action_FluentMigrator_Runner_Processors_ProcessorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerBuilderExtensions.ConfigureGlobalProcessorOptions(FluentMigrator.Runner.IMigrationRunnerBuilder%2CSystem.Action%7BFluentMigrator.Runner.Processors.ProcessorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerBuilderExtensions_ConfigureGlobalProcessorOptions_FluentMigrator_Runner_IMigrationRunnerBuilder_Action_FluentMigrator_Runner_Processors_ProcessorOptions__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerBuilderExtensions.ConfigureGlobalProcessorOptions(FluentMigrator.Runner.IMigrationRunnerBuilder%2CAction%7BFluentMigrator.Runner.Processors.ProcessorOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunnerBuilderExtensions.cs/#L45">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_ConfigureGlobalProcessorOptions_" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.ConfigureGlobalProcessorOptions*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_ConfigureGlobalProcessorOptions_FluentMigrator_Runner_IMigrationRunnerBuilder_System_Action_FluentMigrator_Runner_Processors_ProcessorOptions__" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.ConfigureGlobalProcessorOptions(FluentMigrator.Runner.IMigrationRunnerBuilder,System.Action{FluentMigrator.Runner.Processors.ProcessorOptions})">ConfigureGlobalProcessorOptions(IMigrationRunnerBuilder, Action&lt;ProcessorOptions&gt;)</h4>
+  <h4 id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_ConfigureGlobalProcessorOptions_FluentMigrator_Runner_IMigrationRunnerBuilder_Action_FluentMigrator_Runner_Processors_ProcessorOptions__" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.ConfigureGlobalProcessorOptions(FluentMigrator.Runner.IMigrationRunnerBuilder,Action{FluentMigrator.Runner.Processors.ProcessorOptions})">ConfigureGlobalProcessorOptions(IMigrationRunnerBuilder, Action&lt;ProcessorOptions&gt;)</h4>
   <div class="markdown level1 summary"><p>Sets configuration action for global processor options</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -212,7 +188,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FluentMigrator.Runner.Processors.ProcessorOptions.html">ProcessorOptions</a>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="FluentMigrator.Runner.Processors.ProcessorOptions.html">ProcessorOptions</a>&gt;</td>
         <td><span class="parametername">configureAction</span></td>
         <td><p>The configuration action</p>
 </td>
@@ -237,13 +213,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerBuilderExtensions_ScanIn_FluentMigrator_Runner_IMigrationRunnerBuilder_System_Reflection_Assembly___.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerBuilderExtensions.ScanIn(FluentMigrator.Runner.IMigrationRunnerBuilder%2CSystem.Reflection.Assembly%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerBuilderExtensions_ScanIn_FluentMigrator_Runner_IMigrationRunnerBuilder_Assembly___.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerBuilderExtensions.ScanIn(FluentMigrator.Runner.IMigrationRunnerBuilder%2CAssembly%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunnerBuilderExtensions.cs/#L183">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_ScanIn_" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.ScanIn*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_ScanIn_FluentMigrator_Runner_IMigrationRunnerBuilder_System_Reflection_Assembly___" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.ScanIn(FluentMigrator.Runner.IMigrationRunnerBuilder,System.Reflection.Assembly[])">ScanIn(IMigrationRunnerBuilder, Assembly[])</h4>
+  <h4 id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_ScanIn_FluentMigrator_Runner_IMigrationRunnerBuilder_Assembly___" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.ScanIn(FluentMigrator.Runner.IMigrationRunnerBuilder,Assembly[])">ScanIn(IMigrationRunnerBuilder, Assembly[])</h4>
   <div class="markdown level1 summary"><p>Scans for types in the given assemblies</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -268,7 +244,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>[]</td>
+        <td><span class="xref">Assembly</span>[]</td>
         <td><span class="parametername">assemblies</span></td>
         <td><p>The assemblies to scan</p>
 </td>
@@ -293,13 +269,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalCommandTimeout_FluentMigrator_Runner_IMigrationRunnerBuilder_System_TimeSpan_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalCommandTimeout(FluentMigrator.Runner.IMigrationRunnerBuilder%2CSystem.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalCommandTimeout_FluentMigrator_Runner_IMigrationRunnerBuilder_TimeSpan_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalCommandTimeout(FluentMigrator.Runner.IMigrationRunnerBuilder%2CTimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunnerBuilderExtensions.cs/#L94">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalCommandTimeout_" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalCommandTimeout*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalCommandTimeout_FluentMigrator_Runner_IMigrationRunnerBuilder_System_TimeSpan_" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalCommandTimeout(FluentMigrator.Runner.IMigrationRunnerBuilder,System.TimeSpan)">WithGlobalCommandTimeout(IMigrationRunnerBuilder, TimeSpan)</h4>
+  <h4 id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalCommandTimeout_FluentMigrator_Runner_IMigrationRunnerBuilder_TimeSpan_" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalCommandTimeout(FluentMigrator.Runner.IMigrationRunnerBuilder,TimeSpan)">WithGlobalCommandTimeout(IMigrationRunnerBuilder, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Sets the global command timeout</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -324,7 +300,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">commandTimeout</span></td>
         <td><p>The global command timeout</p>
 </td>
@@ -349,13 +325,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalConnectionString_FluentMigrator_Runner_IMigrationRunnerBuilder_System_Func_System_IServiceProvider_System_String__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalConnectionString(FluentMigrator.Runner.IMigrationRunnerBuilder%2CSystem.Func%7BSystem.IServiceProvider%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalConnectionString_FluentMigrator_Runner_IMigrationRunnerBuilder_Func_IServiceProvider_System_String__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalConnectionString(FluentMigrator.Runner.IMigrationRunnerBuilder%2CFunc%7BIServiceProvider%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunnerBuilderExtensions.cs/#L73">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalConnectionString_" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalConnectionString*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalConnectionString_FluentMigrator_Runner_IMigrationRunnerBuilder_System_Func_System_IServiceProvider_System_String__" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalConnectionString(FluentMigrator.Runner.IMigrationRunnerBuilder,System.Func{System.IServiceProvider,System.String})">WithGlobalConnectionString(IMigrationRunnerBuilder, Func&lt;IServiceProvider, String&gt;)</h4>
+  <h4 id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithGlobalConnectionString_FluentMigrator_Runner_IMigrationRunnerBuilder_Func_IServiceProvider_System_String__" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithGlobalConnectionString(FluentMigrator.Runner.IMigrationRunnerBuilder,Func{IServiceProvider,System.String})">WithGlobalConnectionString(IMigrationRunnerBuilder, Func&lt;IServiceProvider, String&gt;)</h4>
   <div class="markdown level1 summary"><p>Sets the global connection string</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -380,7 +356,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">IServiceProvider</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">configureConnectionString</span></td>
         <td><p>The function that creates the connection string.</p>
 </td>
@@ -517,13 +493,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithMigrationsIn_FluentMigrator_Runner_IMigrationRunnerBuilder_System_Reflection_Assembly___.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithMigrationsIn(FluentMigrator.Runner.IMigrationRunnerBuilder%2CSystem.Reflection.Assembly%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithMigrationsIn_FluentMigrator_Runner_IMigrationRunnerBuilder_Assembly___.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithMigrationsIn(FluentMigrator.Runner.IMigrationRunnerBuilder%2CAssembly%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunnerBuilderExtensions.cs/#L168">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithMigrationsIn_" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithMigrationsIn*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithMigrationsIn_FluentMigrator_Runner_IMigrationRunnerBuilder_System_Reflection_Assembly___" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithMigrationsIn(FluentMigrator.Runner.IMigrationRunnerBuilder,System.Reflection.Assembly[])">WithMigrationsIn(IMigrationRunnerBuilder, Assembly[])</h4>
+  <h4 id="FluentMigrator_Runner_MigrationRunnerBuilderExtensions_WithMigrationsIn_FluentMigrator_Runner_IMigrationRunnerBuilder_Assembly___" data-uid="FluentMigrator.Runner.MigrationRunnerBuilderExtensions.WithMigrationsIn(FluentMigrator.Runner.IMigrationRunnerBuilder,Assembly[])">WithMigrationsIn(IMigrationRunnerBuilder, Assembly[])</h4>
   <div class="markdown level1 summary"><p>Adds the migrations</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -548,7 +524,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>[]</td>
+        <td><span class="xref">Assembly</span>[]</td>
         <td><span class="parametername">assemblies</span></td>
         <td><p>The target assemblies</p>
 </td>

@@ -94,35 +94,11 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FluentMigrator.Runner.Conventions.IConventionSet.html">IConventionSet</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.html">FluentMigrator.Runner</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
   <h5 id="FluentMigrator_Runner_DefaultConventionSet_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DefaultConventionSet : IConventionSet</code></pre>
+    <pre><code class="lang-csharp hljs">public class DefaultConventionSet : object, IConventionSet</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -159,8 +135,7 @@
   
   <a id="FluentMigrator_Runner_DefaultConventionSet_AutoNameConventions_" data-uid="FluentMigrator.Runner.DefaultConventionSet.AutoNameConventions*"></a>
   <h4 id="FluentMigrator_Runner_DefaultConventionSet_AutoNameConventions" data-uid="FluentMigrator.Runner.DefaultConventionSet.AutoNameConventions">AutoNameConventions</h4>
-  <div class="markdown level1 summary"><p>Gets the conventions to be applied to <a class="xref" href="FluentMigrator.Expressions.IAutoNameExpression.html">IAutoNameExpression</a> implementations</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -176,7 +151,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.IAutoNameConvention.html">IAutoNameConvention</a>&gt;</td>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.IAutoNameConvention.html">IAutoNameConvention</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -185,8 +160,7 @@
   
   <a id="FluentMigrator_Runner_DefaultConventionSet_ColumnsConventions_" data-uid="FluentMigrator.Runner.DefaultConventionSet.ColumnsConventions*"></a>
   <h4 id="FluentMigrator_Runner_DefaultConventionSet_ColumnsConventions" data-uid="FluentMigrator.Runner.DefaultConventionSet.ColumnsConventions">ColumnsConventions</h4>
-  <div class="markdown level1 summary"><p>Gets the conventions to be applied to <a class="xref" href="FluentMigrator.Expressions.IColumnsExpression.html">IColumnsExpression</a> implementations</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -202,7 +176,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.IColumnsConvention.html">IColumnsConvention</a>&gt;</td>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.IColumnsConvention.html">IColumnsConvention</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -211,8 +185,7 @@
   
   <a id="FluentMigrator_Runner_DefaultConventionSet_ConstraintConventions_" data-uid="FluentMigrator.Runner.DefaultConventionSet.ConstraintConventions*"></a>
   <h4 id="FluentMigrator_Runner_DefaultConventionSet_ConstraintConventions" data-uid="FluentMigrator.Runner.DefaultConventionSet.ConstraintConventions">ConstraintConventions</h4>
-  <div class="markdown level1 summary"><p>Gets the conventions to be applied to <a class="xref" href="FluentMigrator.Expressions.IConstraintExpression.html">IConstraintExpression</a> implementations</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -228,7 +201,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.IConstraintConvention.html">IConstraintConvention</a>&gt;</td>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.IConstraintConvention.html">IConstraintConvention</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -237,8 +210,7 @@
   
   <a id="FluentMigrator_Runner_DefaultConventionSet_ForeignKeyConventions_" data-uid="FluentMigrator.Runner.DefaultConventionSet.ForeignKeyConventions*"></a>
   <h4 id="FluentMigrator_Runner_DefaultConventionSet_ForeignKeyConventions" data-uid="FluentMigrator.Runner.DefaultConventionSet.ForeignKeyConventions">ForeignKeyConventions</h4>
-  <div class="markdown level1 summary"><p>Gets the conventions to be applied to <a class="xref" href="FluentMigrator.Expressions.IForeignKeyExpression.html">IForeignKeyExpression</a> implementations</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -254,7 +226,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.IForeignKeyConvention.html">IForeignKeyConvention</a>&gt;</td>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.IForeignKeyConvention.html">IForeignKeyConvention</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -263,8 +235,7 @@
   
   <a id="FluentMigrator_Runner_DefaultConventionSet_IndexConventions_" data-uid="FluentMigrator.Runner.DefaultConventionSet.IndexConventions*"></a>
   <h4 id="FluentMigrator_Runner_DefaultConventionSet_IndexConventions" data-uid="FluentMigrator.Runner.DefaultConventionSet.IndexConventions">IndexConventions</h4>
-  <div class="markdown level1 summary"><p>Gets the conventions to be applied to <a class="xref" href="FluentMigrator.Expressions.IIndexExpression.html">IIndexExpression</a> implementations</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -280,7 +251,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.IIndexConvention.html">IIndexConvention</a>&gt;</td>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.IIndexConvention.html">IIndexConvention</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -345,8 +316,7 @@ must be implemented/provided instead.</p>
   
   <a id="FluentMigrator_Runner_DefaultConventionSet_SequenceConventions_" data-uid="FluentMigrator.Runner.DefaultConventionSet.SequenceConventions*"></a>
   <h4 id="FluentMigrator_Runner_DefaultConventionSet_SequenceConventions" data-uid="FluentMigrator.Runner.DefaultConventionSet.SequenceConventions">SequenceConventions</h4>
-  <div class="markdown level1 summary"><p>Gets the conventions to be applied to <a class="xref" href="FluentMigrator.Expressions.ISequenceExpression.html">ISequenceExpression</a> implementations</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -362,7 +332,7 @@ must be implemented/provided instead.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.ISequenceConvention.html">ISequenceConvention</a>&gt;</td>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="FluentMigrator.Runner.Conventions.ISequenceConvention.html">ISequenceConvention</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

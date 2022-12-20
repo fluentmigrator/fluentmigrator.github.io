@@ -96,35 +96,11 @@
     <div><a class="xref" href="FluentMigrator.IQuerySchema.html">IQuerySchema</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.Processors.html">FluentMigrator.Runner.Processors</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
   <h5 id="FluentMigrator_Runner_Processors_ConnectionlessProcessor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ConnectionlessProcessor : IMigrationProcessor, IQuerySchema, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class ConnectionlessProcessor : object, IMigrationProcessor, IQuerySchema</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -141,8 +117,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public ConnectionlessProcessor(IMigrationGenerator generator, IRunnerContext context, IMigrationProcessorOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConnectionlessProcessor(IMigrationGenerator generator, IRunnerContext context, IMigrationProcessorOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -220,13 +195,13 @@ public ConnectionlessProcessor(IMigrationGenerator generator, IRunnerContext con
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_ConnectionlessProcessor__ctor_FluentMigrator_Runner_Generators_IGeneratorAccessor_ILogger_IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__System_Collections_Generic_IReadOnlyCollection_System_String__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.ConnectionlessProcessor.%23ctor(FluentMigrator.Runner.Generators.IGeneratorAccessor%2CILogger%2CIOptionsSnapshot%7BFluentMigrator.Runner.Processors.ProcessorOptions%7D%2CSystem.Collections.Generic.IReadOnlyCollection%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_Processors_ConnectionlessProcessor__ctor_FluentMigrator_Runner_Generators_IGeneratorAccessor_ILogger_IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__IReadOnlyCollection_System_String__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.Processors.ConnectionlessProcessor.%23ctor(FluentMigrator.Runner.Generators.IGeneratorAccessor%2CILogger%2CIOptionsSnapshot%7BFluentMigrator.Runner.Processors.ProcessorOptions%7D%2CIReadOnlyCollection%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner.Core/Processors/ConnectionlessProcessor.cs/#L76">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_Processors_ConnectionlessProcessor__ctor_" data-uid="FluentMigrator.Runner.Processors.ConnectionlessProcessor.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_Processors_ConnectionlessProcessor__ctor_FluentMigrator_Runner_Generators_IGeneratorAccessor_ILogger_IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__System_Collections_Generic_IReadOnlyCollection_System_String__" data-uid="FluentMigrator.Runner.Processors.ConnectionlessProcessor.#ctor(FluentMigrator.Runner.Generators.IGeneratorAccessor,ILogger,IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},System.Collections.Generic.IReadOnlyCollection{System.String})">ConnectionlessProcessor(IGeneratorAccessor, ILogger, IOptionsSnapshot&lt;ProcessorOptions&gt;, IReadOnlyCollection&lt;String&gt;)</h4>
+  <h4 id="FluentMigrator_Runner_Processors_ConnectionlessProcessor__ctor_FluentMigrator_Runner_Generators_IGeneratorAccessor_ILogger_IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__IReadOnlyCollection_System_String__" data-uid="FluentMigrator.Runner.Processors.ConnectionlessProcessor.#ctor(FluentMigrator.Runner.Generators.IGeneratorAccessor,ILogger,IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},IReadOnlyCollection{System.String})">ConnectionlessProcessor(IGeneratorAccessor, ILogger, IOptionsSnapshot&lt;ProcessorOptions&gt;, IReadOnlyCollection&lt;String&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -259,7 +234,7 @@ public ConnectionlessProcessor(IMigrationGenerator generator, IRunnerContext con
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">processorIds</span></td>
         <td></td>
       </tr>
@@ -280,8 +255,7 @@ public ConnectionlessProcessor(IMigrationGenerator generator, IRunnerContext con
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public IAnnouncer Announcer { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IAnnouncer Announcer { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -311,8 +285,7 @@ public IAnnouncer Announcer { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Will change from public to protected&quot;)]
-public string ConnectionString { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string ConnectionString { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -384,7 +357,7 @@ public string ConnectionString { get; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1731,7 +1704,7 @@ public string ConnectionString { get; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.dataset">DataSet</a></td>
+        <td><span class="xref">DataSet</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1783,7 +1756,7 @@ public string ConnectionString { get; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.dataset">DataSet</a></td>
+        <td><span class="xref">DataSet</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1969,8 +1942,7 @@ public string ConnectionString { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-IMigrationProcessorOptions IMigrationProcessor.Options { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IMigrationProcessorOptions IMigrationProcessor.Options { get; }</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">

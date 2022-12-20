@@ -96,38 +96,112 @@
     <div><a class="xref" href="FluentMigrator.Runner.IMigrationRunner.html">IMigrationRunner</a></div>
     <div><a class="xref" href="FluentMigrator.Runner.IMigrationScopeStarter.html">IMigrationScopeStarter</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.Runner.html">FluentMigrator.Runner</a></h6>
   <h6><strong>Assembly</strong>: FluentMigrator.Runner.dll</h6>
   <h5 id="FluentMigrator_Runner_MigrationRunner_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MigrationRunner : IMigrationRunner, IMigrationScopeStarter</code></pre>
+    <pre><code class="lang-csharp hljs">public class MigrationRunner : object, IMigrationRunner, IMigrationScopeStarter</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner__ctor_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.%23ctor(Assembly%2CFluentMigrator.Runner.Initialization.IRunnerContext%2CIMigrationProcessor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunner.cs/#L86">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_MigrationRunner__ctor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(Assembly,FluentMigrator.Runner.Initialization.IRunnerContext,IMigrationProcessor)">MigrationRunner(Assembly, IRunnerContext, IMigrationProcessor)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.MigrationRunner.html">MigrationRunner</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MigrationRunner(Assembly assembly, IRunnerContext runnerContext, IMigrationProcessor processor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>The assembly to scan for migrations, etc...</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a></td>
+        <td><span class="parametername">runnerContext</span></td>
+        <td><p>The runner context</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMigrationProcessor</span></td>
+        <td><span class="parametername">processor</span></td>
+        <td><p>The migration processor</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner__ctor_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_FluentMigrator_Runner_Conventions_IConventionSet_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.%23ctor(Assembly%2CFluentMigrator.Runner.Initialization.IRunnerContext%2CIMigrationProcessor%2CFluentMigrator.Runner.Conventions.IConventionSet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunner.cs/#L99">View Source</a>
+  </span>
+  <a id="FluentMigrator_Runner_MigrationRunner__ctor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_FluentMigrator_Runner_Conventions_IConventionSet_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(Assembly,FluentMigrator.Runner.Initialization.IRunnerContext,IMigrationProcessor,FluentMigrator.Runner.Conventions.IConventionSet)">MigrationRunner(Assembly, IRunnerContext, IMigrationProcessor, IConventionSet)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.MigrationRunner.html">MigrationRunner</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MigrationRunner(Assembly assembly, IRunnerContext runnerContext, IMigrationProcessor processor, IConventionSet conventionSet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>The assembly to scan for migrations, etc...</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a></td>
+        <td><span class="parametername">runnerContext</span></td>
+        <td><p>The runner context</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IMigrationProcessor</span></td>
+        <td><span class="parametername">processor</span></td>
+        <td><p>The migration processor</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Conventions.IConventionSet.html">IConventionSet</a></td>
+        <td><span class="parametername">conventionSet</span></td>
+        <td><p>The expression convention set</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner__ctor_IAssemblyCollection_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_FluentMigrator_Runner_IMigrationRunnerConventions_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.%23ctor(IAssemblyCollection%2CFluentMigrator.Runner.Initialization.IRunnerContext%2CIMigrationProcessor%2CFluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData%2CFluentMigrator.Runner.IMigrationRunnerConventions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -142,8 +216,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public MigrationRunner(IAssemblyCollection assemblies, IRunnerContext runnerContext, IMigrationProcessor processor, IVersionTableMetaData versionTableMetaData = null, IMigrationRunnerConventions migrationRunnerConventions = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public MigrationRunner(IAssemblyCollection assemblies, IRunnerContext runnerContext, IMigrationProcessor processor, IVersionTableMetaData versionTableMetaData = null, IMigrationRunnerConventions migrationRunnerConventions = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,8 +274,7 @@ public MigrationRunner(IAssemblyCollection assemblies, IRunnerContext runnerCont
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public MigrationRunner(IAssemblyCollection assemblies, IRunnerContext runnerContext, IMigrationProcessor processor, IVersionTableMetaData versionTableMetaData, IMigrationRunnerConventions migrationRunnerConventions, IConventionSet conventionSet, IMigrationScopeManager migrationScopeHandler = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public MigrationRunner(IAssemblyCollection assemblies, IRunnerContext runnerContext, IMigrationProcessor processor, IVersionTableMetaData versionTableMetaData, IMigrationRunnerConventions migrationRunnerConventions, IConventionSet conventionSet, IMigrationScopeManager migrationScopeHandler = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -260,13 +332,13 @@ public MigrationRunner(IAssemblyCollection assemblies, IRunnerContext runnerCont
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner__ctor_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_IProfileLoader_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_IMaintenanceLoader_FluentMigrator_Runner_IMigrationInformationLoader_ILogger_FluentMigrator_Runner_MigrationRunner__FluentMigrator_Runner_IStopWatch_FluentMigrator_Runner_Initialization_IMigrationRunnerConventionsAccessor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_MigrationValidator_System_IServiceProvider_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.%23ctor(IOptions%7BFluentMigrator.Runner.Initialization.RunnerOptions%7D%2CIOptionsSnapshot%7BFluentMigrator.Runner.Processors.ProcessorOptions%7D%2CFluentMigrator.Runner.IProfileLoader%2CFluentMigrator.Runner.Processors.IProcessorAccessor%2CFluentMigrator.Runner.IMaintenanceLoader%2CFluentMigrator.Runner.IMigrationInformationLoader%2CILogger%7BFluentMigrator.Runner.MigrationRunner%7D%2CFluentMigrator.Runner.IStopWatch%2CFluentMigrator.Runner.Initialization.IMigrationRunnerConventionsAccessor%2CFluentMigrator.Runner.Initialization.IAssemblySource%2CFluentMigrator.Runner.MigrationValidator%2CSystem.IServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner__ctor_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_IProfileLoader_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_IMaintenanceLoader_FluentMigrator_Runner_IMigrationInformationLoader_ILogger_FluentMigrator_Runner_MigrationRunner__FluentMigrator_Runner_IStopWatch_FluentMigrator_Runner_Initialization_IMigrationRunnerConventionsAccessor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_MigrationValidator_IServiceProvider_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.%23ctor(IOptions%7BFluentMigrator.Runner.Initialization.RunnerOptions%7D%2CIOptionsSnapshot%7BFluentMigrator.Runner.Processors.ProcessorOptions%7D%2CFluentMigrator.Runner.IProfileLoader%2CFluentMigrator.Runner.Processors.IProcessorAccessor%2CFluentMigrator.Runner.IMaintenanceLoader%2CFluentMigrator.Runner.IMigrationInformationLoader%2CILogger%7BFluentMigrator.Runner.MigrationRunner%7D%2CFluentMigrator.Runner.IStopWatch%2CFluentMigrator.Runner.Initialization.IMigrationRunnerConventionsAccessor%2CFluentMigrator.Runner.Initialization.IAssemblySource%2CFluentMigrator.Runner.MigrationValidator%2CIServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunner.cs/#L195">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunner__ctor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_IProfileLoader_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_IMaintenanceLoader_FluentMigrator_Runner_IMigrationInformationLoader_ILogger_FluentMigrator_Runner_MigrationRunner__FluentMigrator_Runner_IStopWatch_FluentMigrator_Runner_Initialization_IMigrationRunnerConventionsAccessor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_MigrationValidator_System_IServiceProvider_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(IOptions{FluentMigrator.Runner.Initialization.RunnerOptions},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.IProfileLoader,FluentMigrator.Runner.Processors.IProcessorAccessor,FluentMigrator.Runner.IMaintenanceLoader,FluentMigrator.Runner.IMigrationInformationLoader,ILogger{FluentMigrator.Runner.MigrationRunner},FluentMigrator.Runner.IStopWatch,FluentMigrator.Runner.Initialization.IMigrationRunnerConventionsAccessor,FluentMigrator.Runner.Initialization.IAssemblySource,FluentMigrator.Runner.MigrationValidator,System.IServiceProvider)">MigrationRunner(IOptions&lt;RunnerOptions&gt;, IOptionsSnapshot&lt;ProcessorOptions&gt;, IProfileLoader, IProcessorAccessor, IMaintenanceLoader, IMigrationInformationLoader, ILogger&lt;MigrationRunner&gt;, IStopWatch, IMigrationRunnerConventionsAccessor, IAssemblySource, MigrationValidator, IServiceProvider)</h4>
+  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_IProfileLoader_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_IMaintenanceLoader_FluentMigrator_Runner_IMigrationInformationLoader_ILogger_FluentMigrator_Runner_MigrationRunner__FluentMigrator_Runner_IStopWatch_FluentMigrator_Runner_Initialization_IMigrationRunnerConventionsAccessor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_MigrationValidator_IServiceProvider_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(IOptions{FluentMigrator.Runner.Initialization.RunnerOptions},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.IProfileLoader,FluentMigrator.Runner.Processors.IProcessorAccessor,FluentMigrator.Runner.IMaintenanceLoader,FluentMigrator.Runner.IMigrationInformationLoader,ILogger{FluentMigrator.Runner.MigrationRunner},FluentMigrator.Runner.IStopWatch,FluentMigrator.Runner.Initialization.IMigrationRunnerConventionsAccessor,FluentMigrator.Runner.Initialization.IAssemblySource,FluentMigrator.Runner.MigrationValidator,IServiceProvider)">MigrationRunner(IOptions&lt;RunnerOptions&gt;, IOptionsSnapshot&lt;ProcessorOptions&gt;, IProfileLoader, IProcessorAccessor, IMaintenanceLoader, IMigrationInformationLoader, ILogger&lt;MigrationRunner&gt;, IStopWatch, IMigrationRunnerConventionsAccessor, IAssemblySource, MigrationValidator, IServiceProvider)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.MigrationRunner.html">MigrationRunner</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -351,7 +423,7 @@ public MigrationRunner(IAssemblyCollection assemblies, IRunnerContext runnerCont
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="xref">IServiceProvider</span></td>
         <td><span class="parametername">serviceProvider</span></td>
         <td><p>The service provider</p>
 </td>
@@ -360,13 +432,13 @@ public MigrationRunner(IAssemblyCollection assemblies, IRunnerContext runnerCont
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner__ctor_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_IProfileLoader_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_IMaintenanceLoader_FluentMigrator_Runner_IMigrationInformationLoader_ILogger_FluentMigrator_Runner_MigrationRunner__FluentMigrator_Runner_IStopWatch_FluentMigrator_Runner_Initialization_IMigrationRunnerConventionsAccessor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_MigrationValidator_System_IServiceProvider_FluentMigrator_Runner_IMigrationScopeManager_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.%23ctor(IOptions%7BFluentMigrator.Runner.Initialization.RunnerOptions%7D%2CIOptionsSnapshot%7BFluentMigrator.Runner.Processors.ProcessorOptions%7D%2CFluentMigrator.Runner.IProfileLoader%2CFluentMigrator.Runner.Processors.IProcessorAccessor%2CFluentMigrator.Runner.IMaintenanceLoader%2CFluentMigrator.Runner.IMigrationInformationLoader%2CILogger%7BFluentMigrator.Runner.MigrationRunner%7D%2CFluentMigrator.Runner.IStopWatch%2CFluentMigrator.Runner.Initialization.IMigrationRunnerConventionsAccessor%2CFluentMigrator.Runner.Initialization.IAssemblySource%2CFluentMigrator.Runner.MigrationValidator%2CSystem.IServiceProvider%2CFluentMigrator.Runner.IMigrationScopeManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner__ctor_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_IProfileLoader_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_IMaintenanceLoader_FluentMigrator_Runner_IMigrationInformationLoader_ILogger_FluentMigrator_Runner_MigrationRunner__FluentMigrator_Runner_IStopWatch_FluentMigrator_Runner_Initialization_IMigrationRunnerConventionsAccessor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_MigrationValidator_IServiceProvider_FluentMigrator_Runner_IMigrationScopeManager_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.%23ctor(IOptions%7BFluentMigrator.Runner.Initialization.RunnerOptions%7D%2CIOptionsSnapshot%7BFluentMigrator.Runner.Processors.ProcessorOptions%7D%2CFluentMigrator.Runner.IProfileLoader%2CFluentMigrator.Runner.Processors.IProcessorAccessor%2CFluentMigrator.Runner.IMaintenanceLoader%2CFluentMigrator.Runner.IMigrationInformationLoader%2CILogger%7BFluentMigrator.Runner.MigrationRunner%7D%2CFluentMigrator.Runner.IStopWatch%2CFluentMigrator.Runner.Initialization.IMigrationRunnerConventionsAccessor%2CFluentMigrator.Runner.Initialization.IAssemblySource%2CFluentMigrator.Runner.MigrationValidator%2CIServiceProvider%2CFluentMigrator.Runner.IMigrationScopeManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunner.cs/#L241">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunner__ctor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_IProfileLoader_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_IMaintenanceLoader_FluentMigrator_Runner_IMigrationInformationLoader_ILogger_FluentMigrator_Runner_MigrationRunner__FluentMigrator_Runner_IStopWatch_FluentMigrator_Runner_Initialization_IMigrationRunnerConventionsAccessor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_MigrationValidator_System_IServiceProvider_FluentMigrator_Runner_IMigrationScopeManager_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(IOptions{FluentMigrator.Runner.Initialization.RunnerOptions},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.IProfileLoader,FluentMigrator.Runner.Processors.IProcessorAccessor,FluentMigrator.Runner.IMaintenanceLoader,FluentMigrator.Runner.IMigrationInformationLoader,ILogger{FluentMigrator.Runner.MigrationRunner},FluentMigrator.Runner.IStopWatch,FluentMigrator.Runner.Initialization.IMigrationRunnerConventionsAccessor,FluentMigrator.Runner.Initialization.IAssemblySource,FluentMigrator.Runner.MigrationValidator,System.IServiceProvider,FluentMigrator.Runner.IMigrationScopeManager)">MigrationRunner(IOptions&lt;RunnerOptions&gt;, IOptionsSnapshot&lt;ProcessorOptions&gt;, IProfileLoader, IProcessorAccessor, IMaintenanceLoader, IMigrationInformationLoader, ILogger&lt;MigrationRunner&gt;, IStopWatch, IMigrationRunnerConventionsAccessor, IAssemblySource, MigrationValidator, IServiceProvider, IMigrationScopeManager)</h4>
+  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_IOptions_FluentMigrator_Runner_Initialization_RunnerOptions__IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_IProfileLoader_FluentMigrator_Runner_Processors_IProcessorAccessor_FluentMigrator_Runner_IMaintenanceLoader_FluentMigrator_Runner_IMigrationInformationLoader_ILogger_FluentMigrator_Runner_MigrationRunner__FluentMigrator_Runner_IStopWatch_FluentMigrator_Runner_Initialization_IMigrationRunnerConventionsAccessor_FluentMigrator_Runner_Initialization_IAssemblySource_FluentMigrator_Runner_MigrationValidator_IServiceProvider_FluentMigrator_Runner_IMigrationScopeManager_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(IOptions{FluentMigrator.Runner.Initialization.RunnerOptions},IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.IProfileLoader,FluentMigrator.Runner.Processors.IProcessorAccessor,FluentMigrator.Runner.IMaintenanceLoader,FluentMigrator.Runner.IMigrationInformationLoader,ILogger{FluentMigrator.Runner.MigrationRunner},FluentMigrator.Runner.IStopWatch,FluentMigrator.Runner.Initialization.IMigrationRunnerConventionsAccessor,FluentMigrator.Runner.Initialization.IAssemblySource,FluentMigrator.Runner.MigrationValidator,IServiceProvider,FluentMigrator.Runner.IMigrationScopeManager)">MigrationRunner(IOptions&lt;RunnerOptions&gt;, IOptionsSnapshot&lt;ProcessorOptions&gt;, IProfileLoader, IProcessorAccessor, IMaintenanceLoader, IMigrationInformationLoader, ILogger&lt;MigrationRunner&gt;, IStopWatch, IMigrationRunnerConventionsAccessor, IAssemblySource, MigrationValidator, IServiceProvider, IMigrationScopeManager)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.MigrationRunner.html">MigrationRunner</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -451,7 +523,7 @@ public MigrationRunner(IAssemblyCollection assemblies, IRunnerContext runnerCont
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="xref">IServiceProvider</span></td>
         <td><span class="parametername">serviceProvider</span></td>
         <td><p>The service provider</p>
 </td>
@@ -460,106 +532,6 @@ public MigrationRunner(IAssemblyCollection assemblies, IRunnerContext runnerCont
         <td><a class="xref" href="FluentMigrator.Runner.IMigrationScopeManager.html">IMigrationScopeManager</a></td>
         <td><span class="parametername">migrationScopeHandler</span></td>
         <td><p>THe migration scope handler</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner__ctor_System_Reflection_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.%23ctor(System.Reflection.Assembly%2CFluentMigrator.Runner.Initialization.IRunnerContext%2CIMigrationProcessor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunner.cs/#L86">View Source</a>
-  </span>
-  <a id="FluentMigrator_Runner_MigrationRunner__ctor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_System_Reflection_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(System.Reflection.Assembly,FluentMigrator.Runner.Initialization.IRunnerContext,IMigrationProcessor)">MigrationRunner(Assembly, IRunnerContext, IMigrationProcessor)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.MigrationRunner.html">MigrationRunner</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public MigrationRunner(Assembly assembly, IRunnerContext runnerContext, IMigrationProcessor processor)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
-        <td><span class="parametername">assembly</span></td>
-        <td><p>The assembly to scan for migrations, etc...</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a></td>
-        <td><span class="parametername">runnerContext</span></td>
-        <td><p>The runner context</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">IMigrationProcessor</span></td>
-        <td><span class="parametername">processor</span></td>
-        <td><p>The migration processor</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner__ctor_System_Reflection_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_FluentMigrator_Runner_Conventions_IConventionSet_.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.%23ctor(System.Reflection.Assembly%2CFluentMigrator.Runner.Initialization.IRunnerContext%2CIMigrationProcessor%2CFluentMigrator.Runner.Conventions.IConventionSet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunner.cs/#L99">View Source</a>
-  </span>
-  <a id="FluentMigrator_Runner_MigrationRunner__ctor_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunner__ctor_System_Reflection_Assembly_FluentMigrator_Runner_Initialization_IRunnerContext_IMigrationProcessor_FluentMigrator_Runner_Conventions_IConventionSet_" data-uid="FluentMigrator.Runner.MigrationRunner.#ctor(System.Reflection.Assembly,FluentMigrator.Runner.Initialization.IRunnerContext,IMigrationProcessor,FluentMigrator.Runner.Conventions.IConventionSet)">MigrationRunner(Assembly, IRunnerContext, IMigrationProcessor, IConventionSet)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FluentMigrator.Runner.MigrationRunner.html">MigrationRunner</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public MigrationRunner(Assembly assembly, IRunnerContext runnerContext, IMigrationProcessor processor, IConventionSet conventionSet)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
-        <td><span class="parametername">assembly</span></td>
-        <td><p>The assembly to scan for migrations, etc...</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IRunnerContext.html">IRunnerContext</a></td>
-        <td><span class="parametername">runnerContext</span></td>
-        <td><p>The runner context</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">IMigrationProcessor</span></td>
-        <td><span class="parametername">processor</span></td>
-        <td><p>The migration processor</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Runner.Conventions.IConventionSet.html">IConventionSet</a></td>
-        <td><span class="parametername">conventionSet</span></td>
-        <td><p>The expression convention set</p>
 </td>
       </tr>
     </tbody>
@@ -592,7 +564,7 @@ public MigrationRunner(Assembly assembly, IRunnerContext runnerContext, IMigrati
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">Exception</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -660,22 +632,6 @@ Setter for <a class="xref" href="FluentMigrator.Runner.IMigrationScopeManager.ht
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
-        <td><p>Thrown when custom <a class="xref" href="FluentMigrator.Runner.IMigrationScopeManager.html">IMigrationScopeManager</a> implementation is used</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner_MaintenanceLoader.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.MaintenanceLoader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -721,8 +677,7 @@ Setter for <a class="xref" href="FluentMigrator.Runner.IMigrationScopeManager.ht
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public IAssemblyCollection MigrationAssemblies { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IAssemblyCollection MigrationAssemblies { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -846,8 +801,7 @@ public IAssemblyCollection MigrationAssemblies { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete]
-public IRunnerContext RunnerContext { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IRunnerContext RunnerContext { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1163,13 +1117,13 @@ public IRunnerContext RunnerContext { get; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner_ExecuteExpressions_System_Collections_Generic_ICollection_IMigrationExpression__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(System.Collections.Generic.ICollection%7BIMigrationExpression%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/fluentmigrator/documentation/new/master/apidoc/v3.x/new?filename=FluentMigrator_Runner_MigrationRunner_ExecuteExpressions_ICollection_IMigrationExpression__.md&amp;value=---%0Auid%3A%20FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(ICollection%7BIMigrationExpression%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/fluentmigrator/fluentmigrator/blob/master/src/FluentMigrator.Runner/MigrationRunner.cs/#L853">View Source</a>
   </span>
   <a id="FluentMigrator_Runner_MigrationRunner_ExecuteExpressions_" data-uid="FluentMigrator.Runner.MigrationRunner.ExecuteExpressions*"></a>
-  <h4 id="FluentMigrator_Runner_MigrationRunner_ExecuteExpressions_System_Collections_Generic_ICollection_IMigrationExpression__" data-uid="FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(System.Collections.Generic.ICollection{IMigrationExpression})">ExecuteExpressions(ICollection&lt;IMigrationExpression&gt;)</h4>
+  <h4 id="FluentMigrator_Runner_MigrationRunner_ExecuteExpressions_ICollection_IMigrationExpression__" data-uid="FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(ICollection{IMigrationExpression})">ExecuteExpressions(ICollection&lt;IMigrationExpression&gt;)</h4>
   <div class="markdown level1 summary"><p>Execute each migration expression in the expression collection</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1188,7 +1142,7 @@ public IRunnerContext RunnerContext { get; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">IMigrationExpression</span>&gt;</td>
+        <td><span class="xref">ICollection</span>&lt;<span class="xref">IMigrationExpression</span>&gt;</td>
         <td><span class="parametername">expressions</span></td>
         <td><p>The expressions to execute</p>
 </td>

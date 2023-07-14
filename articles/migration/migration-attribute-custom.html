@@ -106,6 +106,7 @@ public class TestLcmpMigration : Migration
     public override void Up() { /* ... */ }
 }
 </code></pre>
+<p>Note, this example also contains an additional attribute property, Author, to demonstrate that you can have additional properties. In practice, adding an Author may not be entirely useful, since it will not be automatically added to the VersionInfo table as part of the audit log of what was executed against the target database.  However, if developers were to tag the migrations they wrote with the Author field, it might assist in troubleshooting production issues. As a best practice, these issues should be caught by a good CI/CD process that involves continuously building the initial full database schema to create a baseline, and then applying all migrations. In this way, hopefully nobody is going to wake &quot;Scott Stafford&quot; up in the middle of the night due to a production issue :)</p>
 </article>
           </div>
           

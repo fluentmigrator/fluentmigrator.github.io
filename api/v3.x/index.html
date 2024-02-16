@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>FluentMigrator API | FluentMigrator documentation </title>
+    <title>API for version 3.x | FluentMigrator documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="FluentMigrator API | FluentMigrator documentation ">
+    <meta name="title" content="API for version 3.x | FluentMigrator documentation ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     <meta property="docfx:rel" content="../../">
     
@@ -77,11 +77,39 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="fluentmigrator-api">FluentMigrator API</h1>
+<h1 id="api-for-version-3x">API for version 3.x</h1>
 
-<p>The most important part of the API is the <a class="xref" href="FluentMigrator.Runner.IMigrationRunner.html">migration runner</a>.</p>
-<h1 id="getting-started">Getting started</h1>
-<p>The starting point for every beginner of FluentMigrator is the <a class="xref" href="../../articles/quickstart.html">Quickstart tutorial</a>.</p>
+<h1 id="using-the-in-process-runner">Using the in-process runner</h1>
+<pre><code class="lang-cs">// Create the announcer to output the migration messages
+var announcer = new ConsoleAnnouncer();
+
+// Processor specific options (usually none are needed)
+var options = new ProcessorOptions();
+
+// Use SQLite
+var processorFactory = new SQLiteProcessorFactory();
+
+// Initialize the processor
+using (var processor = processorFactory.Create(
+    // The SQLite connection string
+    &quot;Data Source=test.db&quot;,
+    announcer,
+    options))
+{
+    // Configure the runner
+    var context = new RunnerContext(announcer);
+
+    // Create the migration runner
+    var runner = new MigrationRunner(
+        // Specify the assembly with the migrations
+        typeof(MyMigration).Assembly,
+        context,
+        processor);
+
+    // Run the migrations
+    runner.MigrateUp();
+}
+</code></pre>
 </article>
           </div>
           

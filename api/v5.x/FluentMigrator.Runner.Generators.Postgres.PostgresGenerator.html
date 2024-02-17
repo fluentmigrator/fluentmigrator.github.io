@@ -1,0 +1,2246 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PostgresGenerator | FluentMigrator documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PostgresGenerator | FluentMigrator documentation ">
+    
+    
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator">
+
+
+
+  <h1 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator" class="text-break">Class PostgresGenerator</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html">GeneratorBase</a></div>
+    <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html">GenericGenerator</a></div>
+    <div class="level3"><span class="xref">PostgresGenerator</span></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.Postgres10_0Generator.html">Postgres10_0Generator</a></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.Postgres10_0Generator.html">Postgres10_0Generator</a></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.Postgres11_0Generator.html">Postgres11_0Generator</a></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.html">Postgres92Generator</a></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.html">Postgres92Generator</a></div>
+      <div class="level4"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres92.Postgres92Generator.html">Postgres92Generator</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_compatabilityMode">GenericGenerator.compatabilityMode</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CompatibilityMode">GenericGenerator.CompatibilityMode</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropTableIfExists">GenericGenerator.DropTableIfExists</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_RenameTable">GenericGenerator.RenameTable</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateSchema">GenericGenerator.CreateSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AlterSchema">GenericGenerator.AlterSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropSchema">GenericGenerator.DropSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateIndex">GenericGenerator.CreateIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropIndex">GenericGenerator.DropIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_InsertData">GenericGenerator.InsertData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_UpdateData">GenericGenerator.UpdateData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DeleteData">GenericGenerator.DeleteData</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateConstraint">GenericGenerator.CreateConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DeleteConstraint">GenericGenerator.DeleteConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateForeignKeyConstraint">GenericGenerator.CreateForeignKeyConstraint</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GetUniqueString_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.GetUniqueString(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GetClusterTypeString_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.GetClusterTypeString(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GenerateForeignKeyName_FluentMigrator_Model_ForeignKeyDefinition_">GenericGenerator.GenerateForeignKeyName(ForeignKeyDefinition)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AppendSqlStatementEndToken_System_Text_StringBuilder_">GenericGenerator.AppendSqlStatementEndToken(StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_GenerateColumnNamesAndValues_FluentMigrator_Expressions_InsertDataExpression_">GenericGenerator.GenerateColumnNamesAndValues(InsertDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_ValidateAdditionalFeatureCompatibility_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___">GenericGenerator.ValidateAdditionalFeatureCompatibility(IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Column">GeneratorBase.Column</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Quoter">GeneratorBase.Quoter</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_DescriptionGenerator">GeneratorBase.DescriptionGenerator</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.html">FluentMigrator</a>.<a class="xref" href="FluentMigrator.Runner.html">Runner</a>.<a class="xref" href="FluentMigrator.Runner.Generators.html">Generators</a>.<a class="xref" href="FluentMigrator.Runner.Generators.Postgres.html">Postgres</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.Postgres.dll</h6>
+  <h5 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PostgresGenerator : GenericGenerator, IMigrationGenerator</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_IColumn_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_Microsoft_Extensions_Options_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor(FluentMigrator.Runner.Generators.IColumn,FluentMigrator.Runner.Generators.Postgres.PostgresQuoter,Microsoft.Extensions.Options.IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})">PostgresGenerator(IColumn, PostgresQuoter, IOptions&lt;GeneratorOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PostgresGenerator(IColumn column, PostgresQuoter quoter, IOptions&lt;GeneratorOptions&gt; generatorOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IColumn.html">IColumn</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html">PostgresQuoter</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="FluentMigrator.Runner.Generators.GeneratorOptions.html">GeneratorOptions</a>&gt;</td>
+        <td><span class="parametername">generatorOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter)">PostgresGenerator(PostgresQuoter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PostgresGenerator(PostgresQuoter quoter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html">PostgresQuoter</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_Microsoft_Extensions_Options_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter,Microsoft.Extensions.Options.IOptions{FluentMigrator.Runner.Generators.GeneratorOptions})">PostgresGenerator(PostgresQuoter, IOptions&lt;GeneratorOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PostgresGenerator(PostgresQuoter quoter, IOptions&lt;GeneratorOptions&gt; generatorOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html">PostgresQuoter</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="FluentMigrator.Runner.Generators.GeneratorOptions.html">GeneratorOptions</a>&gt;</td>
+        <td><span class="parametername">generatorOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator__ctor_FluentMigrator_Runner_Generators_Postgres_PostgresQuoter_Microsoft_Extensions_Options_IOptions_FluentMigrator_Runner_Generators_GeneratorOptions__FluentMigrator_Runner_Generators_ITypeMap_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.#ctor(FluentMigrator.Runner.Generators.Postgres.PostgresQuoter,Microsoft.Extensions.Options.IOptions{FluentMigrator.Runner.Generators.GeneratorOptions},FluentMigrator.Runner.Generators.ITypeMap)">PostgresGenerator(PostgresQuoter, IOptions&lt;GeneratorOptions&gt;, ITypeMap)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PostgresGenerator(PostgresQuoter quoter, IOptions&lt;GeneratorOptions&gt; generatorOptions, ITypeMap typeMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html">PostgresQuoter</a></td>
+        <td><span class="parametername">quoter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="FluentMigrator.Runner.Generators.GeneratorOptions.html">GeneratorOptions</a>&gt;</td>
+        <td><span class="parametername">generatorOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.ITypeMap.html">ITypeMap</a></td>
+        <td><span class="parametername">typeMap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_AddColumn_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.AddColumn*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_AddColumn" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.AddColumn">AddColumn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string AddColumn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AddColumn">GenericGenerator.AddColumn</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_AlterColumn_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.AlterColumn*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_AlterColumn" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.AlterColumn">AlterColumn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string AlterColumn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_AlterColumn">GenericGenerator.AlterColumn</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_CreateTable_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.CreateTable*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_CreateTable" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.CreateTable">CreateTable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string CreateTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_CreateTable">GenericGenerator.CreateTable</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_DropColumn_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.DropColumn*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_DropColumn" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.DropColumn">DropColumn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DropColumn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropColumn">GenericGenerator.DropColumn</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_DropTable_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.DropTable*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_DropTable" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.DropTable">DropTable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DropTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_DropTable">GenericGenerator.DropTable</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_RenameColumn_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.RenameColumn*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_RenameColumn" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.RenameColumn">RenameColumn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string RenameColumn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_RenameColumn">GenericGenerator.RenameColumn</a></div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_AlterColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.AlterColumnExpression)">Generate(AlterColumnExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates a <code>ALTER TABLE ALTER COLUMN</code> SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(AlterColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.AlterColumnExpression.html">AlterColumnExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_AlterColumnExpression_">GenericGenerator.Generate(AlterColumnExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_AlterDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.AlterDefaultConstraintExpression)">Generate(AlterDefaultConstraintExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to alter a DEFAULT constraint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(AlterDefaultConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.AlterDefaultConstraintExpression.html">AlterDefaultConstraintExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_AlterDefaultConstraintExpression_">GeneratorBase.Generate(AlterDefaultConstraintExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_AlterSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.AlterSchemaExpression)">Generate(AlterSchemaExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to move a table from one schema to another</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(AlterSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.AlterSchemaExpression.html">AlterSchemaExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_AlterSchemaExpression_">GenericGenerator.Generate(AlterSchemaExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_AlterTableExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.AlterTableExpression)">Generate(AlterTableExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates a <code>ALTER TABLE</code> SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(AlterTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.AlterTableExpression.html">AlterTableExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_AlterTableExpression_">GeneratorBase.Generate(AlterTableExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_CreateColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.CreateColumnExpression)">Generate(CreateColumnExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates a <code>ALTER TABLE ADD COLUMN</code> SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateColumnExpression.html">CreateColumnExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateColumnExpression_">GenericGenerator.Generate(CreateColumnExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_CreateConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.CreateConstraintExpression)">Generate(CreateConstraintExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to create a constraint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateConstraintExpression.html">CreateConstraintExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateConstraintExpression_">GenericGenerator.Generate(CreateConstraintExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_CreateForeignKeyExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.CreateForeignKeyExpression)">Generate(CreateForeignKeyExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to create a foreign key</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateForeignKeyExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateForeignKeyExpression.html">CreateForeignKeyExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateForeignKeyExpression_">GenericGenerator.Generate(CreateForeignKeyExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.CreateIndexExpression)">Generate(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to create an index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateIndexExpression.html">CreateIndexExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateIndexExpression_">GenericGenerator.Generate(CreateIndexExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_CreateSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.CreateSchemaExpression)">Generate(CreateSchemaExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates a <code>CREATE SCHEMA</code> SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateSchemaExpression.html">CreateSchemaExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateSchemaExpression_">GenericGenerator.Generate(CreateSchemaExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_CreateSequenceExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.CreateSequenceExpression)">Generate(CreateSequenceExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates a <code>CREATE SEQUENCE</code> SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateSequenceExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateSequenceExpression.html">CreateSequenceExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateSequenceExpression_">GenericGenerator.Generate(CreateSequenceExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_CreateTableExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.CreateTableExpression)">Generate(CreateTableExpression)</h4>
+  <div class="markdown level1 summary"><p>Outputs a create table string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(CreateTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateTableExpression.html">CreateTableExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_CreateTableExpression_">GenericGenerator.Generate(CreateTableExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_DeleteColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.DeleteColumnExpression)">Generate(DeleteColumnExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates a <code>ALTER TABLE DROP COLUMN</code> SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteColumnExpression.html">DeleteColumnExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteColumnExpression_">GenericGenerator.Generate(DeleteColumnExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_DeleteConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.DeleteConstraintExpression)">Generate(DeleteConstraintExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to drop a constraint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteConstraintExpression.html">DeleteConstraintExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteConstraintExpression_">GenericGenerator.Generate(DeleteConstraintExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_DeleteDataExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.DeleteDataExpression)">Generate(DeleteDataExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to DELETE data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteDataExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteDataExpression.html">DeleteDataExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteDataExpression_">GenericGenerator.Generate(DeleteDataExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_DeleteDefaultConstraintExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.DeleteDefaultConstraintExpression)">Generate(DeleteDefaultConstraintExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to drop a default constraint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteDefaultConstraintExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteDefaultConstraintExpression.html">DeleteDefaultConstraintExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_Generate_FluentMigrator_Expressions_DeleteDefaultConstraintExpression_">GeneratorBase.Generate(DeleteDefaultConstraintExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_DeleteForeignKeyExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.DeleteForeignKeyExpression)">Generate(DeleteForeignKeyExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to delete a foreign key</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteForeignKeyExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteForeignKeyExpression.html">DeleteForeignKeyExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteForeignKeyExpression_">GenericGenerator.Generate(DeleteForeignKeyExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_DeleteIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.DeleteIndexExpression)">Generate(DeleteIndexExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to drop an index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteIndexExpression.html">DeleteIndexExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteIndexExpression_">GenericGenerator.Generate(DeleteIndexExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_DeleteSchemaExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.DeleteSchemaExpression)">Generate(DeleteSchemaExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates a <code>DROP SCHEMA</code> SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteSchemaExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteSchemaExpression.html">DeleteSchemaExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteSchemaExpression_">GenericGenerator.Generate(DeleteSchemaExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_DeleteSequenceExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.DeleteSequenceExpression)">Generate(DeleteSequenceExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates a <code>DROP SEQUENCE</code> SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteSequenceExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteSequenceExpression.html">DeleteSequenceExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteSequenceExpression_">GenericGenerator.Generate(DeleteSequenceExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_DeleteTableExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.DeleteTableExpression)">Generate(DeleteTableExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates a <code>DROP TABLE</code> SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(DeleteTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.DeleteTableExpression.html">DeleteTableExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_DeleteTableExpression_">GenericGenerator.Generate(DeleteTableExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_InsertDataExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.InsertDataExpression)">Generate(InsertDataExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to INSERT data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(InsertDataExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.InsertDataExpression.html">InsertDataExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_InsertDataExpression_">GenericGenerator.Generate(InsertDataExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_RenameColumnExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.RenameColumnExpression)">Generate(RenameColumnExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to rename a column</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(RenameColumnExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.RenameColumnExpression.html">RenameColumnExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_RenameColumnExpression_">GenericGenerator.Generate(RenameColumnExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_RenameTableExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.RenameTableExpression)">Generate(RenameTableExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to rename a table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(RenameTableExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.RenameTableExpression.html">RenameTableExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_RenameTableExpression_">GenericGenerator.Generate(RenameTableExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_Generate_FluentMigrator_Expressions_UpdateDataExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.Generate(FluentMigrator.Expressions.UpdateDataExpression)">Generate(UpdateDataExpression)</h4>
+  <div class="markdown level1 summary"><p>Generates an SQL statement to UPDATE data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Generate(UpdateDataExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.UpdateDataExpression.html">UpdateDataExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to create the SQL for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The generated SQL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Generic.GenericGenerator.html#FluentMigrator_Runner_Generators_Generic_GenericGenerator_Generate_FluentMigrator_Expressions_UpdateDataExpression_">GenericGenerator.Generate(UpdateDataExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAllowIndexStorageParameters_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAllowIndexStorageParameters*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAllowIndexStorageParameters" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAllowIndexStorageParameters">GetAllowIndexStorageParameters()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual HashSet&lt;string&gt; GetAllowIndexStorageParameters()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAsConcurrently_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAsConcurrently*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAsConcurrently_FluentMigrator_Expressions_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAsConcurrently(FluentMigrator.Expressions.CreateIndexExpression)">GetAsConcurrently(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetAsConcurrently(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateIndexExpression.html">CreateIndexExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAsOnly_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAsOnly*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetAsOnly_FluentMigrator_Expressions_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetAsOnly(FluentMigrator.Expressions.CreateIndexExpression)">GetAsOnly(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetAsOnly(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateIndexExpression.html">CreateIndexExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetColumnList_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetColumnList*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetColumnList_System_Collections_Generic_IEnumerable_System_String__" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetColumnList(System.Collections.Generic.IEnumerable{System.String})">GetColumnList(IEnumerable&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetColumnList(IEnumerable&lt;string&gt; columns)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">columns</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetDataList_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetDataList*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetDataList_System_Collections_Generic_List_System_Object__" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetDataList(System.Collections.Generic.List{System.Object})">GetDataList(List&lt;object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetDataList(List&lt;object&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetFilter_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetFilter*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetFilter_FluentMigrator_Expressions_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetFilter(FluentMigrator.Expressions.CreateIndexExpression)">GetFilter(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetFilter(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateIndexExpression.html">CreateIndexExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetIncludeString_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetIncludeString*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetIncludeString_FluentMigrator_Expressions_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetIncludeString(FluentMigrator.Expressions.CreateIndexExpression)">GetIncludeString(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetIncludeString(CreateIndexExpression column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateIndexExpression.html">CreateIndexExpression</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetIndexMethod_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetIndexMethod*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetIndexMethod_FluentMigrator_Expressions_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetIndexMethod(FluentMigrator.Expressions.CreateIndexExpression)">GetIndexMethod(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Algorithm GetIndexMethod(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateIndexExpression.html">CreateIndexExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Model.Algorithm.html">Algorithm</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetNullsSort_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetNullsSort*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetNullsSort_FluentMigrator_Model_IndexColumnDefinition_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetNullsSort(FluentMigrator.Model.IndexColumnDefinition)">GetNullsSort(IndexColumnDefinition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetNullsSort(IndexColumnDefinition column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Model.IndexColumnDefinition.html">IndexColumnDefinition</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetOverridingIdentityValuesString_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetOverridingIdentityValuesString*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetOverridingIdentityValuesString_FluentMigrator_Expressions_InsertDataExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetOverridingIdentityValuesString(FluentMigrator.Expressions.InsertDataExpression)">GetOverridingIdentityValuesString(InsertDataExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetOverridingIdentityValuesString(InsertDataExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.InsertDataExpression.html">InsertDataExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetTablespace_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetTablespace*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetTablespace_FluentMigrator_Expressions_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetTablespace(FluentMigrator.Expressions.CreateIndexExpression)">GetTablespace(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetTablespace(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateIndexExpression.html">CreateIndexExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetWithIndexStorageParameters_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetWithIndexStorageParameters*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetWithIndexStorageParameters_FluentMigrator_Expressions_CreateIndexExpression_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetWithIndexStorageParameters(FluentMigrator.Expressions.CreateIndexExpression)">GetWithIndexStorageParameters(CreateIndexExpression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetWithIndexStorageParameters(CreateIndexExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.CreateIndexExpression.html">CreateIndexExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetWithNullsDistinctString_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetWithNullsDistinctString*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_GetWithNullsDistinctString_FluentMigrator_Model_IndexDefinition_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.GetWithNullsDistinctString(FluentMigrator.Model.IndexDefinition)">GetWithNullsDistinctString(IndexDefinition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetWithNullsDistinctString(IndexDefinition index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Model.IndexDefinition.html">IndexDefinition</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_IsAdditionalFeatureSupported_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.IsAdditionalFeatureSupported*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Postgres_PostgresGenerator_IsAdditionalFeatureSupported_System_String_" data-uid="FluentMigrator.Runner.Generators.Postgres.PostgresGenerator.IsAdditionalFeatureSupported(System.String)">IsAdditionalFeatureSupported(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsAdditionalFeatureSupported(string feature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">feature</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Generators.Base.GeneratorBase.html#FluentMigrator_Runner_Generators_Base_GeneratorBase_IsAdditionalFeatureSupported_System_String_">GeneratorBase.IsAdditionalFeatureSupported(string)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.IMigrationGenerator.html">IMigrationGenerator</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

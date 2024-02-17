@@ -1,21 +1,21 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Fluent API | FluentMigrator documentation </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Fluent API | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.59.4.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Fluent API | FluentMigrator documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Fluent API | FluentMigrator documentation ">
     
-    <link rel="shortcut icon" href="../../images/favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
     
     <meta property="docfx:rel" content="../../">
     
@@ -23,7 +23,7 @@
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../../index.html">
                 <img id="logo" class="svg" src="../../images/logo.svg" alt="">
               </a>
@@ -47,7 +47,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -57,7 +57,7 @@
         </div>
       </header>
       <div class="container body-content">
-        
+
         <div id="search-results">
           <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
@@ -67,7 +67,7 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -81,8 +81,8 @@
 
 <p>The starting points for the fluent API are the following classes:</p>
 <ul>
-<li><a class="xref" href="../../api/v3.x/FluentMigrator.MigrationBase.html">MigrationBase</a>: database modelling</li>
-<li><a class="xref" href="../../api/v3.x/FluentMigrator.Migration.html">Migration</a>: data modification and script execution</li>
+<li><a href="xref:FluentMigrator.MigrationBase">MigrationBase</a>: database modelling</li>
+<li><a href="xref:FluentMigrator.Migration">Migration</a>: data modification and script execution</li>
 </ul>
 <h1 id="supported-expressions">Supported expressions</h1>
 <h2 id="create"><a class="xref" href="fluent-api-create.html">Create</a></h2>
@@ -91,43 +91,44 @@
 <p>Alter a database object.</p>
 <h2 id="delete"><a class="xref" href="fluent-api-delete.html">Delete</a></h2>
 <p>Delete a database object or data.</p>
-<h2 id="rename-irenameexpressionroot">Rename (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Rename.IRenameExpressionRoot.html">IRenameExpressionRoot</a>)</h2>
+<h2 id="rename-irenameexpressionroot">Rename (<a href="xref:FluentMigrator.Builders.Rename.IRenameExpressionRoot">IRenameExpressionRoot</a>)</h2>
 <p>Rename a database object.</p>
-<h2 id="schema-ischemaexpressionroot">Schema (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Schema.ISchemaExpressionRoot.html">ISchemaExpressionRoot</a>)</h2>
+<h2 id="schema-ischemaexpressionroot">Schema (<a href="xref:FluentMigrator.Builders.Schema.ISchemaExpressionRoot">ISchemaExpressionRoot</a>)</h2>
 <p>Schema-oriented starting point for expressions.</p>
-<h2 id="ifdatabase-iifdatabaseexpressionroot">IfDatabase (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.IfDatabase.IIfDatabaseExpressionRoot.html">IIfDatabaseExpressionRoot</a>)</h2>
+<h2 id="ifdatabase-iifdatabaseexpressionroot">IfDatabase (<a href="xref:FluentMigrator.Builders.IfDatabase.IIfDatabaseExpressionRoot">IIfDatabaseExpressionRoot</a>)</h2>
 <p>Create database-specific expressions.</p>
-<h2 id="insert-iinsertexpressionroot">Insert (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Insert.IInsertExpressionRoot.html">IInsertExpressionRoot</a>)</h2>
+<h2 id="insert-iinsertexpressionroot">Insert (<a href="xref:FluentMigrator.Builders.Insert.IInsertExpressionRoot">IInsertExpressionRoot</a>)</h2>
 <p>Insert data.</p>
-<h2 id="update-iupdateexpressionroot">Update (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Update.IUpdateExpressionRoot.html">IUpdateExpressionRoot</a>)</h2>
+<h2 id="update-iupdateexpressionroot">Update (<a href="xref:FluentMigrator.Builders.Update.IUpdateExpressionRoot">IUpdateExpressionRoot</a>)</h2>
 <p>Update data.</p>
-<h2 id="execute-iexecuteexpressionroot">Execute (<a class="xref" href="../../api/v3.x/FluentMigrator.Builders.Execute.IExecuteExpressionRoot.html">IExecuteExpressionRoot</a>)</h2>
+<h2 id="execute-iexecuteexpressionroot">Execute (<a href="xref:FluentMigrator.Builders.Execute.IExecuteExpressionRoot">IExecuteExpressionRoot</a>)</h2>
 <p>Execute SQL statements/scripts.</p>
 <h1 id="planned-changes">Planned changes</h1>
 <ul>
 <li>Differentiate between <code>Delete</code> and <code>Drop</code></li>
 </ul>
+
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/technical/fluent-api.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/technical/fluent-api.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -135,14 +136,14 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
-            
+      <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+      
           </div>
         </div>
       </footer>
     </div>
-    
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>
   </body>

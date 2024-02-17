@@ -1,0 +1,1413 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GenericQuoter | FluentMigrator documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GenericQuoter | FluentMigrator documentation ">
+    
+    
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter">
+
+
+
+  <h1 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter" class="text-break">Class GenericQuoter</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">GenericQuoter</span></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.DB2.Db2Quoter.html">Db2Quoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.DB2.Db2Quoter.html">Db2Quoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.DB2.Db2Quoter.html">Db2Quoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Firebird.FirebirdQuoter.html">FirebirdQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Firebird.FirebirdQuoter.html">FirebirdQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Firebird.FirebirdQuoter.html">FirebirdQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Hana.HanaQuoter.html">HanaQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Hana.HanaQuoter.html">HanaQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Hana.HanaQuoter.html">HanaQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Jet.JetQuoter.html">JetQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Jet.JetQuoter.html">JetQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Jet.JetQuoter.html">JetQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.MySql.MySqlQuoter.html">MySqlQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.MySql.MySqlQuoter.html">MySqlQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.MySql.MySqlQuoter.html">MySqlQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase.html">OracleQuoterBase</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Oracle.OracleQuoterBase.html">OracleQuoterBase</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Oracle.OracleQuoterQuotedIdentifier.html">OracleQuoterQuotedIdentifier</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html">PostgresQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html">PostgresQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Postgres.PostgresQuoter.html">PostgresQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Redshift.RedshiftQuoter.html">RedshiftQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Redshift.RedshiftQuoter.html">RedshiftQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Redshift.RedshiftQuoter.html">RedshiftQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.html">SQLiteQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.html">SQLiteQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.SQLite.SQLiteQuoter.html">SQLiteQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.Snowflake.SnowflakeQuoter.html">SnowflakeQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.SqlAnywhere.SqlAnywhereQuoter.html">SqlAnywhereQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.SqlAnywhere.SqlAnywhereQuoter.html">SqlAnywhereQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.SqlAnywhere.SqlAnywhereQuoter.html">SqlAnywhereQuoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Quoter.html">SqlServer2000Quoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Quoter.html">SqlServer2000Quoter</a></div>
+      <div class="level2"><a class="xref" href="FluentMigrator.Runner.Generators.SqlServer.SqlServer2000Quoter.html">SqlServer2000Quoter</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.Runner.Generators.IQuoter.html">IQuoter</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.html">FluentMigrator</a>.<a class="xref" href="FluentMigrator.Runner.html">Runner</a>.<a class="xref" href="FluentMigrator.Runner.Generators.html">Generators</a>.<a class="xref" href="FluentMigrator.Runner.Generators.Generic.html">Generic</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.Core.dll</h6>
+  <h5 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GenericQuoter : IQuoter</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CloseQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CloseQuote*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CloseQuote" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CloseQuote">CloseQuote</h4>
+  <div class="markdown level1 summary"><p>Returns the closing quote identifier - &quot; is the standard according to the specification</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string CloseQuote { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CloseQuoteEscapeString_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CloseQuoteEscapeString*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CloseQuoteEscapeString" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CloseQuoteEscapeString">CloseQuoteEscapeString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string CloseQuoteEscapeString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_EscapeValueQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.EscapeValueQuote*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_EscapeValueQuote" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.EscapeValueQuote">EscapeValueQuote</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string EscapeValueQuote { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_IdentifierSeparator_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.IdentifierSeparator*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_IdentifierSeparator" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.IdentifierSeparator">IdentifierSeparator</h4>
+  <div class="markdown level1 summary"><p>Gets the separator between identifiers (e.g. the dot between SCHEMA.TABLENAME)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string IdentifierSeparator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_OpenQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.OpenQuote*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_OpenQuote" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.OpenQuote">OpenQuote</h4>
+  <div class="markdown level1 summary"><p>Returns the opening quote identifier - &quot; is the standard according to the specification</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string OpenQuote { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_OpenQuoteEscapeString_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.OpenQuoteEscapeString*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_OpenQuoteEscapeString" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.OpenQuoteEscapeString">OpenQuoteEscapeString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string OpenQuoteEscapeString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_ValueQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.ValueQuote*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_ValueQuote" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.ValueQuote">ValueQuote</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ValueQuote { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CreateSchemaPrefixedQuotedIdentifier_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CreateSchemaPrefixedQuotedIdentifier*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_CreateSchemaPrefixedQuotedIdentifier_System_String_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.CreateSchemaPrefixedQuotedIdentifier(System.String,System.String)">CreateSchemaPrefixedQuotedIdentifier(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string CreateSchemaPrefixedQuotedIdentifier(string quotedSchemaName, string quotedIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">quotedSchemaName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">quotedIdentifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatAnsiString_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatAnsiString*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatAnsiString_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatAnsiString(System.String)">FormatAnsiString(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FormatAnsiString(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatBool_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatBool*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatBool_System_Boolean_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatBool(System.Boolean)">FormatBool(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FormatBool(bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatByteArray_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatByteArray*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatByteArray_System_Byte___" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatByteArray(System.Byte[])">FormatByteArray(byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string FormatByteArray(byte[] value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatChar_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatChar*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatChar_System_Char_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatChar(System.Char)">FormatChar(char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FormatChar(char value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTime_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTime*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTime_System_DateTime_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTime(System.DateTime)">FormatDateTime(DateTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FormatDateTime(DateTime value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTimeOffset_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTimeOffset*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatDateTimeOffset_System_DateTimeOffset_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatDateTimeOffset(System.DateTimeOffset)">FormatDateTimeOffset(DateTimeOffset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FormatDateTimeOffset(DateTimeOffset value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatEnum_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatEnum*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatEnum_System_Object_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatEnum(System.Object)">FormatEnum(object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FormatEnum(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatGuid_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatGuid*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatGuid_System_Guid_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatGuid(System.Guid)">FormatGuid(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FormatGuid(Guid value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatNationalString_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatNationalString*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatNationalString_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatNationalString(System.String)">FormatNationalString(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FormatNationalString(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatNull_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatNull*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatNull" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatNull">FormatNull()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FormatNull()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatSystemMethods_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatSystemMethods*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FormatSystemMethods_FluentMigrator_SystemMethods_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FormatSystemMethods(FluentMigrator.SystemMethods)">FormatSystemMethods(SystemMethods)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FormatSystemMethods(SystemMethods value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.SystemMethods.html">SystemMethods</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FromTimeSpan_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FromTimeSpan*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_FromTimeSpan_System_TimeSpan_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.FromTimeSpan(System.TimeSpan)">FromTimeSpan(TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FromTimeSpan(TimeSpan value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_IsQuoted_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.IsQuoted*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_IsQuoted_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.IsQuoted(System.String)">IsQuoted(string)</h4>
+  <div class="markdown level1 summary"><p>Returns true is the value starts and ends with a close quote</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsQuoted(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_Quote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.Quote*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_Quote_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.Quote(System.String)">Quote(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a quoted string that has been correctly escaped</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Quote(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteColumnName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteColumnName*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteColumnName_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteColumnName(System.String)">QuoteColumnName(string)</h4>
+  <div class="markdown level1 summary"><p>Quotes a column name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string QuoteColumnName(string columnName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">columnName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteConstraintName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteConstraintName*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteConstraintName_System_String_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteConstraintName(System.String,System.String)">QuoteConstraintName(string, string)</h4>
+  <div class="markdown level1 summary"><p>Quotes a constraint name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string QuoteConstraintName(string constraintName, string schemaName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">constraintName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteIndexName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteIndexName*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteIndexName_System_String_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteIndexName(System.String,System.String)">QuoteIndexName(string, string)</h4>
+  <div class="markdown level1 summary"><p>Quote an index name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string QuoteIndexName(string indexName, string schemaName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">indexName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteSchemaName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteSchemaName*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteSchemaName_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteSchemaName(System.String)">QuoteSchemaName(string)</h4>
+  <div class="markdown level1 summary"><p>Quotes a schema name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string QuoteSchemaName(string schemaName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td><p>The schema name to quote</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The quoted schema name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteSequenceName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteSequenceName*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteSequenceName_System_String_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteSequenceName(System.String,System.String)">QuoteSequenceName(string, string)</h4>
+  <div class="markdown level1 summary"><p>Quotes a Sequence name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string QuoteSequenceName(string sequenceName, string schemaName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sequenceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteTableName_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteTableName*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteTableName_System_String_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteTableName(System.String,System.String)">QuoteTableName(string, string)</h4>
+  <div class="markdown level1 summary"><p>Quotes a Table name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string QuoteTableName(string tableName, string schemaName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteValue_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteValue*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_QuoteValue_System_Object_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.QuoteValue(System.Object)">QuoteValue(object)</h4>
+  <div class="markdown level1 summary"><p>Quotes a value to be embedded into an SQL script/statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string QuoteValue(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be quoted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The quoted value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_ShouldQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.ShouldQuote*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_ShouldQuote_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.ShouldQuote(System.String)">ShouldQuote(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ContractAnnotation(&quot;name:null =&gt; false&quot;)]
+protected virtual bool ShouldQuote(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_UnQuote_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.UnQuote*"></a>
+  <h4 id="FluentMigrator_Runner_Generators_Generic_GenericQuoter_UnQuote_System_String_" data-uid="FluentMigrator.Runner.Generators.Generic.GenericQuoter.UnQuote(System.String)">UnQuote(string)</h4>
+  <div class="markdown level1 summary"><p>Provides an unquoted, unescaped string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string UnQuote(string quoted)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">quoted</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.Runner.Generators.IQuoter.html">IQuoter</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

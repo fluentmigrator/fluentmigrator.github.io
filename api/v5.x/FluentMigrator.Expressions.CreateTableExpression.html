@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CreateTableExpression | FluentMigrator documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CreateTableExpression | FluentMigrator documentation ">
+    
+    <meta name="description" content="Expression to create a table">
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Expressions.CreateTableExpression">
+
+
+
+  <h1 id="FluentMigrator_Expressions_CreateTableExpression" data-uid="FluentMigrator.Expressions.CreateTableExpression" class="text-break">Class CreateTableExpression</h1>
+  <div class="markdown level0 summary"><p>Expression to create a table</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="FluentMigrator.Expressions.MigrationExpressionBase.html">MigrationExpressionBase</a></div>
+    <div class="level2"><span class="xref">CreateTableExpression</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.Expressions.IMigrationExpression.html">IMigrationExpression</a></div>
+    <div><a class="xref" href="FluentMigrator.Infrastructure.ICanBeValidated.html">ICanBeValidated</a></div>
+    <div><a class="xref" href="FluentMigrator.Expressions.ISchemaExpression.html">ISchemaExpression</a></div>
+    <div><a class="xref" href="FluentMigrator.Expressions.IColumnsExpression.html">IColumnsExpression</a></div>
+    <div><a class="xref" href="FluentMigrator.Validation.IValidationChildren.html">IValidationChildren</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FluentMigrator.Expressions.MigrationExpressionBase.html#FluentMigrator_Expressions_MigrationExpressionBase_CollectValidationErrors_System_Collections_Generic_ICollection_System_String__">MigrationExpressionBase.CollectValidationErrors(ICollection&lt;string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.html">FluentMigrator</a>.<a class="xref" href="FluentMigrator.Expressions.html">Expressions</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Abstractions.dll</h6>
+  <h5 id="FluentMigrator_Expressions_CreateTableExpression_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CreateTableExpression : MigrationExpressionBase, IMigrationExpression, ICanBeValidated, ISchemaExpression, IColumnsExpression, IValidationChildren</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="FluentMigrator_Expressions_CreateTableExpression_Columns_" data-uid="FluentMigrator.Expressions.CreateTableExpression.Columns*"></a>
+  <h4 id="FluentMigrator_Expressions_CreateTableExpression_Columns" data-uid="FluentMigrator.Expressions.CreateTableExpression.Columns">Columns</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the column definitions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IList&lt;ColumnDefinition&gt; Columns { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FluentMigrator.Model.ColumnDefinition.html">ColumnDefinition</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Expressions_CreateTableExpression_SchemaName_" data-uid="FluentMigrator.Expressions.CreateTableExpression.SchemaName*"></a>
+  <h4 id="FluentMigrator_Expressions_CreateTableExpression_SchemaName" data-uid="FluentMigrator.Expressions.CreateTableExpression.SchemaName">SchemaName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the schema name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string SchemaName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Expressions_CreateTableExpression_TableDescription_" data-uid="FluentMigrator.Expressions.CreateTableExpression.TableDescription*"></a>
+  <h4 id="FluentMigrator_Expressions_CreateTableExpression_TableDescription" data-uid="FluentMigrator.Expressions.CreateTableExpression.TableDescription">TableDescription</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the table description</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string TableDescription { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Expressions_CreateTableExpression_TableName_" data-uid="FluentMigrator.Expressions.CreateTableExpression.TableName*"></a>
+  <h4 id="FluentMigrator_Expressions_CreateTableExpression_TableName" data-uid="FluentMigrator.Expressions.CreateTableExpression.TableName">TableName</h4>
+  <div class="markdown level1 summary"><p>Gets the table name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = &quot;TableNameCannotBeNullOrEmpty&quot;)]
+public virtual string TableName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="FluentMigrator_Expressions_CreateTableExpression_ExecuteWith_" data-uid="FluentMigrator.Expressions.CreateTableExpression.ExecuteWith*"></a>
+  <h4 id="FluentMigrator_Expressions_CreateTableExpression_ExecuteWith_FluentMigrator_IMigrationProcessor_" data-uid="FluentMigrator.Expressions.CreateTableExpression.ExecuteWith(FluentMigrator.IMigrationProcessor)">ExecuteWith(IMigrationProcessor)</h4>
+  <div class="markdown level1 summary"><p>Execute the expression with the given <code class="paramref">processor</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExecuteWith(IMigrationProcessor processor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.IMigrationProcessor.html">IMigrationProcessor</a></td>
+        <td><span class="parametername">processor</span></td>
+        <td><p>The processor to execute the expression with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Expressions.MigrationExpressionBase.html#FluentMigrator_Expressions_MigrationExpressionBase_ExecuteWith_FluentMigrator_IMigrationProcessor_">MigrationExpressionBase.ExecuteWith(IMigrationProcessor)</a></div>
+
+
+  <a id="FluentMigrator_Expressions_CreateTableExpression_Reverse_" data-uid="FluentMigrator.Expressions.CreateTableExpression.Reverse*"></a>
+  <h4 id="FluentMigrator_Expressions_CreateTableExpression_Reverse" data-uid="FluentMigrator.Expressions.CreateTableExpression.Reverse">Reverse()</h4>
+  <div class="markdown level1 summary"><p>Create a reversing migration expression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IMigrationExpression Reverse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.IMigrationExpression.html">IMigrationExpression</a></td>
+        <td><p>The reversing migration expression</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Expressions.MigrationExpressionBase.html#FluentMigrator_Expressions_MigrationExpressionBase_Reverse">MigrationExpressionBase.Reverse()</a></div>
+
+
+  <a id="FluentMigrator_Expressions_CreateTableExpression_ToString_" data-uid="FluentMigrator.Expressions.CreateTableExpression.ToString*"></a>
+  <h4 id="FluentMigrator_Expressions_CreateTableExpression_ToString" data-uid="FluentMigrator.Expressions.CreateTableExpression.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string that represents the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Expressions.MigrationExpressionBase.html#FluentMigrator_Expressions_MigrationExpressionBase_ToString">MigrationExpressionBase.ToString()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.Expressions.IMigrationExpression.html">IMigrationExpression</a>
+  </div>
+  <div>
+      <a class="xref" href="FluentMigrator.Infrastructure.ICanBeValidated.html">ICanBeValidated</a>
+  </div>
+  <div>
+      <a class="xref" href="FluentMigrator.Expressions.ISchemaExpression.html">ISchemaExpression</a>
+  </div>
+  <div>
+      <a class="xref" href="FluentMigrator.Expressions.IColumnsExpression.html">IColumnsExpression</a>
+  </div>
+  <div>
+      <a class="xref" href="FluentMigrator.Validation.IValidationChildren.html">IValidationChildren</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.LegacyValidationExtensions.html#FluentMigrator_LegacyValidationExtensions_CollectErrors_FluentMigrator_Infrastructure_ICanBeValidated_System_Collections_Generic_ICollection_System_String__System_IServiceProvider_">LegacyValidationExtensions.CollectErrors(ICanBeValidated, ICollection&lt;string&gt;, IServiceProvider)</a>
+  </div>
+  <div>
+      <a class="xref" href="FluentMigrator.LegacyValidationExtensions.html#FluentMigrator_LegacyValidationExtensions_TryCollectResults_FluentMigrator_Infrastructure_ICanBeValidated_System_Collections_Generic_ICollection_System_ComponentModel_DataAnnotations_ValidationResult__System_IServiceProvider_System_Collections_Generic_IDictionary_System_Object_System_Object__">LegacyValidationExtensions.TryCollectResults(ICanBeValidated, ICollection&lt;ValidationResult&gt;, IServiceProvider, IDictionary&lt;object, object&gt;)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

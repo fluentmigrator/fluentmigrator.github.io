@@ -1,21 +1,21 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Custom metadata for the VersionInfo table | FluentMigrator documentation </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Custom metadata for the VersionInfo table | FluentMigrator documentation ">
-    <meta name="generator" content="docfx 2.59.4.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Custom metadata for the VersionInfo table | FluentMigrator documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Custom metadata for the VersionInfo table | FluentMigrator documentation ">
     
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     
@@ -23,7 +23,7 @@
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../images/logo.svg" alt="">
               </a>
@@ -47,7 +47,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -57,7 +57,7 @@
         </div>
       </header>
       <div class="container body-content">
-        
+
         <div id="search-results">
           <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
@@ -67,7 +67,7 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="version-table-metadata">
 <h1 id="custom-metadata-for-the-versioninfo-table">Custom metadata for the VersionInfo table</h1>
 
-<p>By implementing the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> interface you can change the defaults for the VersionInfo table. The interface exposes six properties:</p>
+<p>By implementing the <a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData">IVersionTableMetaData</a> interface you can change the defaults for the VersionInfo table. The interface exposes six properties:</p>
 <table>
 <thead>
 <tr>
@@ -90,41 +90,41 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_SchemaName">SchemaName</a></td>
+<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.SchemaName">SchemaName</a></td>
 <td>(empty)</td>
 <td>The schema where the version table is stored</td>
 </tr>
 <tr>
-<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_TableName">TableName</a></td>
+<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.TableName">TableName</a></td>
 <td><code>&quot;VersionInfo&quot;</code></td>
 <td>The table where the version information is stored</td>
 </tr>
 <tr>
-<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_ColumnName">ColumnName</a></td>
+<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.ColumnName">ColumnName</a></td>
 <td><code>&quot;Version&quot;</code></td>
 <td>The name of the column where the version numbers are stored</td>
 </tr>
 <tr>
-<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_DescriptionColumnName">DescriptionColumnName</a></td>
+<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.DescriptionColumnName">DescriptionColumnName</a></td>
 <td><code>&quot;Description&quot;</code></td>
 <td>The name of the last migration applied</td>
 </tr>
 <tr>
-<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_AppliedOnColumnName">AppliedOnColumnName</a></td>
+<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.AppliedOnColumnName">AppliedOnColumnName</a></td>
 <td><code>&quot;AppliedOn&quot;</code></td>
 <td>The datetime of when the last migration was applied</td>
 </tr>
 <tr>
-<td><a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html#FluentMigrator_Runner_VersionTableInfo_IVersionTableMetaData_UniqueIndexName">UniqueIndexName</a></td>
+<td><a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.UniqueIndexName">UniqueIndexName</a></td>
 <td><code>&quot;UC_Version&quot;</code></td>
 <td>The name of the unique constraint for the version column</td>
 </tr>
 </tbody>
 </table>
-<p>In the same assembly that your migrations are located, create a new class (it must be public) that implements the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> interface and decorate the class with the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.VersionTableMetaDataAttribute.html">VersionTableMetaDataAttribute</a>. FluentMigrator will automatically find this and use it instead of the default settings.</p>
+<p>In the same assembly that your migrations are located, create a new class (it must be public) that implements the <a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData">IVersionTableMetaData</a> interface and decorate the class with the <a href="xref:FluentMigrator.Runner.VersionTableInfo.VersionTableMetaDataAttribute">VersionTableMetaDataAttribute</a>. FluentMigrator will automatically find this and use it instead of the default settings.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The custom <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> is filtered by the values in the <a class="xref" href="../api/v3.x/FluentMigrator.Runner.Initialization.TypeFilterOptions.html">TypeFilterOptions</a>. This allows different <a class="xref" href="../api/v3.x/FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData.html">IVersionTableMetaData</a> for every database.</p>
+<p>The custom <a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData">IVersionTableMetaData</a> is filtered by the values in the <a href="xref:FluentMigrator.Runner.Initialization.TypeFilterOptions">TypeFilterOptions</a>. This allows different <a href="xref:FluentMigrator.Runner.VersionTableInfo.IVersionTableMetaData">IVersionTableMetaData</a> for every database.</p>
 </div>
 <p>A common use case is changing the default schema so that you can have a migration assembly per schema.</p>
 <pre><code class="lang-c#">using FluentMigrator.Runner.VersionTableInfo;
@@ -167,27 +167,28 @@ public class VersionTable : DefaultVersionTableMetaData
 <p>Finally, register it via Microsoft Dependency Injection:</p>
 <pre><code class="lang-c#">serviceCollection.AddScoped(typeof(IVersionTableMetaData), typeof(VersionTable));
 </code></pre>
+
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/version-table-metadata.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/version-table-metadata.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -195,14 +196,14 @@ public class VersionTable : DefaultVersionTableMetaData
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
-            
+      <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+      
           </div>
         </div>
       </footer>
     </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

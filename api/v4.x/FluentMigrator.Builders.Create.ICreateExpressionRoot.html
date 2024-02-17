@@ -1,0 +1,600 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface ICreateExpressionRoot | FluentMigrator documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface ICreateExpressionRoot | FluentMigrator documentation ">
+    
+    <meta name="description" content="The root expression for a CREATE operation">
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot">
+
+
+
+  <h1 id="FluentMigrator_Builders_Create_ICreateExpressionRoot" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot" class="text-break">Interface ICreateExpressionRoot</h1>
+  <div class="markdown level0 summary"><p>The root expression for a CREATE operation</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.html">FluentMigrator</a>.<a class="xref" href="FluentMigrator.Builders.html">Builders</a>.<a class="xref" href="FluentMigrator.Builders.Create.html">Create</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Abstractions.dll</h6>
+  <h5 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICreateExpressionRoot</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Column_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Column*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Column_System_String_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Column(System.String)">Column(string)</h4>
+  <div class="markdown level1 summary"><p>Creates a column</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateColumnOnTableSyntax Column(string columnName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">columnName</span></td>
+        <td><p>The column name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.Column.ICreateColumnOnTableSyntax.html">ICreateColumnOnTableSyntax</a></td>
+        <td><p>Additional information about the column creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_ForeignKey_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.ForeignKey*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_ForeignKey" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.ForeignKey">ForeignKey()</h4>
+  <div class="markdown level1 summary"><p>Creates a foreign key with a default name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateForeignKeyFromTableSyntax ForeignKey()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyFromTableSyntax.html">ICreateForeignKeyFromTableSyntax</a></td>
+        <td><p>Additional information about the foreign key creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_ForeignKey_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.ForeignKey*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_ForeignKey_System_String_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.ForeignKey(System.String)">ForeignKey(string)</h4>
+  <div class="markdown level1 summary"><p>Creates a foreign key with the given name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateForeignKeyFromTableSyntax ForeignKey(string foreignKeyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">foreignKeyName</span></td>
+        <td><p>The foreign key name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.ForeignKey.ICreateForeignKeyFromTableSyntax.html">ICreateForeignKeyFromTableSyntax</a></td>
+        <td><p>Additional information about the foreign key creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Index_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Index*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Index" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Index">Index()</h4>
+  <div class="markdown level1 summary"><p>Creates an index with a default name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateIndexForTableSyntax Index()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.Index.ICreateIndexForTableSyntax.html">ICreateIndexForTableSyntax</a></td>
+        <td><p>Additional information about the index creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Index_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Index*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Index_System_String_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Index(System.String)">Index(string)</h4>
+  <div class="markdown level1 summary"><p>Creates an index with the given name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateIndexForTableSyntax Index(string indexName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">indexName</span></td>
+        <td><p>The index name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.Index.ICreateIndexForTableSyntax.html">ICreateIndexForTableSyntax</a></td>
+        <td><p>Additional information about the index creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_PrimaryKey_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.PrimaryKey*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_PrimaryKey" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.PrimaryKey">PrimaryKey()</h4>
+  <div class="markdown level1 summary"><p>Creates a primary key with a default name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateConstraintOnTableSyntax PrimaryKey()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.Constraint.ICreateConstraintOnTableSyntax.html">ICreateConstraintOnTableSyntax</a></td>
+        <td><p>Additional information about the primary key creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_PrimaryKey_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.PrimaryKey*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_PrimaryKey_System_String_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.PrimaryKey(System.String)">PrimaryKey(string)</h4>
+  <div class="markdown level1 summary"><p>Creates a primary key with the given name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateConstraintOnTableSyntax PrimaryKey(string primaryKeyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">primaryKeyName</span></td>
+        <td><p>The primary key name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.Constraint.ICreateConstraintOnTableSyntax.html">ICreateConstraintOnTableSyntax</a></td>
+        <td><p>Additional information about the primary key creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Schema_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Schema*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Schema_System_String_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Schema(System.String)">Schema(string)</h4>
+  <div class="markdown level1 summary"><p>Creates a schema</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateSchemaOptionsSyntax Schema(string schemaName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td><p>The schema name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.Schema.ICreateSchemaOptionsSyntax.html">ICreateSchemaOptionsSyntax</a></td>
+        <td><p>The options for the schema creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Sequence_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Sequence*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Sequence_System_String_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Sequence(System.String)">Sequence(string)</h4>
+  <div class="markdown level1 summary"><p>Creates a sequence</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateSequenceInSchemaSyntax Sequence(string sequenceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sequenceName</span></td>
+        <td><p>The sequence name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.Sequence.ICreateSequenceInSchemaSyntax.html">ICreateSequenceInSchemaSyntax</a></td>
+        <td><p>Additional information about the sequence creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Table_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Table*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_Table_System_String_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.Table(System.String)">Table(string)</h4>
+  <div class="markdown level1 summary"><p>Creates a table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateTableWithColumnOrSchemaOrDescriptionSyntax Table(string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>The table name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.Table.ICreateTableWithColumnOrSchemaOrDescriptionSyntax.html">ICreateTableWithColumnOrSchemaOrDescriptionSyntax</a></td>
+        <td><p>Additional information about the table creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_UniqueConstraint_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.UniqueConstraint*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_UniqueConstraint" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.UniqueConstraint">UniqueConstraint()</h4>
+  <div class="markdown level1 summary"><p>Creates an unique constraint with a default name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateConstraintOnTableSyntax UniqueConstraint()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.Constraint.ICreateConstraintOnTableSyntax.html">ICreateConstraintOnTableSyntax</a></td>
+        <td><p>Additional information about the unique constraint creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FluentMigrator_Builders_Create_ICreateExpressionRoot_UniqueConstraint_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.UniqueConstraint*"></a>
+  <h4 id="FluentMigrator_Builders_Create_ICreateExpressionRoot_UniqueConstraint_System_String_" data-uid="FluentMigrator.Builders.Create.ICreateExpressionRoot.UniqueConstraint(System.String)">UniqueConstraint(string)</h4>
+  <div class="markdown level1 summary"><p>Creates an unique constraint with the given name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICreateConstraintOnTableSyntax UniqueConstraint(string constraintName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">constraintName</span></td>
+        <td><p>The unique constraint name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Builders.Create.Constraint.ICreateConstraintOnTableSyntax.html">ICreateConstraintOnTableSyntax</a></td>
+        <td><p>Additional information about the unique constraint creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

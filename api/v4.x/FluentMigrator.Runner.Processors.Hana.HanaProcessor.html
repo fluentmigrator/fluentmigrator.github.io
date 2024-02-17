@@ -1,0 +1,1084 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class HanaProcessor | FluentMigrator documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class HanaProcessor | FluentMigrator documentation ">
+    
+    
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor">
+
+
+
+  <h1 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor" class="text-break">Class HanaProcessor</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html">ProcessorBase</a></div>
+    <div class="level2"><a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html">GenericProcessorBase</a></div>
+    <div class="level3"><span class="xref">HanaProcessor</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FluentMigrator.IMigrationProcessor.html">IMigrationProcessor</a></div>
+    <div><a class="xref" href="FluentMigrator.IQuerySchema.html">IQuerySchema</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_Connection">GenericProcessorBase.Connection</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_Transaction">GenericProcessorBase.Transaction</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_DbProviderFactory">GenericProcessorBase.DbProviderFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_EnsureConnectionIsOpen">GenericProcessorBase.EnsureConnectionIsOpen()</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_EnsureConnectionIsClosed">GenericProcessorBase.EnsureConnectionIsClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_BeginTransaction">GenericProcessorBase.BeginTransaction()</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_RollbackTransaction">GenericProcessorBase.RollbackTransaction()</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_CommitTransaction">GenericProcessorBase.CommitTransaction()</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_Dispose_System_Boolean_">GenericProcessorBase.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_CreateCommand_System_String_">GenericProcessorBase.CreateCommand(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.GenericProcessorBase.html#FluentMigrator_Runner_Processors_GenericProcessorBase_CreateCommand_System_String_System_Data_Common_DbConnection_System_Data_Common_DbTransaction_">GenericProcessorBase.CreateCommand(string, DbConnection, DbTransaction)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Generator">ProcessorBase.Generator</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_WasCommitted">ProcessorBase.WasCommitted</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Logger">ProcessorBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Options">ProcessorBase.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateSchemaExpression_">ProcessorBase.Process(CreateSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteSchemaExpression_">ProcessorBase.Process(DeleteSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateTableExpression_">ProcessorBase.Process(CreateTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_AlterTableExpression_">ProcessorBase.Process(AlterTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_AlterColumnExpression_">ProcessorBase.Process(AlterColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateColumnExpression_">ProcessorBase.Process(CreateColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteTableExpression_">ProcessorBase.Process(DeleteTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteColumnExpression_">ProcessorBase.Process(DeleteColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateForeignKeyExpression_">ProcessorBase.Process(CreateForeignKeyExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteForeignKeyExpression_">ProcessorBase.Process(DeleteForeignKeyExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateIndexExpression_">ProcessorBase.Process(CreateIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteIndexExpression_">ProcessorBase.Process(DeleteIndexExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_RenameTableExpression_">ProcessorBase.Process(RenameTableExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_RenameColumnExpression_">ProcessorBase.Process(RenameColumnExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_InsertDataExpression_">ProcessorBase.Process(InsertDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteDataExpression_">ProcessorBase.Process(DeleteDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_AlterDefaultConstraintExpression_">ProcessorBase.Process(AlterDefaultConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_UpdateDataExpression_">ProcessorBase.Process(UpdateDataExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_AlterSchemaExpression_">ProcessorBase.Process(AlterSchemaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateSequenceExpression_">ProcessorBase.Process(CreateSequenceExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteSequenceExpression_">ProcessorBase.Process(DeleteSequenceExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_CreateConstraintExpression_">ProcessorBase.Process(CreateConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteConstraintExpression_">ProcessorBase.Process(DeleteConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_DeleteDefaultConstraintExpression_">ProcessorBase.Process(DeleteDefaultConstraintExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Execute_System_String_">ProcessorBase.Execute(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Dispose">ProcessorBase.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.html">FluentMigrator</a>.<a class="xref" href="FluentMigrator.Runner.html">Runner</a>.<a class="xref" href="FluentMigrator.Runner.Processors.html">Processors</a>.<a class="xref" href="FluentMigrator.Runner.Processors.Hana.html">Hana</a></h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Runner.Hana.dll</h6>
+  <h5 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HanaProcessor : GenericProcessorBase, IMigrationProcessor, IQuerySchema, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor__ctor_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.#ctor*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor__ctor_FluentMigrator_Runner_Processors_Hana_HanaDbFactory_FluentMigrator_Runner_Generators_Hana_HanaGenerator_Microsoft_Extensions_Logging_ILogger_FluentMigrator_Runner_Processors_Hana_HanaProcessor__Microsoft_Extensions_Options_IOptionsSnapshot_FluentMigrator_Runner_Processors_ProcessorOptions__FluentMigrator_Runner_Initialization_IConnectionStringAccessor_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.#ctor(FluentMigrator.Runner.Processors.Hana.HanaDbFactory,FluentMigrator.Runner.Generators.Hana.HanaGenerator,Microsoft.Extensions.Logging.ILogger{FluentMigrator.Runner.Processors.Hana.HanaProcessor},Microsoft.Extensions.Options.IOptionsSnapshot{FluentMigrator.Runner.Processors.ProcessorOptions},FluentMigrator.Runner.Initialization.IConnectionStringAccessor)">HanaProcessor(HanaDbFactory, HanaGenerator, ILogger&lt;HanaProcessor&gt;, IOptionsSnapshot&lt;ProcessorOptions&gt;, IConnectionStringAccessor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HanaProcessor(HanaDbFactory factory, HanaGenerator generator, ILogger&lt;HanaProcessor&gt; logger, IOptionsSnapshot&lt;ProcessorOptions&gt; options, IConnectionStringAccessor connectionStringAccessor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Processors.Hana.HanaDbFactory.html">HanaDbFactory</a></td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.Hana.HanaGenerator.html">HanaGenerator</a></td>
+        <td><span class="parametername">generator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="FluentMigrator.Runner.Processors.Hana.HanaProcessor.html">HanaProcessor</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1">IOptionsSnapshot</a>&lt;<a class="xref" href="FluentMigrator.Runner.Processors.ProcessorOptions.html">ProcessorOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Initialization.IConnectionStringAccessor.html">IConnectionStringAccessor</a></td>
+        <td><span class="parametername">connectionStringAccessor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_DatabaseType_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.DatabaseType*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_DatabaseType" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.DatabaseType">DatabaseType</h4>
+  <div class="markdown level1 summary"><p>Gets the default database type identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DatabaseType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_DatabaseType">ProcessorBase.DatabaseType</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_DatabaseTypeAliases_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.DatabaseTypeAliases*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_DatabaseTypeAliases" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.DatabaseTypeAliases">DatabaseTypeAliases</h4>
+  <div class="markdown level1 summary"><p>Gets the database type aliases.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IList&lt;string&gt; DatabaseTypeAliases { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_DatabaseTypeAliases">ProcessorBase.DatabaseTypeAliases</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Quoter_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Quoter*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Quoter" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Quoter">Quoter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQuoter Quoter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Runner.Generators.IQuoter.html">IQuoter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_ColumnExists_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.ColumnExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_ColumnExists_System_String_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.ColumnExists(System.String,System.String,System.String)">ColumnExists(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Tests if a column exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ColumnExists(string schemaName, string tableName, string columnName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td><p>The schema name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>The table name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">columnName</span></td>
+        <td><p>The column name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> when it exists</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_ColumnExists_System_String_System_String_System_String_">ProcessorBase.ColumnExists(string, string, string)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_ConstraintExists_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.ConstraintExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_ConstraintExists_System_String_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.ConstraintExists(System.String,System.String,System.String)">ConstraintExists(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Tests if a constraint exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ConstraintExists(string schemaName, string tableName, string constraintName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td><p>The schema name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>The table name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">constraintName</span></td>
+        <td><p>The constraint name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> when it exists</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_ConstraintExists_System_String_System_String_System_String_">ProcessorBase.ConstraintExists(string, string, string)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_DefaultValueExists_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.DefaultValueExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_DefaultValueExists_System_String_System_String_System_String_System_Object_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.DefaultValueExists(System.String,System.String,System.String,System.Object)">DefaultValueExists(string, string, string, object)</h4>
+  <div class="markdown level1 summary"><p>Tests if a default value for a column exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool DefaultValueExists(string schemaName, string tableName, string columnName, object defaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td><p>The schema name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>The table name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">columnName</span></td>
+        <td><p>The column name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td><p>The default value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> when it exists</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_DefaultValueExists_System_String_System_String_System_String_System_Object_">ProcessorBase.DefaultValueExists(string, string, string, object)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Execute_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Execute*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Execute_System_String_System_Object___" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Execute(System.String,System.Object[])">Execute(string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Execute an SQL statement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Execute(string template, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>The SQL statement</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments to replace in the SQL statement</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Execute_System_String_System_Object___">ProcessorBase.Execute(string, params object[])</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Exists_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Exists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Exists_System_String_System_Object___" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Exists(System.String,System.Object[])">Exists(string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if data could be found for the given SQL query</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Exists(string template, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>The SQL query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments of the SQL query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> when the SQL query returned data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Exists_System_String_System_Object___">ProcessorBase.Exists(string, params object[])</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_IndexExists_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.IndexExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_IndexExists_System_String_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.IndexExists(System.String,System.String,System.String)">IndexExists(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Tests if an index exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IndexExists(string schemaName, string tableName, string indexName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td><p>The schema name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>The table name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">indexName</span></td>
+        <td><p>The index name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> when it exists</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_IndexExists_System_String_System_String_System_String_">ProcessorBase.IndexExists(string, string, string)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Process_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Process*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Process_FluentMigrator_Expressions_PerformDBOperationExpression_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Process(FluentMigrator.Expressions.PerformDBOperationExpression)">Process(PerformDBOperationExpression)</h4>
+  <div class="markdown level1 summary"><p>Executes a DB operation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Process(PerformDBOperationExpression expression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FluentMigrator.Expressions.PerformDBOperationExpression.html">PerformDBOperationExpression</a></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The expression to execute</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_FluentMigrator_Expressions_PerformDBOperationExpression_">ProcessorBase.Process(PerformDBOperationExpression)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Process_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Process*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Process_System_String_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Process(System.String)">Process(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Process(string sql)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Process_System_String_">ProcessorBase.Process(string)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Read_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Read*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_Read_System_String_System_Object___" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.Read(System.String,System.Object[])">Read(string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Executes and returns the result of an SQL query</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataSet Read(string template, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>The SQL query</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments of the SQL query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.dataset">DataSet</a></td>
+        <td><p>The data from the specified SQL query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_Read_System_String_System_Object___">ProcessorBase.Read(string, params object[])</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_ReadTableData_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.ReadTableData*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_ReadTableData_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.ReadTableData(System.String,System.String)">ReadTableData(string, string)</h4>
+  <div class="markdown level1 summary"><p>Reads all data from all rows from a table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataSet ReadTableData(string schemaName, string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td><p>The schema name of the table</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>The table name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.dataset">DataSet</a></td>
+        <td><p>The data from the specified table</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_ReadTableData_System_String_System_String_">ProcessorBase.ReadTableData(string, string)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_SchemaExists_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.SchemaExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_SchemaExists_System_String_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.SchemaExists(System.String)">SchemaExists(string)</h4>
+  <div class="markdown level1 summary"><p>Tests if the schema exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SchemaExists(string schemaName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td><p>The schema name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> when it exists</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_SchemaExists_System_String_">ProcessorBase.SchemaExists(string)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_SequenceExists_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.SequenceExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_SequenceExists_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.SequenceExists(System.String,System.String)">SequenceExists(string, string)</h4>
+  <div class="markdown level1 summary"><p>Tests if a sequence exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SequenceExists(string schemaName, string sequenceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td><p>The schema name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sequenceName</span></td>
+        <td><p>The sequence name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> when it exists</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_SequenceExists_System_String_System_String_">ProcessorBase.SequenceExists(string, string)</a></div>
+
+
+  <a id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_TableExists_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.TableExists*"></a>
+  <h4 id="FluentMigrator_Runner_Processors_Hana_HanaProcessor_TableExists_System_String_System_String_" data-uid="FluentMigrator.Runner.Processors.Hana.HanaProcessor.TableExists(System.String,System.String)">TableExists(string, string)</h4>
+  <div class="markdown level1 summary"><p>Tests if the table exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TableExists(string schemaName, string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">schemaName</span></td>
+        <td><p>The schema name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>The table name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> when it exists</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FluentMigrator.Runner.Processors.ProcessorBase.html#FluentMigrator_Runner_Processors_ProcessorBase_TableExists_System_String_System_String_">ProcessorBase.TableExists(string, string)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FluentMigrator.IMigrationProcessor.html">IMigrationProcessor</a>
+  </div>
+  <div>
+      <a class="xref" href="FluentMigrator.IQuerySchema.html">IQuerySchema</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -31,6 +31,9 @@ references:
 - uid: guides-overview
   name: FluentMigrator Guides
   href: articles/guides/overview.html
+- uid: in-memory-testing
+  name: In-Memory Testing
+  href: articles/in-memory-testing.html
 - uid: maintenance-migrations.md
   name: Maintenance Migrations
   href: articles/maintenance-migrations.html

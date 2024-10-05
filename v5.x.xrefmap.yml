@@ -629,38 +629,6 @@ references:
   commentId: T:FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax
   fullName: FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax
   nameWithType: ICreateBTreeIndexOptionsSyntax
-- uid: FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.Fillfactor(System.Int32)
-  name: Fillfactor(int)
-  href: api/v5.x/FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.html#FluentMigrator_Builder_Create_Index_ICreateBTreeIndexOptionsSyntax_Fillfactor_System_Int32_
-  commentId: M:FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.Fillfactor(System.Int32)
-  name.vb: Fillfactor(Integer)
-  fullName: FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.Fillfactor(int)
-  fullName.vb: FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.Fillfactor(Integer)
-  nameWithType: ICreateBTreeIndexOptionsSyntax.Fillfactor(int)
-  nameWithType.vb: ICreateBTreeIndexOptionsSyntax.Fillfactor(Integer)
-- uid: FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.Fillfactor*
-  name: Fillfactor
-  href: api/v5.x/FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.html#FluentMigrator_Builder_Create_Index_ICreateBTreeIndexOptionsSyntax_Fillfactor_
-  commentId: Overload:FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.Fillfactor
-  isSpec: "True"
-  fullName: FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.Fillfactor
-  nameWithType: ICreateBTreeIndexOptionsSyntax.Fillfactor
-- uid: FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.VacuumCleanupIndexScaleFactor(System.Single)
-  name: VacuumCleanupIndexScaleFactor(float)
-  href: api/v5.x/FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.html#FluentMigrator_Builder_Create_Index_ICreateBTreeIndexOptionsSyntax_VacuumCleanupIndexScaleFactor_System_Single_
-  commentId: M:FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.VacuumCleanupIndexScaleFactor(System.Single)
-  name.vb: VacuumCleanupIndexScaleFactor(Single)
-  fullName: FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.VacuumCleanupIndexScaleFactor(float)
-  fullName.vb: FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.VacuumCleanupIndexScaleFactor(Single)
-  nameWithType: ICreateBTreeIndexOptionsSyntax.VacuumCleanupIndexScaleFactor(float)
-  nameWithType.vb: ICreateBTreeIndexOptionsSyntax.VacuumCleanupIndexScaleFactor(Single)
-- uid: FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.VacuumCleanupIndexScaleFactor*
-  name: VacuumCleanupIndexScaleFactor
-  href: api/v5.x/FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.html#FluentMigrator_Builder_Create_Index_ICreateBTreeIndexOptionsSyntax_VacuumCleanupIndexScaleFactor_
-  commentId: Overload:FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.VacuumCleanupIndexScaleFactor
-  isSpec: "True"
-  fullName: FluentMigrator.Builder.Create.Index.ICreateBTreeIndexOptionsSyntax.VacuumCleanupIndexScaleFactor
-  nameWithType: ICreateBTreeIndexOptionsSyntax.VacuumCleanupIndexScaleFactor
 - uid: FluentMigrator.Builder.Create.Index.ICreateBrinIndexOptionsSyntax
   name: ICreateBrinIndexOptionsSyntax
   href: api/v5.x/FluentMigrator.Builder.Create.Index.ICreateBrinIndexOptionsSyntax.html
@@ -848,44 +816,12 @@ references:
   commentId: T:FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax
   fullName: FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax
   nameWithType: ICreateHashIndexOptionSyntax
-- uid: FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.Fillfactor(System.Int32)
-  name: Fillfactor(int)
-  href: api/v5.x/FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.html#FluentMigrator_Builder_Create_Index_ICreateHashIndexOptionSyntax_Fillfactor_System_Int32_
-  commentId: M:FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.Fillfactor(System.Int32)
-  name.vb: Fillfactor(Integer)
-  fullName: FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.Fillfactor(int)
-  fullName.vb: FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.Fillfactor(Integer)
-  nameWithType: ICreateHashIndexOptionSyntax.Fillfactor(int)
-  nameWithType.vb: ICreateHashIndexOptionSyntax.Fillfactor(Integer)
-- uid: FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.Fillfactor*
-  name: Fillfactor
-  href: api/v5.x/FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.html#FluentMigrator_Builder_Create_Index_ICreateHashIndexOptionSyntax_Fillfactor_
-  commentId: Overload:FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.Fillfactor
-  isSpec: "True"
-  fullName: FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.Fillfactor
-  nameWithType: ICreateHashIndexOptionSyntax.Fillfactor
 - uid: FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax
   name: ICreateIndexMethodOptionsSyntax
   href: api/v5.x/FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax.html
   commentId: T:FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax
   fullName: FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax
   nameWithType: ICreateIndexMethodOptionsSyntax
-- uid: FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax.Fillfactor(System.Int32)
-  name: Fillfactor(int)
-  href: api/v5.x/FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax.html#FluentMigrator_Builder_Create_Index_ICreateIndexMethodOptionsSyntax_Fillfactor_System_Int32_
-  commentId: M:FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax.Fillfactor(System.Int32)
-  name.vb: Fillfactor(Integer)
-  fullName: FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax.Fillfactor(int)
-  fullName.vb: FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax.Fillfactor(Integer)
-  nameWithType: ICreateIndexMethodOptionsSyntax.Fillfactor(int)
-  nameWithType.vb: ICreateIndexMethodOptionsSyntax.Fillfactor(Integer)
-- uid: FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax.Fillfactor*
-  name: Fillfactor
-  href: api/v5.x/FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax.html#FluentMigrator_Builder_Create_Index_ICreateIndexMethodOptionsSyntax_Fillfactor_
-  commentId: Overload:FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax.Fillfactor
-  isSpec: "True"
-  fullName: FluentMigrator.Builder.Create.Index.ICreateIndexMethodOptionsSyntax.Fillfactor
-  nameWithType: ICreateIndexMethodOptionsSyntax.Fillfactor
 - uid: FluentMigrator.Builder.Create.Index.ICreateIndexNonKeyColumnSyntax
   name: ICreateIndexNonKeyColumnSyntax
   href: api/v5.x/FluentMigrator.Builder.Create.Index.ICreateIndexNonKeyColumnSyntax.html

@@ -97,67 +97,11 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FluentMigrator.html">FluentMigrator</a>.<a class="xref" href="FluentMigrator.Builder.html">Builder</a>.<a class="xref" href="FluentMigrator.Builder.Create.html">Create</a>.<a class="xref" href="FluentMigrator.Builder.Create.Index.html">Index</a></h6>
-  <h6><strong>Assembly</strong>: FluentMigrator.Extensions.Postgres.dll</h6>
+  <h6><strong>Assembly</strong>: FluentMigrator.Extensions.MySql.dll</h6>
   <h5 id="FluentMigrator_Builder_Create_Index_ICreateHashIndexOptionSyntax_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface ICreateHashIndexOptionSyntax : ICreateIndexMethodOptionsSyntax, ICreateIndexOptionsSyntax</code></pre>
   </div>
-  <h3 id="methods">Methods
-</h3>
-
-
-  <a id="FluentMigrator_Builder_Create_Index_ICreateHashIndexOptionSyntax_Fillfactor_" data-uid="FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.Fillfactor*"></a>
-  <h4 id="FluentMigrator_Builder_Create_Index_ICreateHashIndexOptionSyntax_Fillfactor_System_Int32_" data-uid="FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.Fillfactor(System.Int32)">Fillfactor(int)</h4>
-  <div class="markdown level1 summary"><p>The fillfactor for an index is a percentage that determines how full the index method will try to pack index pages.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ICreateHashIndexOptionSyntax Fillfactor(int fillfactor)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">fillfactor</span></td>
-        <td><p>The fillfactor value from 10 to 100 can be selected</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="FluentMigrator.Builder.Create.Index.ICreateHashIndexOptionSyntax.html">ICreateHashIndexOptionSyntax</a></td>
-        <td><p>The next step</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="FluentMigrator_Builder_Create_Index_ICreateHashIndexOptionSyntax_Fillfactor_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>For B-trees, leaf pages are filled to this percentage during initial index build, and also when extending
-the index at the right (adding new largest key values). If pages subsequently become completely full,
-they will be split, leading to gradual degradation in the index's efficiency.
-B-trees use a default fillfactor of 90, but any integer value from 10 to 100 can be selected.
-If the table is static then fillfactor 100 is best to minimize the index's physical size,
-but for heavily updated tables a smaller fillfactor is better to minimize the need for page splits.
-The other index methods use fillfactor in different but roughly analogous ways; the default fillfactor varies between methods.</p>
-</div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="FluentMigrator.MySql.MySqlExtensions.html#FluentMigrator_MySql_MySqlExtensions_Using_FluentMigrator_Builders_Create_Index_ICreateIndexOptionsSyntax_FluentMigrator_Model_IndexType_">MySqlExtensions.Using(ICreateIndexOptionsSyntax, IndexType)</a>

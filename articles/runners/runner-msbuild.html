@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>dotnet-fm tool | FluentMigrator documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="dotnet-fm tool | FluentMigrator documentation ">
+    
+    
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="dotnet-fm">
+<h1 id="the-fluentmigratormsbuild-tool">The <code>FluentMigrator.MSBuild</code> tool</h1>
+
+<h1 id="installation">Installation</h1>
+<p>The best way to install FluentMigrator.MSBuild is through GeneratePathProperty. However, care must be taken due to how MSBuild handles the evaluation phase.</p>
+<h1 id="running">Running</h1>
+<p>To be set-up as part of your build process.</p>
+<h2 id="net-runtime-related-switches">.NET Runtime related switches</h2>
+<h3 id="--allowdirtyassemblies-switch"><code>--allowDirtyAssemblies</code> switch</h3>
+<p>Overrides the default .NET Assembly Loading logic, allowing you to load assemblies written for other versions of the .NET runtime.
+This is primarily intended for developers working on preview releases of the next version of the .NET runtime, but can be used by others as a workaround for assembly not found errors.  In particular, it is possible to have a &quot;diamond dependency&quot; where some dependencies have higher assembly versions than the one FluentMigrator uses.</p>
+<p>For example, suppose FluentMigrator.DotNet.Cli ships with a particular version of System.ComponentModel.DataAnnotations.  Further suppose that you have a private enterprise nuget package repository that has re-usable FluentMigrator extension methods, which transitively references a different verison of System.ComponentModel.DataAnnotations.  There are only two possible ways you can call such an extension method: (1) implement your own FluentMigrator.DotNet.Cli tool and directly package your migrations DLL with the tool so that the MSBuild Microsoft.NET.Sdk correctly builds a project.deps.json used to resolve the right assembly (2) use this <code>--allowDirtyAssemblies</code> switch.</p>
+<p>As another example, suppose FluentMigrator has not yet shipped a .NET vNext compatible binary, but you want to work with that binary.  The <code>--allowDirtyAssemblies</code> switch will help resolve the <code>System.Runtime</code> assembly.</p>
+<p>As another example, suppose you want to use dependency injection to load your data access layer for use with <code>Execute.WithConnection</code>.  You might get the following runtime error testing your migrations due to MSBuild loading a different version of <code>System.Diagnostics.DiagnosticSource</code>:</p>
+<pre><code>While executing migrations the following error was encountered: Could not load file or assembly 'System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.,
+    at Autofac.Core.Lifetime.LifetimeScope..ctor(IComponentRegistry componentRegistry, Object tag)
+    at Autofac.Core.Container..ctor(IComponentRegistry componentRegistry)
+    at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+</code></pre>
+<h3 id="usemsbuildlogging-optional-defaults-to-false"><code>UseMsBuildLogging</code> (optional, defaults to false)</h3>
+<p>Historically, the FluentMigrator.MSBuild task uses Console.Out to display output.  As MSBuild is multi-threaded, it is unsafe to do it this way.
+Currently, this option only turns on diagnostic logging, but will be used in the future for logging all output.</p>
+<h2 id="connection-related-commands">Connection related commands</h2>
+<h3 id="task-required"><code>Task</code> (required)</h3>
+<pre><code>migrate               = Apply all migrations
+migrate:up            = Apply all migrations
+</code></pre>
+<h3 id="target-aka-assembly-required"><code>Target</code> aka Assembly (required)</h3>
+<p>The assembly containing the migrations you want to execute.</p>
+<h3 id="connection-aka-connectionstring-required-can-be-a-connectionstringname"><code>Connection</code> aka ConnectionString (required, can be a <code>connectionStringName</code>)</h3>
+<p>The connection string to the server and database you want to execute your migrations against. This can be a full connection string or the name of the connection string stored in a config file.</p>
+<p>When specifying a named connection string, FluentMigrator searches for it in this order:</p>
+<ol>
+<li>The specified config file via <code>--connectionStringConfigPath</code>](#cscp) parameter</li>
+<li>Target assembly's config file</li>
+<li>Machine.config config file</li>
+</ol>
+<h3 id="timeout-optional-specify-value-in-whole-seconds"><code>Timeout</code> (optional, specify value in whole seconds)</h3>
+<p>Overrides the default database command timeout of 30 seconds.</p>
+<h3 id="profile-optional"><code>Profile</code> (optional)</h3>
+<p>The profile to run after executing migrations.</p>
+<h3 id="tags-optional"><code>Tags</code> (optional)</h3>
+<p>Filters the migrations to be run by tags.</p>
+<h3 id="stripcomments-optional-defaults-to-false"><code>StripComments</code> (optional, defaults to false)</h3>
+<p>Whether comments should be stripped from SQL text prior to executing migration on server.
+Default is true in 3.x; false will become the default in 4.x.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/fluentmigrator/documentation/blob/master/articles/runners/runner-msbuild.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <table border='0'><tr><td><span>Copyright © 2018 Fluent Migrator Project<br>Generated by <strong>DocFX</strong></span></td><td><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png'></a><br><span xmlns:dct='http://purl.org/dc/terms/' property='dct:title'>FluentMigrator Documentation</span> by <a xmlns:cc='http://creativecommons.org/ns#' href='https://fluentmigrator.github.io' property='cc:attributionName' rel='cc:attributionURL'>FluentMigrator Project</a> is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</td></tr></table>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

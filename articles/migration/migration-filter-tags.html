@@ -92,6 +92,12 @@
 [Migration(1)]
 public class DoSomeStuffToEuropeanStagingAndProdDbs : Migration { /* ... etc ... */ }
 </code></pre>
+<h1 id="tag-matching-behavior">Tag Matching Behavior</h1>
+<p>By default, FluentMigrator only runs migrations that have no tags or whose tags match all of the tags passed in to the runner.  Another option that can be used is passing in the <code>TagBehavior.Any</code> enum to the <code>[Tags]</code> attribute so that the migration will run if any of the tags defined in the attribute match those passed into the runner.</p>
+<pre><code class="lang-cs">[Tags(TagBehavior.Any, &quot;UK&quot;)]
+[Migration(2)]
+public class DoSomethingToUnitedKingdomDbs : Migration { /* ... etc ... */ }
+</code></pre>
 <h1 id="inheriting-migration-tags">Inheriting Migration Tags</h1>
 <p>Tag inheritance can apply to both base classes (single-inheritance) and interfaces (multiple-inheritance).</p>
 <p>Scenario: If you have a multiple contexts for which changes need to be applied, it can be less error-prone to inherit tags from a base class.</p>

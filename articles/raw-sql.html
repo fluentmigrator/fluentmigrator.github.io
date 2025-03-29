@@ -87,6 +87,8 @@
 <pre><code class="lang-c#">Insert.IntoTable(&quot;User&quot;).Row(new { Username = RawSql.Insert(&quot;CURRENT_USER&quot;) });
 </code></pre>
 <p>This will result in the Username column being set to the current username. Be aware that by using an sql server specific function like <code>CURRENT_USER</code> that this expression is not portable anymore and will not work against another database (like PostgreSQL).</p>
+<h1 id="limitations-of-raw-sql-helper">Limitations of Raw SQL Helper</h1>
+<p><code>RawSql.Insert</code> cannot be used as the value in the Set or Where clause of an Update or Delete expression. See issue: <a href="https://github.com/fluentmigrator/fluentmigrator/issues/1827">fluentmigrator/fluentmigrator#1827</a>.</p>
 
 </article>
           </div>

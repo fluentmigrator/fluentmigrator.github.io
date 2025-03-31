@@ -129,13 +129,18 @@ namespace test
 </thead>
 <tbody>
 <tr>
-<td>Microsoft SQL Server 2019</td>
+<td>Microsoft SQL Server 2022</td>
 <td>SqlServer2016<sup>(1)</sup></td>
 <td>SqlServer</td>
 </tr>
 <tr>
-<td>Microsoft SQL Server 2017</td>
+<td>Microsoft SQL Server 2019</td>
 <td>SqlServer2016<sup>(2)</sup></td>
+<td>SqlServer</td>
+</tr>
+<tr>
+<td>Microsoft SQL Server 2017</td>
+<td>SqlServer2016<sup>(3)</sup></td>
 <td>SqlServer</td>
 </tr>
 <tr>
@@ -169,7 +174,7 @@ namespace test
 <td>SqlServer</td>
 </tr>
 <tr>
-<td><del>Microsoft SQL Server Compact Edition</del><sup>(3)</sup></td>
+<td><del>Microsoft SQL Server Compact Edition</del><sup>(4)</sup></td>
 <td><del>SqlServerCe</del></td>
 <td><del>SqlServer</del></td>
 </tr>
@@ -194,6 +199,11 @@ namespace test
 <td>PostgreSQL</td>
 </tr>
 <tr>
+<td>PostgreSQL 15.0</td>
+<td>PostgreSQL15_0</td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
 <td>MySQL 4</td>
 <td>MySql4</td>
 <td>MySql</td>
@@ -201,6 +211,11 @@ namespace test
 <tr>
 <td>MySQL 5</td>
 <td>MySql5</td>
+<td>MySql, MariaDB</td>
+</tr>
+<tr>
+<td>MySQL 8</td>
+<td>MySQL8</td>
 <td>MySql, MariaDB</td>
 </tr>
 <tr>
@@ -244,7 +259,7 @@ namespace test
 <td></td>
 </tr>
 <tr>
-<td><del>SAP SQL Anywhere</del><sup>(4)</sup></td>
+<td><del>SAP SQL Anywhere</del><sup>(5)</sup></td>
 <td><del>SqlAnywhere16</del></td>
 <td><del>SqlAnywhere</del></td>
 </tr>
@@ -255,16 +270,17 @@ namespace test
 </tr>
 <tr>
 <td>DB2 iSeries</td>
-<td>DB2 iSeries</td>
+<td>DB2 iSeries, IBM DB2 iSeries</td>
 <td>DB2</td>
 </tr>
 </tbody>
 </table>
 <ul>
 <li><sup>(1)</sup> All integration tests ran without error against an SQL Server 2019 using the SqlServer2016 dialect.</li>
-<li><sup>(2)</sup> All integration tests ran without error against an SQL Server 2017 using the SqlServer2016 dialect.</li>
-<li><sup>(3)</sup> Support for Microsoft SQL Server Compact Edition is being dropped due to Microsoft end-of-life support date passing.</li>
-<li><sup>(4)</sup> Support for SAP SQL Anywhere is being dropped due to SAP not supporting a .NET Core / .NET 5 database driver.</li>
+<li><sup>(2)</sup> All integration tests ran without error against an SQL Server 2019 using the SqlServer2016 dialect.</li>
+<li><sup>(3)</sup> All integration tests ran without error against an SQL Server 2017 using the SqlServer2016 dialect.</li>
+<li><sup>(4)</sup> Support for Microsoft SQL Server Compact Edition is being dropped due to Microsoft end-of-life support date passing.</li>
+<li><sup>(5)</sup> Support for SAP SQL Anywhere is being dropped due to SAP not supporting a .NET Core / .NET 5 database driver.</li>
 </ul>
 <h1 id="more-information-on-fluentmigrator">More Information on FluentMigrator</h1>
 <ul>

@@ -88,8 +88,10 @@
 <li>Migration class isn't attributed with <code>MigrationAttribute</code></li>
 <li>The versions of the <code>Migrate.exe</code> tool (<code>FluentMigrator.Console</code> package) and the <code>FluentMigrator</code> package(s) referenced in your project are different.</li>
 </ul>
-<h2 id="how-can-i-run-fluentmigratordotnetcli-with-a-net-50-assembly">How can I run FluentMigrator.DotNet.Cli with a .NET 5.0 assembly?</h2>
-<p>The FluentMigrator.DotNet.Cli contains an <code>--allowDirtyAssemblies</code> switch that will allow you to load your 5.0 assemblies in a .NET Core 3.1 context.  We're working on .NET 5.0 support.'</p>
+<h2 id="how-can-i-run-fluentmigratordotnetcli-with-a-different-net-runtime-target-migration-assembly">How can I run FluentMigrator.DotNet.Cli with a different .NET runtime target migration assembly?</h2>
+<p>The FluentMigrator.DotNet.Cli contains an <code>--allowDirtyAssemblies</code> switch that will allow you to load your migration assemblies (e.g. 9.0) in a different .NET runtime context (e.g. 8.0).</p>
+<h2 id="why-arent-my-maintenance-migrations-found-and-run-by-my-in-process-runner">Why aren't my Maintenance Migrations found and run by my In-Process Runner?</h2>
+<p>If you're using a custom runner, use <code>.For.All()</code> instead of <code>.For.Migrations()</code>.</p>
 <h2 id="why-do-i-get-systemiofileloadexception-could-not-load-file-or-assembly-fluentmigrator-">Why do I get <code>System.IO.FileLoadException: Could not load file or assembly 'FluentMigrator ...</code>?</h2>
 <p>If you get a stack trace like the following:</p>
 <pre><code>System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.IO.FileLoadException: Could not load file or assembly 'FluentMigrator, Version=3.2.1.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05&quot;. Could not find or load specific file.

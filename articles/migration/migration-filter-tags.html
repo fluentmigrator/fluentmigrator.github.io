@@ -157,7 +157,7 @@ public class ApplySomeChangeToFeatureWithAsynchronousResponses : Migration, IApp
     .ConfigureRunner(rb =&gt; rb
         .AddSqlServer2008()
         .WithGlobalConnectionString(&quot;server=.\\SQLEXPRESS;uid=testfm;pwd=test;Trusted_Connection=yes;database=FluentMigrator&quot;)
-        .ScanIn(typeof(DoSomeStuffToEuropeanStagingAndProdDbs).Assembly).For.Migrations())
+        .ScanIn(typeof(DoSomeStuffToEuropeanStagingAndProdDbs).Assembly).For.All())
     .AddLogging(lb =&gt; lb.AddFluentMigratorConsole())
     // Start of type filter configuration
     .Configure&lt;RunnerOptions&gt;(opt =&gt; {
